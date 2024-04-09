@@ -1,0 +1,3038 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2006%20-%20Trigonometry/06-graphs/">
+      
+      
+        <link rel="prev" href="../05-Circular/">
+      
+      
+        <link rel="next" href="../07-Compound%20Angles/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Drawing Graphs - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#an-introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Drawing Graphs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#an-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      An introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-sine" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Graph of Sine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-cosine" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of cosine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-of-sine-and-cosine-superimposed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph of Sine and Cosine superimposed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-tan" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of tan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-cosec" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of cosec
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-secant" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of secant
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-cot" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of cot
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#an-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      An introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-sine" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Graph of Sine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-cosine" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of cosine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-of-sine-and-cosine-superimposed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph of Sine and Cosine superimposed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-tan" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of tan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-cosec" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of cosec
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-secant" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of secant
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graph-of-cot" class="md-nav__link">
+    <span class="md-ellipsis">
+      The graph of cot
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Drawing Graphs</h1>
+
+<h2 id="an-introduction">An introduction</h2>
+<p>As a point <span class="arithmatex">\( P \)</span> traces the path of a unit circle, it encounters the same points repeatedly after completing each full rotation. This recurring journey around the circle results in the trigonometric functions—such as sine and cosine—exhibiting a pattern of repetition known as periodicity. To put it simply, if we take the sine of an angle <span class="arithmatex">\( \theta \)</span>, represented as <span class="arithmatex">\( \sin(\theta) \)</span>, and find that its value is <span class="arithmatex">\( y \)</span>, then after the point <span class="arithmatex">\( P \)</span> completes one full circle (which corresponds to an angle of <span class="arithmatex">\( 2\pi \)</span> radians), the sine of the new angle, <span class="arithmatex">\( \theta + 2\pi \)</span>, will also be <span class="arithmatex">\( y \)</span>. </p>
+<p>This concept can be visualized on a graph that plots the sine value against its angle. As the angle increases by <span class="arithmatex">\( 2\pi \)</span> radians, the sine value will follow the same path as before, creating a wave-like pattern that rises and falls. The distance over which this pattern repeats, which in the case of sine and cosine is <span class="arithmatex">\( 2\pi \)</span> radians, is called the period of the function. In essence, the period is the angular distance after which the trigonometric functions start to echo their previous values, illustrating their inherent cyclical nature. This property is what allows these functions to model periodic phenomena so effectively, such as the oscillations of a pendulum or the waves of the sea.</p>
+<h2 id="the-graph-of-sine">The Graph of Sine</h2>
+<p><a class="glightbox" href="../img/image105.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unit circle with point P on it with angle theta" src="../img/image105.png" /></a></p>
+<p>The sine function relates an angle with the vertical component(ordinate) of a point located on the unit circle's circumference. Look at the image below. Point <span class="arithmatex">\(P\)</span> moves on the circumference of the unit circle with coordinates <span class="arithmatex">\((x,y)\)</span>. Angle <span class="arithmatex">\(AOP\)</span> is <span class="arithmatex">\(\theta\)</span>. <strong>Focus</strong> on <span class="arithmatex">\(y\)</span>, which we know is the sine of angle <span class="arithmatex">\(\theta\)</span>. Imagine this point, starting from point <span class="arithmatex">\(A\)</span> with coordinates <span class="arithmatex">\((1,0)\)</span>, moving on this circle. </p>
+<ul>
+<li>
+<p>At <span class="arithmatex">\(A\)</span> the value of sine is clearly <span class="arithmatex">\(0\)</span>. As it moves further the value of sine (ordinate of P) starts increasing to 1, and it becomes 1 when <span class="arithmatex">\(\theta=\frac{\pi}{2}\)</span>. Keep moving point <span class="arithmatex">\(P\)</span> like this around the circle and read the value of the its ordinate for each value of <span class="arithmatex">\(\theta\)</span>. </p>
+</li>
+<li>
+<p>It then reaches second quadrant, where theta changes from <span class="arithmatex">\(\frac{\pi}{2}\)</span> to <span class="arithmatex">\(\pi\)</span> and if you observe carefully, the value of sine, i.e. the ordinate of <span class="arithmatex">\(P\)</span> decreases from <span class="arithmatex">\(1\)</span> to <span class="arithmatex">\(0\)</span>. </p>
+</li>
+<li>
+<p><span class="arithmatex">\(P\)</span> then moves to third quadrant, <span class="arithmatex">\(\theta\)</span> changes from <span class="arithmatex">\(\pi\)</span> to <span class="arithmatex">\(\frac{3\pi}{2}\)</span>. Correspondingly, <span class="arithmatex">\(\sin\theta\)</span> decreases from <span class="arithmatex">\(0\)</span> to <span class="arithmatex">\(-1\)</span>. </p>
+</li>
+<li>
+<p>Eventually, <span class="arithmatex">\(P\)</span> reaches the fourth quadrant, where <span class="arithmatex">\(\theta\)</span> changes from <span class="arithmatex">\(\frac{3\pi}{2}\)</span> to <span class="arithmatex">\(2\pi\)</span> and correspondingly <span class="arithmatex">\(sin\theta\)</span> increases from <span class="arithmatex">\(-1\)</span> to <span class="arithmatex">\(0\)</span>. </p>
+</li>
+<li>
+<p>As <span class="arithmatex">\(P\)</span> moves further anti-clockwise, it is again in first quadrant. Now <span class="arithmatex">\(\theta\)</span> changes from <span class="arithmatex">\(2\pi\)</span> to <span class="arithmatex">\(\frac{5\pi}{2}\)</span>. <span class="arithmatex">\(sin\theta\)</span> again increased from <span class="arithmatex">\(0\)</span> to <span class="arithmatex">\(1\)</span>. </p>
+</li>
+<li>
+<p>This <strong>cycle</strong> keeps on repeating and the value of <span class="arithmatex">\(sin\theta\)</span> oscillates between <span class="arithmatex">\(-1\)</span> to <span class="arithmatex">\(1\)</span>. </p>
+</li>
+</ul>
+<p><strong>Procedure for Plotting the Graph of Sine Function</strong></p>
+<p><strong>Step 1: Preparation of the Axes</strong>
+To begin plotting <span class="arithmatex">\( \sin \theta \)</span> against <span class="arithmatex">\( \theta \)</span>, draw two perpendicular lines to establish the x-axis (for <span class="arithmatex">\( \theta \)</span>) and the y-axis (for <span class="arithmatex">\( \sin \theta \)</span>). The range of <span class="arithmatex">\( \sin \theta \)</span> is from -1 to 1.</p>
+<p><strong>Step 2: Scaling the x-axis and y-axis</strong>
+Divide the x-axis into units where each unit corresponds to <span class="arithmatex">\( \pi/2 \)</span> radians. The segment between 0 to <span class="arithmatex">\( \pi/2 \)</span> radians denotes the first quadrant of the unit circle. Calibrate the y-axis in integers as the range is <span class="arithmatex">\([-1,1]\)</span>, on y-axis.</p>
+<p><a class="glightbox" href="../img/image101.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure for step 2" src="../img/image101.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Observe that <span class="arithmatex">\(\frac{\pi}{2}\approx 1.57\)</span>. We do not use integer scaling on x-axis because it would then become difficult to locate 1.57 on it. All special angles are in the form of <span class="arithmatex">\(\frac{p\pi}{q}\)</span>. So calibration in terms of <span class="arithmatex">\(\frac{\pi}{2}\)</span> is a natural choice. </p>
+</div>
+<p><a class="glightbox" href="../img/image102.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure for step 2" src="../img/image102.png" /></a></p>
+<p><strong>Step 3: Plotting Points in the First Quadrant</strong>
+At <span class="arithmatex">\( \theta = 0 \)</span>, plot the initial point where <span class="arithmatex">\( \sin \theta = 0 \)</span>. Continue to mark the sine values at <span class="arithmatex">\( \theta = \pi/6, \pi/3, \)</span> and <span class="arithmatex">\( \pi/2 \)</span>. Note that <span class="arithmatex">\( \pi/4 \)</span> is the midpoint between <span class="arithmatex">\( \pi/6 \)</span> and <span class="arithmatex">\( \pi/3 \)</span>. Use the table below. Plot the ordered pair <span class="arithmatex">\( (\theta, \sin(\theta)) \)</span> on the cartesian coordinate system that you made in step 2 above. </p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\( \theta \)</span></th>
+<th><span class="arithmatex">\( \sin(\theta) \)</span></th>
+<th>Ordered Pair <span class="arithmatex">\( (\theta, \sin(\theta)) \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td><span class="arithmatex">\( (0, 0) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{6} \)</span></td>
+<td><span class="arithmatex">\( \frac{1}{2} \)</span></td>
+<td><span class="arithmatex">\( (\frac{\pi}{6}, \frac{1}{2}) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{4} \)</span></td>
+<td><span class="arithmatex">\( \frac{\sqrt{2}}{2} \)</span></td>
+<td><span class="arithmatex">\( (\frac{\pi}{4}, \frac{\sqrt{2}}{2}) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{3} \)</span></td>
+<td><span class="arithmatex">\( \frac{\sqrt{3}}{2} \)</span></td>
+<td><span class="arithmatex">\( (\frac{\pi}{3}, \frac{\sqrt{3}}{2}) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{2} \)</span></td>
+<td>1</td>
+<td><span class="arithmatex">\( (\frac{\pi}{2}, 1) \)</span></td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" href="../img/image103.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="figure for step 3" src="../img/image103.png" /></a></p>
+<p><strong>Step 4: Reflecting the Curve for the Second Quadrant</strong>
+Recognize the symmetry of the unit circle and reflect the plotted points across the second quadrant. Here, as <span class="arithmatex">\( \theta \)</span> advances from <span class="arithmatex">\( \pi/2 \)</span> to <span class="arithmatex">\( \pi \)</span>, the sine value gradually returns to 0.</p>
+<p><a class="glightbox" href="../img/image104.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="figure for step 3 and 4" src="../img/image104.png" /></a></p>
+<p><strong>Step 5: Extending the Curve to the Third and Fourth Quadrants</strong>
+Proceed to the third quadrant, marking the declining sine values until they reach -1 at <span class="arithmatex">\( \theta = 3\pi/2 \)</span>. In the fourth quadrant, plot the increasing sine values, which rise back to 0 at <span class="arithmatex">\( \theta = 2\pi \)</span>.</p>
+<p><strong>Step 6: Completion of the Sine Wave</strong>
+Join all the points with a smooth, flowing line to create a wave pattern, which represents the sine function's periodic nature. </p>
+<p><strong>Conclusion</strong>
+Upon completing the graph, one will observe the periodic and oscillatory nature of the sine function, repeating every <span class="arithmatex">\( 2\pi \)</span> radians. Each quadrant of the unit circle gives a quarter of the wave. This visualization helps in comprehending the behavior of sine across different angles.</p>
+<h2 id="the-graph-of-cosine">The graph of cosine</h2>
+<p>Similar to the graph of sine, we draw the graph of cosine. This time since we know that cosine of <span class="arithmatex">\(theta\)</span> is defined to be the abscissa of point <span class="arithmatex">\(P\)</span>, we focus on <span class="arithmatex">\(x\)</span> as <span class="arithmatex">\(P\)</span> moves in anticlockwise direction starting from <span class="arithmatex">\(A\)</span>. With the similar process that we used above we draw the graph of cosine. You may use the following table:</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\( \theta \)</span></th>
+<th><span class="arithmatex">\( \cos(\theta) \)</span></th>
+<th>Ordered Pair <span class="arithmatex">\( (\theta, \cos(\theta)) \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td><span class="arithmatex">\( (0, 1) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{6} \)</span></td>
+<td><span class="arithmatex">\( \frac{\sqrt{3}}{2} \)</span></td>
+<td><span class="arithmatex">\( (\frac{\pi}{6}, \frac{\sqrt{3}}{2}) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{4} \)</span></td>
+<td><span class="arithmatex">\( \frac{\sqrt{2}}{2} \)</span></td>
+<td><span class="arithmatex">\( (\frac{\pi}{4}, \frac{\sqrt{2}}{2}) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{3} \)</span></td>
+<td><span class="arithmatex">\( \frac{1}{2} \)</span></td>
+<td><span class="arithmatex">\( (\frac{\pi}{3}, \frac{1}{2}) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{2} \)</span></td>
+<td>0</td>
+<td><span class="arithmatex">\( (\frac{\pi}{2}, 0) \)</span></td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" href="../img/image106.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="The complete graph of cosine" src="../img/image106.png" /></a></p>
+<h2 id="graph-of-sine-and-cosine-superimposed">Graph of Sine and Cosine superimposed</h2>
+<p><a class="glightbox" href="../img/image107.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sine and cosine graphs together" src="../img/image107.png" /></a></p>
+<p>When the graphs of sine and cosine functions are plotted on the same axes, several interesting and fundamental properties of these trigonometric functions become evident. </p>
+<p><strong>1. Shape and Symmetry:</strong></p>
+<ul>
+<li>Both sine and cosine graphs have the same shape – a smooth, continuous wave that oscillates between 1 and -1.</li>
+<li>The sine graph starts at the origin (0,0), while the cosine graph starts at its peak (0,1). This difference in starting points is crucial to understanding their relationship.</li>
+</ul>
+<p><strong>2. Periodicity:</strong></p>
+<ul>
+<li>Both functions are periodic with a period of <span class="arithmatex">\(2\pi\)</span> radians. This means the wave patterns repeat every <span class="arithmatex">\(2\pi\)</span> radians along the x-axis.</li>
+</ul>
+<p><strong>3. Phase Shift:</strong></p>
+<ul>
+<li>The sine graph can be seen as a shifted version of the cosine graph, or vice versa. Specifically, the sine graph is a horizontal shift of the cosine graph by <span class="arithmatex">\( \frac{\pi}{2} \)</span> to the right. In other words, <span class="arithmatex">\( \sin(\theta) = \cos(\theta - \frac{\pi}{2}) \)</span>. This represents a phase shift between the two functions.</li>
+</ul>
+<p><strong>4. Points of Intersection:</strong></p>
+<ul>
+<li>The sine and cosine graphs intersect at points where their values are equal. This occurs at <span class="arithmatex">\( \theta = \frac{\pi}{4} \)</span> and <span class="arithmatex">\( \theta = \frac{5\pi}{4} \)</span> within the first <span class="arithmatex">\(2\pi\)</span> interval. At these points, both sine and cosine have the same value of <span class="arithmatex">\( \frac{\sqrt{2}}{2} \)</span> and <span class="arithmatex">\( -\frac{\sqrt{2}}{2} \)</span> respectively.</li>
+</ul>
+<p><strong>5. Quadrant Analysis:</strong></p>
+<ul>
+<li>In the first quadrant (0 to <span class="arithmatex">\( \frac{\pi}{2} \)</span>), both sine and cosine values are positive. In the second quadrant (<span class="arithmatex">\( \frac{\pi}{2} \)</span> to <span class="arithmatex">\( \pi \)</span>), sine values are positive while cosine values are negative. This pattern continues, reflecting the signs of these functions in each quadrant.</li>
+</ul>
+<h2 id="the-graph-of-tan">The graph of tan</h2>
+<p>To understand how to draw the graph of tangent, we first analyze the graph in the first quadrant. </p>
+<p><strong>The graph of tan in the first quadrant</strong></p>
+<p>By definition <span class="arithmatex">\(\tan\theta=\frac{y}{x}\)</span>, where <span class="arithmatex">\((x,y)\)</span> are the coordinates of terminal point <span class="arithmatex">\(P\)</span> of angle <span class="arithmatex">\(\theta\)</span>. as shown in the figure above.</p>
+<p>We calibrate the x-axis and y-axis like we did in the grpahs of sine and cosine. We can use the following table to obtain few points on the graph.</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\( \theta \)</span></th>
+<th><span class="arithmatex">\( \tan(\theta) \)</span></th>
+<th>Ordered Pair <span class="arithmatex">\( (\theta, \tan(\theta)) \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td><span class="arithmatex">\( (0, 0) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{6} \)</span></td>
+<td><span class="arithmatex">\( \frac{1}{\sqrt{3}} \)</span> or <span class="arithmatex">\( \frac{\sqrt{3}}{3} \)</span></td>
+<td><span class="arithmatex">\( (\frac{\pi}{6}, \frac{\sqrt{3}}{3}) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{4} \)</span></td>
+<td>1</td>
+<td><span class="arithmatex">\( (\frac{\pi}{4}, 1) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{\pi}{3} \)</span></td>
+<td><span class="arithmatex">\( \sqrt{3} \)</span></td>
+<td><span class="arithmatex">\( (\frac{\pi}{3}, \sqrt{3}) \)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exploring the Tangent Function as It Nears <span class="arithmatex">\( \frac{\pi}{2} \)</span></strong></p>
+<p><span class="arithmatex">\( \tan(\theta) \)</span> shows some interesting behavior near <span class="arithmatex">\( \theta = \frac{\pi}{2} \)</span> (or 90 degrees). We say that <span class="arithmatex">\( \tan(\theta) \)</span> is 'undefined' at <span class="arithmatex">\( \frac{\pi}{2} \)</span>. This is because, at this angle on the unit circle, the <span class="arithmatex">\( x \)</span>-coordinate of the point is zero, and since tangent is the division <span class="arithmatex">\(y\)</span> by <span class="arithmatex">\(x\)</span>, it's like dividing by zero, which we can't do.</p>
+<p>However, what happens when <span class="arithmatex">\( \theta \)</span> is very close to <span class="arithmatex">\( \frac{\pi}{2} \)</span>, but not quite there, is quite interesting. For angles just a little bit less than 90 degrees, like 89 degrees, 89.9 degrees, or even closer, the tangent function is still something we can calculate. But, as <span class="arithmatex">\( \theta \)</span> gets closer to 90 degrees, the value of <span class="arithmatex">\( \tan(\theta) \)</span> becomes very, very large.</p>
+<p>Here's a simple table to show how big the tangent function gets as the angle <span class="arithmatex">\( \theta \)</span> gets closer to 90 degrees:</p>
+<table>
+<thead>
+<tr>
+<th>Angle <span class="arithmatex">\( \theta \)</span> (Degrees)</th>
+<th>Tangent Value <span class="arithmatex">\( \tan(\theta) \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>85</td>
+<td>11.43</td>
+</tr>
+<tr>
+<td>89</td>
+<td>57.29</td>
+</tr>
+<tr>
+<td>89.9</td>
+<td>572.96</td>
+</tr>
+<tr>
+<td>89.99</td>
+<td>5729.58</td>
+</tr>
+<tr>
+<td>89.999</td>
+<td>57295.78</td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" href="../img/image108.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="graph of tan in first quadrant" src="../img/image108.png" /></a>
+When we consider angles <span class="arithmatex">\( \theta \)</span> that are less than <span class="arithmatex">\( \frac{\pi}{2} \)</span> but increasingly close to it, the behavior of the tangent function, <span class="arithmatex">\( \tan(\theta) \)</span>, the <span class="arithmatex">\( x \)</span>-coordinate of the point on the unit circle corresponding to <span class="arithmatex">\( \theta \)</span> approaches zero, while the <span class="arithmatex">\( y \)</span>-coordinate approaches 1. As a result, the tangent function, which is the ratio of <span class="arithmatex">\( y \)</span> over <span class="arithmatex">\( x \)</span> (or <span class="arithmatex">\( \sin(\theta) \)</span> over <span class="arithmatex">\( \cos(\theta) \)</span>), starts to approach positive infinity. This means that <span class="arithmatex">\( \tan(\theta) \)</span> becomes larger and larger as <span class="arithmatex">\( \theta \)</span> gets closer to <span class="arithmatex">\( \frac{\pi}{2} \)</span>. The closer <span class="arithmatex">\( \theta \)</span> is to 90 degrees, the closer <span class="arithmatex">\( x \)</span> is to zero, and the higher the value of <span class="arithmatex">\( \tan(\theta) \)</span> becomes, illustrating a fundamental characteristic of the tangent function near its undefined point at <span class="arithmatex">\( \frac{\pi}{2} \)</span>.</p>
+<p><strong>The graph of tan in second quadrant</strong></p>
+<p>To get an idea of how the graph might look like, let us plot some points in the second quadrant. We choose <span class="arithmatex">\(theta=\pi, \frac{5\pi}{6}, \frac{3\pi}{4}, \frac{2\pi}{3}\)</span>. </p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\( \theta \)</span></th>
+<th><span class="arithmatex">\( \tan(\theta) \)</span></th>
+<th>Ordered Pair <span class="arithmatex">\( (\theta, \tan(\theta)) \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( \pi \)</span></td>
+<td>0</td>
+<td><span class="arithmatex">\( (\pi, 0) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{5\pi}{6} \)</span></td>
+<td><span class="arithmatex">\( -\frac{1}{\sqrt{3}} \)</span> or <span class="arithmatex">\( -\frac{\sqrt{3}}{3} \)</span></td>
+<td><span class="arithmatex">\( (\frac{5\pi}{6}, -\frac{1}{\sqrt{3}}) \)</span> or <span class="arithmatex">\( (\frac{5\pi}{6}, -\frac{\sqrt{3}}{3}) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{3\pi}{4} \)</span></td>
+<td>-1</td>
+<td><span class="arithmatex">\( (\frac{3\pi}{4}, -1) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \frac{2\pi}{3} \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{3} \)</span></td>
+<td><span class="arithmatex">\( (\frac{2\pi}{3}, -\sqrt{3}) \)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Obviously <span class="arithmatex">\(tan\theta\)</span> is negative in the second quadrant. When we approach <span class="arithmatex">\(\frac{pi}{2}\)</span>(<span class="arithmatex">\(=90^\circ\)</span>), like before the graph shoots down to negative infinity. The reason to which should be apparent by now. If not then, observe the following table:</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\( \theta \)</span> (Degrees)</th>
+<th><span class="arithmatex">\( \tan(\theta) \)</span> (Approximate Value)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>95</td>
+<td>-11.43</td>
+</tr>
+<tr>
+<td>91</td>
+<td>-57.29</td>
+</tr>
+<tr>
+<td>90.1</td>
+<td>-572.96</td>
+</tr>
+<tr>
+<td>90.01</td>
+<td>-5729.58</td>
+</tr>
+<tr>
+<td>90.001</td>
+<td>-57295.78</td>
+</tr>
+</tbody>
+</table>
+<p>Which makes the graph looks like this: </p>
+<p><a class="glightbox" href="../img/image109.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="graph of tan in first and second quadrant" src="../img/image109.png" /></a></p>
+<p><strong>The graph of tan in third quadrant</strong></p>
+<p>The graph of the tangent function, <span class="arithmatex">\( \tan(\theta) \)</span>, shows a notable pattern: it is identical in the first and third quadrants. This symmetry arises because of the identity <span class="arithmatex">\( \tan(\pi + \theta) = \tan(\theta) \)</span>. Simply put, when you add <span class="arithmatex">\( \pi \)</span> (180 degrees) to an angle in the first quadrant, you get an angle in the third quadrant with the same tangent value. This relationship results in the tangent function having a period of <span class="arithmatex">\( \pi \)</span> radians, and its graph repeats every 180 degrees. So, the portion of the <span class="arithmatex">\( \tan(\theta) \)</span> graph from 0 to <span class="arithmatex">\( \frac{\pi}{2} \)</span> (first quadrant) is mirrored in the <span class="arithmatex">\( \pi \)</span> to <span class="arithmatex">\( \frac{3\pi}{2} \)</span> range (third quadrant).</p>
+<p>Similarly, the graph in the fourth quadrant is exactly the same as the graph in second quadrant. Interestingly the graph of tan repeats itself every <span class="arithmatex">\(\pi\)</span> units. Finally, we get the follwoing graph which we must remember. </p>
+<p><a class="glightbox" href="../img/image110.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Complete graph of tan" src="../img/image110.png" /></a></p>
+<p><strong>Domain of the Tangent Function:</strong>
+The domain of the tangent function, which is the set of all possible input values (angles in this case), includes all real numbers except for the points where the function is undefined. From the graph, it's clear that the tangent function is undefined at <span class="arithmatex">\( \frac{\pi}{2} \)</span>, <span class="arithmatex">\( \frac{3\pi}{2} \)</span>, and every odd multiple of <span class="arithmatex">\( \frac{\pi}{2} \)</span> (e.g., <span class="arithmatex">\( \frac{5\pi}{2} \)</span>, <span class="arithmatex">\( \frac{7\pi}{2} \)</span>, etc.), where the graph shows vertical asymptotes. Therefore, the domain of <span class="arithmatex">\( \tan(\theta) \)</span> can be expressed as all real numbers <span class="arithmatex">\( \theta \)</span> such that <span class="arithmatex">\( \theta \neq \frac{(2n+1)\pi}{2} \)</span>, where <span class="arithmatex">\( n \)</span> is an integer.</p>
+<p><strong>Range of the Tangent Function:</strong>
+The range of the tangent function is the set of all possible output values (tangent of the angle). From the graph, we can observe that as the function approaches its undefined points, the values of <span class="arithmatex">\( \tan(\theta) \)</span> increase or decrease without bound. This means that the range of the tangent function is all real numbers, which can be expressed as <span class="arithmatex">\( (-\infty, \infty) \)</span>.</p>
+<p>This graph is an excellent visualization of the periodic and unbounded nature of the tangent function.</p>
+<div class="admonition note">
+<p class="admonition-title">Asymtote</p>
+<p><em>An asymptote is a line that a graph gets closer and closer to, but never actually touches or crosses. In simple terms, it's like a boundary that the graph approaches infinitely but never actually reaches or crosses over.</em></p>
+<p>Looking at the graph of tan above, those vertical lines at <span class="arithmatex">\( \frac{\pi}{2} \)</span>, <span class="arithmatex">\( \frac{3\pi}{2} \)</span>, and so on, are examples of asymptotes. The curve of the tangent function swoops down or shoots up towards these lines as the angle gets closer to these points, but no matter how close the curve gets, it never actually touches the line. It's as if the curve is trying to reach the line but keeps on going up or down forever, getting closer and closer but never actually making contact.</p>
+</div>
+<h2 id="the-graph-of-cosec">The graph of cosec</h2>
+<p>The graph of <span class="arithmatex">\( \csc(\theta) \)</span> can be easily constructed from the graph of <span class="arithmatex">\( \sin(\theta) \)</span> since <span class="arithmatex">\( \csc(\theta) = \frac{1}{\sin(\theta)} \)</span>. Here's is the process of drwing the graph of <span class="arithmatex">\( \csc(\theta) \)</span>:</p>
+<ol>
+<li>
+<p><strong>Start with the Sine Graph:</strong> Begin by plotting the graph of <span class="arithmatex">\( \sin(\theta) \)</span>, which oscillates between -1 and 1 and crosses the horizontal axis at multiples of <span class="arithmatex">\( \pi \)</span> (0, <span class="arithmatex">\( \pi \)</span>, <span class="arithmatex">\( 2\pi \)</span>, etc.).</p>
+</li>
+<li>
+<p><strong>Identify Non-Zero Points:</strong> Identify the points where <span class="arithmatex">\( \sin(\theta) \)</span> is not zero since <span class="arithmatex">\( \csc(\theta) \)</span> will be undefined where <span class="arithmatex">\( \sin(\theta) = 0 \)</span>.</p>
+</li>
+<li>
+<p><strong>Take Reciprocals:</strong> For each non-zero value of <span class="arithmatex">\( \sin(\theta) \)</span>, find the reciprocal to get the value of <span class="arithmatex">\( \csc(\theta) \)</span>. For example, when <span class="arithmatex">\( \sin(\theta) = 1 \)</span> at <span class="arithmatex">\( \theta = \frac{\pi}{2} \)</span>, the reciprocal is also 1, so <span class="arithmatex">\( \csc(\frac{\pi}{2}) = 1 \)</span>.</p>
+</li>
+<li>
+<p><strong>Plot Reciprocal Values:</strong> For values of <span class="arithmatex">\( \sin(\theta) \)</span> that are greater than 0 but less than 1, their reciprocals will be greater than 1. Plot these on the graph above the horizontal axis.</p>
+</li>
+<li>
+<p><strong>Handle Values Less Than 1:</strong> For values of <span class="arithmatex">\( \sin(\theta) \)</span> that are negative and greater than -1, their reciprocals will be less than -1. Plot these on the graph below the horizontal axis.</p>
+</li>
+<li>
+<p><strong>Approaching Zero:</strong> As <span class="arithmatex">\( \sin(\theta) \)</span> approaches zero (as <span class="arithmatex">\( \theta \)</span> approaches multiples of <span class="arithmatex">\( \pi \)</span>), the reciprocal will grow without bound, meaning <span class="arithmatex">\( \csc(\theta) \)</span> will tend towards positive or negative infinity.</p>
+</li>
+<li>
+<p><strong>Draw Asymptotes:</strong> Draw vertical lines (asymptotes) at the points where <span class="arithmatex">\( \sin(\theta) = 0 \)</span> (multiples of <span class="arithmatex">\( \pi \)</span>) since <span class="arithmatex">\( \csc(\theta) \)</span> will be undefined at these points.</p>
+</li>
+<li>
+<p><strong>Mirror Sine's Behavior:</strong> Remember that <span class="arithmatex">\( \csc(\theta) \)</span> will mirror the behavior of <span class="arithmatex">\( \sin(\theta) \)</span>, but with the values flipped and stretched as you're taking the reciprocal.</p>
+</li>
+</ol>
+<p>By following these steps, you can draw the graph of <span class="arithmatex">\( \csc(\theta) \)</span> which will look like a series of arches that become steeper and narrower as they approach the vertical lines drawn at multiples of <span class="arithmatex">\( \pi \)</span>, reflecting the reciprocal nature of the cosecant function in relation to sine. Here is the completed graph:</p>
+<p><a class="glightbox" href="../img/image111.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="The graph of cosec theta" src="../img/image111.png" /></a></p>
+<p>From this graph of the cosecant function (<span class="arithmatex">\( \csc(\theta) \)</span>), we can observe:</p>
+<p><strong>Domain of <span class="arithmatex">\( \csc(\theta) \)</span>:</strong>
+The domain of <span class="arithmatex">\( \csc(\theta) \)</span> includes all real numbers except where <span class="arithmatex">\( \sin(\theta) \)</span> is zero since <span class="arithmatex">\( \csc(\theta) = \frac{1}{\sin(\theta)} \)</span>. On the graph, <span class="arithmatex">\( \sin(\theta) \)</span> is zero at integer multiples of <span class="arithmatex">\( \pi \)</span> (e.g., <span class="arithmatex">\( 0, \pm\pi, \pm2\pi, \pm3\pi, ... \)</span>). Therefore, these points are not included in the domain of the cosecant function. As a result, the domain of <span class="arithmatex">\( \csc(\theta) \)</span> is <span class="arithmatex">\( \theta \in \mathbb{R} \setminus \{n\pi \mid n \in \mathbb{Z}\} \)</span>.</p>
+<p><strong>Range of <span class="arithmatex">\( \csc(\theta) \)</span>:</strong>
+The range of <span class="arithmatex">\( \csc(\theta) \)</span> is all real numbers except between -1 and 1. This is because the cosecant function is the reciprocal of the sine function, and the sine function only takes on values between -1 and 1. Therefore, <span class="arithmatex">\( \csc(\theta) \)</span> will never take on values between -1 and 1 since there is no real number whose reciprocal falls within this interval. As seen on the graph, the function approaches positive and negative infinity as it nears points where <span class="arithmatex">\( \sin(\theta) = 0 \)</span>. Hence, the range is <span class="arithmatex">\( \csc(\theta) \in (-\infty, -1] \cup [1, \infty) \)</span>.</p>
+<h2 id="the-graph-of-secant">The graph of secant</h2>
+<p>To draw the graph of <span class="arithmatex">\( \sec(\theta) \)</span>, which is the reciprocal of <span class="arithmatex">\( \cos(\theta) \)</span>, start by plotting the cosine graph that oscillates between -1 and 1. Wherever the cosine graph has a value, take the reciprocal to get the secant value. For example, when <span class="arithmatex">\( \cos(\theta) = 1 \)</span>, <span class="arithmatex">\( \sec(\theta) \)</span> will also be 1. For values of <span class="arithmatex">\( \cos(\theta) \)</span> between 0 and 1, the graph of <span class="arithmatex">\( \sec(\theta) \)</span> will be above the horizontal axis and greater than 1. When <span class="arithmatex">\( \cos(\theta) \)</span> is negative but greater than -1, the secant graph will be below the horizontal axis and less than -1. As <span class="arithmatex">\( \cos(\theta) \)</span> approaches zero, <span class="arithmatex">\( \sec(\theta) \)</span> heads off towards positive or negative infinity, which means you'll draw vertical lines (asymptotes) at the points where <span class="arithmatex">\( \cos(\theta) = 0 \)</span>, such as <span class="arithmatex">\( \frac{\pi}{2} \)</span>, <span class="arithmatex">\( \frac{3\pi}{2} \)</span>, etc. The graph of <span class="arithmatex">\( \sec(\theta) \)</span> will form a series of U-shaped curves above and inverted U-shapes below these asymptotes, corresponding to where the cosine graph is positive and negative, respectively.</p>
+<p><a class="glightbox" href="../img/image112.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="The graph of secant" src="../img/image112.png" /></a></p>
+<p><strong>Domain of <span class="arithmatex">\( \sec(\theta) \)</span>:</strong>
+The secant function is undefined where the cosine function is zero because taking the reciprocal of zero would be undefined. The graph shows that the cosine function equals zero at odd multiples of <span class="arithmatex">\( \frac{\pi}{2} \)</span> (e.g., <span class="arithmatex">\( \pm\frac{\pi}{2}, \pm\frac{3\pi}{2}, \ldots \)</span>). These points are represented on the graph by vertical asymptotes, indicating that <span class="arithmatex">\( \sec(\theta) \)</span> approaches infinity as <span class="arithmatex">\( \cos(\theta) \)</span> approaches zero. Therefore, the domain of <span class="arithmatex">\( \sec(\theta) \)</span> excludes these points and is <span class="arithmatex">\( \theta \in \mathbb{R} \setminus \left\{ \frac{(2k+1)\pi}{2} \mid k \in \mathbb{Z} \right\} \)</span>.</p>
+<p><strong>Range of <span class="arithmatex">\( \sec(\theta) \)</span>:</strong>
+The secant function can take any real number except for the interval (-1, 1). As seen in the graph, <span class="arithmatex">\( \sec(\theta) \)</span> has a range of <span class="arithmatex">\( (-\infty, -1] \cup [1, \infty) \)</span> because <span class="arithmatex">\( \sec(\theta) \)</span> approaches negative or positive infinity as the cosine approaches zero and equals ±1 when the cosine equals ±1.</p>
+<h2 id="the-graph-of-cot">The graph of cot</h2>
+<p>To draw the graph of the cotangent function, <span class="arithmatex">\( \cot(\theta) \)</span>, which is the reciprocal of the tangent function, <span class="arithmatex">\( \tan(\theta) \)</span>, you would follow these steps:</p>
+<ol>
+<li>
+<p><strong>Sketch the Tangent Graph:</strong> Start by plotting the graph of <span class="arithmatex">\( \tan(\theta) \)</span>, which has a period of <span class="arithmatex">\( \pi \)</span>, with vertical asymptotes at every <span class="arithmatex">\( \theta = \frac{\pi}{2} + n\pi \)</span> for integers <span class="arithmatex">\( n \)</span>.</p>
+</li>
+<li>
+<p><strong>Identify Non-Zero Points:</strong> Determine the points on the tangent graph that are not zero, as <span class="arithmatex">\( \cot(\theta) \)</span> will be undefined at <span class="arithmatex">\( \theta \)</span> where <span class="arithmatex">\( \tan(\theta) = 0 \)</span>.</p>
+</li>
+<li>
+<p><strong>Take Reciprocals:</strong> For each point on the <span class="arithmatex">\( \tan(\theta) \)</span> graph that is not zero, calculate the reciprocal to find the corresponding <span class="arithmatex">\( \cot(\theta) \)</span> value.</p>
+</li>
+<li>
+<p><strong>Plot Reciprocal Values:</strong> Where <span class="arithmatex">\( \tan(\theta) \)</span> is positive, <span class="arithmatex">\( \cot(\theta) \)</span> will be positive and vice versa. As <span class="arithmatex">\( \tan(\theta) \)</span> approaches zero from positive, <span class="arithmatex">\( \cot(\theta) \)</span> will approach infinity, and where <span class="arithmatex">\( \tan(\theta) \)</span> approaches zero from negative, <span class="arithmatex">\( \cot(\theta) \)</span> will approach negative infinity.</p>
+</li>
+<li>
+<p><strong>Draw Asymptotes and Curves:</strong> The points where <span class="arithmatex">\( \tan(\theta) = 0 \)</span> become the asymptotes for the <span class="arithmatex">\( \cot(\theta) \)</span> graph. Between the asymptotes, <span class="arithmatex">\( \cot(\theta) \)</span> will form a series of decreasing curves in each period, going from positive infinity through zero to negative infinity as <span class="arithmatex">\( \theta \)</span> increases from <span class="arithmatex">\( n\pi \)</span> to <span class="arithmatex">\( \frac{\pi}{2} + n\pi \)</span>.</p>
+</li>
+</ol>
+<p>By repeating this process over the range of <span class="arithmatex">\( \theta \)</span>, you can create the full graph of <span class="arithmatex">\( \cot(\theta) \)</span>, which will appear as a series of downward-opening curves that approach the vertical asymptotes at multiples of <span class="arithmatex">\( \pi \)</span>.</p>
+<p><a class="glightbox" href="../img/image113.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="The graph of cotangent" src="../img/image113.png" /></a></p>
+<p><strong>Domain of <span class="arithmatex">\( \cot(\theta) \)</span>:</strong>
+The cotangent function is the reciprocal of the tangent function. The graph shows that <span class="arithmatex">\( \cot(\theta) \)</span> is undefined where the tangent function is zero, which occurs at integer multiples of <span class="arithmatex">\( \pi \)</span> (e.g., <span class="arithmatex">\( 0, \pm\pi, \pm2\pi, \ldots \)</span>). These points are represented on the graph by vertical asymptotes, indicating that the function approaches infinity as it nears these points. Therefore, the domain of <span class="arithmatex">\( \cot(\theta) \)</span> excludes these points and is <span class="arithmatex">\( \theta \in \mathbb{R} \setminus \{k\pi \mid k \in \mathbb{Z}\} \)</span>.</p>
+<p><strong>Range of <span class="arithmatex">\( \cot(\theta) \)</span>:</strong>
+As seen in the graph, <span class="arithmatex">\( \cot(\theta) \)</span> takes on all real number values. There are no restrictions on the output values of <span class="arithmatex">\( \cot(\theta) \)</span> as it can go from negative to positive infinity. Thus, the range of the cotangent function is all real numbers, which can be written as <span class="arithmatex">\( \cot(\theta) \in (-\infty, \infty) \)</span>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

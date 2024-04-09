@@ -1,0 +1,3010 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/">
+      
+      
+        <link rel="prev" href="../03-Radian%20Measure%20of%20Angles/">
+      
+      
+        <link rel="next" href="../05-Circular/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Right Triangle Trigonometry - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#finding-the-value-of-trigonometric-ratios" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Right Triangle Trigonometry
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-the-value-of-trigonometric-ratios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding the value of Trigonometric Ratios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#values-of-trigonometric-ratios-for-some-special-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Values of trigonometric ratios for some special angles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Values of trigonometric ratios for some special angles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#30-and-60" class="md-nav__link">
+    <span class="md-ellipsis">
+      30° and 60°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      45°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-and-75" class="md-nav__link">
+    <span class="md-ellipsis">
+      15° and 75°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      18°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36" class="md-nav__link">
+    <span class="md-ellipsis">
+      36°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#225" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.5°
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complementary-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complementary Angles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigonometric-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Identities
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-the-value-of-trigonometric-ratios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding the value of Trigonometric Ratios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#values-of-trigonometric-ratios-for-some-special-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Values of trigonometric ratios for some special angles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Values of trigonometric ratios for some special angles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#30-and-60" class="md-nav__link">
+    <span class="md-ellipsis">
+      30° and 60°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      45°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-and-75" class="md-nav__link">
+    <span class="md-ellipsis">
+      15° and 75°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      18°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36" class="md-nav__link">
+    <span class="md-ellipsis">
+      36°
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#225" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.5°
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complementary-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complementary Angles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigonometric-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Identities
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Right Triangle Trigonometry</h1>
+
+<p><a class="glightbox" href="../img/image09.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="left" alt="Similarity of Triangles" src="../img/image09.png" width="30%" /></a></p>
+<p>The right angle trigonometry originates from similarity of triangles.</p>
+<p>In the above figure <span class="arithmatex">\( \triangle OA_1B_1 \sim \triangle OA_2B_2 \)</span> because <span class="arithmatex">\( \angle A_1OB_1 = \angle A_2OB_2 = \theta \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow \)</span> their corresponding sides are proportional</p>
+<p>We can conclude from proportionality of sides that</p>
+<p><span class="arithmatex">\( \frac{A_1B_1}{OB_1} = \frac{A_2B_2}{OB_2} \quad ....(1) \)</span></p>
+<p><span class="arithmatex">\( \frac{OA_1}{OB_1} = \frac{OA_2}{OB_2} \quad ....(2) \)</span></p>
+<p>And</p>
+<p><span class="arithmatex">\( \frac{A_1B_1}{OA_1} = \frac{A_2B_2}{OA_2} \quad ....(3) \)</span></p>
+<p>Let us consider another triangle <span class="arithmatex">\( \triangle OAB \)</span> which is similar to <span class="arithmatex">\( \triangle OA_1B_1 \)</span> and <span class="arithmatex">\( \triangle OA_2B_2 \)</span></p>
+<p><a class="glightbox" href="../img/image10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="right" alt="Right angled Triangle " src="../img/image10.png" width="40%" /></a></p>
+<p>The trigonometric ratios are defined based on the principles of similar triangles. When triangles are similar, their corresponding angles are equal, and their corresponding sides are in proportion. For any right-angled triangle, if we take the angle <span class="arithmatex">\( \theta \)</span> as one of the non-right angles, the side opposite to <span class="arithmatex">\( \theta \)</span> is called the <strong>perpendicular</strong>, the side adjacent to <span class="arithmatex">\( \theta \)</span> is called the <strong>base</strong>, and the longest side, opposite the right angle, is called the <strong>hypotenuse</strong>.</p>
+<p>Because the triangles <span class="arithmatex">\( \triangle OA_1B_1 \)</span>, <span class="arithmatex">\( \triangle OA_2B_2 \)</span>, and <span class="arithmatex">\( \triangle OAB \)</span> are similar (as they share the same angle <span class="arithmatex">\( \theta \)</span>), the ratios of their corresponding sides are equal and constant for a given angle <span class="arithmatex">\( \theta \)</span>, regardless of the size of the triangle. This constancy allows us to define the following trigonometric ratios:</p>
+<ol>
+<li>
+<p>Sine of angle <span class="arithmatex">\( \theta \)</span>, written as <span class="arithmatex">\( \sin\theta \)</span>, is the ratio of the perpendicular to hypotenuse.</p>
+<p><span class="arithmatex">\( \sin\theta = \frac{\text{perpendicular}}{\text{hypotenuse}} \)</span></p>
+</li>
+<li>
+<p>Cosine of angle <span class="arithmatex">\( \theta \)</span>, written as <span class="arithmatex">\( \cos\theta \)</span>, is the ratio of the base to hypotenuse.</p>
+<p><span class="arithmatex">\( \cos\theta = \frac{\text{base}}{\text{hypotenuse}} \)</span></p>
+</li>
+<li>
+<p>Tangent of angle <span class="arithmatex">\( \theta \)</span>, written as <span class="arithmatex">\( \tan\theta \)</span>, is the ratio of the perpendicular to base.</p>
+<p><span class="arithmatex">\( \tan\theta = \frac{\text{perpendicular}}{\text{base}} \)</span></p>
+</li>
+<li>
+<p>Cosecant of angle <span class="arithmatex">\( \theta \)</span>, written as <span class="arithmatex">\( \csc\theta \)</span>, is the reciprocal of <span class="arithmatex">\( \sin\theta \)</span>,</p>
+<p><span class="arithmatex">\( \csc\theta = \frac{1}{\sin\theta} \quad \Rightarrow \quad \csc\theta = \frac{\text{hypotenuse}}{\text{perpendicular}} \)</span></p>
+</li>
+<li>
+<p>Secant of angle <span class="arithmatex">\( \theta \)</span>, written as <span class="arithmatex">\( \sec\theta \)</span>, is the reciprocal of <span class="arithmatex">\( \cos\theta \)</span>,</p>
+<p><span class="arithmatex">\( \sec\theta = \frac{1}{\cos\theta} \quad \Rightarrow \quad \sec\theta = \frac{\text{hypotenuse}}{\text{base}} \)</span></p>
+</li>
+<li>
+<p>Cotangent of angle <span class="arithmatex">\( \theta \)</span>, written as <span class="arithmatex">\( \cot\theta \)</span>, is the reciprocal of <span class="arithmatex">\( \tan\theta \)</span>,</p>
+<p><span class="arithmatex">\( \cot\theta = \frac{1}{\tan\theta} \quad \Rightarrow \quad \cot\theta = \frac{\text{base}}{\text{perpendicular}} \)</span></p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Conclusion</p>
+<p>For a given angle <span class="arithmatex">\( \theta \)</span> in a right-angled triangle, the trigonometric ratios (sine, cosine, tangent, cosecant, secant, and cotangent) remain <strong>constant</strong> regardless of the size of the triangle. Now we know that this is due to the principle of similar triangles. When two right-angled triangles have the same acute angle <span class="arithmatex">\( \theta \)</span>, they are similar, which means their corresponding sides are proportional.</p>
+<p>This proportionality is the basis for trigonometric ratios. For instance, if you double the lengths of all sides of a right-angled triangle, the ratios of the lengths of the sides (perpendicular to base, base to hypotenuse, perpendicular to hypotenuse) do not change. Hence, the values of <span class="arithmatex">\( \sin\theta \)</span>, <span class="arithmatex">\( \cos\theta \)</span>, <span class="arithmatex">\( \tan\theta \)</span>, <span class="arithmatex">\( \csc\theta \)</span>, <span class="arithmatex">\( \sec\theta \)</span>, and <span class="arithmatex">\( \cot\theta \)</span> are invariant.</p>
+<p>Moreover, because these ratios are constant for a given angle, they are often tabulated or encoded into scientific calculators and computer functions, allowing for quick and accurate computation of trigonometric values in practical applications. This constancy also implies that we can talk about the sine, cosine, or tangent of an angle without referring to a specific triangle. </p>
+</div>
+<h2 id="finding-the-value-of-trigonometric-ratios">Finding the value of Trigonometric Ratios</h2>
+<p>Well from a naïve point of view, one would find out values of trigonometric ratios of any angle by actually drawing a right-angled triangle with that angle. Measure the side lengths with a scale and calculate all six ratios.</p>
+<p>For example, suppose you want to know the values of trigonometric ratios for the angle 40°.</p>
+<p><a class="glightbox" href="../img/image11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Right Anled Triange with one angle 40 degree" src="../img/image11.png" /></a></p>
+<p>Let us draw a right-angled triangle with one angle 40°. I have drawn this on a software called “Adobe Illustrator” where lengths are in some unit (actually the unit is point. So the hypotenuse is 400 points) I measured that the perpendicular length is 257.3 points and base is 306.8 points.</p>
+<p>So, sin 40° = <span class="arithmatex">\(\frac{257.3}{400} = 0.643\)</span>, cos 40° = <span class="arithmatex">\(\frac{306.8}{400} = 0.767\)</span> and tan 40° = <span class="arithmatex">\(\frac{257.3}{306.8} = 0.839\)</span></p>
+<p><strong><em>Draw your own triangle using a scale and protractor and you should get very similar results.</em></strong></p>
+<p>Actually, all values that I calculated are very near to actual values. We have errors in our result because we had errors in measurement.</p>
+<p>Similarly, we can calculate sin(1°), sin(2°), sin(3°), ..., sin(90°) by repeatedly drawing an actual right-angled triangle for correspoding angles. Even though we do not actually do so. As we learn about trigonometry further, we shall see that we have formulas which can calculate these values directly to a great accuracy! We need not calculate these values using formulas as we can always use trigonometric tables (precalculated values presented as tables) or a calculator if you are allowed to do so. </p>
+<div class="admonition example">
+<p class="admonition-title">An Application of what you did above</p>
+<p>The question arises, where are you actually going to use these values. One example would be enough to understand the significance of what you did. </p>
+<p>Suppose there is a building whose height you want to measure. You can use take a measuring tape and measure the height of the building directly. Too dangerous! </p>
+<p>You go outside the building. Measure two things. Firstly measure the angle that the top of the building from the horizontal. Secondly, measure that the distance of the base of the building from you(which is not dangerous too!).</p>
+<p><a class="glightbox" href="../img/image12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Measuring the height of a building" src="../img/image12.png" /></a></p>
+<p>Triangle OAB is a right-angled triangle.</p>
+<p>tan 63° = <span class="arithmatex">\(\frac{\text{perpendicular}}{\text{base}} = \frac{h}{20} \)</span> ⇒ <span class="arithmatex">\( h = 20 \tan 63° \)</span></p>
+<p>Using your calculator or some trigonometric table you can find how much is tan 63°</p>
+<p>tan 63° = 1.9626</p>
+<p>Thus, <span class="arithmatex">\( h = 20 \times 1.9626 = 39.252 \)</span></p>
+<p>But since you measured this from your eye level, the</p>
+<p>actual height of the building is <span class="arithmatex">\( 39.252 + 1.8 = 41.052 \)</span> m</p>
+<p>So the height of the building is roughly 41 m.</p>
+<p>This is not the only use of trigonometry and not even the complicated one. If apocalypse happens and everything is destroyed and you are left with a responsibility to start the civilization again, trigonometry may be useful. You can measure the height of mountains, measure the width of rivers or may be measure the distance of Moon from Earth.</p>
+</div>
+<h2 id="values-of-trigonometric-ratios-for-some-special-angles">Values of trigonometric ratios for some special angles</h2>
+<p>Values of certain trigonometric functions can be found using geometry. You can find them easily using compound angles, multiple angle identities. Then, why know this?</p>
+<p>Let us start with the simplest ones.</p>
+<h3 id="30-and-60"><strong>30° and 60°</strong></h3>
+<p>Using an equilateral triangle one can easily find out the values of trigonometric functions of these angles.</p>
+<p>Draw an equilateral triangle <span class="arithmatex">\( ABC \)</span> having side lengths equal to <span class="arithmatex">\( 2a \)</span> (why <span class="arithmatex">\( 2a \)</span>? Why not just <span class="arithmatex">\( a \)</span>? You can appreciate if you try both ways. We are assuming <span class="arithmatex">\( 2a \)</span> just to avoid fractions. This kind of thing you do at many places in mathematics.)</p>
+<p>All angles in this triangle are equal to 60°. Draw a line perpendicular to <span class="arithmatex">\( BC \)</span> from the vertex <span class="arithmatex">\( A \)</span>. Let the foot of this perpendicular be <span class="arithmatex">\( N \)</span>.</p>
+<p>It can easily be proven that <span class="arithmatex">\( AN \)</span> bisects the angle <span class="arithmatex">\( CAB \)</span> and also bisects the side <span class="arithmatex">\( BC \)</span>.</p>
+<p>Clearly, <span class="arithmatex">\( BN = NC = a \)</span>.</p>
+<p><a class="glightbox" href="../img/image13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Equilateral tirangle" src="../img/image13.png" /></a></p>
+<p>Observe that in the right-angled triangle <span class="arithmatex">\( \triangle ANB \)</span>, <span class="arithmatex">\( \angle BAN = 30^\circ \)</span>. By Pythagoras theorem,</p>
+<p><span class="arithmatex">\( AB^2 = AN^2 + BN^2 \)</span> i.e. <span class="arithmatex">\( AN^2 = 4a^2 - a^2 = 3a^2 \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow AN = \sqrt{3}a \)</span></p>
+<p>Keep in mind, in <span class="arithmatex">\( \triangle ANB \)</span>, with respect to <span class="arithmatex">\( 30^\circ \)</span>, <span class="arithmatex">\( BN \)</span> is the perpendicular, <span class="arithmatex">\( AN \)</span> is the base and <span class="arithmatex">\( AB \)</span> is obviously the hypotenuse.</p>
+<p>Whereas with respect to <span class="arithmatex">\( 60^\circ \)</span> <span class="arithmatex">\( AN \)</span> is the perpendicular, <span class="arithmatex">\( BN \)</span> is the base and <span class="arithmatex">\( AB \)</span> is obviously the hypotenuse.</p>
+<p>In <span class="arithmatex">\( \triangle ANB \)</span>,</p>
+<div class="arithmatex">\[
+\begin{align*}
+\sin 30^\circ &amp;= \frac{BN}{AB} = \frac{a}{2a} = \frac{1}{2} \\
+\cos 30^\circ &amp;= \frac{AN}{AB} = \frac{\sqrt{3}a}{2a} = \frac{\sqrt{3}}{2} \\
+\tan 30^\circ &amp;= \frac{BN}{AN} = \frac{a}{\sqrt{3}a} = \frac{1}{\sqrt{3}} \\
+\end{align*}
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+\sin 60^\circ &amp;= \frac{AN}{AB} = \frac{\sqrt{3}a}{2a} = \frac{\sqrt{3}}{2} \\
+\cos 60^\circ &amp;= \frac{BN}{AB} = \frac{a}{2a} = \frac{1}{2} \\
+\tan 60^\circ &amp;= \frac{AN}{BN} = \frac{\sqrt{3}a}{a} = \sqrt{3} \\
+\end{align*}
+\]</div>
+<h3 id="45"><strong>45°</strong></h3>
+<p>Draw a right-angled isosceles triangle – triangle with one angle 90° and the other two angles are equal to 45°.
+<a class="glightbox" href="../img/image14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="An isosceles right-angled triangle" src="../img/image14.png" /></a></p>
+<p>If the length of equal sides of the triangle are equal to <span class="arithmatex">\( a \)</span>, then the length of the hypotenuse by Pythagoras theorem is <span class="arithmatex">\( \sqrt{2a} \)</span>.</p>
+<div class="arithmatex">\[
+\sin 45^\circ = \frac{a}{\sqrt{2a}} = \frac{1}{\sqrt{2}}, \quad \cos 45^\circ = \frac{a}{\sqrt{2a}} = \frac{1}{\sqrt{2}}, \quad \text{and} \quad \tan 45^\circ = \frac{a}{a} = 1
+\]</div>
+<h3 id="15-and-75"><strong>15° and 75°</strong></h3>
+<p><strong>Method 1:</strong>
+<a class="glightbox" href="../img/image16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Equilaterial triangle" src="../img/image16.png" /></a>
+Draw an equilateral triangle <span class="arithmatex">\( ABC \)</span> of side length <span class="arithmatex">\( 2a \)</span>. Drop a perpendicular <span class="arithmatex">\( AN \)</span> to side <span class="arithmatex">\( BC \)</span> from vertex <span class="arithmatex">\( A \)</span>. Since it is an equilateral triangle, <span class="arithmatex">\( N \)</span> is the midpoint of <span class="arithmatex">\( BC \)</span>.</p>
+<div class="arithmatex">\[ \Rightarrow BN = a \]</div>
+<p>Now draw the angle bisector <span class="arithmatex">\( AM \)</span> of <span class="arithmatex">\( \angle BAN \)</span> which cuts <span class="arithmatex">\( BC \)</span> at <span class="arithmatex">\( M \)</span>. Thus, <span class="arithmatex">\( \angle MAN = 15^\circ \)</span>.</p>
+<p>Since, <span class="arithmatex">\( \triangle MAN \)</span> is a right angled triangle and its angles are <span class="arithmatex">\( 15^\circ \)</span> and <span class="arithmatex">\( 75^\circ \)</span> we can find all trigonometric values for <span class="arithmatex">\( 15^\circ \)</span> and <span class="arithmatex">\( 75^\circ \)</span>, if we know lengths of its sides <span class="arithmatex">\( AM \)</span>, <span class="arithmatex">\( MN \)</span> and <span class="arithmatex">\( AN \)</span></p>
+<p><span class="arithmatex">\( AN \)</span> is the easiest to find out.</p>
+<p>In <span class="arithmatex">\( \triangle ABN \)</span>,</p>
+<p>By Pythagoras theorem,</p>
+<p><span class="arithmatex">\( AN^2 = AB^2 - BN^2 = 4a^2 - a^2 = 3a^2 \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow AN = \sqrt{3}a \)</span></p>
+<p>Now, we will find out <span class="arithmatex">\( MN \)</span>.</p>
+<p>Since <span class="arithmatex">\( AM \)</span> is the angle bisector of angle <span class="arithmatex">\( \angle BAN \)</span> in <span class="arithmatex">\( \triangle ABN \)</span>, by angle bisector theorem <span class="arithmatex">\( AM \)</span> divides <span class="arithmatex">\( BN \)</span> in the ratio <span class="arithmatex">\( AB:AN \)</span>, that is,</p>
+<p><span class="arithmatex">\(
+\frac{BM}{MN} = \frac{AB}{AN} = \frac{2a}{\sqrt{3}a} = \frac{2}{\sqrt{3}} \quad ...(1)
+\)</span></p>
+<p><span class="arithmatex">\(
+\Rightarrow 2MN = \sqrt{3}BM
+\)</span></p>
+<p><span class="arithmatex">\(
+\Rightarrow 2MN = \sqrt{3} (BN - MN)
+\)</span></p>
+<p><span class="arithmatex">\( \Rightarrow (2 + \sqrt{3}) MN = \sqrt{3}BN \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow MN = \frac{\sqrt{3}a}{2 + \sqrt{3}} \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow MN = \sqrt{3}(2 - \sqrt{3})a \quad \text{[Rationalizing the denominator]} \)</span></p>
+<p>Lastly we find out <span class="arithmatex">\( AM \)</span> using Pythagoras theorem in <span class="arithmatex">\( \triangle AMN \)</span>,</p>
+<p><span class="arithmatex">\( AM^2 = AN^2 + MN^2 \)</span></p>
+<p><span class="arithmatex">\( = 3a^2 + (2 - \sqrt{3})^2 a^2 = 3a^2 (8 - 4\sqrt{3}) \)</span></p>
+<p><span class="arithmatex">\( AM^2 = 6a^2 (4 - 2\sqrt{3}) \)</span></p>
+<p><span class="arithmatex">\( = 6a^2 \left( \sqrt{3} - 1 \right)^2 \)</span></p>
+<p><span class="arithmatex">\( AM = \sqrt{6a} \left( \sqrt{3} - 1 \right) \)</span></p>
+<p>Finally</p>
+<p><span class="arithmatex">\( \sin 15^\circ = \frac{MN}{AM} = \frac{\sqrt{3}(2 - \sqrt{3})a}{\sqrt{6}(\sqrt{3} - 1)a} \)</span></p>
+<p><span class="arithmatex">\( = \frac{4 - 2\sqrt{3}}{2\sqrt{2}(\sqrt{3} - 1)} = \frac{(\sqrt{3} - 1)^2}{2\sqrt{2}(\sqrt{3} - 1)} = \frac{\sqrt{3} - 1}{2\sqrt{2}} \)</span></p>
+<p><span class="arithmatex">\( \cos 15^\circ = \frac{AN}{AM} = \frac{\sqrt{3}a}{\sqrt{6a}(\sqrt{3} - 1)} = \frac{\sqrt{3} + 1}{2\sqrt{2}} \)</span></p>
+<p><span class="arithmatex">\( \tan 15^\circ = \frac{MN}{AN} = \frac{\sqrt{3}(2 - \sqrt{3})a}{\sqrt{3}a} = 2 - \sqrt{3} \)</span></p>
+<p>Similarly, we can see that angle <span class="arithmatex">\( \angle AMN = 75^\circ \)</span> in <span class="arithmatex">\( \triangle AMN \)</span>. Thus,</p>
+<p><span class="arithmatex">\( \sin 75^\circ = \frac{\sqrt{3} + 1}{2\sqrt{2}}, \quad \cos 75^\circ = \frac{\sqrt{3} - 1}{2\sqrt{2}}, \quad \text{and} \quad \tan 75^\circ = 2 + \sqrt{3} \)</span></p>
+<p><strong>Method 2</strong></p>
+<p><a class="glightbox" href="../img/image17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Calculation of trigonometric ratios for 15 degree" src="../img/image17.png" /></a></p>
+<p>Certainly, here is the corrected text with proper formatting:</p>
+<p>Draw an isosceles right-angled triangle <span class="arithmatex">\( \triangle ABC \)</span> right-angled at <span class="arithmatex">\( B \)</span>. Let <span class="arithmatex">\( AB = BC = a \)</span>.</p>
+<p><span class="arithmatex">\( \Rightarrow AC = \sqrt{2}a \quad \text{[Using Pythagoras theorem]} \)</span></p>
+<p>Draw <span class="arithmatex">\( AD \)</span> such that <span class="arithmatex">\( \angle BAD = 30^\circ \)</span>. Drop a perpendicular <span class="arithmatex">\( DE \)</span> from <span class="arithmatex">\( D \)</span> to <span class="arithmatex">\( AC \)</span>. <span class="arithmatex">\( EC = CD \)</span> because <span class="arithmatex">\( \triangle ECD \)</span> is a right-angled isosceles triangle.</p>
+<p>In <span class="arithmatex">\( \triangle ABD \)</span>,</p>
+<p><span class="arithmatex">\( \tan 30^\circ = \frac{BD}{AB} \Rightarrow BD = \frac{a}{\sqrt{3}}. \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow CD = BC - BD = a - \frac{a}{\sqrt{3}} = \left( \sqrt{3} - 1 \right) \frac{a}{\sqrt{3}} \)</span></p>
+<p>In <span class="arithmatex">\( \triangle ECD \)</span>,</p>
+<p><span class="arithmatex">\( \cos 45^\circ = \frac{EC}{CD} \Rightarrow EC = CD \cdot \cos 45^\circ \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow EC = \left( \sqrt{3} - 1 \right) \frac{a}{\sqrt{3}} \cdot \frac{1}{\sqrt{2}} = \left( \sqrt{3} - 1 \right) \frac{a}{\sqrt{6}} \)</span></p>
+<p>In <span class="arithmatex">\(\triangle AED \)</span>, angle <span class="arithmatex">\( \angle EAD = 15^\circ \)</span> and it is a right-angled triangle. We now only need to calculate <span class="arithmatex">\( AE \)</span>, <span class="arithmatex">\( AD \)</span> and <span class="arithmatex">\( ED \)</span>.</p>
+<p><span class="arithmatex">\( ED = EC = \left( \sqrt{3} - 1 \right) \frac{a}{\sqrt{6}} \)</span></p>
+<p>In <span class="arithmatex">\( \triangle ABD \)</span>, <span class="arithmatex">\( \cos 30^\circ = \frac{AB}{AD} \Rightarrow AD = \frac{AB}{\cos 30^\circ} \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow AD = \frac{a}{\sqrt{3}} = \frac{2a}{\sqrt{3}} \cdot \frac{1}{2} \)</span></p>
+<p>In <span class="arithmatex">\( AE = AC - EC = \sqrt{2a} - \left( \sqrt{3} - 1 \right) \frac{a}{\sqrt{6}} = \left( \sqrt{3} + 1 \right) \frac{a}{\sqrt{6}} \)</span></p>
+<p>Thus, finally,</p>
+<p><span class="arithmatex">\( \sin 15^\circ = \frac{ED}{AD} = \left( \sqrt{3} - 1 \right) \frac{a}{\sqrt{6}} \times \frac{\sqrt{3}}{2a} = \left( \sqrt{3} - 1 \right) \frac{1}{2\sqrt{2}} \)</span></p>
+<p><strong>Method 3</strong></p>
+<p><a class="glightbox" href="../img/image18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure for the calculation of trigonometric ratios of 15 degrees" src="../img/image18.png" /></a></p>
+<p>Draw a circle of radius 1 unit. Let <span class="arithmatex">\( AB \)</span> be the diameter with <span class="arithmatex">\( O \)</span> as the centre. Draw <span class="arithmatex">\( AC \)</span> such that <span class="arithmatex">\( \angle BAC = 15^\circ \)</span> and <span class="arithmatex">\( C \)</span> lies on the circle. The angle subtended by <span class="arithmatex">\( BC \)</span> at <span class="arithmatex">\( A \)</span> is <span class="arithmatex">\( 15^\circ \)</span>, then the angle subtended by <span class="arithmatex">\( BC \)</span> at the centre <span class="arithmatex">\( O \)</span> is twice of it, that is, <span class="arithmatex">\( 30^\circ \)</span>. Drop a perpendicular from <span class="arithmatex">\( C \)</span> to diameter <span class="arithmatex">\( AB \)</span>, <span class="arithmatex">\( N \)</span> being its foot on <span class="arithmatex">\( AB \)</span>.</p>
+<p>In <span class="arithmatex">\( \triangle OCN \)</span>, <span class="arithmatex">\( OC = 1 \)</span> (radius), <span class="arithmatex">\( CN = \sin 30^\circ \)</span> and <span class="arithmatex">\( ON = \cos 30^\circ \)</span></p>
+<p><span class="arithmatex">\( \triangle MNC \)</span> is a right-angled triangle with <span class="arithmatex">\( \angle NAC = 15^\circ \)</span>. If we wish to find out the values of trigonometric ratios we need to know the lengths of its sides, that is, <span class="arithmatex">\( AC \)</span>, <span class="arithmatex">\( AN \)</span> and <span class="arithmatex">\( CN \)</span>.</p>
+<p><span class="arithmatex">\( CN = \sin 30^\circ = \frac{1}{2} \)</span></p>
+<p>And <span class="arithmatex">\( AN = 1 + \cos 30^\circ \)</span></p>
+<p><span class="arithmatex">\( AC^2 = AN^2 + CN^2 = (1 + \cos 30^\circ)^2 + \sin^2 30^\circ = 2 + 2 \cos 30^\circ \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow AC = \sqrt{2 + \sqrt{3}} = \sqrt{\frac{4 + 2\sqrt{3}}{2}} = \sqrt{\frac{\left(\sqrt{3} + 1\right)^2}{2}} = \frac{\sqrt{3} + 1}{\sqrt{2}} \)</span></p>
+<p>Therefore,</p>
+<p><span class="arithmatex">\( \sin 15^\circ = \frac{CN}{AC} \)</span><span class="arithmatex">\(= \frac{\sin 30^\circ}{\sqrt{2 + \sqrt{3}}} \)</span><span class="arithmatex">\(= \frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{3} + 1}{\sqrt{2}}} = \frac{\sqrt{3} - 1}{2\sqrt{2}} \)</span></p>
+<p><span class="arithmatex">\( \cos 15^\circ = \frac{AN}{AC} = \frac{1 + \cos 30^\circ}{\sqrt{2 + \sqrt{3}}} = \frac{2 + \sqrt{3}}{\sqrt{2}(\sqrt{3} + 1)} = \frac{\sqrt{3} + 1}{2\sqrt{2}} \)</span></p>
+<h3 id="18"><strong>18°</strong></h3>
+<p>Calculating sin 18°</p>
+<p><a class="glightbox" href="../img/image19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Pentagon for the calculation of trigonometric ratios of 18 degrees" src="../img/image19.png" /></a></p>
+<p>Let there be a regular pentagon <span class="arithmatex">\( ABCDE \)</span> having side lengths equal to <span class="arithmatex">\( a \)</span> and centre <span class="arithmatex">\( O \)</span>.</p>
+<p>Construct some extra stuff as shown in the figure. A little angle hunting will show that <span class="arithmatex">\( \angle NAC = 18^\circ \)</span>.</p>
+<p>Now <span class="arithmatex">\( CN = \frac{CD}{2} = \frac{a}{2} \)</span></p>
+<p><span class="arithmatex">\( \angle CBL = \angle MED = 18^\circ \)</span></p>
+<p><span class="arithmatex">\( LC = BC \sin 18^\circ = a \sin 18^\circ \)</span> and <span class="arithmatex">\( DM = a \sin 18^\circ \)</span></p>
+<p><span class="arithmatex">\( AC + BE = LM = LC + CD + DM \)</span></p>
+<p><span class="arithmatex">\( AC = a \sin 18^\circ + a + a \sin 18^\circ \Rightarrow AC = a + 2a \sin 18^\circ \)</span></p>
+<p>In <span class="arithmatex">\( \triangle NAC \)</span>, <span class="arithmatex">\( \sin 18^\circ = \frac{CN}{AC} = \frac{\frac{a}{2}}{a + 2a \sin 18^\circ} \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow \sin 18^\circ = \frac{1}{2 + 4 \sin 18^\circ} \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow 4 \sin^2 18^\circ + 2 \sin 18^\circ - 1 = 0 \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow \sin 18^\circ = \frac{-2 + \sqrt{4 + 16}}{8} = \frac{-1 + \sqrt{5}}{4} \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow \sin 18^\circ = \frac{\sqrt{5} - 1}{4} \quad (\sin 18^\circ \text{ cannot be negative value}) \)</span></p>
+<h3 id="36">36°</h3>
+<p><a class="glightbox" href="../img/image20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Pentagon for the calculation of trigonometric ratios of 36 degree" src="../img/image20.png" /></a></p>
+<p>Construct a regular pentagon <span class="arithmatex">\(ABCDE\)</span> as shown above.</p>
+<p><span class="arithmatex">\(\triangle ECB \cong \triangle FCB \Rightarrow \frac{x+y}{x} = \frac{x}{y} \Rightarrow xy + y^2 = x^2 \quad ...(1)\)</span></p>
+<p>In <span class="arithmatex">\(\triangle BCF\)</span>,</p>
+<p><span class="arithmatex">\(cos 36^\circ = \frac{x^2 + x^2 - y^2}{2x^2} \quad \text{[Using Cosine Rule]}\)</span></p>
+<p><span class="arithmatex">\( \Rightarrow \cos 36^\circ = \frac{x^2 + xy}{2(xy + y^2)} \quad \text{[Using (1)]}\)</span></p>
+<p><span class="arithmatex">\( \Rightarrow \cos 36^\circ = \frac{x(x+y)}{2y(x+y)} = \frac{x}{2y} \)</span></p>
+<p>In <span class="arithmatex">\(\triangle BFE\)</span>, </p>
+<p><span class="arithmatex">\( 2x\cos 36^\circ = x + y \quad ...(2)\)</span></p>
+<p>From (1) and (2),</p>
+<p><span class="arithmatex">\( 2\cos 36^\circ = 1 + \frac{1}{2\cos 36^\circ} \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow 4\cos^2 36^\circ = 2\cos 36^\circ + 1 \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow 4\cos^2 36^\circ - 2\cos 36^\circ - 1 = 0 \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow \cos 36^\circ = \frac{2 + \sqrt{4 + 16}}{8} \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow \cos 36^\circ = \frac{\sqrt{5} + 1}{4} \quad (\cos 36^\circ \text{ cannot be negative}) \)</span></p>
+<p>By the way, <span class="arithmatex">\( \triangle BEC \)</span> is called the Golden Triangle. But more on that later, at some place, somewhere else.</p>
+<h3 id="225"><strong>22.5°</strong></h3>
+<p><a class="glightbox" href="../img/image21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Isosceles triangle for the calculation of trigonometric ratios of 22.5 degree" src="../img/image21.png" /></a></p>
+<p><span class="arithmatex">\( \triangle ABD \cong \triangle AED \)</span></p>
+<p><span class="arithmatex">\( \Rightarrow AE = AB = x \)</span></p>
+<p>Thus, <span class="arithmatex">\( EC = AC - AE = \sqrt{2}x - x = (\sqrt{2} - 1)x \)</span></p>
+<p><span class="arithmatex">\( \triangle CED \)</span> is an isosceles right-angled triangle</p>
+<p><span class="arithmatex">\( CE = ED = (\sqrt{2} - 1)x \)</span></p>
+<p><span class="arithmatex">\( \tan 22.5^\circ = \frac{ED}{AE} = \frac{(\sqrt{2} - 1)x}{x} = \sqrt{2} - 1 \)</span></p>
+<p>We can easily find <span class="arithmatex">\( \sin 22.5^\circ \)</span> and <span class="arithmatex">\( \cos 22.5^\circ \)</span></p>
+<p>So I in this section tried to introduce you about various techniques used in geometry to find values of various trigonometric ratios. What we discussed is not the whole thing. You may come up with various other techniques.</p>
+<p>I think you must be convinced that for certain angles we can find the values of trigonometric ratios using geometry. But this may not be possible for all angles or it may be a very complicated process.</p>
+<div class="admonition note">
+<p class="admonition-title">Father of Trigonometry</p>
+<p>The title "Father of Trigonometry" can be attributed to <strong><em>Hipparchus</em></strong> of Nicaea, an ancient Greek astronomer and mathematician. He is known for creating the first trigonometric table in the 2nd century BCE. Hipparchus developed a way to solve problems in astronomy that required accurate geometric calculations, and his work laid the foundation for the field of trigonometry.</p>
+<p>Hipparchus's trigonometric table was based on the concept of a chord, which is a line segment connecting two points on a circle. By systematically calculating the lengths of chords for a series of angles, he effectively created a table that could be used to determine the angle subtended by a chord of a given length. This was an early form of what we now consider the sine function, although he did not use the modern sine function itself. </p>
+<p>His work on compiling these values into a table was revolutionary because it allowed for more precise astronomical predictions and calculations. It's believed that he used a base circle (a circle with a fixed radius) and then calculated the chord lengths for various angles by constructing and measuring geometric figures within the circle.</p>
+<p>The method for these calculations was based on dividing the circle into 360 degrees and then constructing a table that gave the length of the chord subtending the various angles from the center of the circle. These lengths could then be related to modern trigonometric functions. His work was further developed by later mathematicians like Claudius Ptolemy, who expanded upon Hipparchus's chords with his own works in trigonometry.</p>
+</div>
+<h2 id="complementary-angles">Complementary Angles</h2>
+<p>Two angles are said to be complementary angles if and only if their sum is 90°.</p>
+<p>For any angle <span class="arithmatex">\( \theta \)</span>, the complement is <span class="arithmatex">\( 90^\circ - \theta \)</span>.</p>
+<p>In a right-angled triangle, one of the angles is 90° and the other two are complementary.</p>
+<p><a class="glightbox" href="../img/image22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="A right angles triangle depicting complementary angles" src="../img/image22.png" /></a></p>
+<p>The perpendicular with respect to <span class="arithmatex">\( \theta \)</span> is the base with respect to <span class="arithmatex">\( 90^\circ - \theta \)</span> and the base with respect to <span class="arithmatex">\( \theta \)</span> is the perpendicular with respect to <span class="arithmatex">\( 90^\circ - \theta \)</span>. Because of which,</p>
+<div class="arithmatex">\[
+\begin{align*}
+\sin(90^\circ - \theta) &amp;= \cos \theta \\
+\cos(90^\circ - \theta) &amp;= \sin \theta \\
+\tan(90^\circ - \theta) &amp;= \cot \theta \\
+\csc(90^\circ - \theta) &amp;= \sec \theta \\
+\sec(90^\circ - \theta) &amp;= \csc \theta \\
+\cot(90^\circ - \theta) &amp;= \tan \theta
+\end{align*}
+\]</div>
+<p>Therefore if <span class="arithmatex">\( \sin 18^\circ = \frac{\sqrt{5} - 1}{4} \)</span> <span class="arithmatex">\( \Rightarrow \cos(90^\circ - 18^\circ) = \frac{\sqrt{5} - 1}{4} \)</span> <span class="arithmatex">\( \Rightarrow \cos 72^\circ = \frac{\sqrt{5} - 1}{4} \)</span></p>
+<h2 id="trigonometric-identities">Trigonometric Identities</h2>
+<p>We have three fundamental identities which relate all six trigonometric ratios of an angle.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\( \sin^2 \theta + \cos^2 \theta = 1 \)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\( 1 + \tan^2 \theta = \sec^2 \theta \)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\( 1 + \cot^2 \theta = \csc^2 \theta \)</span></p>
+</li>
+</ol>
+<p><strong>Proof:</strong> Let there be a right angled triangle <span class="arithmatex">\( \triangle ABC \)</span> such that <span class="arithmatex">\( AB = x \)</span> and <span class="arithmatex">\( BC = y \)</span>. By Pythagoras theorem, <span class="arithmatex">\( AC = \sqrt{AB^2 + BC^2} = \sqrt{x^2 + y^2} \)</span> . Let angle <span class="arithmatex">\( BAC = \theta \)</span></p>
+<p><a class="glightbox" href="../img/image23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="A right-angled triangle" src="../img/image23.png" /></a></p>
+<p><span class="arithmatex">\( \sin \theta = \frac{y}{\sqrt{x^2 + y^2}}, \quad \cos \theta = \frac{x}{\sqrt{x^2 + y^2}}, \quad \tan \theta = \frac{y}{x} \)</span></p>
+<p><span class="arithmatex">\( \csc \theta = \frac{\sqrt{x^2 + y^2}}{y}, \quad \sec \theta = \frac{\sqrt{x^2 + y^2}}{x}, \quad \cot \theta = \frac{x}{y} \)</span></p>
+<p><span class="arithmatex">\( \sin^2 \theta + \cos^2 \theta = \frac{y^2}{x^2 + y^2} + \frac{x^2}{x^2 + y^2} = 1 \)</span></p>
+<p><span class="arithmatex">\( 1 + \tan^2 \theta = 1 + \frac{y^2}{x^2} = \frac{x^2 + y^2}{x^2} = \sec^2 \theta \)</span></p>
+<p><span class="arithmatex">\( 1 + \cot^2 \theta = 1 + \frac{x^2}{y^2} = \frac{x^2 + y^2}{y^2} = \csc^2 \theta \)</span></p>
+<p>Given the value of one of the six trigonometric ratios of an angle, how to find values of rest of them for that angle.</p>
+<p>Suppose you know that for some angle <span class="arithmatex">\( \theta \)</span>, its sine is <span class="arithmatex">\( s \)</span>. i.e. <span class="arithmatex">\( \sin \theta = s \)</span>. We know that</p>
+<p><span class="arithmatex">\( \sin \theta = \frac{\text{perpendicular}}{\text{hypotenuse}} \)</span></p>
+<p>Now <span class="arithmatex">\( \sin \theta = s \)</span> can be written as <span class="arithmatex">\( \sin \theta = \frac{s}{1} \)</span> and we assume, 
+<span class="arithmatex">\( \text{perpendicular} = s \)</span> and <span class="arithmatex">\( \text{hypotenuse} = 1 \)</span>.</p>
+<p>We construct where one of the angle is <span class="arithmatex">\( \theta \)</span> and its perpendicular is of length <span class="arithmatex">\( s \)</span> and hypotenuse is of length 1 unit. Then, base, by Pythagoras theorem, is equal to <span class="arithmatex">\( \sqrt{1 - s^2} \)</span>. Thus, now we can calculate values of each trigonometric ratio of angle <span class="arithmatex">\( \theta \)</span> from this triangle.</p>
+<p><a class="glightbox" href="../img/image24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="A right angled triangle" src="../img/image24.png" /></a></p>
+<p>This innocent looking technique of finding trigonometric ratios will be very useful in the future.</p>
+<p>Of course, you can directly use identities to calculate other trigonometric ratios.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 1</p>
+<p>If cos θ = 0.6, find other trigonometric ratios of angle θ.</p>
+<p><strong>Solution:</strong> cos θ = 0.6 ⇒ cos θ = <span class="arithmatex">\( \frac{6}{10} \)</span> ⇒ cos θ = <span class="arithmatex">\( \frac{3}{5} \)</span></p>
+<p>Since cos θ = <span class="arithmatex">\( \frac{\text{base}}{\text{hypotenuse}} \)</span> ⇒ base = 3 and hypotenuse = 5</p>
+<p>⇒ perpendicular = <span class="arithmatex">\( \sqrt{5^2 - 3^2} \)</span> = 4</p>
+</div>
+<p><a class="glightbox" href="../img/image25.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Right-angled triangle" src="../img/image25.png" /></a></p>
+<p><span class="arithmatex">\( \sin \theta = \frac{4}{5}, \tan \theta = \frac{4}{3}, \csc \theta = \frac{5}{4}, \sec \theta = \frac{5}{3}, \text{ and } \cot \theta = \frac{3}{4} \)</span></p>
+<p>Sometimes it’s suitable to write the identity <span class="arithmatex">\(1 + \tan^2 \theta = \sec^2 \theta\)</span> as <span class="arithmatex">\(\sec^2 \theta - \tan^2 \theta = 1\)</span></p>
+<p><span class="arithmatex">\( \Rightarrow (\sec \theta - \tan \theta)(\sec \theta + \tan \theta) = 1 \Rightarrow \sec \theta - \tan \theta = \frac{1}{\sec \theta + \tan \theta} \)</span></p>
+<p>Suppose if it is known that <span class="arithmatex">\(\sec \theta - \tan \theta = p\)</span>, ...(1)</p>
+<p>Then <span class="arithmatex">\(\sec \theta + \tan \theta = \frac{1}{p}\)</span> ...(2)</p>
+<p>Adding (1) and (2),</p>
+<p><span class="arithmatex">\( 2 \sec \theta = p + \frac{1}{p} \Rightarrow \sec \theta = \frac{1}{2}\left( p + \frac{1}{p} \right) \)</span></p>
+<p>Subtracting (1) from (2), we get,</p>
+<p><span class="arithmatex">\( 2 \tan \theta = \frac{1}{p} - p \Rightarrow \tan \theta = \frac{1}{2}\left( \frac{1}{p} - p \right) \)</span></p>
+<p>Similarly. <span class="arithmatex">\(\csc \theta - \cot \theta = \frac{1}{\csc \theta + \cot \theta} \)</span></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

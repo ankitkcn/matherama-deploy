@@ -1,0 +1,3268 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2001%20-%20Sets/2-Definition/">
+      
+      
+        <link rel="prev" href="../1-Introduction/">
+      
+      
+        <link rel="next" href="../3%20-%20Venn%20Diagrams/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Definitions - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#definition-of-sets" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Definitions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of Sets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definition of Sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-representation-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Representation of sets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#characteristics-of-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Characteristics of a Set
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Sets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-membership-symbol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Membership Symbol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empty-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty set
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-builder-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Builder form
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Set Builder form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-builder-form-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set-Builder Form Explained:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-examples-of-set-builder-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Examples of Set-Builder Form:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subset-and-superset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subset and Superset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subset and Superset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proper-subset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proper subset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Superset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cardinality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cardinality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cardinality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cardinality-of-infinite-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cardinality of Infinite Sets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Sets:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of Sets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definition of Sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-representation-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Representation of sets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#characteristics-of-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Characteristics of a Set
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Sets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-membership-symbol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Membership Symbol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empty-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty set
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-builder-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Builder form
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Set Builder form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-builder-form-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set-Builder Form Explained:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-examples-of-set-builder-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Examples of Set-Builder Form:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subset-and-superset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subset and Superset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subset and Superset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proper-subset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proper subset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Superset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cardinality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cardinality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cardinality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cardinality-of-infinite-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cardinality of Infinite Sets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Sets:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Definitions</h1>
+
+<h2 id="definition-of-sets">Definition of Sets</h2>
+<p>A <strong>set</strong> is a fundamental concept in mathematics, defined as a collection of distinct objects, treated as an entity in itself. These objects are known as the <em>elements</em> or <em>members</em> of the set. </p>
+<h3 id="basic-representation-of-sets">Basic Representation of sets</h3>
+<p>The basic representation of sets in mathematics uses curly braces to enclose a collection of distinct, well-defined objects. These objects are the elements of the set. The use of curly braces is a universally accepted convention in mathematics to denote a set.</p>
+<p>Within the curly braces, the elements of the set are listed, typically separated by commas. For example, a set of the first three natural numbers is represented as <span class="arithmatex">\(\{1, 2, 3\}\)</span>. The elements inside the set are distinct; duplicates are not acknowledged in a set. So, if a collection includes duplicates, like 2, 2, 3, it's represented as <span class="arithmatex">\(\{2, 3\}\)</span> in set notation, eliminating any repetitions.</p>
+<p>Another important characteristic of sets is that the order of elements does not matter. Therefore, <span class="arithmatex">\(\{1, 2, 3\}\)</span> is the same as <span class="arithmatex">\(\{3, 2, 1\}\)</span>. This unordered nature is a defining feature of set theory.</p>
+<p>For clarity, here are five examples of sets represented using this notation:</p>
+<ul>
+<li>A set of primary colors: <span class="arithmatex">\(\{red, blue, yellow\}\)</span>.</li>
+<li>A set of single-digit even numbers: <span class="arithmatex">\(\{2, 4, 6, 8\}\)</span>.</li>
+<li>A set of vowels in the English alphabet: <span class="arithmatex">\(\{a, e, i, o, u\}\)</span>.</li>
+<li>A set of basic geometric shapes: <span class="arithmatex">\(\{circle, square, triangle\}\)</span>.</li>
+<li>A set containing a mix of numbers and letters: <span class="arithmatex">\(\{1, x, 3, y\}\)</span>.</li>
+</ul>
+<p>In each of these examples, the set is defined by the unique elements it contains, irrespective of their order, and is enclosed within curly braces, following the standard set notation in mathematics.</p>
+<h3 id="characteristics-of-a-set">Characteristics of a Set</h3>
+<ol>
+<li>
+<p><strong>Unordered:</strong>
+    The elements in a set do not have a specific order. For example, the set containing numbers 1, 2, and 3 is written as <span class="arithmatex">\(1, 2, 3\)</span> and is the same as <span class="arithmatex">\(3, 2, 1\)</span>.</p>
+</li>
+<li>
+<p><strong>Well-Defined:</strong>
+    A set is well-defined when it is clear whether any particular item belongs to the set or not. For instance, the set of all letters in the word 'apple' is well-defined as <span class="arithmatex">\(a, p, l, e\)</span>.</p>
+</li>
+<li>
+<p><strong>Distinctness:</strong>
+    Each element in a set is unique. If an object is in a set, it cannot be in the set more than once. For example, in the set <span class="arithmatex">\(a, b, c\)</span>, each letter is distinct and appears only once.</p>
+</li>
+</ol>
+<h3 id="examples-of-sets">Examples of Sets</h3>
+<ul>
+<li>A set of prime numbers less than 10: <span class="arithmatex">\(\{2, 3, 5, 7\}\)</span>.</li>
+<li>A set of colors in a rainbow: <span class="arithmatex">\(\{red, orange, yellow, green, blue, indigo, violet\}\)</span>.</li>
+<li>A set of months in a year: <span class="arithmatex">\(\{January, February, March, ..., December\}\)</span>.</li>
+<li>
+<p><strong>Fibonacci Numbers Less Than 30:</strong>
+    <span class="arithmatex">\(\{0, 1, 1, 2, 3, 5, 8, 13, 21\}\)</span><br />
+    This set consists of Fibonacci numbers up to 30.</p>
+</li>
+<li>
+<p><strong>First Five Positive Even Numbers:</strong>
+    <span class="arithmatex">\(\{2, 4, 6, 8, 10\}\)</span>   <br />
+    A set of the smallest even numbers.</p>
+</li>
+<li>
+<p><strong>Primary Colors in the RGB Color Model:</strong>
+    <span class="arithmatex">\(\{Red, Green, Blue\}\)</span>  <br />
+    The set of primary colors used in digital color representation.</p>
+</li>
+<li>
+<p><strong>Basic Tastes Detected by Human Tongue:</strong>
+    <span class="arithmatex">\(\{Sweet, Sour, Salty, Bitter, Umami\}\)</span>  <br />
+    This set includes all the primary tastes our taste buds can detect.</p>
+</li>
+<li>
+<p><strong>Planets in Our Solar System:</strong>
+    <span class="arithmatex">\(\{Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune\}\)</span>  <br />
+    A set containing the names of all planets that orbit the Sun.</p>
+</li>
+<li>
+<p><strong>First Five Roman Numerals:</strong>
+    <span class="arithmatex">\(\{I, II, III, IV, V\}\)</span>  <br />
+    This set represents the first five numbers in the Roman numeral system.</p>
+</li>
+<li>
+<p><strong>Continents on Earth:</strong>
+    <span class="arithmatex">\(\{Africa, Antarctica, Asia, Europe, North America, Oceania, South America\}\)</span>  <br />
+    The set of all seven continents in the world.</p>
+</li>
+<li>
+<p><strong>Chess Pieces for One Player:</strong>
+    <span class="arithmatex">\(\{King, Queen, Bishop, Knight, Rook, Pawn\}\)</span>  <br />
+    A set representing each type of chess piece in a standard chess game.</p>
+</li>
+<li>
+<p><strong>Olympic Rings Colors:</strong>
+    <span class="arithmatex">\(\{Blue, Yellow, Black, Green, Red\}\)</span>  <br />
+    The set of colors used in the Olympic rings symbol.</p>
+</li>
+<li>
+<p><strong>Basic Geometric Shapes:</strong>
+     <span class="arithmatex">\(\{Circle, Square, Triangle, Rectangle, Pentagon, Hexagon\}\)</span> <br />
+     This set contains different simple geometric shapes.</p>
+</li>
+</ul>
+<div class="admonition note warning">
+<p class="admonition-title">Not all collections are sets</p>
+<p>Not all collections are sets.Collections that are not considered sets typically violate fundamental properties of set theory, such as the uniqueness and well-defined nature of elements. Here are examples of such collections:</p>
+<ol>
+<li>
+<p><strong>A Collection with Duplicate Elements:</strong>
+ Example: <span class="arithmatex">\(\{\text{apple}, \text{banana}, \text{apple}\}\)</span> <br />
+ This collection includes 'apple' twice, violating the principle of unique elements in a set.</p>
+</li>
+<li>
+<p><strong>A Collection with Ambiguous Elements:</strong>
+ Example: <span class="arithmatex">\(\{\text{the tallest building}, \text{the fastest car}\}\)</span> <br />
+ The elements are not well-defined as they can change over time or depend on context.</p>
+</li>
+<li>
+<p><strong>A Collection with Vague Criteria:</strong>
+ Example: <span class="arithmatex">\(\{\text{interesting numbers}, \text{beautiful shapes}\}\)</span> <br />
+ 'Interesting' and 'beautiful' are subjective terms, making this collection not well-defined.</p>
+</li>
+<li>
+<p><strong>A Collection Based on Uncertain Membership:</strong>
+ Example: <span class="arithmatex">\(\{\text{future Nobel laureates}, \text{next decade's bestselling authors}\}\)</span> <br />
+ The members of this collection are unknown and speculative, not fitting the well-defined criterion.</p>
+</li>
+<li>
+<p><strong>A Collection with Non-Distinct Categories:</strong>
+ Example: <span class="arithmatex">\(\{\text{fruit}, \text{apple}, \text{orange}\}\)</span> <br />
+ 'Fruit' is a category that includes 'apple' and 'orange', making the collection non-distinct.</p>
+</li>
+<li>
+<p><strong>A Continuously Changing Collection:</strong>
+ Example: <span class="arithmatex">\(\{\text{current stock market leaders}\}\)</span> <br />
+ This is not a set because its composition changes frequently.</p>
+</li>
+<li>
+<p><strong>A Collection with Incomparable Elements:</strong>
+ Example: <span class="arithmatex">\(\{2, \text{"two"}, \{2\}\}\)</span> <br />
+ This collection mixes numbers, strings, and sets, making it inconsistent in terms of element type comparison.</p>
+</li>
+</ol>
+<p>Each of these examples demonstrates collections that fail to meet the criteria for sets in set theory, either due to the presence of duplicates, lack of well-defined elements, or inconsistency in the nature of the elements.</p>
+</div>
+<div class="admonition note info">
+<p class="admonition-title">Multiset</p>
+<p>A multiset, also known as a bag, is a collection of elements where duplicates are allowed. Unlike a traditional set, in a multiset, the same element can appear more than once. The order of elements in a multiset is not significant. Multisets are useful in situations where the frequency of elements is important.</p>
+</div>
+<h2 id="set-membership-symbol">Set Membership Symbol</h2>
+<p>The set membership symbol in set theory is <span class="arithmatex">\(\in\)</span>. It is used to indicate that a particular element is a part of a set. Conversely, the symbol <span class="arithmatex">\(\notin\)</span> denotes that an element is not a part of a set.</p>
+<h4 id="examples">Examples:</h4>
+<ol>
+<li><strong>For a Set of Natural Numbers:</strong></li>
+<li>Let's say we have a set <span class="arithmatex">\(N = \{1, 2, 3, 4, 5\}\)</span>.</li>
+<li>We can state that <span class="arithmatex">\(3 \in N\)</span>, which means 3 is a member of the set N.</li>
+<li>
+<p>Similarly, <span class="arithmatex">\(6 \notin N\)</span> signifies that 6 is not a member of the set N.</p>
+</li>
+<li>
+<p><strong>For a Set of Vowels:</strong></p>
+</li>
+<li>Consider a set <span class="arithmatex">\(V = \{a, e, i, o, u\}\)</span>.</li>
+<li>Here, <span class="arithmatex">\(e \in V\)</span> indicates that e is a member of the set V.</li>
+<li>On the other hand, <span class="arithmatex">\(b \notin V\)</span> indicates that b is not a member of the set V.</li>
+</ol>
+<p>These examples demonstrate how the symbols <span class="arithmatex">\(\in\)</span> and <span class="arithmatex">\(\notin\)</span> are used in set theory to express membership and non-membership, respectively.</p>
+<h2 id="special-sets">Special Sets</h2>
+<p>Some sets are special and we refer to them again and again. So we give them special symbols. </p>
+<ol>
+<li>
+<p><strong>Natural Numbers (ℕ):</strong>
+    Symbol: <span class="arithmatex">\(\mathbb{N}\)</span> <br />
+    Description: The set of natural numbers includes all positive integers starting from 1. In some definitions, it also includes 0.  <br />
+    Example: <span class="arithmatex">\(\{1, 2, 3, 4, ...\}\)</span>   </p>
+</li>
+<li>
+<p><strong>Whole Numbers:</strong>
+    Symbol: Often denoted as <span class="arithmatex">\(\mathbb{W}\)</span> or <span class="arithmatex">\(\mathbb{N}_0\)</span>, but there is no universal symbol. <br />
+    Description: Whole numbers include all natural numbers along with 0. <br />
+    Example: <span class="arithmatex">\(\{0, 1, 2, 3, 4, ...\}\)</span></p>
+</li>
+<li>
+<p><strong>Integers (ℤ):</strong>
+    Symbol: <span class="arithmatex">\(\mathbb{Z}\)</span> <br />
+    Description: The set of integers encompasses all whole numbers as well as their negative counterparts. <br />
+    Example: <span class="arithmatex">\(\{..., -3, -2, -1, 0, 1, 2, 3, ...\}\)</span></p>
+</li>
+<li>
+<p><strong>Rational Numbers (ℚ):</strong>
+    Symbol: <span class="arithmatex">\(\mathbb{Q}\)</span> <br />
+    Description: Rational numbers include all fractions and integers, essentially numbers that can be expressed as the quotient of two integers. <br />
+    Example: Numbers like <span class="arithmatex">\(1/2\)</span>, <span class="arithmatex">\(4/5\)</span>, <span class="arithmatex">\(7\)</span>, <span class="arithmatex">\(-3\)</span>, etc.</p>
+</li>
+<li>
+<p><strong>Real Numbers (ℝ):</strong>
+    Symbol: <span class="arithmatex">\(\mathbb{R}\)</span> <br />
+    Description: Real numbers consist of all rational and irrational numbers, covering every point on the number line. <br />
+    Example: Includes numbers like <span class="arithmatex">\(1.414\)</span>, <span class="arithmatex">\(\pi\)</span>, <span class="arithmatex">\(e\)</span>, <span class="arithmatex">\(3/4\)</span>, <span class="arithmatex">\(5\)</span>, etc.</p>
+</li>
+<li>
+<p><strong>Complex Numbers (ℂ):</strong>
+    Symbol: <span class="arithmatex">\(\mathbb{C}\)</span> <br />
+    Description: Complex numbers include all numbers that can be written in the form <span class="arithmatex">\(a + bi\)</span>, where <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> are real numbers, and <span class="arithmatex">\(i\)</span> is the imaginary unit. <br />
+    Example: Numbers like <span class="arithmatex">\(3 + 4i\)</span>, <span class="arithmatex">\(-2 - i\)</span>, etc.</p>
+</li>
+<li>
+<p><strong>Positive Real Numbers (ℝ⁺):</strong>
+   Symbol: <span class="arithmatex">\(\mathbb{R}^+\)</span>  <br />
+   Description: Includes all real numbers greater than 0. <br />
+   Example: Numbers like <span class="arithmatex">\(0.5\)</span>, <span class="arithmatex">\(3.14\)</span>, and <span class="arithmatex">\(e\)</span>.</p>
+</li>
+<li>
+<p><strong>Positive Integers (ℕ⁺):</strong>
+   Symbol: <span class="arithmatex">\(\mathbb{N}^+\)</span> or <span class="arithmatex">\(\mathbb{Z}^+\)</span> <br />
+   Description: Contains all positive integers, starting from 1. <br />
+   Example: <span class="arithmatex">\(\{1, 2, 3, 4, ...\}\)</span></p>
+</li>
+<li>
+<p><strong>Non-Negative Integers:</strong>
+   Symbol: Often <span class="arithmatex">\(\mathbb{N}_0\)</span> or <span class="arithmatex">\(\mathbb{Z}_{\geq 0}\)</span> <br />
+   Description: Includes all positive integers along with 0. <br />
+   Example: <span class="arithmatex">\(\{0, 1, 2, 3, ...\}\)</span></p>
+</li>
+<li>
+<p><strong>Negative Integers (ℤ⁻):</strong>
+   Symbol: <span class="arithmatex">\(\mathbb{Z}^-\)</span> <br />
+   Description: The set of all negative integers. <br />
+   Example: <span class="arithmatex">\(\{..., -4, -3, -2, -1\}\)</span></p>
+</li>
+<li>
+<p><strong>Positive Rational Numbers:</strong>
+   Symbol: <span class="arithmatex">\(\mathbb{Q}^+\)</span> <br />
+   Description: All rational numbers greater than 0. <br />
+   Example: Numbers like <span class="arithmatex">\(\frac{1}{2}\)</span>, <span class="arithmatex">\(\frac{3}{4}\)</span>, <span class="arithmatex">\(5\)</span>.</p>
+</li>
+<li>
+<p><strong>Negative Rational Numbers:</strong>
+   Symbol: <span class="arithmatex">\(\mathbb{Q}^-\)</span> <br />
+   Description: The set of all rational numbers less than 0. <br />
+   Example: <span class="arithmatex">\(-\frac{1}{2}\)</span>, <span class="arithmatex">\(-\frac{4}{5}\)</span>, <span class="arithmatex">\(-3\)</span>.</p>
+</li>
+<li>
+<p><strong>Irrational Numbers:</strong>
+   Symbol: There is no universally accepted symbol, but sometimes denoted as <span class="arithmatex">\(\mathbb{I}\)</span>. <br />
+   Description: Comprises real numbers that cannot be expressed as a fraction of two integers. <br />
+   Example: Numbers like <span class="arithmatex">\(\sqrt{2}\)</span>, <span class="arithmatex">\(\pi\)</span>, <span class="arithmatex">\(e\)</span>.</p>
+</li>
+</ol>
+<h2 id="empty-set">Empty set</h2>
+<p>The empty set, also known as the null set, is a basic concept in set theory. It is the unique set that contains no elements. The common symbols used to represent the empty set are <span class="arithmatex">\( \emptyset \)</span> and <span class="arithmatex">\( \{ \} \)</span>.</p>
+<div class="admonition note info">
+<p class="admonition-title">Origin</p>
+<p>The symbol <span class="arithmatex">\( \emptyset \)</span> was introduced by the Danish mathematician and logician, André Weil, in the mid-20th century. He was inspired by the Norwegian alphabet, which includes the letter Ø, symbolizing the concept of nothing or emptiness. This symbol has since become standard in mathematics to represent a set with no elements.</p>
+<p>For more detailed information about the empty set and its origins, you can refer to its Wikipedia page: <a href="https://en.wikipedia.org/wiki/Empty_set">Empty Set</a>.</p>
+</div>
+<h2 id="set-builder-form">Set Builder form</h2>
+<p>Till now, when we were expressing sets in roster form, that is, by explicitly listing out all the elements of the set, we were using a straightforward and clear method suitable for smaller or well-defined collections. However, when dealing with larger or more complex sets, this approach can become impractical. In such cases, the set-builder form of expressing sets is more efficient and useful.</p>
+<h3 id="set-builder-form-explained">Set-Builder Form Explained:</h3>
+<p>Set-builder form is a method of defining sets that specifies the properties or rules that the members of the set must satisfy, rather than listing each element individually. This form is particularly useful for describing sets with an infinite number of elements or sets defined by a specific mathematical rule or property. The general notation for set-builder form is:</p>
+<div class="arithmatex">\[
+\{ x \mid \text{property}(x) \}
+\]</div>
+<p>In this notation:  </p>
+<ul>
+<li><span class="arithmatex">\( x \)</span> represents an element of the set.</li>
+<li><span class="arithmatex">\(\text{property}(x)\)</span> is a statement or condition that defines the set, describing a property that elements <span class="arithmatex">\( x \)</span> must satisfy to be included in the set.</li>
+<li>The vertical bar <span class="arithmatex">\(\mid\)</span> (or sometimes a colon <span class="arithmatex">\(:\)</span>) is read as "such that" or "for which".</li>
+</ul>
+<p>For instance,</p>
+<div class="arithmatex">\[
+\{ x \in \mathbb{R} \mid x^2 - 4x + 3 = 0 \}
+\]</div>
+<p>In this set, <span class="arithmatex">\( x \)</span> represents an element of the set, and the condition <span class="arithmatex">\( x^2 - 4x + 3 = 0 \)</span> is an equation that elements of the set must satisfy. The set includes all real numbers <span class="arithmatex">\( x \)</span> that are solutions to this quadratic equation.</p>
+<h3 id="more-examples-of-set-builder-form">More Examples of Set-Builder Form:</h3>
+<ul>
+<li>
+<p><strong>Set of All Even Numbers:</strong>
+   <span class="arithmatex">\(\{ x \in \mathbb{N} \mid x \text{ is even} \}\)</span> <br />
+   This defines a set consisting of all even natural numbers.</p>
+</li>
+<li>
+<p><strong>Set of Positive Integers Less than 10:</strong>
+   <span class="arithmatex">\(\{ x \in \mathbb{N} \mid x &lt; 10 \}\)</span> <br />
+   Here, the set includes all natural numbers less than 10.</p>
+</li>
+<li>
+<p><strong>Set of Real Numbers Greater than Zero:</strong>
+   <span class="arithmatex">\(\{ x \in \mathbb{R} \mid x &gt; 0 \}\)</span> <br />
+   This set consists of all real numbers greater than zero.</p>
+</li>
+<li>
+<p><strong>Set of Ordered Pairs Where the Sum Equals 10:</strong>
+   <span class="arithmatex">\(
+   \{ (x, y) \in \mathbb{R}^2 \mid x + y = 10 \}
+   \)</span> <br />
+   This set includes all ordered pairs <span class="arithmatex">\((x, y)\)</span> of real numbers where the sum of <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> is equal to 10.</p>
+</li>
+<li>
+<p><strong>Set of Ordered Pairs Where the Product Equals 0:</strong>
+   <span class="arithmatex">\(
+   \{ (x, y) \in \mathbb{R}^2 \mid xy = 0 \}
+   \)</span> <br />
+   This set consists of all ordered pairs <span class="arithmatex">\((x, y)\)</span> of real numbers where the product of <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> equals 0.</p>
+</li>
+</ul>
+<div class="admonition note info">
+<p class="admonition-title">Conciseness of Set-builder form</p>
+<p>Observe the following example:
+<span class="arithmatex">\(
+\left\{ \frac{n}{n+1} \mid n \in \mathbb{N} \right\}
+\)</span>. In this set, each element is formed by the expression <span class="arithmatex">\( \frac{n}{n+1} \)</span>, where <span class="arithmatex">\( n \)</span> is a natural number. The set includes all such fractions starting from <span class="arithmatex">\( n = 1 \)</span> onwards, representing an infinite sequence of fractions that approach 1.
+Set-builder notation is a concise and flexible way to define sets, especially when the set is infinite or follows a clear pattern defined by the given property or rule.</p>
+</div>
+<h2 id="subset-and-superset">Subset and Superset</h2>
+<h3 id="subset">Subset</h3>
+<p>A subset of a set is defined as follows:</p>
+<p>Given two sets <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>, set <span class="arithmatex">\(A\)</span> is considered a subset of set <span class="arithmatex">\(B\)</span> if and only if every element <span class="arithmatex">\(x\)</span> in set <span class="arithmatex">\(A\)</span> is also an element of set <span class="arithmatex">\(B\)</span>. This relationship is denoted as:</p>
+<div class="arithmatex">\[
+A \subseteq B
+\]</div>
+<p>In this notation:</p>
+<ul>
+<li><span class="arithmatex">\(A\)</span> is the subset set.</li>
+<li><span class="arithmatex">\(B\)</span> is the parent set.</li>
+<li>The symbol <span class="arithmatex">\(\subseteq\)</span> represents the subset relationship.</li>
+</ul>
+<p>In simple terms, set <span class="arithmatex">\(A\)</span> is a subset of set <span class="arithmatex">\(B\)</span> if all the elements of set <span class="arithmatex">\(A\)</span> are contained within set <span class="arithmatex">\(B\)</span>. It's important to note that a set can also be considered a subset of itself, as every element of <span class="arithmatex">\(A\)</span> is also in <span class="arithmatex">\(A\)</span>.</p>
+<p>For example, if we have sets:
+<span class="arithmatex">\(A = \{1, 2, 3\}\)</span> and <span class="arithmatex">\(B = \{1, 2, 3, 4, 5\}\)</span>,
+then <span class="arithmatex">\(A\)</span> is a subset of <span class="arithmatex">\(B\)</span> because every element in <span class="arithmatex">\(A\)</span> is also in <span class="arithmatex">\(B\)</span>, and we can write this as <span class="arithmatex">\(A \subseteq B\)</span>.</p>
+<p>Here are examples of subsets, both common and creative, using Markdown with LaTeX:</p>
+<ol>
+<li>
+<p><strong>Set of Natural Numbers as a Subset of Integers:</strong>
+    Let <span class="arithmatex">\( \mathbb{N} \)</span> represent the set of natural numbers (<span class="arithmatex">\( \mathbb{N} = \{1, 2, 3, \ldots\} \)</span>) and <span class="arithmatex">\( \mathbb{Z} \)</span> represent the set of integers (<span class="arithmatex">\( \mathbb{Z} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\} \)</span>). <br />
+   Mathematically: <span class="arithmatex">\( \mathbb{N} \subseteq \mathbb{Z} \)</span>, indicating that every natural number is also an integer.</p>
+</li>
+<li>
+<p><strong>Set of Prime Numbers as a Subset of Natural Numbers:</strong>
+   Let <span class="arithmatex">\( P \)</span> represent the set of prime numbers (<span class="arithmatex">\( P = \{2, 3, 5, 7, 11, \ldots\} \)</span>) and <span class="arithmatex">\( \mathbb{N} \)</span> represent the set of natural numbers. <br />
+   Mathematically: <span class="arithmatex">\( P \subseteq \mathbb{N} \)</span>, indicating that every prime number is a natural number.</p>
+</li>
+<li>
+<p><strong>Set of Mammals as a Subset of Animals:</strong>
+   Let <span class="arithmatex">\( M \)</span> represent the set of mammals and <span class="arithmatex">\( A \)</span> represent the set of all animals. <br />
+   Mathematically: <span class="arithmatex">\( M \subseteq A \)</span>, indicating that all mammals are animals.</p>
+</li>
+</ol>
+<h3 id="proper-subset">Proper subset</h3>
+<p>Given two sets <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>, set <span class="arithmatex">\(A\)</span> is considered a proper subset of set <span class="arithmatex">\(B\)</span> if and only if every element <span class="arithmatex">\(x\)</span> in set <span class="arithmatex">\(A\)</span> is also an element of set <span class="arithmatex">\(B\)</span>, and <span class="arithmatex">\(A\)</span> is not equal to <span class="arithmatex">\(B\)</span>. This relationship is denoted as:</p>
+<div class="arithmatex">\[
+A \subset B
+\]</div>
+<p>In this notation:</p>
+<ul>
+<li><span class="arithmatex">\(A\)</span> is the proper subset.</li>
+<li><span class="arithmatex">\(B\)</span> is the parent set.</li>
+<li>The symbol <span class="arithmatex">\(\subset\)</span> represents the proper subset relationship.</li>
+</ul>
+<p>In simpler terms, set <span class="arithmatex">\(A\)</span> is a proper subset of set <span class="arithmatex">\(B\)</span> if all the elements of set <span class="arithmatex">\(A\)</span> are contained within set <span class="arithmatex">\(B\)</span>, and <span class="arithmatex">\(A\)</span> is not the same as <span class="arithmatex">\(B\)</span>. The symbol <span class="arithmatex">\(\subset\)</span> is used to indicate that it is a proper subset, implying that it is a subset but not equal to the parent set.</p>
+<h3 id="superset">Superset</h3>
+<p>We used the term 'parent' above. Instead of this term, we have a better term 'superset' defined as follows:</p>
+<p>Given two sets <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>, set <span class="arithmatex">\(B\)</span> is considered a superset of set <span class="arithmatex">\(A\)</span> if and only if every element <span class="arithmatex">\(x\)</span> in set <span class="arithmatex">\(A\)</span> is also an element of set <span class="arithmatex">\(B\)</span>. This relationship is denoted as:</p>
+<div class="arithmatex">\[
+B \supseteq A
+\]</div>
+<p>In this notation:</p>
+<ul>
+<li><span class="arithmatex">\(B\)</span> is the superset.</li>
+<li><span class="arithmatex">\(A\)</span> is the subset.</li>
+<li>The symbol <span class="arithmatex">\(\supseteq\)</span> represents the superset relationship.</li>
+</ul>
+<p>Examples:</p>
+<ol>
+<li>
+<p><strong>Superset of Natural Numbers:</strong> Let <span class="arithmatex">\( \mathbb{Z} \)</span> represent the set of integers (<span class="arithmatex">\( \mathbb{Z} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\} \)</span>) and <span class="arithmatex">\( \mathbb{N} \)</span> represent the set of natural numbers (<span class="arithmatex">\( \mathbb{N} = \{1, 2, 3, \ldots\} \)</span>). Mathematically: <span class="arithmatex">\( \mathbb{Z} \supseteq \mathbb{N} \)</span>.</p>
+</li>
+<li>
+<p><strong>Superset of Primary Colors:</strong> Let <span class="arithmatex">\( P = \{\text{Red, Blue, Yellow}\} \)</span> represent the set of primary colors, and <span class="arithmatex">\( C \)</span> represent the set of all colors. Mathematically: <span class="arithmatex">\( C \supseteq P \)</span>.</p>
+</li>
+<li>
+<p><strong>Superset of Vowels:</strong> Let <span class="arithmatex">\( V = \{a, e, i, o, u\} \)</span> represent the set of vowels in the English alphabet, and <span class="arithmatex">\( E \)</span> represent the set of all English alphabets. Mathematically: <span class="arithmatex">\( E \supseteq V \)</span>.</p>
+</li>
+</ol>
+<h2 id="cardinality">Cardinality</h2>
+<p>The cardinality of finite sets refers to the number of elements or members in a finite set. It is denoted as <span class="arithmatex">\(\left| A \right|\)</span> or <span class="arithmatex">\(\text{card}(A)\)</span> or <span class="arithmatex">\(n(A)\)</span>, where <span class="arithmatex">\(A\)</span> represents the finite set. Essentially, it provides a count of how many items are present in the set.</p>
+<p>Examples:</p>
+<ol>
+<li>If we have the set <span class="arithmatex">\(S = \{1, 2, 3, 4, 5\}\)</span>, then the cardinality of <span class="arithmatex">\(S\)</span> is <span class="arithmatex">\(\left| S \right| = 5\)</span>.</li>
+<li>For the set of months in a year, <span class="arithmatex">\(M = \{\text{January, February, March, ..., December}\}\)</span>, the cardinality of <span class="arithmatex">\(M\)</span> is <span class="arithmatex">\(\left| M \right| = 12\)</span>.</li>
+<li>Consider a set <span class="arithmatex">\(F = \{x \in \mathbb{N} \mid 1 \leq x \leq 100\}\)</span>, which represents the first 100 natural numbers. The cardinality of <span class="arithmatex">\(F\)</span> is <span class="arithmatex">\(\left| F \right| = 100\)</span>.</li>
+</ol>
+<h3 id="cardinality-of-infinite-sets">Cardinality of Infinite Sets</h3>
+<p>The cardinality of infinite sets is a concept that can be a bit more complex. In simple terms, it's a way to compare the "size" of different infinite sets to see if they have the same number of elements, even though they are infinite.</p>
+<p>One way to explain this idea is to use the concept of "countability." Some infinite sets, like the set of natural numbers (<span class="arithmatex">\( \mathbb{N} = \{1, 2, 3, \ldots\} \)</span>), are countable because you can list their elements one by one, even though they go on forever. Other sets, like the set of all real numbers (<span class="arithmatex">\( \mathbb{R} \)</span>), are uncountable because you can't list all of their elements in a sequence.</p>
+<p>For a more detailed explanation and examples, you can refer to the <a href="https://en.wikipedia.org/wiki/Cardinality">Wikipedia page on Cardinality</a>. </p>
+<h2 id="types-of-sets">Types of Sets:</h2>
+<p>a. <strong>Empty Set (Null Set or Void Set):</strong> This set contains no elements and is denoted by <span class="arithmatex">\( \emptyset \)</span> or <span class="arithmatex">\( \phi \)</span>. Note that <span class="arithmatex">\( \{\emptyset\} \)</span> is not an empty set but a set containing one element, which itself is an empty set.</p>
+<p>b. <strong>Singleton Set:</strong> A set with exactly one element. For instance, <span class="arithmatex">\( A = \{\emptyset\} \)</span>, <span class="arithmatex">\( B = \{e\} \)</span>.</p>
+<p>d. <strong>Finite Set:</strong> A set with a limited number of elements. For example, <span class="arithmatex">\( \{a, e, i, o, u\} \)</span> represents a set of vowels with a finite number of elements. Similarly, <span class="arithmatex">\( \{\mathbb{Z}, \mathbb{N}, \mathbb{R}, \mathbb{Q}\} \)</span> constitutes a set with four elements.</p>
+<p>e. <strong>Infinite Set:</strong> A set with an unbounded number of elements. An example is the set of all real numbers <span class="arithmatex">\( \mathbb{R} \)</span>, or the set of all natural numbers. The set <span class="arithmatex">\( \{x \in \mathbb{R} | 1 &lt; x &lt; 2\} \)</span> is an example of a set of real numbers between 1 and 2.</p>
+<p>f. <strong>Universal Set:</strong> In any context where sets are being considered, there exists a set that encompasses all elements under discussion, known as the universal set. It includes every element from each set in the given context and may also contain additional elements not present in any of the sets under consideration. For example, given the sets <span class="arithmatex">\( A = \{1,2\} \)</span>, <span class="arithmatex">\( B = \{3,4,5,6\} \)</span>, and <span class="arithmatex">\( C = \{6,7\} \)</span>, the universal set could be <span class="arithmatex">\( U = \{0,1,2,3,4,5,6,7,8,9\} \)</span>, containing all elements from sets <span class="arithmatex">\( A \)</span>, <span class="arithmatex">\( B \)</span>, and <span class="arithmatex">\( C \)</span>, as well as elements like 0 and 9, which are not in <span class="arithmatex">\( A \)</span>, <span class="arithmatex">\( B \)</span>, or <span class="arithmatex">\( C \)</span>.</p>
+<p>As an additional example, the set of real numbers <span class="arithmatex">\( \mathbb{R} \)</span> can serve as a universal set for the collection including the integers <span class="arithmatex">\( \mathbb{Z} \)</span>, natural numbers <span class="arithmatex">\( \mathbb{N} \)</span>, and rational numbers <span class="arithmatex">\( \mathbb{Q} \)</span>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

@@ -1,0 +1,3050 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/">
+      
+      
+        <link rel="prev" href="../04%20-%20Square%20root%20of%20a%20complex%20number/">
+      
+      
+        <link rel="next" href="../06%20-%20Polar%20form/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Properties of Conjugate and Modulus of a Complex Number - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Properties of Conjugate and Modulus of a Complex Number
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-of-conjugate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of conjugate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-of-modulus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of Modulus
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties of Modulus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#triangles-inequality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triangle's Inequality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-of-triangles-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application of Triangle's Inequalities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      More properties
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-of-conjugate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of conjugate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-of-modulus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of Modulus
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties of Modulus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#triangles-inequality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triangle's Inequality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-of-triangles-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application of Triangle's Inequalities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      More properties
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Properties of Conjugate and Modulus of a Complex Number</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>The conjugate, modulus, and argument of a complex number are interconnected concepts that play crucial roles in complex number theory. The conjugate of a complex number <span class="arithmatex">\(z = a + bi\)</span> is <span class="arithmatex">\( \overline{z} = a - bi \)</span>, essentially mirroring <span class="arithmatex">\(z\)</span> across the real axis. The modulus, <span class="arithmatex">\( |z| \)</span>, represents the distance of <span class="arithmatex">\(z\)</span> from the origin in the complex plane and is calculated as <span class="arithmatex">\( \sqrt{a^2 + b^2} \)</span>. The argument, often denoted as <span class="arithmatex">\( \arg(z) \)</span>, is the angle <span class="arithmatex">\( \theta \)</span> that the line connecting <span class="arithmatex">\(z\)</span> to the origin makes with the positive real axis, measured in radians. The modulus and argument together describe the position of <span class="arithmatex">\(z\)</span> in polar coordinates. Notably, the modulus of <span class="arithmatex">\(z\)</span> and its conjugate <span class="arithmatex">\( \overline{z} \)</span> are the same, as they are equidistant from the origin. The argument of <span class="arithmatex">\( \overline{z} \)</span> is the negative of the argument of <span class="arithmatex">\(z\)</span>, reflecting the symmetry across the real axis. These properties highlight the deep interrelation between the algebraic and geometric aspects of complex numbers, facilitating their manipulation and understanding in both algebraic operations and geometric interpretations.</p>
+<h2 id="properties-of-conjugate">Properties of conjugate</h2>
+<p>For a complex number <span class="arithmatex">\( z \)</span>, let <span class="arithmatex">\( \overline{z} \)</span> denote its conjugate. The properties and corresponding proofs involving complex numbers and their conjugates are as follows:</p>
+<ol>
+<li>
+<p><strong>Double Conjugate Property:</strong> <span class="arithmatex">\( \overline{\overline{z}} = z \)</span></p>
+</li>
+<li>
+<p><strong>Conjugation and Real and Imaginary Parts:</strong></p>
+<ol>
+<li><span class="arithmatex">\(z + \overline{z} = 2\text{Re}(z)\)</span></li>
+<li><span class="arithmatex">\(z - \overline{z} = 2i\text{Im}(z)\)</span></li>
+</ol>
+<p>Thus, <span class="arithmatex">\( z + \overline{z} = 0 \)</span> if and only if <span class="arithmatex">\( z \)</span> is purely imaginary, and <span class="arithmatex">\( z = \overline{z} \)</span> if and only if <span class="arithmatex">\( z \)</span> is real.</p>
+<p><strong>Proof:</strong></p>
+<p>Let <span class="arithmatex">\( z = a + bi \)</span> where <span class="arithmatex">\( a, b \in \mathbb{R} \)</span> and <span class="arithmatex">\( i \)</span> is the imaginary unit. Then the conjugate of <span class="arithmatex">\( z \)</span>, denoted <span class="arithmatex">\( \overline{z} \)</span>, is <span class="arithmatex">\( a - bi \)</span>.</p>
+<p><span class="arithmatex">\( z + \overline{z} = (a + bi) + (a - bi) = a + a = 2a = 2\text{Re}(z)\)</span></p>
+<p><span class="arithmatex">\(z - \overline{z} = (a + bi) - (a - bi) = bi + bi = 2bi = 2i\text{Im}(z)\)</span></p>
+<p>For the implications:</p>
+<p>If <span class="arithmatex">\( z + \overline{z} = 0 \)</span>, then <span class="arithmatex">\( 2\text{Re}(z) = 0 \)</span> implying <span class="arithmatex">\( \text{Re}(z) = 0 \)</span>. Therefore, <span class="arithmatex">\( z \)</span> is purely imaginary since <span class="arithmatex">\( z = a + bi \)</span> with <span class="arithmatex">\( a = 0 \)</span>.</p>
+<p>Conversely, if <span class="arithmatex">\( z \)</span> is purely imaginary, then <span class="arithmatex">\( a = 0 \)</span> and <span class="arithmatex">\( z = bi \)</span>. Therefore, <span class="arithmatex">\( z + \overline{z} = bi - bi = 0 \)</span>.</p>
+<p>If <span class="arithmatex">\( z = \overline{z} \)</span>, then <span class="arithmatex">\( a + bi = a - bi \)</span> implying <span class="arithmatex">\( bi = -bi \)</span>, which is true if and only if <span class="arithmatex">\( b = 0 \)</span>. Thus, <span class="arithmatex">\( z \)</span> is a real number since <span class="arithmatex">\( z = a + 0i \)</span>.</p>
+<p>Conversely, if <span class="arithmatex">\( z \)</span> is real, then <span class="arithmatex">\( z = a \)</span> and <span class="arithmatex">\( \overline{z} = a \)</span> which means <span class="arithmatex">\( z = \overline{z} \)</span>. </p>
+<p>In summary, <span class="arithmatex">\( z \)</span> is purely imaginary if and only if <span class="arithmatex">\( z + \overline{z} = 0 \)</span>, and <span class="arithmatex">\( z \)</span> is real if and only if <span class="arithmatex">\( z = \overline{z} \)</span>.</p>
+</li>
+<li>
+<p><strong>Modulus Property:</strong> <span class="arithmatex">\( z\overline{z} = |z|^2 \)</span>.</p>
+<p>Proof: If <span class="arithmatex">\( z = a + bi \)</span>, then <span class="arithmatex">\( \overline{z} = a - bi \)</span> and thus <span class="arithmatex">\( z\overline{z} = (a + bi)(a - bi) = a^2 + b^2 = |z|^2 \)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">An Important Special Case</p>
+<p>Let <span class="arithmatex">\( z \)</span> be a complex number with <span class="arithmatex">\( |z| = 1 \)</span>. Then <span class="arithmatex">\( z\overline{z} = |z|^2 \)</span>. Since <span class="arithmatex">\( |z| = 1 \)</span>, it follows that:</p>
+<div class="arithmatex">\[z\overline{z} = 1.\]</div>
+<p>Therefore, the complex conjugate <span class="arithmatex">\( \overline{z} \)</span> is the multiplicative inverse of <span class="arithmatex">\( z \)</span>:</p>
+<div class="arithmatex">\[
+\overline{z} = \frac{1}{z}.
+\]</div>
+</div>
+</li>
+<li>
+<p><strong>Summation Property:</strong>
+   <span class="arithmatex">\( \overline{z_1 + z_2} = \overline{z_1} + \overline{z_2} \)</span>.</p>
+<p>Proof: Let <span class="arithmatex">\( z_1 = a + bi \)</span>, <span class="arithmatex">\( z_2 = c + di \)</span>, then
+<span class="arithmatex">\( \overline{z_1 + z_2} = \overline{(a + bi) + (c + di)} = \overline{(a + c) + (b + d)i} = (a + c) - (b + d)i = \overline{z_1} + \overline{z_2} \)</span>.</p>
+</li>
+<li>
+<p><strong>Product Property:</strong><span class="arithmatex">\( \overline{z_1z_2} = \overline{z_1} \cdot \overline{z_2} \)</span>.</p>
+<p>Proof: Using the definition of complex multiplication,
+<span class="arithmatex">\( \overline{z_1z_2} = \overline{(a + bi)(c + di)} = \overline{(ac - bd) + (bc + ad)i} = (ac - bd) - (bc + ad)i = \overline{z_1} \cdot \overline{z_2} \)</span>.</p>
+</li>
+<li>
+<p><strong>Division Property:</strong><span class="arithmatex">\( \frac{\overline{z_1}}{z_2} = \frac{\overline{z_1}}{\overline{z_2}} \)</span>, provided <span class="arithmatex">\( z_2 \neq 0 \)</span>.</p>
+<p>Proof: Multiply numerator and denominator by <span class="arithmatex">\( \overline{z_2} \)</span>:
+<span class="arithmatex">\( \frac{\overline{z_1}}{z_2} = \frac{\overline{z_1} \cdot \overline{z_2}}{z_2 \cdot \overline{z_2}} = \frac{\overline{z_1}}{\overline{z_2}} \)</span>, since <span class="arithmatex">\( z_2\overline{z_2} = |z_2|^2 \)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( |z| = |\overline{z}| \)</span>.</p>
+<p>Proof: <span class="arithmatex">\( |\overline{z}|^2 = \overline{z} \cdot z = |z|^2 \)</span>, hence <span class="arithmatex">\( |z| = |\overline{z}| \)</span>.</p>
+</li>
+<li>
+<p><strong>Argument Property:</strong> <span class="arithmatex">\( \text{arg}(\overline{z}) = -\text{arg}(z) \)</span>.</p>
+<p>Proof: If <span class="arithmatex">\( z = re^{i\theta} \)</span>, then <span class="arithmatex">\( \overline{z} = re^{-i\theta} \)</span>, implying <span class="arithmatex">\( \text{arg}(\overline{z}) = -\theta = -\text{arg}(z) \)</span>.</p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">An Important theorem as a consequence of above properties</p>
+<p><strong>Theorem:</strong>
+The square of the modulus of the sum of two complex numbers <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> is equal to the sum of the squares of their moduli plus twice the real part of the product of the first number and the conjugate of the second. Formally, this is stated as:</p>
+<div class="arithmatex">\[ |z_1 + z_2|^2 = |z_1|^2 + |z_2|^2 + 2\text{Re}(z_1\overline{z_2}). \]</div>
+<p><strong>Proof:</strong>
+Let <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> be complex numbers. The modulus squared of their sum is given by the product of <span class="arithmatex">\( z_1 + z_2 \)</span> and its conjugate <span class="arithmatex">\( \overline{z_1 + z_2} \)</span>. Expanding this product, we have:</p>
+<div class="arithmatex">\[
+\begin{align*}
+|z_1 + z_2|^2 &amp;= (z_1 + z_2)(\overline{z_1} + \overline{z_2}) \\
+&amp;= z_1\overline{z_1} + z_1\overline{z_2} + z_2\overline{z_1} + z_2\overline{z_2} \\
+&amp;= |z_1|^2 + z_1\overline{z_2} + \overline{z_1}z_2 + |z_2|^2.
+\end{align*}
+\]</div>
+<p>Notice that <span class="arithmatex">\( z_1\overline{z_2} \)</span> and <span class="arithmatex">\( \overline{z_1}z_2 \)</span> are conjugates of each other. Therefore, their sum is twice the real part of either:</p>
+<div class="arithmatex">\[
+z_1\overline{z_2} + \overline{z_1}z_2 = 2\text{Re}(z_1\overline{z_2}).
+\]</div>
+<p>Substituting this into our previous equation, we obtain:</p>
+<div class="arithmatex">\[
+|z_1 + z_2|^2 = |z_1|^2 + |z_2|^2 + 2\text{Re}(z_1\overline{z_2}).
+\]</div>
+<p>Hence, the theorem is proved. <span class="arithmatex">\(\blacksquare\)</span></p>
+<p>Similarly, for the difference:</p>
+<p><span class="arithmatex">\( |z_1 - z_2|^2 = (z_1 - z_2)(\overline{z_1} - \overline{z_2}) \)</span>
+<span class="arithmatex">\( = z_1\overline{z_1} - z_1\overline{z_2} - z_2\overline{z_1} + z_2\overline{z_2} \)</span>
+<span class="arithmatex">\( = |z_1|^2 - z_1\overline{z_2} - \overline{z_1}z_2 + |z_2|^2 \)</span>
+<span class="arithmatex">\( = |z_1|^2 + |z_2|^2 - 2\text{Re}(z_1\overline{z_2}) \)</span>.</p>
+</div>
+<h2 id="properties-of-modulus">Properties of Modulus</h2>
+<p><strong>Some important properties of the Modulus of a complex number:</strong></p>
+<ol>
+<li>
+<p><span class="arithmatex">\( \|z\| = |z| \)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\( |z| = |\overline{z}| \)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\( |-z| = |z| \)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\( |kz| = |k||z| \)</span> for any real number <span class="arithmatex">\( k \)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\( |z_1z_2| = |z_1||z_2| \)</span></p>
+<p><strong>Proof of Property 5:</strong></p>
+<p>Let <span class="arithmatex">\( z_1 = x_1 + iy_1 \)</span> and <span class="arithmatex">\( z_2 = x_2 + iy_2 \)</span>.</p>
+<p>Then,</p>
+<div class="arithmatex">\[
+\begin{align*}
+z_1z_2 &amp;= (x_1 + iy_1)(x_2 + iy_2) \\
+&amp;= (x_1x_2 - y_1y_2) + i(x_1y_2 + y_1x_2),
+\end{align*}
+\]</div>
+<p>and so,</p>
+<div class="arithmatex">\[
+\begin{align*}
+|z_1z_2| &amp;= \sqrt{(x_1x_2 - y_1y_2)^2 + (x_1y_2 + y_1x_2)^2} \\
+&amp;= \sqrt{x_1^2x_2^2 + y_1^2y_2^2 - 2x_1x_2y_1y_2 + x_1^2y_2^2 + y_1^2x_2^2 + 2x_1y_2y_1x_2} \\
+&amp;= \sqrt{x_1^2(x_2^2 + y_2^2) + y_1^2(x_2^2 + y_2^2)} \\
+&amp;= \sqrt{(x_1^2 + y_1^2)(x_2^2 + y_2^2)} \\
+&amp;= \sqrt{x_1^2 + y_1^2} \sqrt{x_2^2 + y_2^2} \\
+&amp;= |z_1||z_2|.
+\end{align*}
+\]</div>
+<p>This completes the proof that the modulus of the product of two complex numbers is equal to the product of their moduli.<span class="arithmatex">\(\blacksquare\)</span></p>
+<div class="admonition info">
+<p class="admonition-title">An useful identity from the above proof</p>
+<div class="arithmatex">\[ (ac \pm bd)^2 + (ad \mp bc)^2 = (a^2 + b^2)(c^2 + d^2) \]</div>
+<p>This can be proved as follows:</p>
+<p>Consider the left-hand side of the equation:</p>
+<div class="arithmatex">\[ (ac \pm bd)^2 + (ad \mp bc)^2 \]</div>
+<p>Expanding both squares, we have:</p>
+<div class="arithmatex">\[ (ac \pm bd)^2 = a^2c^2 \pm 2abcd + b^2d^2 \]</div>
+<div class="arithmatex">\[ (ad \mp bc)^2 = a^2d^2 \mp 2abcd + b^2c^2 \]</div>
+<p>Adding these expansions together:</p>
+<div class="arithmatex">\[ a^2c^2 \pm 2abcd + b^2d^2 + a^2d^2 \mp 2abcd + b^2c^2 \]</div>
+<p>Notice that <span class="arithmatex">\( \pm 2abcd \)</span> and <span class="arithmatex">\( \mp 2abcd \)</span> cancel each other out, so we are left with:</p>
+<div class="arithmatex">\[ a^2c^2 + a^2d^2 + b^2d^2 + b^2c^2 \]</div>
+<p>Factor by grouping <span class="arithmatex">\( a^2 \)</span> and <span class="arithmatex">\( b^2 \)</span>:</p>
+<div class="arithmatex">\[ a^2(c^2 + d^2) + b^2(c^2 + d^2) \]</div>
+<p>This can be further factored to get the right-hand side of the original equation:</p>
+<div class="arithmatex">\[ (a^2 + b^2)(c^2 + d^2) \]</div>
+<p>Thus proving the original assertion.</p>
+</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\left| \frac{z_1}{z_2} \right| = \frac{|z_1|}{|z_2|}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-|z| \leq \text{Re}(z) \leq |z|\)</span> and <span class="arithmatex">\(-|z| \leq \text{Im}(z) \leq |z|\)</span></p>
+<p><strong>Proof of Property 7:</strong></p>
+<p>Let <span class="arithmatex">\( z \)</span> be a complex number, such that <span class="arithmatex">\( z = a + bi \)</span> where <span class="arithmatex">\( a = \text{Re}(z) \)</span> and <span class="arithmatex">\( b = \text{Im}(z) \)</span>.</p>
+<p>The modulus of <span class="arithmatex">\( z \)</span> is given by <span class="arithmatex">\( |z| = \sqrt{a^2 + b^2} \)</span>.</p>
+<p>The square of the modulus is <span class="arithmatex">\( |z|^2 = a^2 + b^2 \)</span>.</p>
+<p>Since <span class="arithmatex">\( b^2 \)</span> is non-negative (as it is a square), it follows that <span class="arithmatex">\( a^2 \leq a^2 + b^2 \)</span>, and thus <span class="arithmatex">\( |a| \leq |z| \)</span>. This implies both <span class="arithmatex">\( a \leq |z| \)</span> and <span class="arithmatex">\( -a \leq |z| \)</span>, or equivalently, <span class="arithmatex">\( -|z| \leq a \)</span>.</p>
+<p>Since <span class="arithmatex">\( a = \text{Re}(z) \)</span>, we have <span class="arithmatex">\( -|z| \leq \text{Re}(z) \leq |z| \)</span>.</p>
+<p>Similarly, since <span class="arithmatex">\( a^2 \)</span> is non-negative, <span class="arithmatex">\( b^2 \leq a^2 + b^2 \)</span>, which gives <span class="arithmatex">\( |b| \leq |z| \)</span>. Hence, <span class="arithmatex">\( -|z| \leq b \)</span> and <span class="arithmatex">\( b \leq |z| \)</span>, or <span class="arithmatex">\( -|z| \leq \text{Im}(z) \leq |z| \)</span>.</p>
+<p><span class="arithmatex">\(\blacksquare\)</span></p>
+</li>
+</ol>
+<h3 id="triangles-inequality">Triangle's Inequality</h3>
+<p><strong>Triangle Inequality Theorem for Complex Numbers:</strong></p>
+<p>For any complex numbers <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>, the following inequalities hold:</p>
+<div class="arithmatex">\[ ||z_1| - |z_2|| \leq |z_1 + z_2| \leq |z_1| + |z_2| \]</div>
+<ul>
+<li>
+<p>The left inequality becomes an equality if and only if the difference in the arguments of <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> is <span class="arithmatex">\( \pi \)</span>. This corresponds to <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> being diametrically opposite points on the complex plane.</p>
+</li>
+<li>
+<p>The right inequality becomes an equality if and only if the arguments of <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> are equal. This corresponds to <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> pointing in the same direction on the complex plane.</p>
+</li>
+</ul>
+<p><strong>Geometric Proof:</strong></p>
+<p><a class="glightbox" href="../image-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sum of complex numbers" src="../image-15.png" /></a></p>
+<p>In the complex plane, the complex numbers <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> can be represented by points A and B, respectively. The sum <span class="arithmatex">\( z_1 + z_2 \)</span> is represented by point C, which is the endpoint of the diagonal of the parallelogram OACB, with O as the origin.</p>
+<p><strong>To prove the right inequality <span class="arithmatex">\( |z_1 + z_2| \leq |z_1| + |z_2| \)</span>:</strong></p>
+<p>Observe triangle OAC. By the triangle inequality in geometry (not to be confused with the Triangle Inequality Theorem for complex numbers), the sum of the lengths of two sides of a triangle is greater than or equal to the length of the third side. Hence, <span class="arithmatex">\( OA + AC \geq OC \)</span>, which translates to <span class="arithmatex">\( |z_1| + |z_2| \geq |z_1 + z_2| \)</span>.</p>
+<p>The equality <span class="arithmatex">\( |z_1 + z_2| = |z_1| + |z_2| \)</span> occurs only when points A, B, and O are collinear and OA ans OB have the same direction, which happens when <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> lie on the same ray from the origin, meaning they have the same argument.</p>
+<p><strong>To prove the left inequality <span class="arithmatex">\( ||z_1| - |z_2|| \leq |z_1 + z_2| \)</span>:</strong></p>
+<p>First, consider triangle OCB. Using the triangle inequality, <span class="arithmatex">\( OC + OB \geq BC \)</span>, or <span class="arithmatex">\( OC \geq OB - OC \)</span>. Translating this to complex numbers, <span class="arithmatex">\( |z_1 + z_2| \geq |z_2| - |z_1| \)</span>.</p>
+<p>Next, observe triangle OAC. Again applying the triangle inequality, <span class="arithmatex">\( OA + OC \geq AC \)</span>, or <span class="arithmatex">\( OC \geq OA - OC \)</span>. In terms of complex numbers, this is <span class="arithmatex">\( |z_1 + z_2| \geq |z_1| - |z_2| \)</span>.</p>
+<p>Combining both results, we conclude that <span class="arithmatex">\( |z_1 + z_2| \geq ||z_1| - |z_2|| \)</span>, meaning the modulus of the sum is greater than or equal to the absolute difference of the moduli.</p>
+<p>The equality <span class="arithmatex">\( |z_1 + z_2| = ||z_1| - |z_2|| \)</span> occurs when points A, B, and O are collinear and OA and OB are in opposite directions. This scenario happens when <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> lie on rays in opposite directions, which means their arguments differ by <span class="arithmatex">\( \pi \)</span>.</p>
+<p>Thus, the geometrical interpretation of the complex plane and the properties of triangles provide a convincing proof of the Triangle Inequality Theorem for complex numbers.</p>
+<p><a class="glightbox" href="../image-16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Triangle's Inequality" src="../image-16.png" /></a></p>
+<p>The image contains a two-part algebraic proof concerning the modulus of a complex number and its components, using properties of the real and imaginary parts. Here is the transcription of the proof provided in the images:</p>
+<p><strong>Algebraic proof</strong></p>
+<p>If <span class="arithmatex">\( z_1 = x_1 + iy_1 \)</span> and <span class="arithmatex">\( z_2 = x_2 + iy_2 \)</span>, then</p>
+<div class="arithmatex">\[ |z_1 + z_2|^2 = |z_1|^2 + |z_2|^2 + 2\text{Re}(z_1\overline{z_2}) \quad \text{...(1)} \]</div>
+<p>Let us do some analysis of the third term of the above identity.</p>
+<p>Now using the inequality, <span class="arithmatex">\( -|z| \leq \text{Re}(z) \leq |z| \)</span>, where equality on the right side occurs when occurs when imaginary part is zero and the real part is positive and the equality on the left side occurs when imaginary part is zero and the real part is negative.</p>
+<div class="arithmatex">\[ -|z_1z_2| \leq \text{Re}(z_1\overline{z_2}) \leq |z_1z_2| \]</div>
+<div class="arithmatex">\[ \Rightarrow -|z_1||z_2| \leq \text{Re}(z_1\overline{z_2}) \leq |z_1||z_2| \quad \text{...(2)} \]</div>
+<p>Equality on the right side occurs when imaginary part of <span class="arithmatex">\( z_1\overline{z_2} \)</span> is zero and its real part is positive.</p>
+<p><span class="arithmatex">\( z_1\overline{z_2} = (x_1 + iy_1)(x_2 - iy_2) \)</span></p>
+<p>Clearly, </p>
+<p><span class="arithmatex">\( \text{Im}(z_1\overline{z_2}) = y_1x_2 - x_1y_2 \)</span></p>
+<div class="arithmatex">\[ \text{Im}(z_1\overline{z_2}) = 0 \Rightarrow \frac{y_1}{x_1} = \frac{y_2}{x_2} \Rightarrow \]</div>
+<p>The line joining origin to <span class="arithmatex">\( (x_1, y_1) \)</span> and the line joining origin to <span class="arithmatex">\( (x_2, y_2) \)</span> have the same slope, which suggests that either they are in the same quadrant or the opposite quadrant.</p>
+<p>Now, <span class="arithmatex">\( \text{Re}(z_1\overline{z_2}) &gt; 0 \)</span> implies <span class="arithmatex">\( x_1x_2 + y_1y_2 &gt; 0 \)</span> implying <span class="arithmatex">\( (x_1, y_1) \)</span> and <span class="arithmatex">\( (x_2, y_2) \)</span> are in the same quadrant. Also, <span class="arithmatex">\( \text{Re}(z_1\overline{z_2}) &lt; 0 \)</span> implies <span class="arithmatex">\( x_1x_2 + y_1y_2 &lt; 0 \)</span> implying <span class="arithmatex">\( (x_1, y_1) \)</span> and <span class="arithmatex">\( (x_2, y_2) \)</span> are in the opposite quadrant</p>
+<p>Finally, we can conclude that when equality occurs on the right side, arguments of <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> are the same, but when equality occurs on the left side, arguments of <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> differ by an angle <span class="arithmatex">\( \pi \)</span>.</p>
+<p>We can now go back to (1). Using the result of (2), we can say that</p>
+<div class="arithmatex">\[ |z_1|^2 + |z_2|^2 - 2|z_1||z_2| \leq |z_1|^2 + |z_2|^2 + 2\text{Re}(z_1\overline{z_2}) \leq |z_1|^2 + |z_2|^2 + 2|z_1||z_2| \]</div>
+<div class="arithmatex">\[ \Rightarrow (|z_1| - |z_2|)^2 \leq |z_1 + z_2|^2 \leq (|z_1| + |z_2|)^2 \]</div>
+<div class="arithmatex">\[ \Rightarrow ||z_1| - |z_2|| \leq |z_1 + z_2| \leq |z_1| + |z_2| ... \left[ \because , \sqrt{x^2}=|x|\right]\]</div>
+<p>(Using the fact that <span class="arithmatex">\( a^2 \leq x^2 \leq b^2 \)</span> implies <span class="arithmatex">\( |a| \leq |x| \leq |b| \)</span>. Since <span class="arithmatex">\( |z_1 + z_2| \)</span> and <span class="arithmatex">\( |z_1| + |z_2| \)</span> are always positive we have removed the useless modulus symbol, but <span class="arithmatex">\( |z_1| - |z_2| \)</span> may be positive or negative, that’s why we have not removed it.)</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>We will call the right inequality: <span class="arithmatex">\( |z_1 + z_2| \leq |z_1| + |z_2|\)</span> as <strong>First Triangle's Inequality</strong> and the left one: <span class="arithmatex">\(||z_1| - |z_2|| \leq |z_1 + z_2|\)</span>  as <strong>Second or Reverse Triangle's Inequality</strong>.</p>
+<p>The Second Triangle Inequality for complex numbers <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> can be obtained from the First Triangle Inequality by considering the complex number <span class="arithmatex">\(-z_2\)</span> instead of <span class="arithmatex">\(z_2\)</span>:</p>
+<p>Using the First Triangle Inequality <span class="arithmatex">\( |z_1 + z_2| \leq |z_1| + |z_2| \)</span>, and replacing <span class="arithmatex">\( z_2 \)</span> with <span class="arithmatex">\( -z_2 \)</span>, we get:</p>
+<div class="arithmatex">\[ |z_1 - z_2| \leq |z_1| + |-z_2| \]</div>
+<p>Since <span class="arithmatex">\( |-z| = |z| \)</span> for any complex number <span class="arithmatex">\( z \)</span>, we can rewrite this as:</p>
+<div class="arithmatex">\[ |z_1 - z_2| \leq |z_1| + |z_2| \]</div>
+<p>The equality occurs only when <span class="arithmatex">\(z_1\)</span> and <span class="arithmatex">\(z_2\)</span> lie on rays in opposite directions, that is, the difference of arguments is <span class="arithmatex">\(pi\)</span>. </p>
+<p>Similarly, we get:</p>
+<div class="arithmatex">\[ ||z_1| - |z_2|| \leq |z_1 - z_2| \]</div>
+<p>Equality occurs when <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> lie on rays in the same direction, meaning their arguments are equal.</p>
+</div>
+<h2 id="application-of-triangles-inequalities">Application of Triangle's Inequalities</h2>
+<p>One of the main usage of these inequalities is in calculation of minimum and maximum values of expressions involving complex numbers. Consider the following examples:</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong>
+Given a complex number <span class="arithmatex">\( z \)</span> that satisfies <span class="arithmatex">\( |z| = 4 \)</span>, find the maximum value of <span class="arithmatex">\( |z - 3 - 4i| \)</span>.</p>
+<p><strong>Solution:</strong>
+To find the maximum value of <span class="arithmatex">\( |z - 3 - 4i| \)</span>, we can use the Triangle Inequality, which states that for any two complex numbers <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>, <span class="arithmatex">\( |z_1 + z_2| \leq |z_1| + |z_2| \)</span>. By applying the Triangle Inequality to the expression <span class="arithmatex">\( |z - (3 + 4i)| \)</span>, we get:</p>
+<div class="arithmatex">\[ |z - (3 + 4i)| \leq |z| + |3 + 4i| \]</div>
+<p>Since <span class="arithmatex">\( |z| = 4 \)</span> and <span class="arithmatex">\( |3 + 4i| = 5 \)</span> </p>
+<div class="arithmatex">\[ |z - (3 + 4i)| \leq 4 + 5 \]</div>
+<p>Therefore, the maximum value of <span class="arithmatex">\( |z - 3 - 4i| \)</span> is <span class="arithmatex">\( 9 \)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong>
+Given a complex number <span class="arithmatex">\( z \)</span> satisfying <span class="arithmatex">\( |z - 2| \leq 3 \)</span>, find the maximum value of <span class="arithmatex">\( |z + i| \)</span>.</p>
+<p><strong>Solution:</strong>
+Start by expressing <span class="arithmatex">\( |z + i| \)</span> in terms of <span class="arithmatex">\( |z - 2| \)</span>:</p>
+<div class="arithmatex">\[ |z + i| = |z - 2 + 2 + i| \]</div>
+<p>By applying the Triangle Inequality, which states that <span class="arithmatex">\( |a + b| \leq |a| + |b| \)</span> for any two complex numbers <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span>, we get:</p>
+<div class="arithmatex">\[ |z - 2 + 2 + i| \leq |z - 2| + |2 + i| \]</div>
+<p>Since <span class="arithmatex">\( |2 + i| = \sqrt{2^2 + 1^2} = \sqrt{5} \)</span>, the inequality simplifies to:</p>
+<div class="arithmatex">\[ |z + i| \leq |z - 2| + \sqrt{5} \]</div>
+<p>because <span class="arithmatex">\( |z - 2| \leq 3 \)</span>, we get,</p>
+<p>[ |z + i| \leq |z - 2| + \sqrt{5} \leq 3 + \sqrt{5}]</p>
+<div class="arithmatex">\[ \implies |z + i| \leq 3 + \sqrt{5} \]</div>
+<p>Thus, the maximum value of <span class="arithmatex">\( |z + i| \)</span> is <span class="arithmatex">\( 3 + \sqrt{5} \)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong>
+Given a complex number <span class="arithmatex">\(z\)</span> such that <span class="arithmatex">\( |z - 1| \geq 5 \)</span>, find the minimum value of <span class="arithmatex">\( |z - 2i| \)</span>.</p>
+<p><strong>Solution:</strong>
+We can use the Reverse Triangle Inequality, which states that for any two complex numbers <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span>, <span class="arithmatex">\( ||a| - |b|| \leq |a + b| \)</span>. To find the minimum value of <span class="arithmatex">\( |z - 2i| \)</span>, we rewrite it in terms of <span class="arithmatex">\( |z - 1| \)</span>:</p>
+<div class="arithmatex">\[ |z - 2i| = |z - 1 + 1 - 2i| \]</div>
+<p>Using the Reverse Triangle Inequality, we have:</p>
+<div class="arithmatex">\[ |z - 2i| \geq ||z - 1| - |1 - 2i|| \]</div>
+<p>Now, we know that <span class="arithmatex">\( |z - 1| &gt; 5 \)</span>, so we can substitute this inequality into our expression:</p>
+<div class="arithmatex">\[ |z - 2i| \geq ||z - 1| - |1 - 2i|| \geq |5 - |1 - 2i|| \]</div>
+<p>We know that,</p>
+<div class="arithmatex">\[ |1 - 2i| = \sqrt{1^2 + (-2)^2} = \sqrt{1 + 4} = \sqrt{5} \]</div>
+<p>So we continue:</p>
+<div class="arithmatex">\[ |z - 2i| \geq |5 - \sqrt{5}| \]</div>
+<p>Since <span class="arithmatex">\( 5 - \sqrt{5} \)</span> is positive (as <span class="arithmatex">\( 5 &gt; \sqrt{5} \)</span>), the absolute value is not needed:</p>
+<div class="arithmatex">\[ |z - 2i| \geq 5 - \sqrt{5} \]</div>
+<p>Thus, the minimum value of <span class="arithmatex">\( |z - 2i| \)</span> is <span class="arithmatex">\( 5 - \sqrt{5} \)</span>. <span class="arithmatex">\(\blacksquare\)</span></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong>
+Let <span class="arithmatex">\( z \)</span> be a complex number such that <span class="arithmatex">\( |z| = r \)</span>, where <span class="arithmatex">\( r &gt; 0 \)</span>. Find the minimum and maximum values of <span class="arithmatex">\( |z + \frac{1}{z}| \)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p>To find the maximum value of <span class="arithmatex">\( |z + \frac{1}{z}| \)</span>, we apply the First Triangle Inequality:</p>
+<div class="arithmatex">\[ |z + \frac{1}{z}| \leq |z| + \left|\frac{1}{z}\right| \]</div>
+<p>Since <span class="arithmatex">\( |z| = r \)</span> and <span class="arithmatex">\( \left|\frac{1}{z}\right| = \frac{1}{|z|} = \frac{1}{r} \)</span>, we have:</p>
+<div class="arithmatex">\[ |z + \frac{1}{z}| \leq r + \frac{1}{r} \]</div>
+<p>This is the maximum value of <span class="arithmatex">\( |z + \frac{1}{z}| \)</span>.</p>
+<p>To find the minimum value of <span class="arithmatex">\( |z + \frac{1}{z}| \)</span>, we apply the Second Triangle Inequality:</p>
+<div class="arithmatex">\[ \left||z| - \left|\frac{1}{z}\right|\right| \leq |z + \frac{1}{z}| \]</div>
+<p>Using the given that <span class="arithmatex">\( |z| = r \)</span>, we have:</p>
+<div class="arithmatex">\[ \left|r - \frac{1}{r}\right| \leq |z + \frac{1}{z}| \]</div>
+<p>If <span class="arithmatex">\( r \geq 1 \)</span>, then <span class="arithmatex">\( r - \frac{1}{r} \)</span> is positive, and we have:</p>
+<div class="arithmatex">\[ r - \frac{1}{r} \leq |z + \frac{1}{z}| \]</div>
+<p>If <span class="arithmatex">\( r &lt; 1 \)</span>, then <span class="arithmatex">\( r - \frac{1}{r} \)</span> is negative, and we must take the absolute value:</p>
+<div class="arithmatex">\[ \frac{1}{r} - r \leq |z + \frac{1}{z}| \]</div>
+<p>Since <span class="arithmatex">\( r &gt; 0 \)</span>, the minimum value of <span class="arithmatex">\( |z + \frac{1}{z}| \)</span> is <span class="arithmatex">\( \left|r - \frac{1}{r}\right| \)</span>, regardless of whether <span class="arithmatex">\( r \geq 1 \)</span> or <span class="arithmatex">\( r &lt; 1 \)</span>.</p>
+<p>Thus, the minimum value of <span class="arithmatex">\( |z + \frac{1}{z}| \)</span> is <span class="arithmatex">\( \left|r - \frac{1}{r}\right| \)</span>, and the maximum value is <span class="arithmatex">\( r + \frac{1}{r} \)</span>. <span class="arithmatex">\(\blacksquare\)</span></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong></p>
+<p>Find the range of <span class="arithmatex">\( |z| \)</span> given that <span class="arithmatex">\( |z + \frac{1}{z}| = r \)</span>, where <span class="arithmatex">\( r \)</span> is a positive real number.</p>
+<p><strong>Solution:</strong></p>
+<p>We know that,</p>
+<div class="arithmatex">\[ \left| |z| - \left|\frac{1}{z}\right| \right| \leq \left|z + \frac{1}{z}\right| \leq |z| + \left|\frac{1}{z}\right| \quad \text{(Triangles inequality)} \]</div>
+<p>Let us first solve: <span class="arithmatex">\( |z + \frac{1}{z}| \leq |z| + \left|\frac{1}{z}\right| \)</span></p>
+<p>We have <span class="arithmatex">\( |z| + \left|\frac{1}{z}\right| \geq r \)</span></p>
+<p>This implies that <span class="arithmatex">\( |z|^2 - r|z| + 1 \geq 0 \)</span>, which leads to <span class="arithmatex">\( |z| \geq \frac{r + \sqrt{r^2 - 4}}{2} \)</span> or <span class="arithmatex">\( 0 \leq |z| \leq \frac{r - \sqrt{r^2 - 4}}{2} \)</span> (Clearly this is true only when <span class="arithmatex">\( r \geq 2 \)</span>)</p>
+<p>If <span class="arithmatex">\( r &lt; 2 \)</span>, then <span class="arithmatex">\( |z| &gt; 0 \)</span> </p>
+<p>Now let us solve <span class="arithmatex">\( \left| |z| - \left|\frac{1}{z}\right| \right| \leq r \)</span> implies <span class="arithmatex">\( -r \leq |z| - \left|\frac{1}{z}\right| \leq r \)</span></p>
+<div class="arithmatex">\[ \Rightarrow -r|z| \leq (|z|^2 - 1) \leq r|z| \]</div>
+<p>The above inequality can be solved as</p>
+<div class="arithmatex">\[ \frac{-r+\sqrt{r^2 + 4}}{2} \leq |z| \leq \frac{r+\sqrt{r^2 + 4}}{2} \quad \text{(try it!)} \]</div>
+<p>Combining the result (which requires a little more algebra, try!):</p>
+<p>For <span class="arithmatex">\( r \leq 2 \)</span>,</p>
+<div class="arithmatex">\[  \frac{-r+\sqrt{r^2+4}}{2} \leq |z| \leq  \frac{r+\sqrt{r^2+4}}{2} \]</div>
+<p>For <span class="arithmatex">\( r &gt; 2 \)</span>,</p>
+<div class="arithmatex">\[ \frac{-r+\sqrt{r^2+4}}{2} \leq |z| \leq \frac{r-\sqrt{r^2-4}}{2} \quad \text{or} \quad \frac{r+\sqrt{r^2-4}}{2} \leq |z| \leq \frac{r+\sqrt{r^2+4}}{2} \]</div>
+</div>
+<h2 id="more-properties">More properties</h2>
+<ol>
+<li>
+<div class="arithmatex">\[ |z_1 + z_2| = |z_1 - z_2| \implies O_{z_1} \perp O_{z_2} \]</div>
+<p>This relation can be deduced from the geometric representation.</p>
+<p><a class="glightbox" href="../image-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="two complex numbers at right angle" src="../image-17.png" /></a></p>
+<p><strong>The algebraic proof is even more important here.</strong></p>
+<p>Take the square of both sides,</p>
+<div class="arithmatex">\[ |z_1 + z_2|^2 = |z_1 - z_2|^2 \]</div>
+<p>This implies</p>
+<div class="arithmatex">\[ (z_1 + z_2)(\overline{z_1} + \overline{z_2}) = (z_1 - z_2)(\overline{z_1} - \overline{z_2}) \quad [\text{Using } zz = |z|^2 ] \]</div>
+<p>This expands to</p>
+<div class="arithmatex">\[ z_1\overline{z_1} + z_2\overline{z_2} + z_1\overline{z_2} + z_2\overline{z_1} = z_1\overline{z_1} + z_2\overline{z_2} - z_1\overline{z_2} - z_2\overline{z_1} \]</div>
+<p>Simplifying,</p>
+<div class="arithmatex">\[ |z_1|^2 + |z_2|^2 + 2z_1\overline{z_2} + 2z_2\overline{z_1} = |z_1|^2 + |z_2|^2 - 2z_1\overline{z_2} - 2z_2\overline{z_1} \]</div>
+<p>Thus,</p>
+<div class="arithmatex">\[ 2z_1\overline{z_2} + 2z_2\overline{z_1} = 0 \]</div>
+<p>Which simplifies to</p>
+<div class="arithmatex">\[ z_1\overline{z_2} = -z_2\overline{z_1} \]</div>
+<p>This can be rewritten as</p>
+<div class="arithmatex">\[ \frac{z_1}{z_2} = -\frac{\overline{z_1}}{\overline{z_2}} \]</div>
+<p>Thus, we have</p>
+<div class="arithmatex">\[ \frac{z_1}{z_2} = -\overline{\left( \frac{z_1}{z_2} \right)} \]</div>
+<p>Therefore,</p>
+<div class="arithmatex">\[ \frac{z_1}{z_2} \text{ is purely imaginary} \quad \Rightarrow \text{ angle between } O_{z_1} \text{ and } O_{z_2} \text{ is } \frac{\pi}{2}. \]</div>
+<p>This concludes the algebraic proof showing that if the modulus of the sum is equal to the modulus of the difference of two complex numbers, the vectors representing these complex numbers in the complex plane are perpendicular to each other.</p>
+<div class="admonition info">
+<p class="admonition-title"><span class="arithmatex">\(\frac{z_1}{z_2} \text{ is purely imaginary} \quad \Rightarrow \text{ angle between } O_{z_1} \text{ and } O_{z_2} \text{ is } \frac{\pi}{2}. \)</span></p>
+<p>Given <span class="arithmatex">\( z_1 = a_1 + ib_1 \)</span> and <span class="arithmatex">\( z_2 = a_2 + ib_2 \)</span>, let's consider what it means for <span class="arithmatex">\( \frac{z_1}{z_2} \)</span> to be purely imaginary.</p>
+<p>The division of <span class="arithmatex">\( z_1 \)</span> by <span class="arithmatex">\( z_2 \)</span> is:</p>
+<div class="arithmatex">\[ \frac{z_1}{z_2} = \frac{a_1 + ib_1}{a_2 + ib_2} \]</div>
+<p>Multiplying numerator and denominator by the conjugate of the denominator to make the denominator real:</p>
+<div class="arithmatex">\[ \frac{z_1}{z_2} = \frac{(a_1 + ib_1)(a_2 - ib_2)}{a_2^2 + b_2^2} \]</div>
+<div class="arithmatex">\[ \frac{z_1}{z_2} = \frac{a_1a_2 + b_1b_2}{a_2^2 + b_2^2} + i\frac{a_2b_1 - a_1b_2}{a_2^2 + b_2^2} \]</div>
+<p>For <span class="arithmatex">\( \frac{z_1}{z_2} \)</span> to be purely imaginary, the real part must be zero:</p>
+<div class="arithmatex">\[ \frac{a_1a_2 + b_1b_2}{a_2^2 + b_2^2} = 0 \]</div>
+<div class="arithmatex">\[ a_1a_2 + b_1b_2 = 0 \]</div>
+<p>Now, we interpret <span class="arithmatex">\( a_1, b_1 \)</span> and <span class="arithmatex">\( a_2, b_2 \)</span> as coordinates of points <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> in the complex plane, representing vectors <span class="arithmatex">\( O_{z_1} \)</span> and <span class="arithmatex">\( O_{z_2} \)</span>. In vector terms, this implies that the dot product of <span class="arithmatex">\( O_{z_1} \)</span> and <span class="arithmatex">\( O_{z_2} \)</span> is zero, which is a condition for perpendicularity.</p>
+<p>Alternatively, the equation <span class="arithmatex">\( a_1a_2 + b_1b_2 = 0 \)</span> can be rewritten to express the slopes of lines <span class="arithmatex">\( O_{z_1} \)</span> and <span class="arithmatex">\( O_{z_2} \)</span>:</p>
+<div class="arithmatex">\[ \frac{b_1}{a_1}.\frac{b_2}{a_2} =-1\]</div>
+<p>Thus, the product of slopes of the lines from the origin to <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\(z_2\)</span> is <span class="arithmatex">\(-1\)</span> . In a Cartesian coordinate system, if the product of the slopes of two lines is -1, the lines are perpendicular.</p>
+<p>Therefore, <span class="arithmatex">\( O_{z_1} \)</span> is perpendicular to <span class="arithmatex">\( O_{z_2} \)</span>, meaning the angle between them is <span class="arithmatex">\( 90^\circ \)</span> or <span class="arithmatex">\( \frac{\pi}{2} \)</span> radians.</p>
+<p><strong>If you do not know the concept of slopes of straightn lines, you can totally ignore this proof for a while. A more straightforward proof will soon follow.</strong></p>
+</div>
+</li>
+<li>
+<p><span class="arithmatex">\( |z_1 + z_2|^2 = |z_1|^2 + |z_2|^2 \Rightarrow O_{z_1} \perp O_{z_2} \)</span> </p>
+<div class="admonition note">
+<p class="admonition-title">proof</p>
+<p>In the complex plane, <span class="arithmatex">\( |z_1 + z_2| \)</span> and <span class="arithmatex">\( |z_1 - z_2| \)</span> are the lengths of the diagonals of the parallelogram formed by <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>.</p>
+<p>From the parallelogram law, if <span class="arithmatex">\( z_1 \)</span> is perpendicular to <span class="arithmatex">\( z_2 \)</span>, the parallelogram formed is a rectangle. In a rectangle, the diagonals are equal in length, which aligns with the equation given:</p>
+<div class="arithmatex">\[ |z_1 + z_2| = |z_1 - z_2| \]</div>
+<p>Now, if we apply the Pythagorean theorem to the right-angled triangle formed by <span class="arithmatex">\( z_1 \)</span>, <span class="arithmatex">\( z_2 \)</span>, and <span class="arithmatex">\( z_1 + z_2 \)</span> (or <span class="arithmatex">\( z_1 - z_2 \)</span>), we have:</p>
+<div class="arithmatex">\[ |z_1|^2 + |z_2|^2 = |z_1 + z_2|^2 \]</div>
+<p>This is only true if <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> are perpendicular to each other because for right-angled triangles, the square of the length of the hypotenuse (the diagonal in our case) is equal to the sum of the squares of the other two sides (the vectors <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>).</p>
+<p>Therefore, by observing the given figure and using the properties of a parallelogram and the Pythagorean theorem, we can conclude that <span class="arithmatex">\( O_{z_1} \)</span> is perpendicular to <span class="arithmatex">\( O_{z_2} \)</span>.</p>
+</div>
+</li>
+<li>
+<p>Given <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span> are real numbers and <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> are complex numbers, let's prove the given identity:</p>
+<div class="arithmatex">\[ |az_1 + bz_2|^2 + |bz_1 - az_2|^2 = (a^2 + b^2)(|z_1|^2 + |z_2|^2) \]</div>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>We expand the left-hand side (LHS) using <span class="arithmatex">\( |z|^2 = zz^* \)</span>, where <span class="arithmatex">\( z^* \)</span> denotes the complex conjugate of <span class="arithmatex">\( z \)</span>.</p>
+<p>For the first term <span class="arithmatex">\( |az_1 + bz_2|^2 \)</span>:</p>
+<div class="arithmatex">\[ |az_1 + bz_2|^2 = (az_1 + bz_2)(a\overline{z_1} + b\overline{z_2}) \]</div>
+<div class="arithmatex">\[ = a^2z_1\overline{z_1} + abz_1\overline{z_2} + abz_2\overline{z_1} + b^2z_2\overline{z_2} \]</div>
+<div class="arithmatex">\[ = a^2|z_1|^2 + ab(z_1\overline{z_2} + z_2\overline{z_1}) + b^2|z_2|^2 \]</div>
+<p>For the second term <span class="arithmatex">\( |bz_1 - az_2|^2 \)</span>:</p>
+<div class="arithmatex">\[ |bz_1 - az_2|^2 = (bz_1 - az_2)(b\overline{z_1} - a\overline{z_2}) \]</div>
+<div class="arithmatex">\[ = b^2z_1\overline{z_1} - abz_1\overline{z_2} - abz_2\overline{z_1} + a^2z_2\overline{z_2} \]</div>
+<div class="arithmatex">\[ = b^2|z_1|^2 - ab(z_1\overline{z_2} + z_2\overline{z_1}) + a^2|z_2|^2 \]</div>
+<p>Adding the two expansions together, the mixed terms <span class="arithmatex">\( ab(z_1\overline{z_2} + z_2\overline{z_1}) \)</span> will cancel out, yielding:</p>
+<div class="arithmatex">\[ a^2|z_1|^2 + b^2|z_2|^2 + b^2|z_1|^2 + a^2|z_2|^2 \]</div>
+<div class="arithmatex">\[ = a^2(|z_1|^2 + |z_2|^2) + b^2(|z_1|^2 + |z_2|^2) \]</div>
+<div class="arithmatex">\[ = (a^2 + b^2)(|z_1|^2 + |z_2|^2) \]</div>
+<p>This completes the proof that the original identity holds true.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Parallelogram identity</p>
+<p>When <span class="arithmatex">\( a = 1 \)</span> and <span class="arithmatex">\( b = 1 \)</span>, the identity simplifies to:</p>
+<div class="arithmatex">\[ |z_1 + z_2|^2 + |z_1 - z_2|^2 = (1^2 + 1^2)(|z_1|^2 + |z_2|^2) \]</div>
+<p>Simplifying further gives us:</p>
+<div class="arithmatex">\[ |z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2) \]</div>
+<p>This is an instance of the parallelogram law in complex numbers, which states that the sum of the squares of the lengths of the diagonals of a parallelogram is equal to the sum of the squares of the lengths of all sides.</p>
+</div>
+</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

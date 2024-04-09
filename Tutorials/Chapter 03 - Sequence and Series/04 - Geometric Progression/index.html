@@ -1,0 +1,3254 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/">
+      
+      
+        <link rel="prev" href="../03%20-%20Arithmetic%20Progression%28AP%29/">
+      
+      
+        <link rel="next" href="../05%20-%20Harmonic%20Progression/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Geometric Progression - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#definition" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Geometric Progression
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-general-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      The general term
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increasing-vs-decreasing-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increasing vs Decreasing GP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finite-geometric-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finite Geometric Series
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infinite-geometric-series-and-its-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infinite Geometric Series and Its Sum
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infinite Geometric Series and Its Sum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-an-infinite-geometric-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of an Infinite Geometric Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convergence Criteria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sum-for-the-infinite-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum for the Infinite Series
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-properties-of-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important properties of GP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important properties of GP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-terms-in-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three terms in GP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kth-term-from-the-end-in-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      kth term from the end in GP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constant-product-of-equidistant-terms-in-a-geometric-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Product of Equidistant Terms in a Geometric Progression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-of-all-terms-of-a-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Product of all terms of a GP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operations-on-a-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Operations on a GP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recurring-decimals-and-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recurring decimals and GP
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-general-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      The general term
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increasing-vs-decreasing-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increasing vs Decreasing GP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finite-geometric-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finite Geometric Series
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infinite-geometric-series-and-its-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infinite Geometric Series and Its Sum
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infinite Geometric Series and Its Sum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-an-infinite-geometric-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of an Infinite Geometric Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convergence Criteria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sum-for-the-infinite-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum for the Infinite Series
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-properties-of-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important properties of GP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important properties of GP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-terms-in-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three terms in GP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kth-term-from-the-end-in-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      kth term from the end in GP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constant-product-of-equidistant-terms-in-a-geometric-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Product of Equidistant Terms in a Geometric Progression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-of-all-terms-of-a-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Product of all terms of a GP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operations-on-a-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Operations on a GP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recurring-decimals-and-gp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recurring decimals and GP
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Geometric Progression</h1>
+
+<h2 id="definition">Definition</h2>
+<p>A geometric progression (GP), or geometric sequence, is a sequence of numbers where each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common ratio. The recursive definition of a geometric progression can be described as follows:</p>
+<p>Let <span class="arithmatex">\(a_1\)</span> denote the first term of the geometric progression, and let <span class="arithmatex">\(r\)</span> denote the common ratio, where <span class="arithmatex">\(r \neq 0\)</span>. Then, the <span class="arithmatex">\(n\)</span>-th term of the geometric progression, denoted by <span class="arithmatex">\(a_n\)</span>, can be defined recursively by:</p>
+<ul>
+<li><span class="arithmatex">\(a_1 = a\)</span>, where <span class="arithmatex">\(a\)</span> is the first term of the sequence.</li>
+<li>For <span class="arithmatex">\(n &gt; 1\)</span>, <span class="arithmatex">\(a_n = a_{n-1} \cdot r\)</span>, where <span class="arithmatex">\(a_{n-1}\)</span> is the term immediately preceding <span class="arithmatex">\(a_n\)</span>, and <span class="arithmatex">\(r\)</span> is the common ratio.</li>
+</ul>
+<p>So, in a geometric progression (GP) with the first term <span class="arithmatex">\(a\)</span> and common ratio <span class="arithmatex">\(r\)</span>, the sequence is: <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(ar\)</span>, <span class="arithmatex">\(ar^2\)</span>, <span class="arithmatex">\(ar^3\)</span>, ..., where each term is obtained by multiplying the previous term by <span class="arithmatex">\(r\)</span>.</p>
+<p>For example: For a geometric progression (GP) with the first term <span class="arithmatex">\(a = 2\)</span> and a common ratio <span class="arithmatex">\(r = \frac{1}{3}\)</span>, the sequence is: <span class="arithmatex">\(2\)</span>, <span class="arithmatex">\(2 \cdot \frac{1}{3}\)</span>, <span class="arithmatex">\(2 \cdot \left(\frac{1}{3}\right)^2\)</span>, <span class="arithmatex">\(2 \cdot \left(\frac{1}{3}\right)^3\)</span>, ..., resulting in the series: <span class="arithmatex">\(2\)</span>, <span class="arithmatex">\(\frac{2}{3}\)</span>, <span class="arithmatex">\(\frac{2}{9}\)</span>, <span class="arithmatex">\(\frac{2}{27}\)</span>, ....</p>
+<h2 id="the-general-term">The general term</h2>
+<p>To derive the <span class="arithmatex">\(n\)</span>-th term of a geometric progression with the first term <span class="arithmatex">\(a\)</span> and common ratio <span class="arithmatex">\(r\)</span>, we observe the relationship between successive terms:</p>
+<div class="arithmatex">\[ \frac{a_2}{a_1} = r, \quad \frac{a_3}{a_2} = r, \quad \frac{a_4}{a_3} = r, \ldots, \quad \frac{a_n}{a_{n-1}} = r \]</div>
+<p>Multiplying these equations together, we get:</p>
+<div class="arithmatex">\[ \frac{a_2}{a_1} \cdot \frac{a_3}{a_2} \cdot \frac{a_4}{a_3} \cdot \ldots \cdot \frac{a_n}{a_{n-1}} = r \cdot r \cdot r \cdot \ldots \cdot r \]</div>
+<p>Notice the telescoping effect, where all intermediate terms <span class="arithmatex">\(a_2, a_3, \ldots, a_{n-1}\)</span> cancel out, leaving:</p>
+<div class="arithmatex">\[ \frac{a_n}{a} = r^{n-1} \]</div>
+<p>Thus, we arrive at the general formula for the <span class="arithmatex">\(n\)</span>-th term of the geometric progression:</p>
+<div class="arithmatex">\[ a_n = a \cdot r^{n-1} \]</div>
+<p>This demonstrates that the <span class="arithmatex">\(n\)</span>-th term is obtained by multiplying the first term <span class="arithmatex">\(a\)</span> by the common ratio <span class="arithmatex">\(r\)</span> raised to the power of <span class="arithmatex">\(n-1\)</span>, encapsulating the essence of geometric progression.</p>
+<h2 id="increasing-vs-decreasing-gp">Increasing vs Decreasing GP</h2>
+<p>Consider the characteristics of the following geometric progressions (GPs), each defined by a distinct pair of initial term <span class="arithmatex">\(a\)</span> and common ratio <span class="arithmatex">\(r\)</span>:</p>
+<ol>
+<li>
+<p><strong>For <span class="arithmatex">\(a = 2\)</span>, <span class="arithmatex">\(r = 3\)</span>:</strong><br />
+   The sequence begins as <span class="arithmatex">\(2, 6, 18, 54, \ldots\)</span>. Given <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(r\)</span> are positive, with <span class="arithmatex">\(r\)</span> exceeding unity, the progression is monotonically increasing. Each term exceeds its predecessor, amplifying the sequence exponentially.</p>
+</li>
+<li>
+<p><strong>For <span class="arithmatex">\(a = 2\)</span>, <span class="arithmatex">\(r = \frac{1}{3}\)</span>:</strong><br />
+   This progression, <span class="arithmatex">\(2, \frac{2}{3}, \frac{2}{9}, \frac{2}{27}, \ldots\)</span>, demonstrates a decrease in magnitude. The positive initial term combined with a common ratio between zero and one ensures a gradual reduction towards zero.</p>
+</li>
+<li>
+<p><strong>For <span class="arithmatex">\(a = -2\)</span>, <span class="arithmatex">\(r = 3\)</span>:</strong><br />
+   Manifesting as <span class="arithmatex">\(-2, -6, -18, -54, \ldots\)</span>, this series, while consistently multiplying in magnitude due to a common ratio greater than one, starts with a negative term. The sequence, therefore, remains negative, diverging to negative infinity.</p>
+</li>
+<li>
+<p><strong>For <span class="arithmatex">\(a = -2\)</span>, <span class="arithmatex">\(r = \frac{1}{3}\)</span>:</strong><br />
+   The series <span class="arithmatex">\(-2, -\frac{2}{3}, -\frac{2}{9}, -\frac{2}{27}, \ldots\)</span> diminishes in absolute value. Originating from a negative term and reduced by a factor less than one, it converges towards zero from the negative side.</p>
+</li>
+<li>
+<p><strong>For <span class="arithmatex">\(a = 2\)</span>, <span class="arithmatex">\(r = -3\)</span>:</strong><br />
+   With terms <span class="arithmatex">\(2, -6, 18, -54, \ldots\)</span>, the progression alternates in sign due to the negative common ratio. The sequence exhibits neither a pure increase nor decrease but expands in absolute magnitude, signifying an oscillatory behavior.</p>
+</li>
+</ol>
+<p><a class="glightbox" href="../img/image01.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure illustrating increasing and decreasing nature of " src="../img/image01.png" /></a></p>
+<p>We can easily see that:</p>
+<ol>
+<li><strong><span class="arithmatex">\(a &gt; 0, r &gt; 1\)</span>:</strong> The GP is monotonically increasing, as each term is larger than the previous one due to a positive starting term and a common ratio greater than one.</li>
+<li><strong><span class="arithmatex">\(a &gt; 0, 0 &lt; r &lt; 1\)</span>:</strong> The GP is monotonically decreasing, with each term getting closer to zero, starting from a positive first term and a common ratio between zero and one.</li>
+<li><strong><span class="arithmatex">\(a &lt; 0, r &gt; 1\)</span>:</strong> The GP decreases in value (becomes more negative) but increases in absolute magnitude, diverging negatively as the sequence progresses.</li>
+<li><strong><span class="arithmatex">\(a &lt; 0, 0 &lt; r &lt; 1\)</span>:</strong> The GP approaches zero from the negative side, decreasing in absolute value, but remains negative throughout due to a negative starting term and a fractional common ratio.</li>
+<li><strong><span class="arithmatex">\(a \neq 0, r &lt; 0\)</span>:</strong> The GP oscillates, with terms alternating in sign. The sequence does not strictly increase or decrease but grows in absolute value if <span class="arithmatex">\(|r| &gt; 1\)</span> or diminishes in absolute value if <span class="arithmatex">\(|r| &lt; 1\)</span>.</li>
+</ol>
+<p>When <span class="arithmatex">\(r = 1\)</span> in a geometric progression (GP), each term of the sequence is equal to the first term <span class="arithmatex">\(a\)</span>, resulting in a constant sequence. This means that the GP does not change from term to term, remaining the same throughout the sequence. For any <span class="arithmatex">\(n\)</span>, the <span class="arithmatex">\(n\)</span>-th term <span class="arithmatex">\(a_n\)</span> is always equal to <span class="arithmatex">\(a\)</span>, illustrating a special case of a geometric progression where the common ratio does not lead to growth or decay in the sequence. Thus, the series would be <span class="arithmatex">\(a, a, a, \ldots\)</span>, indefinitely.</p>
+<h2 id="finite-geometric-series">Finite Geometric Series</h2>
+<p>A finite geometric series is a sum of terms in a geometric progression where each term is obtained by multiplying the previous term by a constant ratio, and the series has a specific number of terms. Formally, if <span class="arithmatex">\(a\)</span> is the first term, <span class="arithmatex">\(r\)</span> the common ratio, and <span class="arithmatex">\(n\)</span> the total number of terms, the finite geometric series is given by:</p>
+<div class="arithmatex">\[S_n = a + ar + ar^2 + \ldots + ar^{n-1}\]</div>
+<p>The sum of a finite geometric series can be calculated using the formula:</p>
+<div class="arithmatex">\[S_n = \frac{a(1 - r^n)}{1 - r}\]</div>
+<p>for <span class="arithmatex">\(r \neq 1\)</span>. This formula encapsulates the sum of all terms in the series, efficiently allowing for the computation of the series' total based on its initial term, common ratio, and length.</p>
+<p><strong>Proof:</strong></p>
+<p>To prove the formula for the sum of a finite geometric series of <span class="arithmatex">\(n\)</span> terms, consider the series:</p>
+<div class="arithmatex">\[S_n = a + ar + ar^2 + ar^3 + \ldots + ar^{n-1}\]</div>
+<p><strong>Step 1: Multiply both sides by <span class="arithmatex">\(r\)</span>:</strong></p>
+<div class="arithmatex">\[rS_n = ar + ar^2 + ar^3 + \ldots + ar^{n-1} + ar^n\]</div>
+<p><strong>Step 2: Shift the above series to the right by one term and subtract <span class="arithmatex">\(rS_n\)</span> from <span class="arithmatex">\(S_n\)</span>:</strong></p>
+<div class="arithmatex">\[
+\begin{align*}
+S_n &amp;= a + \phantom{a}\cancel{ar} + \cancel{ar^2} + \cancel{ar^3} + \ldots + \cancel{ar^{n-1}} \\
+rS_n &amp;= \phantom{a + {}} \cancel{ar} + \cancel{ar^2} + \cancel{ar^3} + \ldots + \cancel{ar^{n-1}} + ar^n
+\end{align*}
+\]</div>
+<p>Subtracting the second equation from the first:</p>
+<div class="arithmatex">\[
+\begin{align*}
+S_n - rS_n &amp;= a - ar^n \\
+S_n(1 - r) &amp;= a(1 - r^n)
+\end{align*}
+\]</div>
+<p><strong>Step 3: Solve for <span class="arithmatex">\(S_n\)</span>:</strong></p>
+<p>If <span class="arithmatex">\(r \neq 1\)</span>, to find <span class="arithmatex">\(S_n\)</span>, divide both sides by <span class="arithmatex">\((1 - r)\)</span>:</p>
+<div class="arithmatex">\[
+S_n = \frac{a(1 - r^n)}{1 - r}
+\]</div>
+<p>This yields the formula for the sum of a finite geometric series of <span class="arithmatex">\(n\)</span> terms, providing a concise method to calculate the total sum based on the first term <span class="arithmatex">\(a\)</span>, the common ratio <span class="arithmatex">\(r\)</span>, and the number of terms <span class="arithmatex">\(n\)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Examples</p>
+<p><strong>Example 1:</strong> Sum of the Geometric Series <span class="arithmatex">\(2 + 2\cdot3 + 2\cdot3^2 + \ldots + 2\cdot3^{10}\)</span></p>
+<p><strong>Solution:</strong>
+<strong>Identifying the Common Ratio:</strong><br />
+The common ratio <span class="arithmatex">\(r\)</span>, which is the factor by which we multiply each term to get the next term, is correctly identified as <span class="arithmatex">\(3\)</span>. </p>
+<p><strong>Calculating the Sum:</strong><br />
+To find the sum of the first <span class="arithmatex">\(n\)</span> terms in this GP, we use the formula:</p>
+<div class="arithmatex">\[S_n = \frac{a(1 - r^n)}{1 - r}\]</div>
+<p>Given <span class="arithmatex">\(n = 10\)</span>, <span class="arithmatex">\(a = 2\)</span>, and <span class="arithmatex">\(r = 3\)</span>, we substitute these into the formula:</p>
+<div class="arithmatex">\[S_n = \frac{2(1 - 3^{10})}{1 - 3}\]</div>
+<p>Simplifying the expression:</p>
+<div class="arithmatex">\[S_n = \frac{2(1 - 3^{10})}{-2} = -(1 - 3^{10})\]</div>
+<div class="arithmatex">\[S_n = 3^{10} - 1\]</div>
+<p>This formula accurately calculates the sum of the series <span class="arithmatex">\(2 + 2\cdot3 + 2\cdot3^2 + \ldots + 2\cdot3^{10}\)</span> based on the corrected common ratio.</p>
+<p><strong>Example 2:</strong> Sum of the Geometric Series <span class="arithmatex">\((1/2) + (1/2)^3 + (1/2)^5 + \ldots\)</span> up to 20 terms</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Identifying the Common Ratio:</strong><br />
+The first term <span class="arithmatex">\(a = 1/2\)</span>, and the second term is <span class="arithmatex">\((1/2)^3\)</span>. To find the common ratio (<span class="arithmatex">\(r\)</span>), divide the second term by the first:</p>
+<div class="arithmatex">\[r = \frac{(1/2)^3}{(1/2)} = (1/2)^2 = 1/4\]</div>
+<p>This confirms the series is a geometric progression with <span class="arithmatex">\(a = 1/2\)</span> and <span class="arithmatex">\(r = 1/4\)</span>.</p>
+<p><strong>Calculating the Sum:</strong><br />
+For a geometric series up to 20 terms, use the formula:</p>
+<div class="arithmatex">\[S_n = \frac{a(1 - r^n)}{1 - r}\]</div>
+<p>Given <span class="arithmatex">\(n = 20\)</span>, <span class="arithmatex">\(a = 1/2\)</span>, and <span class="arithmatex">\(r = 1/4\)</span>, we substitute these values:</p>
+<div class="arithmatex">\[S_n = \frac{(1/2)(1 - (1/4)^{20})}{1 - 1/4}\]</div>
+<div class="arithmatex">\[S_n = \frac{(1/2)(1 - (1/4)^{20})}{3/4}\]</div>
+<div class="arithmatex">\[S_n = \frac{2}{3}(1 - (1/4)^{20})\]</div>
+<p>This expression provides the sum of the series <span class="arithmatex">\((1/2) + (1/2)^3 + (1/2)^5 + \ldots\)</span> up to 20 terms.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Usual Mistake</p>
+<p>An usual mistake that students make in the beginning with sum of geometric series formula is putting wrong number of terms <span class="arithmatex">\(n\)</span> in the formula. Consider the following example:</p>
+<p><strong>Example:</strong> Sum of the Series <span class="arithmatex">\((2^{21}/3^2) + (2^{20}/3^3) + (2^{19}/3^4) + \ldots + (2^3/3^{20})\)</span></p>
+<p><strong>Identifying the Number of Terms (<span class="arithmatex">\(n\)</span>) in the Series:</strong></p>
+<p>The powers of 3 in the denominators start from <span class="arithmatex">\(3^2\)</span> and go up to <span class="arithmatex">\(3^{20}\)</span>. This indicates that the total number of terms is <span class="arithmatex">\(20 - 2 = 18\)</span>, as the sequence begins at the second term and concludes at the twentieth term. Thus, <span class="arithmatex">\(n = 18\)</span>.</p>
+<p><strong>Identifying the Common Ratio (<span class="arithmatex">\(r\)</span>):</strong></p>
+<p>To find the common ratio, divide the second term by the first term:</p>
+<div class="arithmatex">\[ \frac{2^{20}/3^3}{2^{21}/3^2} = \frac{2^{20}}{3^3} \cdot \frac{3^2}{2^{21}} = \frac{2^{-1}}{3} = \frac{1}{2 \cdot 3} = \frac{1}{6} \]</div>
+<p>Hence, the common ratio <span class="arithmatex">\(r = \frac{1}{6}\)</span>.</p>
+<p><strong>Calculating the Sum (<span class="arithmatex">\(S_n\)</span>):</strong></p>
+<p>With <span class="arithmatex">\(n = 18\)</span>, <span class="arithmatex">\(a = \frac{2^{21}}{3^2}\)</span>, and <span class="arithmatex">\(r = \frac{1}{6}\)</span>, apply the formula for the sum of a finite geometric series:</p>
+<div class="arithmatex">\[S_n = \frac{a(1 - r^n)}{1 - r}\]</div>
+<p>Substituting the identified values into the formula:</p>
+<div class="arithmatex">\[S_n = \frac{\frac{2^{21}}{3^2}(1 - (\frac{1}{6})^{18})}{1 - \frac{1}{6}}\]</div>
+<div class="arithmatex">\[S_n = \frac{\frac{2^{21}}{9}(1 - (\frac{1}{6})^{18})}{\frac{5}{6}}\]</div>
+<div class="arithmatex">\[S_n = \frac{2^{21} \cdot 6}{9.5}(1 - (\frac{1}{6})^{18})\]</div>
+<div class="arithmatex">\[S_n = \frac{2^{22}}{15}\left[1 - \frac{1}{6^{18}}\right]\]</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Prove the identity:</p>
+<div class="arithmatex">\[x^{n-1} + x^{n-2}y + x^{n-3}y^2 + \ldots + y^{n-1} = \frac{x^n - y^n}{x - y}\]</div>
+<p><strong>Proof:</strong></p>
+<p>Start by factoring <span class="arithmatex">\(x^{n-1}\)</span> out of the left-hand side (LHS):</p>
+<div class="arithmatex">\[LHS = x^{n-1}\left(1 + \frac{y}{x} + \left(\frac{y}{x}\right)^2 + \left(\frac{y}{x}\right)^3 + \ldots + \left(\frac{y}{x}\right)^{n-1}\right)\]</div>
+<p>The expression inside the parentheses is a geometric progression (GP) with the first term <span class="arithmatex">\(a = 1\)</span> and the common ratio <span class="arithmatex">\(r = \frac{y}{x}\)</span>. The sum of the first <span class="arithmatex">\(n\)</span> terms of a GP is given by:</p>
+<div class="arithmatex">\[S_n = \frac{a(1 - r^n)}{1 - r}\]</div>
+<p>Applying this formula to the GP inside the parentheses:</p>
+<div class="arithmatex">\[S_n = \frac{1 - \left(\frac{y}{x}\right)^n}{1 - \frac{y}{x}}\]</div>
+<p>Simplifying the denominator and numerator:</p>
+<div class="arithmatex">\[S_n = \frac{1 - \frac{y^n}{x^n}}{1 - \frac{y}{x}} = \frac{x^n - y^n}{x^n(1 - \frac{y}{x})}\]</div>
+<p>Further simplification of the denominator inside the fraction yields:</p>
+<div class="arithmatex">\[S_n = \frac{x^n - y^n}{x^n \cdot \frac{x - y}{x}} = \frac{x^n - y^n}{x - y}\]</div>
+<p>Multiplying this result by <span class="arithmatex">\(x^{n-1}\)</span> gives us the original left-hand side:</p>
+<div class="arithmatex">\[LHS = x^{n-1} \cdot \frac{x^n - y^n}{x - y}\]</div>
+<p>Since the manipulation of the LHS leads directly to the right-hand side (RHS) of the original equation:</p>
+<div class="arithmatex">\[\frac{x^n - y^n}{x - y}\]</div>
+<p>We have proven that:</p>
+<div class="arithmatex">\[x^{n-1} + x^{n-2}y + x^{n-3}y^2 + \ldots + y^{n-1} = \frac{x^n - y^n}{x - y}\]</div>
+<p>This identity elegantly demonstrates how a geometric progression can be used to simplify and prove polynomial identities, showcasing the interplay between algebraic expressions and summation formulas.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Very Important Identities</p>
+<p>Using the example above we can derive a few very important identities that you will be seeing again and again in the future. </p>
+<p><strong>Factorization of <span class="arithmatex">\(x^n - y^n\)</span> and <span class="arithmatex">\(x^n + y^n\)</span></strong></p>
+<ol>
+<li><strong>For any <span class="arithmatex">\(n\)</span>, positive integer:</strong></li>
+</ol>
+<div class="arithmatex">\[x^n - y^n = (x - y)(x^{n-1} + x^{n-2}y + x^{n-3}y^2 + \ldots + y^{n-1})\]</div>
+<ol>
+<li><strong>For <span class="arithmatex">\(n\)</span> odd:</strong></li>
+</ol>
+<div class="arithmatex">\[x^n + y^n = (x + y)(x^{n-1} - x^{n-2}y + x^{n-3}y^2 - \ldots + y^{n-1})\]</div>
+<p>Note: When <span class="arithmatex">\(n\)</span> is even, <span class="arithmatex">\(x^n + y^n\)</span> cannot be factored in this manner.</p>
+<p><strong>Proof of the Second Identity:</strong></p>
+<p>To prove the identity for <span class="arithmatex">\(x^n + y^n\)</span> when <span class="arithmatex">\(n\)</span> is odd, we utilize the first identity by substituting <span class="arithmatex">\(y\)</span> with <span class="arithmatex">\(-y\)</span>:</p>
+<div class="arithmatex">\[x^n - (-y)^n = (x - (-y))(x^{n-1} + x^{n-2}(-y) + x^{n-3}(-y)^2 + \ldots + (-y)^{n-1})\]</div>
+<p>Given <span class="arithmatex">\(n\)</span> is odd, <span class="arithmatex">\((-y)^n = -y^n\)</span>, and the expression simplifies to:</p>
+<div class="arithmatex">\[x^n + y^n = (x + y)(x^{n-1} - x^{n-2}y + x^{n-3}y^2 - \ldots + (-1)^{n-1}y^{n-1})\]</div>
+<p>Since <span class="arithmatex">\(n\)</span> is odd, the last term <span class="arithmatex">\(y^{n-1}\)</span> remains positive due to the odd power of <span class="arithmatex">\(-1\)</span>, leading to the final form:</p>
+<div class="arithmatex">\[x^n + y^n = (x + y)(x^{n-1} - x^{n-2}y + x^{n-3}y^2 - \ldots + y^{n-1})\]</div>
+<p><strong>Factorization of <span class="arithmatex">\(x^n - y^n\)</span> When <span class="arithmatex">\(n\)</span> is Eeen</strong></p>
+<p>Let <span class="arithmatex">\(n = 2m\)</span>, where <span class="arithmatex">\(m\)</span> is an integer. This representation indicates that <span class="arithmatex">\(n\)</span> is even. We aim to show that for even <span class="arithmatex">\(n\)</span>, <span class="arithmatex">\(x^n - y^n\)</span> can be factored into <span class="arithmatex">\((x - y)\)</span> and <span class="arithmatex">\((x + y)\)</span> among other factors.</p>
+<p>Starting with <span class="arithmatex">\(x^n - y^n\)</span> and substituting <span class="arithmatex">\(n = 2m\)</span>, we have:</p>
+<div class="arithmatex">\[x^n - y^n = x^{2m} - y^{2m}\]</div>
+<p>This can be expressed as a difference of squares since <span class="arithmatex">\(x^{2m} = (x^2)^m\)</span> and <span class="arithmatex">\(y^{2m} = (y^2)^m\)</span>:</p>
+<div class="arithmatex">\[x^{2m} - y^{2m} = (x^2)^m - (y^2)^m\]</div>
+<div class="arithmatex">\[(x^2)^m - (y^2)^m = (x^2 - y^2)((x^2)^{m-1} + (x^2)^{m-2}(y^2) + \ldots + (y^2)^{m-1})\]</div>
+<p>Since <span class="arithmatex">\(x^2 - y^2\)</span> is itself a difference of squares, it further factors into:</p>
+<div class="arithmatex">\[(x^2 - y^2) = (x - y)(x + y)\]</div>
+<p>Thus, combining these results, we obtain:</p>
+<div class="arithmatex">\[x^{2m} - y^{2m} = (x - y)(x + y)((x^2)^{m-1} + (x^2)^{m-2}(y^2) + \ldots + (y^2)^{m-1})\]</div>
+</div>
+<h2 id="infinite-geometric-series-and-its-sum">Infinite Geometric Series and Its Sum</h2>
+<h3 id="definition-of-an-infinite-geometric-series">Definition of an Infinite Geometric Series</h3>
+<p>An infinite geometric series is defined as the sum of infinitely many terms of the form:</p>
+<div class="arithmatex">\[ S = a + ar + ar^2 + ar^3 + \cdots \]</div>
+<p>where <span class="arithmatex">\(a\)</span> is the first term and <span class="arithmatex">\(r\)</span> is the common ratio, with <span class="arithmatex">\(a \neq 0\)</span> and <span class="arithmatex">\(r \neq 0\)</span>.</p>
+<h3 id="convergence-criteria">Convergence Criteria</h3>
+<p>For an infinite geometric series to converge to a finite value, the absolute value of the common ratio must be less than one (<span class="arithmatex">\(|r| &lt; 1\)</span>). If <span class="arithmatex">\(|r| \geq 1\)</span>, the series diverges, meaning it grows without bound.</p>
+<h3 id="sum-for-the-infinite-series">Sum for the Infinite Series</h3>
+<p><strong>Finite Geometric Series</strong></p>
+<p>Before addressing the infinite case, let's consider a finite geometric series with <span class="arithmatex">\(n\)</span> terms:</p>
+<div class="arithmatex">\[ S_n = a + ar + ar^2 + \cdots + ar^{n-1} \]</div>
+<p>We know that the sum of this series can be found using the formula:</p>
+<div class="arithmatex">\[ S_n = \frac{a(1 - r^n)}{1 - r} \]</div>
+<p>where <span class="arithmatex">\(a\)</span> is the first term, <span class="arithmatex">\(r\)</span> is the common ratio, and <span class="arithmatex">\(n\)</span> is the number of terms.</p>
+<p><strong>Transition to Infinity</strong></p>
+<p>To examine the behavior of <span class="arithmatex">\(S_n\)</span> as <span class="arithmatex">\(n\)</span> approaches infinity, we rewrite the formula for <span class="arithmatex">\(S_n\)</span> by dividing the numerator and the denominator by <span class="arithmatex">\(1-r\)</span>, yielding:</p>
+<div class="arithmatex">\[ S_n = \frac{a}{1-r} - \frac{ar^n}{1-r} \]</div>
+<p>As <span class="arithmatex">\(n\)</span> becomes larger and approaches infinity, and given <span class="arithmatex">\(|r| &lt; 1\)</span>, the term <span class="arithmatex">\(r^n\)</span> approaches zero. This behavior is due to the property of geometric progressions where, if the absolute value of the ratio is less than one, the terms of the sequence become closer and closer to zero as <span class="arithmatex">\(n\)</span> increases.</p>
+<p>With the understanding that <span class="arithmatex">\(r^n \rightarrow 0\)</span> as <span class="arithmatex">\(n \rightarrow \infty\)</span> for <span class="arithmatex">\(|r| &lt; 1\)</span>, we can now consider the limit of <span class="arithmatex">\(S_n\)</span> as <span class="arithmatex">\(n\)</span> approaches infinity:</p>
+<div class="arithmatex">\[ \lim_{n \to \infty} S_n = \lim_{n \to \infty} \left( \frac{a}{1-r} - \frac{ar^n}{1-r} \right) \]</div>
+<p>Given <span class="arithmatex">\(r^n \rightarrow 0\)</span>, the second term in the expression above vanishes, leading to:</p>
+<div class="arithmatex">\[ S_{\infty} = \frac{a}{1-r} \]</div>
+<p>This result shows that the sum of an infinite geometric series converges to <span class="arithmatex">\(a/(1-r)\)</span> under the condition that <span class="arithmatex">\(|r| &lt; 1\)</span>. The convergence to a finite sum highlights a remarkable property of infinite geometric series, where despite the addition of infinitely many terms, the series sums to a finite, well-defined value.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong></p>
+<p>Find the sum of the infinite geometric series: <span class="arithmatex">\( \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \cdots \)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p>Given the series:</p>
+<div class="arithmatex">\[ \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \cdots \]</div>
+<p>The first term <span class="arithmatex">\(a\)</span> is <span class="arithmatex">\(\frac{1}{2}\)</span>, and the common ratio <span class="arithmatex">\(r\)</span> is also <span class="arithmatex">\(\frac{1}{2}\)</span>.</p>
+<p>The sum <span class="arithmatex">\(S_{\infty}\)</span> of an infinite geometric series is given by:</p>
+<div class="arithmatex">\[ S_{\infty} = \frac{a}{1 - r} \]</div>
+<p>Substituting the given values:</p>
+<div class="arithmatex">\[ S_{\infty} = \frac{\frac{1}{2}}{1 - \frac{1}{2}} \]</div>
+<p>Simplifying:</p>
+<div class="arithmatex">\[ S_{\infty} = 1 \]</div>
+<p><strong>Conclusion:</strong></p>
+<p>The sum of the series <span class="arithmatex">\( \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \cdots \)</span> up to infinity is <span class="arithmatex">\(1\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong></p>
+<p>Prove that for <span class="arithmatex">\( |x| &lt; 1 \)</span>, the expression <span class="arithmatex">\( (1 + x)^{-1} \)</span> equals the infinite series <span class="arithmatex">\( 1 + x + x^2 + x^3 + \cdots \)</span>.</p>
+<p><strong>Proof:</strong></p>
+<p>Given <span class="arithmatex">\( |x| &lt; 1 \)</span>, we aim to prove that <span class="arithmatex">\( (1 + x)^{-1} = 1 + x + x^2 + x^3 + \cdots \)</span>.</p>
+<p>Consider the infinite geometric series <span class="arithmatex">\( S = 1 + x + x^2 + x^3 + \cdots \)</span> with the first term <span class="arithmatex">\( a = 1 \)</span> and common ratio <span class="arithmatex">\( r = x \)</span>. For the series to converge, it is necessary that <span class="arithmatex">\( |r| &lt; 1 \)</span>, which is satisfied by our condition <span class="arithmatex">\( |x| &lt; 1 \)</span>.</p>
+<p>The sum of an infinite geometric series is given by <span class="arithmatex">\( S_{\infty} = \frac{a}{1 - r} \)</span>. Substituting <span class="arithmatex">\( a = 1 \)</span> and <span class="arithmatex">\( r = x \)</span> into this formula, we get:</p>
+<div class="arithmatex">\[ S_{\infty} = \frac{1}{1 - x} \]</div>
+<p>This expression is equivalent to <span class="arithmatex">\( (1 + x)^{-1} \)</span> by basic algebraic principles, under the assumption that <span class="arithmatex">\( |x| &lt; 1 \)</span>.</p>
+<p>Hence, <span class="arithmatex">\( (1 + x)^{-1} = 1 + x + x^2 + x^3 + \cdots \)</span> for <span class="arithmatex">\( |x| &lt; 1 \)</span>, proving the given statement.</p>
+</div>
+<h2 id="important-properties-of-gp">Important properties of GP</h2>
+<h3 id="three-terms-in-gp">Three terms in GP</h3>
+<p>For three numbers <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span> in geometric progression (GP), the relationship <span class="arithmatex">\(b^2 = ac\)</span> holds.</p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Proof:</strong></p>
+<p>By definition, in a geometric progression, each term after the first is obtained by multiplying the preceding term by a constant ratio, denoted as <span class="arithmatex">\(r\)</span>. Given <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span> are consecutive terms of a GP, they satisfy:</p>
+<div class="arithmatex">\[ b = ar \quad \text{and} \quad c = br \]</div>
+<p>From these relations, the common ratio <span class="arithmatex">\(r\)</span> can be expressed as <span class="arithmatex">\(r = \frac{b}{a}\)</span>. Substituting this expression into <span class="arithmatex">\(c = br\)</span>, we get:</p>
+<div class="arithmatex">\[ c = b \left( \frac{b}{a} \right) = \frac{b^2}{a} \]</div>
+<p>Multiplying both sides by <span class="arithmatex">\(a\)</span> yields:</p>
+<div class="arithmatex">\[ ac = b^2 \]</div>
+<p>This completes the proof, establishing that for three numbers <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span> in geometric progression, the property <span class="arithmatex">\(b^2 = ac\)</span> indeed holds.</p>
+</div>
+<p>Also, observe that <span class="arithmatex">\(abc=b^3\)</span></p>
+<h3 id="kth-term-from-the-end-in-gp">kth term from the end in GP</h3>
+<p>In a geometric progression (GP) consisting of terms <span class="arithmatex">\(a, ar, ar^2, ar^3, \ldots, ar^{n-1}\)</span>, </p>
+<p>where <span class="arithmatex">\(a\)</span> is the first term, </p>
+<p><span class="arithmatex">\(r\)</span> is the common ratio, and <span class="arithmatex">\(n\)</span> is the total number of terms, athe <span class="arithmatex">\(k^{th}\)</span> term from the end is given by <span class="arithmatex">\(ar^{n-k}\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>Consider a GP defined by the sequence <span class="arithmatex">\(a, ar, ar^2, ar^3, \ldots, ar^{n-1}\)</span>, where:</p>
+<ul>
+<li><span class="arithmatex">\(a\)</span> is the first term,</li>
+<li><span class="arithmatex">\(r\)</span> is the common ratio,</li>
+<li><span class="arithmatex">\(n\)</span> represents the total number of terms.</li>
+</ul>
+<p>The general formula for the <span class="arithmatex">\(m^{th}\)</span> term (<span class="arithmatex">\(T_m\)</span>) of a GP is given by:</p>
+<div class="arithmatex">\[ T_m = ar^{m-1} \]</div>
+<p>To find the <span class="arithmatex">\(k^{th}\)</span> term from the end, we note that the last term (<span class="arithmatex">\(T_n\)</span>) is <span class="arithmatex">\(ar^{n-1}\)</span>. Counting backwards <span class="arithmatex">\(k\)</span> terms from the end essentially means finding the <span class="arithmatex">\((n-k+1)^{th}\)</span> term from the beginning, since the last term is the <span class="arithmatex">\(n^{th}\)</span> term, the second-to-last is the <span class="arithmatex">\((n-1)^{th}\)</span> term, and so on, until we reach the <span class="arithmatex">\((n-k+1)^{th}\)</span> term from the beginning.</p>
+<p>Applying the general formula for the <span class="arithmatex">\(m^{th}\)</span> term to find the <span class="arithmatex">\((n-k+1)^{th}\)</span> term, we substitute <span class="arithmatex">\(m = n-k+1\)</span> into <span class="arithmatex">\(T_m = ar^{m-1}\)</span>, yielding:</p>
+<div class="arithmatex">\[ T_{n-k+1} = ar^{(n-k+1)-1} = ar^{n-k} \]</div>
+<p>Thus, the <span class="arithmatex">\(k^{th}\)</span> term from the end of the GP <span class="arithmatex">\(a, ar, ar^2, ar^3, \ldots, ar^{n-1}\)</span> is <span class="arithmatex">\(ar^{n-k}\)</span>, proving the property.</p>
+</div>
+<h3 id="constant-product-of-equidistant-terms-in-a-geometric-progression">Constant Product of Equidistant Terms in a Geometric Progression</h3>
+<p>In a geometric progression (GP) consisting of <span class="arithmatex">\(n\)</span> terms, represented as <span class="arithmatex">\(a_1, a_2, a_3, \ldots, a_n\)</span>, with <span class="arithmatex">\(a_1\)</span> being the first term and <span class="arithmatex">\(r\)</span> the common ratio, the product of terms equidistant from the start and end of the series is constant across the series. For any term <span class="arithmatex">\(a_k\)</span> and its counterpart <span class="arithmatex">\(a_{n-k+1}\)</span> equidistant from the opposite end, the product is given by:</p>
+<div class="arithmatex">\[ a_1 \cdot a_n = a_2 \cdot a_{n-1} = \cdots = a_k \cdot a_{n-k+1} = \text{constant} = a_1^2 \cdot r^{n-1} \]</div>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>Given a GP with the first term <span class="arithmatex">\(a_1 = a\)</span> and common ratio <span class="arithmatex">\(r\)</span>, the <span class="arithmatex">\(k^{th}\)</span> term (<span class="arithmatex">\(a_k\)</span>) and the <span class="arithmatex">\((n-k+1)^{th}\)</span> term (<span class="arithmatex">\(a_{n-k+1}\)</span>) can be expressed as:</p>
+<div class="arithmatex">\[ a_k = a \cdot r^{k-1} \]</div>
+<div class="arithmatex">\[ a_{n-k+1} = a \cdot r^{(n-k+1)-1} = a \cdot r^{n-k} \]</div>
+<p>The product of these two terms is:</p>
+<div class="arithmatex">\[ a_k \cdot a_{n-k+1} = (a \cdot r^{k-1}) \cdot (a \cdot r^{n-k}) \]</div>
+<div class="arithmatex">\[ = a^2 \cdot r^{(k-1)+(n-k)} \]</div>
+<div class="arithmatex">\[ = a^2 \cdot r^{n-1} \]</div>
+<p>This demonstrates that the product of the terms equidistant from the start and end of the GP (<span class="arithmatex">\(a_k \cdot a_{n-k+1}\)</span>) is indeed constant and equals <span class="arithmatex">\(a^2 \cdot r^{n-1}\)</span> for any <span class="arithmatex">\(k\)</span> within the range <span class="arithmatex">\(1 \leq k \leq n\)</span>. This constant nature of the product underlines a fundamental symmetry in geometric progressions, highlighting that the product of terms equidistant from the ends is invariant, regardless of the position <span class="arithmatex">\(k\)</span> within the sequence.</p>
+</div>
+<h3 id="product-of-all-terms-of-a-gp">Product of all terms of a GP</h3>
+<p>For a geometric progression (GP) with <span class="arithmatex">\(n\)</span> terms, denoted by <span class="arithmatex">\(a, ar, ar^2, ar^3, \ldots, ar^{n-1}\)</span>, where <span class="arithmatex">\(a\)</span> is the first term and <span class="arithmatex">\(r\)</span> is the common ratio, the product of all terms in the sequence is given by <span class="arithmatex">\(a^n r^{\frac{n(n-1)}{2}}\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>Consider a GP defined by the terms <span class="arithmatex">\(a, ar, ar^2, ar^3, \ldots, ar^{n-1}\)</span>. The product <span class="arithmatex">\(P\)</span> of all terms in the GP can be written as:</p>
+<div class="arithmatex">\[ P = a \cdot ar \cdot ar^2 \cdot ar^3 \cdot \ldots \cdot ar^{n-1} \]</div>
+<p>This expression simplifies to:</p>
+<div class="arithmatex">\[ P = a^n \cdot r^{1+2+3+\ldots+(n-1)} \]</div>
+<p>The exponent of <span class="arithmatex">\(r\)</span> is the sum of the first <span class="arithmatex">\(n-1\)</span> natural numbers, which can be calculated using the formula for the sum of an arithmetic series:</p>
+<div class="arithmatex">\[ S = \frac{n(n-1)}{2} \]</div>
+<p>Therefore, the product <span class="arithmatex">\(P\)</span> can be expressed as:</p>
+<div class="arithmatex">\[ P = a^n \cdot r^{\frac{n(n-1)}{2}} \]</div>
+<p>This demonstrates that the product of all terms in a GP is <span class="arithmatex">\(a^n\)</span> multiplied by <span class="arithmatex">\(r\)</span> raised to the sum of the first <span class="arithmatex">\(n-1\)</span> natural numbers, which is equivalent to <span class="arithmatex">\(a^n r^{\frac{n(n-1)}{2}}\)</span>. This result highlights the relationship between the geometric progression's parameters and the product of its terms, encapsulating the progression's multiplicative nature in a concise formula.</p>
+</div>
+<h3 id="arithmetic-operations-on-a-gp">Arithmetic Operations on a GP</h3>
+<ol>
+<li>
+<p><strong>Multiplication by a Real Number <span class="arithmatex">\(k\)</span></strong></p>
+<p>When each term of a GP with a common ratio <span class="arithmatex">\(r\)</span> is multiplied by a real number <span class="arithmatex">\(k\)</span> (where <span class="arithmatex">\(k\)</span> is not equal to zero), the resulting sequence remains a GP. The common ratio of the new GP is unchanged at <span class="arithmatex">\(r\)</span>.</p>
+<p><strong>Proof:</strong> Consider a GP <span class="arithmatex">\(\{a, ar, ar^2, \ldots\}\)</span>. Multiplying each term by <span class="arithmatex">\(k\)</span> results in the sequence <span class="arithmatex">\(\{ka, kar, kar^2, \ldots\}\)</span>, which is still geometric with the same common ratio <span class="arithmatex">\(r\)</span>, as <span class="arithmatex">\(\frac{kar}{ka} = r\)</span>.</p>
+</li>
+<li>
+<p><strong>Division by <span class="arithmatex">\(k\)</span></strong></p>
+<p>Similarly, dividing each term of a GP by a non-zero real number <span class="arithmatex">\(k\)</span> results in a sequence that is also a GP, with the common ratio remaining <span class="arithmatex">\(r\)</span>.</p>
+<p><strong>Proof:</strong> Starting with a GP <span class="arithmatex">\(\{a, ar, ar^2, \ldots\}\)</span> and dividing each term by <span class="arithmatex">\(k\)</span>, we obtain <span class="arithmatex">\(\{\frac{a}{k}, \frac{ar}{k}, \frac{ar^2}{k}, \ldots\}\)</span>. This sequence maintains the common ratio <span class="arithmatex">\(r\)</span>, as <span class="arithmatex">\(\frac{\frac{ar}{k}}{\frac{a}{k}} = r\)</span>.</p>
+</li>
+<li>
+<p><strong>Addition or Subtraction by <span class="arithmatex">\(k\)</span></strong></p>
+<p>Adding or subtracting a real number <span class="arithmatex">\(k\)</span> (where <span class="arithmatex">\(k\)</span> is not equal to zero) to each term of a GP does not result in a GP.</p>
+<p><strong>Proof:</strong> Consider a GP <span class="arithmatex">\(\{a, ar, ar^2, \ldots\}\)</span>. Adding <span class="arithmatex">\(k\)</span> to each term results in <span class="arithmatex">\(\{a+k, ar+k, ar^2+k, \ldots\}\)</span>. The ratio between successive terms varies, as <span class="arithmatex">\(\frac{ar+k}{a+k} \neq \frac{ar^2+k}{ar+k}\)</span> in general, hence the resulting sequence is not a GP.</p>
+</li>
+<li>
+<p><strong>Logarithmic Transformation and Exponentiation</strong></p>
+<ul>
+<li>
+<p><strong>Logarithmic Transformation:</strong> Taking the logarithm base <span class="arithmatex">\(b\)</span> of each term in a GP <span class="arithmatex">\(\{a, ar, ar^2, \ldots\}\)</span> results in an arithmetic progression (AP) with a common difference of <span class="arithmatex">\(\log_b r\)</span>.</p>
+<p><strong>Proof:</strong> The logarithm base <span class="arithmatex">\(b\)</span> of the GP terms gives <span class="arithmatex">\(\{\log_b a, \log_b ar, \log_b ar^2, \ldots\}\)</span>, which simplifies to <span class="arithmatex">\(\{\log_b a, \log_b a + \log_b r, \log_b a + 2\log_b r, \ldots\}\)</span>, clearly an AP with common difference <span class="arithmatex">\(\log_b r\)</span>.</p>
+</li>
+<li>
+<p><strong>Exponentiation:</strong> Conversely, exponentiating each term of an AP by a base <span class="arithmatex">\(b\)</span> results in a GP.</p>
+<p><strong>Proof:</strong> Consider an AP <span class="arithmatex">\(\{a, a+d, a+2d, \ldots\}\)</span>. Exponentiating each term by base <span class="arithmatex">\(b\)</span> yields <span class="arithmatex">\(\{b^a, b^{a+d}, b^{a+2d}, \ldots\}\)</span>. This forms a GP, as the ratio between successive terms is <span class="arithmatex">\(b^d\)</span>, showing exponential growth by a constant factor.
+5. <strong>Raising Each Term of a Geometric Progression to a Power <span class="arithmatex">\(k\)</span></strong></p>
+</li>
+</ul>
+<p>Given a geometric progression (GP) with terms <span class="arithmatex">\(a, ar, ar^2, \ldots\)</span> and a common ratio <span class="arithmatex">\(r\)</span>, when each term of the GP is raised to a certain power <span class="arithmatex">\(k\)</span>, the resulting sequence <span class="arithmatex">\(\{a^k, (ar)^k, (ar^2)^k, \ldots\}\)</span> is also a geometric progression with a common ratio of <span class="arithmatex">\(r^k\)</span>.</p>
+</li>
+<li>
+<p>Combining Terms of Two Geometric Progressions via Arithmetic Operations</p>
+<p>Given two geometric progressions (GPs) <span class="arithmatex">\(G_1\)</span> and <span class="arithmatex">\(G_2\)</span> with terms <span class="arithmatex">\(\{a_1, a_1r_1, a_1r_1^2, \ldots\}\)</span> and <span class="arithmatex">\(\{a_2, a_2r_2, a_2r_2^2, \ldots\}\)</span> respectively, where <span class="arithmatex">\(a_1\)</span> and <span class="arithmatex">\(a_2\)</span> are the first terms and <span class="arithmatex">\(r_1\)</span> and <span class="arithmatex">\(r_2\)</span> are the common ratios, the result of combining corresponding terms of <span class="arithmatex">\(G_1\)</span> and <span class="arithmatex">\(G_2\)</span> via arithmetic operations (multiplication, division, addition, subtraction) follows specific patterns:</p>
+<ol>
+<li><strong>Multiplication:</strong> Produces a GP with the first term <span class="arithmatex">\(a_1a_2\)</span> and common ratio <span class="arithmatex">\(r_1r_2\)</span>.</li>
+<li><strong>Division:</strong> Results in a sequence that is a GP with the first term <span class="arithmatex">\(a_1/a_2\)</span> (assuming <span class="arithmatex">\(a_2 \neq 0\)</span>) and common ratio <span class="arithmatex">\(r_1/r_2\)</span> (assuming <span class="arithmatex">\(r_2 \neq 0\)</span>).</li>
+<li><strong>Addition or Subtraction:</strong> Does not generally result in a GP.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p><strong>Multiplication:</strong></p>
+<p>For the multiplication operation, combining corresponding terms of <span class="arithmatex">\(G_1\)</span> and <span class="arithmatex">\(G_2\)</span> gives:</p>
+<div class="arithmatex">\[ \{a_1a_2, (a_1r_1)(a_2r_2), (a_1r_1^2)(a_2r_2^2), \ldots\} \]</div>
+<p>This sequence is a GP because the ratio of any term to its preceding term is constant:</p>
+<div class="arithmatex">\[ \frac{(a_1r_1^n)(a_2r_2^n)}{(a_1r_1^{n-1})(a_2r_2^{n-1})} = r_1r_2 \]</div>
+<p><strong>Division:</strong></p>
+<p>For division, assuming <span class="arithmatex">\(a_2\)</span> and <span class="arithmatex">\(r_2\)</span> are not zero, the sequence formed by combining corresponding terms is:</p>
+<div class="arithmatex">\[ \left\{\frac{a_1}{a_2}, \frac{a_1r_1}{a_2r_2}, \frac{a_1r_1^2}{a_2r_2^2}, \ldots\right\} \]</div>
+<p>This is also a GP, with each term's ratio to its preceding term being <span class="arithmatex">\(r_1/r_2\)</span>.</p>
+<p><strong>Addition and Subtraction:</strong></p>
+<p>Addition or subtraction of corresponding terms yields:</p>
+<div class="arithmatex">\[ \{a_1 + a_2, a_1r_1 + a_2r_2, a_1r_1^2 + a_2r_2^2, \ldots\} \]</div>
+<div class="arithmatex">\[ \{a_1 - a_2, a_1r_1 - a_2r_2, a_1r_1^2 - a_2r_2^2, \ldots\} \]</div>
+<p>The sequences resulting from addition or subtraction do not generally form GPs because the difference (or sum) between successive terms does not multiply by a constant ratio. The ratio of successive terms varies, depending on the values of <span class="arithmatex">\(r_1\)</span>, <span class="arithmatex">\(r_2\)</span>, <span class="arithmatex">\(a_1\)</span>, and <span class="arithmatex">\(a_2\)</span>.</p>
+</div>
+</li>
+<li>
+<p><strong>Forming a Subsequence from a Geometric Progression by Selecting Terms at a Constant Interval</strong></p>
+<p>Given a geometric progression (GP) with a common ratio <span class="arithmatex">\(r\)</span>, if we form a subsequence by choosing terms at a constant interval of length <span class="arithmatex">\(k\)</span>, the resulting subsequence is also a GP with a common ratio of <span class="arithmatex">\(r^k\)</span>.</p>
+<p><strong><em>Definition of Interval</em></strong></p>
+<p><em>In the context of sequences, an interval of length <span class="arithmatex">\(k\)</span> refers to the practice of selecting every <span class="arithmatex">\(k^{th}\)</span> term from a sequence, effectively skipping <span class="arithmatex">\(k-1\)</span> terms between selections. For example, an interval of length <span class="arithmatex">\(k=2\)</span> means selecting every second term from the sequence.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>Consider a GP given by the sequence <span class="arithmatex">\(\{a, ar, ar^2, ar^3, \ldots\}\)</span>, where <span class="arithmatex">\(a\)</span> is the first term and <span class="arithmatex">\(r\)</span> is the common ratio.</p>
+<p><strong>Original GP:</strong></p>
+<ul>
+<li>The <span class="arithmatex">\(n^{th}\)</span> term of this GP can be represented as <span class="arithmatex">\(ar^{n-1}\)</span>.</li>
+</ul>
+<p><strong>Forming a Subsequence:</strong></p>
+<ul>
+<li>By selecting terms at a constant interval of length <span class="arithmatex">\(k\)</span>, we choose the terms <span class="arithmatex">\(a, ar^k, ar^{2k}, ar^{3k}, \ldots\)</span>. This selection corresponds to taking every <span class="arithmatex">\(k^{th}\)</span> term from the original sequence.</li>
+</ul>
+<p><strong>Analysis of the Subsequence:</strong></p>
+<ul>
+<li>The first term of the subsequence is <span class="arithmatex">\(a\)</span>.</li>
+<li>The second term is <span class="arithmatex">\(ar^k\)</span>.</li>
+<li>The third term is <span class="arithmatex">\(ar^{2k}\)</span>, and so on.</li>
+</ul>
+<p><strong>Determining the Common Ratio:</strong></p>
+<ul>
+<li>The ratio of the second term to the first term in the subsequence is <span class="arithmatex">\(\frac{ar^k}{a} = r^k\)</span>.</li>
+<li>Similarly, the ratio of the third term to the second term is <span class="arithmatex">\(\frac{ar^{2k}}{ar^k} = r^k\)</span>.</li>
+</ul>
+<p>Given that the ratio between successive terms in the subsequence is constant and equal to <span class="arithmatex">\(r^k\)</span>, the subsequence formed by selecting every <span class="arithmatex">\(k^{th}\)</span> term from the original GP is itself a GP with a common ratio of <span class="arithmatex">\(r^k\)</span>.</p>
+</div>
+</li>
+</ol>
+<h2 id="recurring-decimals-and-gp">Recurring decimals and GP</h2>
+<p><strong>Definition of Recurring Decimals</strong></p>
+<p>A recurring decimal is a decimal number in which a digit or group of digits repeats infinitely. For example, in <span class="arithmatex">\(0.6666\ldots\)</span>, the digit <span class="arithmatex">\(6\)</span> repeats indefinitely, and in <span class="arithmatex">\(0.123123\ldots\)</span>, the sequence <span class="arithmatex">\(123\)</span> repeats.</p>
+<p><strong>Recurring Decimals and Infinite Geometric Progressions</strong></p>
+<p>Recurring decimals can be represented as infinite geometric progressions (GPs). This representation is based on the observation that each repetition of the recurring digits can be seen as a term in a GP, where the common ratio is a power of <span class="arithmatex">\(10\)</span> inversely proportional to the length of the repeating sequence.</p>
+<div class="admonition example">
+<p class="admonition-title">Example: Converting a Recurring Decimal to an Infinite GP</p>
+<p>Consider the recurring decimal <span class="arithmatex">\(0.232323\ldots\)</span>. This can be expressed as the sum of an infinite GP:</p>
+<div class="arithmatex">\[ 0.23 + 0.0023 + 0.000023 + \ldots \]</div>
+<p>In this series:
+- The first term (<span class="arithmatex">\(a\)</span>) is <span class="arithmatex">\(0.23\)</span> or <span class="arithmatex">\(23 \times 10^{-2}\)</span>.
+- The common ratio (<span class="arithmatex">\(r\)</span>) is <span class="arithmatex">\(10^{-2}\)</span>, since each subsequent term is <span class="arithmatex">\(100\)</span> times smaller than the previous term.</p>
+<p>The series can be rewritten as:</p>
+<div class="arithmatex">\[ 23 \times 10^{-2} + 23 \times 10^{-4} + 23 \times 10^{-6} + \ldots \]</div>
+<p><strong>Summing the Infinite GP</strong></p>
+<p>The sum (<span class="arithmatex">\(S\)</span>) of an infinite GP is given by the formula <span class="arithmatex">\(S = \frac{a}{1 - r}\)</span>, where <span class="arithmatex">\(a\)</span> is the first term and <span class="arithmatex">\(r\)</span> is the common ratio. Applying this formula to our series:</p>
+<div class="arithmatex">\[ S = \frac{23 \times 10^{-2}}{1 - 10^{-2}} \]</div>
+<p>Calculating the sum:</p>
+<div class="arithmatex">\[ S = \frac{23 \times 10^{-2}}{1 - 0.01} \]</div>
+<div class="arithmatex">\[ S = \frac{23 \times 10^{-2}}{0.99} \]</div>
+<div class="arithmatex">\[ S = \frac{23}{99} \]</div>
+<p><strong>Conclusion</strong></p>
+<p>The recurring decimal <span class="arithmatex">\(0.232323\ldots\)</span> can be expressed as the infinite geometric progression <span class="arithmatex">\(23 \times 10^{-2} + 23 \times 10^{-4} + 23 \times 10^{-6} + \ldots\)</span>, which sums to <span class="arithmatex">\(\frac{23}{99}\)</span>. This example demonstrates how recurring decimals are not just patterns in decimal notation but can also be precisely represented and summed using the concept of infinite GPs. This approach provides a powerful tool for converting recurring decimals into exact fractional forms.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Consider the recurring decimal <span class="arithmatex">\(3.142857142857\ldots\)</span>. This decimal has a repeating cycle of <span class="arithmatex">\(142857\)</span> that goes on infinitely. To express this recurring decimal as an infinite geometric progression, we first isolate the repeating part:</p>
+<div class="arithmatex">\[ 3.142857142857\ldots = 3 + 0.142857 + 0.000000142857 + 0.000000000142857 + \ldots \]</div>
+<p>The sequence <span class="arithmatex">\(0.142857, 0.000000142857, 0.000000000142857, \ldots\)</span> forms an infinite GP, where:
+- The first term (<span class="arithmatex">\(a\)</span>) is <span class="arithmatex">\(0.142857\)</span>, or more precisely, <span class="arithmatex">\(142857 \times 10^{-6}\)</span>.
+- The common ratio (<span class="arithmatex">\(r\)</span>) is <span class="arithmatex">\(10^{-6}\)</span>, since each subsequent term is <span class="arithmatex">\(10^6\)</span> times smaller than the previous one, correcting the earlier error.</p>
+<p>The GP can thus be written as:</p>
+<div class="arithmatex">\[ 142857 \times 10^{-6} + 142857 \times 10^{-12} + 142857 \times 10^{-18} + \ldots \]</div>
+<h4 id="summing-the-infinite-gp">Summing the Infinite GP</h4>
+<p>The sum <span class="arithmatex">\(S\)</span> of an infinite GP is given by the formula <span class="arithmatex">\(S = \frac{a}{1 - r}\)</span>, substituting the values:</p>
+<div class="arithmatex">\[ S = \frac{142857 \times 10^{-6}}{1 - 10^{-6}} \]</div>
+<p>Simplifying, we get:</p>
+<div class="arithmatex">\[ S = \frac{142857 \times 10^{-6}}{0.999999} \]</div>
+<div class="arithmatex">\[ S = \frac{142857}{999999} \]</div>
+<p>Including the non-repeating part (<span class="arithmatex">\(3\)</span>) yields the total value of the recurring decimal:</p>
+<div class="arithmatex">\[ 3 + \frac{142857}{999999} \]</div>
+<p>which can be simlified as <span class="arithmatex">\(3 + \frac{142857}{999999} = \frac{22}{7}\)</span></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

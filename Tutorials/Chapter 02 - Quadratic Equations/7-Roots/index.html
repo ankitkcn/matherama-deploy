@@ -1,0 +1,3036 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2002%20-%20Quadratic%20Equations/7-Roots/">
+      
+      
+        <link rel="prev" href="../6-Range%20of%20quadratic%20expressions/">
+      
+      
+        <link rel="next" href="../8-Relation%20of%20roots%20and%20Graph/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Roots - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#factorizing-a-quadratic-expression" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Roots
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#factorizing-a-quadratic-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factorizing a quadratic expression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Factorizing a quadratic expression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#determining-irreducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Determining Irreducibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roots()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vietas-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vieta's Formula:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vieta's Formula:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-quadratic-expression-and-its-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Quadratic Expression and Its Roots
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vietas-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vieta's Formulas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-than-two-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      More than two roots
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#newtons-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Newton's identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#difference-of-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference of Roots
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#factorizing-a-quadratic-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factorizing a quadratic expression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Factorizing a quadratic expression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#determining-irreducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Determining Irreducibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roots()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vietas-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vieta's Formula:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vieta's Formula:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-quadratic-expression-and-its-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Quadratic Expression and Its Roots
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vietas-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vieta's Formulas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-than-two-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      More than two roots
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#newtons-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Newton's identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#difference-of-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference of Roots
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Roots</h1>
+
+<h2 id="factorizing-a-quadratic-expression">Factorizing a quadratic expression</h2>
+<p>The primary goal of factorizing a quadratic expression <span class="arithmatex">\( ax^2 + bx + c \)</span> is to simplify the equation and find its solutions more easily. Factorization transforms the quadratic into a product of binomials, typically in the form <span class="arithmatex">\( a(x - \alpha)(x - \beta) \)</span>, where <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span> are the roots.</p>
+<hr />
+<p><strong><img alt="🧠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f9e0.svg" title=":brain:" /> Exploring the Factorization of Quadratic Expressions Using Completing the Square</strong></p>
+<p>One effective method to factorize a quadratic expression of the form <span class="arithmatex">\( ax^2 + bx + c \)</span> is by completing the square. This method involves transforming the expression into a perfect square plus or minus a constant. Let's go through this process step-by-step:</p>
+<p><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":right_arrow:" /> <strong>Step 1: Take common the coefficient of <span class="arithmatex">\(x^2\)</span></strong></p>
+<p>First, let's factor out the coefficient <span class="arithmatex">\( a \)</span> from all terms in the expression:</p>
+<p><span class="arithmatex">\( a(x^2 + \frac{b}{a}x + \frac{c}{a}) \)</span></p>
+<p><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":right_arrow:" /> <strong>Step 2: Completing the Square</strong></p>
+<p>Now, within the brackets, we add and subtract the square of half the coefficient of <span class="arithmatex">\( x \)</span>, which is <span class="arithmatex">\( \left(\frac{b}{2a}\right)^2 \)</span>:</p>
+<p><span class="arithmatex">\( a \left(x^2 + \frac{b}{a}x + \left(\frac{b}{2a}\right)^2 - \left(\frac{b}{2a}\right)^2 + \frac{c}{a} \right) \)</span></p>
+<p><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":right_arrow:" /> <strong>Step 3: Forming a Perfect Square</strong></p>
+<p>We can rearrange the terms inside the brackets to form a perfect square:</p>
+<p><span class="arithmatex">\( a \left( \left(x + \frac{b}{2a}\right)^2 - \left(\frac{b}{2a}\right)^2 + \frac{c}{a} \right) \)</span></p>
+<p><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":right_arrow:" /> <strong>Step 4: A rearrangement</strong></p>
+<p>Let <span class="arithmatex">\( \Delta = b^2 - 4ac \)</span>. Combine the last two terms:</p>
+<p><span class="arithmatex">\( a \left( \left(x + \frac{b}{2a}\right)^2 - \frac{{b^2-4ac}}{4a^2} \right) \)</span></p>
+<p><span class="arithmatex">\( = a \left( \left(x + \frac{b}{2a}\right)^2 - \frac{{\Delta}}{4a^2} \right) \)</span></p>
+<p><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":right_arrow:" /> <strong>Step 5: Cases Based on <span class="arithmatex">\( \Delta \)</span>:</strong> <img alt="🔍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f50d.svg" title=":mag:" />  <br />
+Whether the obtained expression can be factorized or not depends on <span class="arithmatex">\(\Delta\)</span>.</p>
+<p><img alt="🔘" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f518.svg" title=":radio_button:" /> <strong><em>Case I. <span class="arithmatex">\( \Delta &gt; 0 \)</span></em></strong>:</p>
+<ul>
+<li>In this case, <span class="arithmatex">\( \frac{\Delta}{4a^2} \)</span> is a positive number.</li>
+<li>The expression can be viewed as <span class="arithmatex">\(a^2-b^2=(a-b)(a+b)\)</span>. Factorization is possible:
+    <span class="arithmatex">\( a\left(\left(x + \frac{b}{2a}\right)^2 - \frac{\Delta}{4a^2}\right) \)</span>
+    <span class="arithmatex">\(= a\left(\left(x + \frac{b}{2a}\right) - \frac{\sqrt{\Delta}}{2a}\right)\left(\left(x + \frac{b}{2a}\right) + \frac{\sqrt{\Delta}}{2a}\right) \)</span></li>
+</ul>
+<p><img alt="🔘" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f518.svg" title=":radio_button:" /> <strong><em>Case II. <span class="arithmatex">\( \Delta = 0 \)</span></em></strong>:</p>
+<ul>
+<li>The expression becomes a perfect square:
+    <span class="arithmatex">\( a\left(\left(x + \frac{b}{2a}\right)^2\right) \)</span></li>
+<li>Factorization results in a single repeated factor.</li>
+</ul>
+<p><img alt="🔘" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f518.svg" title=":radio_button:" /> <strong><em>Case III. <span class="arithmatex">\( \Delta &lt; 0 \)</span></em></strong>:<img alt="🚫" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6ab.svg" title=":no_entry_sign:" /></p>
+<ul>
+<li>The term <span class="arithmatex">\( \frac{\Delta}{4a^2} \)</span> is negative, leading to <span class="arithmatex">\( a^2 + b^2 \)</span> form inside the parentheses, which cannot be factorized.</li>
+<li>Factorization  is not possible into real factors. Even though we will learn later that we can factorize it into complex factors. </li>
+</ul>
+<p>In summary, factorization into real number factors is possible when <span class="arithmatex">\( \Delta \geq 0 \)</span>, with a single repeated factor for <span class="arithmatex">\( \Delta = 0 \)</span>, and two distinct factors for <span class="arithmatex">\( \Delta &gt; 0 \)</span>. For <span class="arithmatex">\( \Delta &lt; 0 \)</span>, factorization into real factors is not possible.</p>
+<hr />
+<div class="admonition example">
+<p class="admonition-title">Examples</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Example 1</label><label for="__tabbed_1_2">Example 2</label><label for="__tabbed_1_3">Example 3</label><label for="__tabbed_1_4">Example 4</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The following <strong>example</strong> should make it clear how to apply the above steps.</p>
+<p>Let us factorize <span class="arithmatex">\( -2x^2 + 4x + 3 \)</span>. Observe that <span class="arithmatex">\(\Delta=b^2-4ac=(4)^2-4(-2)(3)\)</span><span class="arithmatex">\(&gt;0\)</span>. This means that the given expression is factorizable into linear factors. </p>
+<ol>
+<li>
+<p>Write the expression: <span class="arithmatex">\( -2x^2 + 4x + 3 \)</span>.</p>
+</li>
+<li>
+<p>Factor out <span class="arithmatex">\(-2\)</span>, keeping it with the expression: 
+<span class="arithmatex">\( -2(x^2 - 2x - \frac{3}{2}) \)</span>.</p>
+</li>
+<li>
+<p>Complete the square inside the parenthesis:
+<span class="arithmatex">\( x^2 - 2x \)</span> becomes <span class="arithmatex">\( (x - 1)^2 \)</span> by adding and subtracting <span class="arithmatex">\( 1 \)</span>. 
+So, <span class="arithmatex">\( -2(x^2 - 2x - \frac{3}{2}) \)</span> becomes <span class="arithmatex">\( -2((x - 1)^2 - 1 - \frac{3}{2}) \)</span>.</p>
+</li>
+<li>
+<p>Simplify inside the parenthesis:
+<span class="arithmatex">\( (x - 1)^2 - 1 - \frac{3}{2} = (x - 1)^2 - \frac{5}{2} \)</span>.</p>
+</li>
+<li>
+<p>The factorized form is:
+<span class="arithmatex">\( -2((x - 1)^2 - \frac{5}{2}) \)</span>.</p>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p>May be another example: Factorize <span class="arithmatex">\( 3x^2 - 5x + 1 \)</span>. For this example as well <span class="arithmatex">\(\Delta&gt;0\)</span></p>
+<p>To factorize <span class="arithmatex">\( 3x^2 - 5x + 1 \)</span> by completing the square, follow these steps:</p>
+<ol>
+<li>
+<p>Write the expression: <span class="arithmatex">\( 3x^2 - 5x + 1 \)</span>.</p>
+</li>
+<li>
+<p>Factor out the coefficient of <span class="arithmatex">\( x^2 \)</span>, which is <span class="arithmatex">\( 3 \)</span>:
+<span class="arithmatex">\( 3(x^2 - \frac{5}{3}x + \frac{1}{3}) \)</span>.</p>
+</li>
+<li>
+<p>Complete the square inside the parenthesis:
+<span class="arithmatex">\( x^2 - \frac{5}{3}x \)</span> becomes <span class="arithmatex">\( \left(x - \frac{5}{6}\right)^2 \)</span> by adding and subtracting <span class="arithmatex">\( \left(\frac{5}{6}\right)^2 \)</span>. 
+So, <span class="arithmatex">\( 3(x^2 - \frac{5}{3}x + \frac{1}{3}) \)</span> becomes <span class="arithmatex">\( 3\left(\left(x - \frac{5}{6}\right)^2 - \left(\frac{5}{6}\right)^2 + \frac{1}{3}\right) \)</span>.</p>
+</li>
+<li>
+<p>Simplify inside the parenthesis:
+<span class="arithmatex">\( \left(x - \frac{5}{6}\right)^2 - \left(\frac{5}{6}\right)^2 + \frac{1}{3} = \left(x - \frac{5}{6}\right)^2 - \frac{25}{36} + \frac{12}{36} = \left(x - \frac{5}{6}\right)^2 - \frac{13}{36} \)</span>.</p>
+</li>
+<li>
+<p>The factorized form is:
+<span class="arithmatex">\( 3\left(\left(x - \frac{5}{6}\right)^2 - \frac{13}{36}\right) \)</span>.</p>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p>Let us look at an example in which <span class="arithmatex">\(\Delta=0\)</span>. Factorize <span class="arithmatex">\(4x^2+12x+9\)</span></p>
+<ol>
+<li>
+<p><strong>Take 4 common</strong>:
+<span class="arithmatex">\( 4x^2 + 12x + 9 = 4(x^2 + 3x + \frac{9}{4}) \)</span></p>
+</li>
+<li>
+<p><strong>Complete the Square for the expression inside the parentheses</strong>:
+<span class="arithmatex">\( x^2 + 3x + \frac{9}{4} \)</span> <br />
+To complete the square, add and subtract the square of half the coefficient of <span class="arithmatex">\(x\)</span>. The coefficient of <span class="arithmatex">\(x\)</span> is 3, so half of it is <span class="arithmatex">\(\frac{3}{2}\)</span>, and its square is <span class="arithmatex">\(\left(\frac{3}{2}\right)^2 = \frac{9}{4}\)</span>.   <br />
+<span class="arithmatex">\( x^2 + 3x + \frac{9}{4} = \left(x + \frac{3}{2}\right)^2 \)</span></p>
+</li>
+<li>
+<p><strong>Substitute back into the original expression</strong>:
+<span class="arithmatex">\( 4(x^2 + 3x + \frac{9}{4}) = 4\left(x + \frac{3}{2}\right)^2 \)</span><span class="arithmatex">\(=\left(2x + 3\right)^2\)</span></p>
+</li>
+</ol>
+<p>Therefore, the factorized form of <span class="arithmatex">\(4x^2 + 12x + 9\)</span> is <span class="arithmatex">\(\left(2x + 3\right)^2\)</span>.</p>
+</div>
+<div class="tabbed-block">
+<p>Now, let us look at an example in which <span class="arithmatex">\(\Delta&lt;0\)</span>. Factorize <span class="arithmatex">\(3x^2 - 5x + 5\)</span>.</p>
+<ol>
+<li>
+<p><strong>Take 3 common</strong>:
+<span class="arithmatex">\( 3x^2 - 5x + 5 = 3(x^2 - \frac{5}{3}x + \frac{5}{3}) \)</span></p>
+</li>
+<li>
+<p><strong>Complete the Square for the expression inside the parentheses</strong>:
+<span class="arithmatex">\( x^2 - \frac{5}{3}x \)</span>  <br />
+To complete the square, add and subtract the square of half the coefficient of <span class="arithmatex">\(x\)</span>. The coefficient of <span class="arithmatex">\(x\)</span> is <span class="arithmatex">\(-\frac{5}{3}\)</span>, so half of it is <span class="arithmatex">\(-\frac{5}{6}\)</span>, and its square is <span class="arithmatex">\(\left(-\frac{5}{6}\right)^2 = \frac{25}{36}\)</span>.    <br />
+<span class="arithmatex">\( = x^2 - \frac{5}{3}x + \frac{25}{36} - \frac{25}{36} + \frac{5}{3} \)</span>    <br />
+<span class="arithmatex">\( = x^2 - \frac{5}{3}x + \frac{25}{36} = \left(x - \frac{5}{6}\right)^2 \)</span>    <br />
+<span class="arithmatex">\( = 3\left(\left(x - \frac{5}{6}\right)^2 - \frac{25}{36} + \frac{5}{3}\right) \)</span></p>
+</li>
+<li>
+<p><strong>Simplify</strong>:
+<span class="arithmatex">\( 3\left(\left(x - \frac{5}{6}\right)^2 + \frac{45}{36} - \frac{25}{36}\right) \)</span>
+<span class="arithmatex">\( =3\left(\left(x - \frac{5}{6}\right)^2 + \frac{20}{36}\right) \)</span></p>
+</li>
+<li>
+<p><strong>Examine for Factorization</strong>:
+Since the term inside the parentheses is a sum of squares <span class="arithmatex">\(\left(\left(x - \frac{5}{6}\right)^2 + \frac{20}{36}\right)\)</span>, it cannot be further factorized using real numbers.</p>
+</li>
+</ol>
+<p>Therefore, the expression <span class="arithmatex">\(3x^2 - 5x + 5\)</span> is irreducible over the real numbers.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Irreducibility</p>
+<p>A quadratic expression is said to be <strong>irreducible</strong> over the real numbers <span class="arithmatex">\( \mathbb{R} \)</span> if it cannot be factored into the product of two linear expressions with real coefficients. In simpler terms, an irreducible quadratic expression over <span class="arithmatex">\( \mathbb{R} \)</span> does not have any real roots.</p>
+<p>Mathematically, a quadratic expression of the form:</p>
+<div class="arithmatex">\[ ax^2 + bx + c \]</div>
+<p>is irreducible over <span class="arithmatex">\( \mathbb{R} \)</span> if there are no real numbers <span class="arithmatex">\( p \)</span>, <span class="arithmatex">\( q \)</span>, <span class="arithmatex">\( r \)</span>, and <span class="arithmatex">\( s \)</span> such that:</p>
+<div class="arithmatex">\[ ax^2 + bx + c = (px + q)(rx + s) \]</div>
+<p>for all <span class="arithmatex">\( x \)</span> in <span class="arithmatex">\( \mathbb{R} \)</span>.</p>
+<h3 id="determining-irreducibility">Determining Irreducibility</h3>
+<p>The irreducibility of a quadratic expression over <span class="arithmatex">\( \mathbb{R} \)</span> is typically determined by examining its discriminant, <span class="arithmatex">\( \Delta \)</span>, where <span class="arithmatex">\( \Delta = b^2 - 4ac \)</span>. The expression is irreducible over <span class="arithmatex">\( \mathbb{R} \)</span> if and only if <span class="arithmatex">\( \Delta &lt; 0 \)</span>. When the discriminant is negative, the quadratic equation <span class="arithmatex">\( ax^2 + bx + c = 0 \)</span> does not have real solutions, and thus the expression cannot be factored into real linear factors.</p>
+<h3 id="example">Example</h3>
+<p>For instance, the quadratic expression <span class="arithmatex">\( x^2 + 1 \)</span> is irreducible over <span class="arithmatex">\( \mathbb{R} \)</span> since its discriminant <span class="arithmatex">\( \Delta = 0^2 - 4 \cdot 1 \cdot 1 = -4 \)</span> is less than zero. Therefore, there are no real numbers <span class="arithmatex">\( x \)</span> that satisfy <span class="arithmatex">\( x^2 + 1 = 0 \)</span>, and the expression cannot be factored into linear terms with real coefficients.</p>
+</div>
+<h2 id="roots">Roots(<img alt="🌳" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f333.svg" title=":deciduous_tree:" />)</h2>
+<p>Now that we understand how to factorize a quadratic expression, we look at what roots of a quadratix expressions are. Simply, the roots of a quadratic expression are the solutions to the quadratic equation <span class="arithmatex">\( ax^2 + bx + c = 0 \)</span>, where <span class="arithmatex">\( a \)</span>, <span class="arithmatex">\( b \)</span>, and <span class="arithmatex">\( c \)</span> are real numbers and <span class="arithmatex">\( a \neq 0 \)</span>. The roots are the values of <span class="arithmatex">\( x \)</span> for which the value of the expression becomes exactly zero. That's why these values of <span class="arithmatex">\(x\)</span> are also called <strong>zeros</strong>. The rocess again involves <em>completing the square method</em>. </p>
+<p>So, we start with quadratic eqaution <span class="arithmatex">\( ax^2 + bx + c = 0 \)</span> and follow these steps. 
+<img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":right_arrow:" /><strong>Step 1. Rearranging the Equation</strong>:
+   Divide the entire equation by <span class="arithmatex">\( a \)</span> (if <span class="arithmatex">\( a \)</span> is not 1) to make the coefficient of <span class="arithmatex">\( x^2 \)</span> equal to 1:
+   [ x^2 + \frac{b}{a}x + \frac{c}{a} = 0 ]</p>
+<p><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":right_arrow:" /><strong>Step 2. Moving the Constant Term</strong>:
+   Shift the constant term to the right side:
+   [ x^2 + \frac{b}{a}x = -\frac{c}{a} ]</p>
+<p><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":right_arrow:" /><strong>Step 3. Completing the Square</strong>:
+   Add <span class="arithmatex">\(\left(\frac{b}{2a}\right)^2\)</span> (the square of half the coefficient of <span class="arithmatex">\( x \)</span>) to both sides:
+   [ x^2 + \frac{b}{a}x + \left(\frac{b}{2a}\right)^2 = \left(\frac{b}{2a}\right)^2 - \frac{c}{a} ]
+   This forms a perfect square on the left side:
+   [ \left(x + \frac{b}{2a}\right)^2 = \frac{b^2 - 4ac}{4a^2} ]</p>
+<p><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":right_arrow:" /><strong>Step 4: Introducing Discriminant (<span class="arithmatex">\( \Delta \)</span>)</strong>:</p>
+<p>Define <span class="arithmatex">\( \Delta = b^2 - 4ac \)</span>. The equation becomes:
+   [ \left(x + \frac{b}{2a}\right)^2 = \frac{\Delta}{4a^2} ]</p>
+<p><img alt="🔍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f50d.svg" title=":mag:" /> <strong>Analysis Based on Discriminant (<span class="arithmatex">\( \Delta \)</span>)</strong></p>
+<p><img alt="🔘" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f518.svg" title=":radio_button:" />  <strong>Case I: For <span class="arithmatex">\( \Delta &gt; 0 \)</span></strong>:</p>
+<ul>
+<li>The equation has two real and distinct roots.</li>
+<li>Solve using: <span class="arithmatex">\( x = \frac{-b \pm \sqrt{\Delta}}{2a} \)</span>.</li>
+</ul>
+<p><img alt="🔘" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f518.svg" title=":radio_button:" />  <strong>Case II: For <span class="arithmatex">\( \Delta = 0 \)</span></strong>:</p>
+<ul>
+<li>The equation has one real root (a repeated root).</li>
+<li>The root is <span class="arithmatex">\( x = \frac{-b}{2a} \)</span>.</li>
+</ul>
+<p><img alt="🔘" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f518.svg" title=":radio_button:" />  <strong>Case III. For <span class="arithmatex">\( \Delta &lt; 0 \)</span></strong>:</p>
+<ul>
+<li>The equation has no real roots. This is because the left-hand side of the equation, <span class="arithmatex">\(\left(x + \frac{b}{2a}\right)^2\)</span>, represents a square and thus is always non-negative (as the square of any real number, whether positive, negative, or zero, is non-negative).</li>
+<li>However, for <span class="arithmatex">\( \Delta &lt; 0 \)</span>, the right-hand side, <span class="arithmatex">\(\frac{\Delta}{4a^2}\)</span>, is negative (since <span class="arithmatex">\( \Delta \)</span> is negative and <span class="arithmatex">\( a^2 \)</span> is always non-negative).</li>
+<li>Since a non-negative number cannot equal a negative number, there are no real values of <span class="arithmatex">\( x \)</span> that satisfy the equation when <span class="arithmatex">\( \Delta &lt; 0 \)</span>.</li>
+</ul>
+<div class="admonition note info">
+<p class="admonition-title">Roots and Factorization</p>
+<p>The factorization of a quadratic expression <span class="arithmatex">\( ax^2 + bx + c \)</span> is intimately connected to its roots. When this expression is factorized, it takes the form <span class="arithmatex">\( a(x - \alpha)(x - \beta) \)</span>, where <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span> represent the roots of the quadratic equation <span class="arithmatex">\( ax^2 + bx + c = 0 \)</span>. These roots are the specific values of <span class="arithmatex">\( x \)</span> that satisfy the equation, making the entire expression equal to zero.</p>
+<p>The roots, <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span>, are determined using the quadratic formula: <span class="arithmatex">\( \alpha, \beta = \frac{-b \pm \sqrt{\Delta}}{2a} \)</span>, where <span class="arithmatex">\( \Delta \)</span> is the discriminant given by <span class="arithmatex">\( b^2 - 4ac \)</span>. This formula provides the solutions to the quadratic equation, and these solutions are precisely the values at which the factorized expression <span class="arithmatex">\( a(x - \alpha)(x - \beta) \)</span> equals zero.</p>
+<p>In essence, the process of factorizing the quadratic expression reveals the roots directly. Each factor in the expression <span class="arithmatex">\( a(x - \alpha)(x - \beta) \)</span> corresponds to a root of the quadratic equation. When <span class="arithmatex">\( x \)</span> takes the value of <span class="arithmatex">\( \alpha \)</span> or <span class="arithmatex">\( \beta \)</span>, the corresponding factor becomes zero, thereby making the product of the factors, and hence the entire expression, equal to zero. This relationship between factorization and the roots of a quadratic equation is fundamental in algebra, allowing for an understanding of how the solutions to the equation are intrinsically linked to the expression's factorized form.</p>
+<h2 id="vietas-formula">Vieta's Formula:</h2>
+<p>Vieta's formulas for a quadratic expression provide a powerful relationship between the roots of the expression and its coefficients. These formulas state that for a quadratic expression of the form <span class="arithmatex">\( ax^2 + bx + c \)</span>, where <span class="arithmatex">\( a \)</span>, <span class="arithmatex">\( b \)</span>, and <span class="arithmatex">\( c \)</span> are constants and <span class="arithmatex">\( a \neq 0 \)</span>, the sum and product of its roots are directly related to the coefficients of the expression.</p>
+</div>
+<h3 id="the-quadratic-expression-and-its-roots">The Quadratic Expression and Its Roots</h3>
+<p>Consider the quadratic expression <span class="arithmatex">\( ax^2 + bx + c \)</span>. The roots of this expression, let's call them <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span>, are the solutions to the equation <span class="arithmatex">\( ax^2 + bx + c = 0 \)</span>. These roots can be real or complex numbers depending on the discriminant of the quadratic equation.</p>
+<h2 id="vietas-formulas">Vieta's Formulas</h2>
+<p>The fundamental idea behind Vieta's formulas comes from the fact that a quadratic expression with roots <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span> can be factorized as <span class="arithmatex">\( a(x - \alpha)(x - \beta) \)</span>. By expanding this factorized form, we get:</p>
+<div class="arithmatex">\[ a(x - \alpha)(x - \beta) = ax^2 - a(\alpha + \beta)x + a\alpha\beta \]</div>
+<p>Now, compare this expanded form to the original expression <span class="arithmatex">\( ax^2 + bx + c \)</span>. By equating the coefficients of the corresponding terms of <span class="arithmatex">\( x^2 \)</span>, <span class="arithmatex">\( x \)</span>, and the constant term, we derive the formulas:</p>
+<ol>
+<li>
+<p><strong>Sum of the Roots</strong>: 
+   Equating the coefficients of <span class="arithmatex">\( x \)</span> from <span class="arithmatex">\( -a(\alpha + \beta)x \)</span> and <span class="arithmatex">\( bx \)</span> gives us the first of Vieta's formulas: <span class="arithmatex">\( \alpha + \beta = -\frac{b}{a} \)</span>.       <br />
+   This formula states that the sum of the roots of the quadratic expression is equal to the negative of the coefficient of <span class="arithmatex">\( x \)</span> divided by the coefficient of <span class="arithmatex">\( x^2 \)</span>.</p>
+</li>
+<li>
+<p><strong>Product of the Roots</strong>:
+   Equating the constant terms <span class="arithmatex">\( a\alpha\beta \)</span> and <span class="arithmatex">\( c \)</span> gives us the second formula: <span class="arithmatex">\( \alpha\beta = \frac{c}{a} \)</span>.     <br />
+   This means that the product of the roots of the quadratic expression is equal to the constant term divided by the coefficient of <span class="arithmatex">\( x^2 \)</span>.</p>
+</li>
+</ol>
+<p>Thus, Vieta's formulas establish a clear and direct relationship between the coefficients of a quadratic expression and the roots of the corresponding quadratic equation. The elegance of these formulas lies in their ability to provide information about the roots without necessarily having to solve the equation explicitly. They are particularly useful in various mathematical applications, including algebraic manipulation and problem-solving.</p>
+<div class="admonition note info">
+<p class="admonition-title">When discriminant is negative.</p>
+<p>One thing which is not clear now is what happens when discriminant is negative. As negative discriminant indicates that quadratic expression does not have real roots, does the sum and product of roots still make sense? Since, we have not yet defined the concept of complex numbers, Vieta's formulas clearly are absurd in this case. But once we define complex numbers, these formulas will absolutely make sense for negative discriminant.</p>
+</div>
+<h2 id="more-than-two-roots">More than two roots <img alt="🤔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f914.svg" title=":thinking:" /></h2>
+<p>If a quadratic expression has three distinct roots (let's call them <span class="arithmatex">\( \alpha \)</span>, <span class="arithmatex">\( \beta \)</span>, and <span class="arithmatex">\( \gamma \)</span>), then the coefficients of the quadratic expression must be zero (i.e., <span class="arithmatex">\( a = 0 \)</span>, <span class="arithmatex">\( b = 0 \)</span>, and <span class="arithmatex">\( c = 0 \)</span>). To prove this, we start with the standard form of a quadratic expression:</p>
+<div class="arithmatex">\[ ax^2 + bx + c \]</div>
+<p>Given that <span class="arithmatex">\( \alpha \)</span>, <span class="arithmatex">\( \beta \)</span>, and <span class="arithmatex">\( \gamma \)</span> are roots of this expression, it means that the expression equals zero when <span class="arithmatex">\( x \)</span> is replaced by each of these roots. Therefore, we have:</p>
+<ol>
+<li><span class="arithmatex">\( a\alpha^2 + b\alpha + c = 0 \)</span> [1]</li>
+<li><span class="arithmatex">\( a\beta^2 + b\beta + c = 0 \)</span> [2]</li>
+<li><span class="arithmatex">\( a\gamma^2 + b\gamma + c = 0 \)</span> [3]</li>
+</ol>
+<p><img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:" /> First, subtract [2] from [1]:</p>
+<p><span class="arithmatex">\( a\alpha^2 + b\alpha + c - (a\beta^2 + b\beta + c) = 0 - 0 \)</span>   <br />
+<span class="arithmatex">\(\implies\)</span><span class="arithmatex">\( a(\alpha^2 - \beta^2) + b(\alpha - \beta) = 0 \)</span>   <br />
+<span class="arithmatex">\(\implies\)</span><span class="arithmatex">\( (\alpha - \beta)(a(\alpha + \beta) + b) = 0 \)</span></p>
+<p>Since <span class="arithmatex">\( \alpha \neq \beta \)</span> (the roots are distinct), <span class="arithmatex">\( \alpha - \beta \neq 0 \)</span>. Therefore, the other factor must be zero:     <br />
+<span class="arithmatex">\( a(\alpha + \beta) + b = 0 \)</span> [4]</p>
+<p><img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:" /> Similarly, subtract [3] from [1]:</p>
+<p><span class="arithmatex">\( a(\alpha^2 - \gamma^2) + b(\alpha - \gamma) = 0 \)</span>    <br />
+<span class="arithmatex">\(\implies\)</span><span class="arithmatex">\( (\alpha - \gamma)(a(\alpha + \gamma) + b) = 0 \)</span>      </p>
+<p>Since <span class="arithmatex">\( \alpha \neq \gamma \)</span>, <span class="arithmatex">\( \alpha - \gamma \neq 0 \)</span>. Thus:     <br />
+<span class="arithmatex">\( a(\alpha + \gamma) + b = 0 \)</span> [5]</p>
+<p><img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:" /> Subtract Equation [4] from [5]</p>
+<p><span class="arithmatex">\( a(\alpha + \gamma) + b - (a(\alpha + \beta) + b) = 0 - 0 \)</span>     <br />
+<span class="arithmatex">\(\implies\)</span><span class="arithmatex">\( a\gamma - a\beta = 0 \)</span>      <br />
+<span class="arithmatex">\(\implies\)</span><span class="arithmatex">\( a(\gamma - \beta) = 0 \)</span>       </p>
+<p>Since we assume <span class="arithmatex">\( a \neq 0 \)</span>, it follows that <span class="arithmatex">\( \gamma - \beta = 0 \)</span> or <span class="arithmatex">\( \beta = \gamma \)</span>, which contradicts our initial assumption of three distinct roots.</p>
+<p>This contradiction implies that our initial assumption of having three distinct roots for a quadratic expression is flawed. Therefore, the only way a quadratic expression can have three distinct roots is if <span class="arithmatex">\( a = 0 \)</span>, <span class="arithmatex">\( b = 0 \)</span>, and <span class="arithmatex">\( c = 0 \)</span>, which essentially means the expression is identically zero. This aligns with the fundamental nature of a quadratic equation, which can have at most two distinct roots.</p>
+<h2 id="newtons-identities">Newton's identities</h2>
+<p>For a quadratic equation <span class="arithmatex">\( ax^2 + bx + c = 0 \)</span> with roots <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span>, Newton's identity states that for any natural number <span class="arithmatex">\( n \)</span> greater than or equal to 2, the following recursive relationship holds:</p>
+<div class="arithmatex">\[ aS_n + bS_{n-1} + cS_{n-2} = 0 \]</div>
+<p>where <span class="arithmatex">\( S_n = \alpha^n + \beta^n \)</span>.</p>
+<p><strong><em>Proof:</em></strong></p>
+<ol>
+<li>
+<p><strong>Begin with the Roots:</strong>
+   Since <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span> are roots of the quadratic equation, they satisfy:</p>
+<p><span class="arithmatex">\( a\alpha^2 + b\alpha + c = 0 \)</span> [1]    <br />
+<span class="arithmatex">\( a\beta^2 + b\beta + c = 0 \)</span> [2]</p>
+</li>
+<li>
+<p><strong>Multiply by Powers of <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span>:</strong>
+   Multiply equation [1] by <span class="arithmatex">\( \alpha^{n-2} \)</span> and equation [2] by <span class="arithmatex">\( \beta^{n-2} \)</span>:</p>
+<p><span class="arithmatex">\( a\alpha^n + b\alpha^{n-1} + c\alpha^{n-2} = 0 \)</span> [3]    <br />
+<span class="arithmatex">\( a\beta^n + b\beta^{n-1} + c\beta^{n-2} = 0 \)</span> [4]</p>
+</li>
+<li>
+<p><strong>Add the Equations:</strong>
+   Add equations [3] and [4] to get:</p>
+<p><span class="arithmatex">\( a(\alpha^n + \beta^n) + b(\alpha^{n-1} + \beta^{n-1}) + c(\alpha^{n-2} + \beta^{n-2}) = 0 \)</span>     </p>
+<p>Simplifying this, we have: <span class="arithmatex">\( aS_n + bS_{n-1} + cS_{n-2} = 0 \)</span></p>
+</li>
+<li>
+<p><strong>Initial Cases:</strong>
+   For <span class="arithmatex">\( n = 1 \)</span> and <span class="arithmatex">\( n = 2 \)</span>, the initial cases are:</p>
+<p><span class="arithmatex">\( S_1 = \alpha + \beta = -\frac{b}{a} \)</span>    <br />
+<span class="arithmatex">\( S_2 = \alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \left(-\frac{b}{a}\right)^2 - 2\frac{c}{a} \)</span></p>
+</li>
+</ol>
+<p>This recursive nature of Newton's identities provides a method for calculating higher power sums of the roots without directly solving for the roots themselves.</p>
+<h2 id="difference-of-roots">Difference of Roots</h2>
+<p>Given a quadratic equation <span class="arithmatex">\( ax^2 + bx + c = 0 \)</span> with roots <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span>, the absolute difference between the roots is given by the formula:</p>
+<div class="arithmatex">\[ |\alpha - \beta| = \frac{\sqrt{D}}{|a|} \]</div>
+<p>where <span class="arithmatex">\( D = b^2 - 4ac \)</span> is the discriminant of the quadratic equation.</p>
+<details class="note">
+<summary>Proof:</summary>
+<p>By Vieta's formulas, the sum and product of the roots <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span> of the quadratic equation are given as follows:</p>
+<ul>
+<li>The sum of the roots <span class="arithmatex">\( \alpha + \beta = -\frac{b}{a} \)</span>.</li>
+<li>The product of the roots <span class="arithmatex">\( \alpha\beta = \frac{c}{a} \)</span>.</li>
+</ul>
+<p>We aim to find the absolute value of the difference of the roots, <span class="arithmatex">\( |\alpha - \beta| \)</span>. To do this, we start with the identity that relates the square of the difference of the roots to the sum and product of the roots:</p>
+<p><span class="arithmatex">\( (\alpha - \beta)^2 = (\alpha + \beta)^2 - 4\alpha\beta \)</span></p>
+<p>Substituting Vieta's formulas into the identity gives:</p>
+<p><span class="arithmatex">\( (\alpha - \beta)^2 = \left(-\frac{b}{a}\right)^2 - 4\left(\frac{c}{a}\right) \)</span>    <br />
+<span class="arithmatex">\(\implies\)</span><span class="arithmatex">\( (\alpha - \beta)^2 = \frac{b^2}{a^2} - \frac{4ac}{a^2} \)</span>   <br />
+<span class="arithmatex">\(\implies\)</span><span class="arithmatex">\( (\alpha - \beta)^2 = \frac{b^2 - 4ac}{a^2} \)</span></p>
+<p>Recognizing that <span class="arithmatex">\( b^2 - 4ac \)</span> is the discriminant <span class="arithmatex">\( D \)</span>, we can write:</p>
+<div class="arithmatex">\[ (\alpha - \beta)^2 = \frac{D}{a^2} \]</div>
+<p>Taking the square root of both sides, and considering the absolute value to account for the order of subtraction in the roots, we obtain:</p>
+<div class="arithmatex">\[ |\alpha - \beta| = \frac{\sqrt{D}}{|a|} \]</div>
+<p>This completes the proof. The absolute difference between the roots of the quadratic equation <span class="arithmatex">\( ax^2 + bx + c = 0 \)</span> is indeed <span class="arithmatex">\( \frac{\sqrt{D}}{|a|} \)</span>, where <span class="arithmatex">\( D \)</span> is the discriminant of the equation.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

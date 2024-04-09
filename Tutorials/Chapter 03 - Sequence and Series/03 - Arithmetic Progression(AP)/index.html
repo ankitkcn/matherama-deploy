@@ -1,0 +1,3433 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/">
+      
+      
+        <link rel="prev" href="../02%20-%20Sigma%20Notation/">
+      
+      
+        <link rel="next" href="../04%20-%20Geometric%20Progression/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Arithmetic Progression - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#definition-of-arithmetic-progression" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Arithmetic Progression
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-arithmetic-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of Arithmetic Progression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definition of Arithmetic Progression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explicit-formula-for-the-nth-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit Formula for the nth term
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sum-of-n-terms-of-a-sequence-in-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum of n terms of a sequence in AP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-general-form-of-the-nth-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      The general form of the nth term
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-form-of-the-sum-of-an-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Form of the sum of an AP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ratio-of-nth-terms-and-sums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ratio of nth terms and sums
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ratio of nth terms and sums">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ratio-of-nth-terms-when-ratio-of-sums-is-known-better-than-the-method-in-previous-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ratio of nth terms when ratio of sums is known (Better than the method in previous examples)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ratio-of-sum-of-n-terms-of-two-aps-when-the-ratio-of-their-nth-terms-is-known" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ratio of sum of n terms of two AP's when the ratio of their nth terms is known
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-properties-of-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Properties of AP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important Properties of AP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-terms-in-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three terms in AP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kth-term-from-the-end-in-an-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      kth Term from the End in an AP:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constant-sum-property-of-equidistant-terms-in-arithmetic-progressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Sum Property of Equidistant Terms in Arithmetic Progressions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#average-of-n-terms-of-an-arithmetic-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Average of n Terms of an Arithmetic Progression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operations-and-their-effects-on-arithmetic-progressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Operations and Their Effects on Arithmetic Progressions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplified-assumptions-for-sums-in-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplified Assumptions for Sums in AP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subsequences-in-an-arithmetic-progression-ap-formed-by-selecting-terms-at-regular-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subsequences in an Arithmetic Progression (AP) Formed by Selecting Terms at Regular Intervals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-terms-of-two-integer-arithmetic-progressions-form-an-arithmetic-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Terms of Two Integer Arithmetic Progressions Form an Arithmetic Progression
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-arithmetic-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of Arithmetic Progression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definition of Arithmetic Progression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explicit-formula-for-the-nth-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit Formula for the nth term
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sum-of-n-terms-of-a-sequence-in-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum of n terms of a sequence in AP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-general-form-of-the-nth-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      The general form of the nth term
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-form-of-the-sum-of-an-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Form of the sum of an AP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ratio-of-nth-terms-and-sums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ratio of nth terms and sums
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ratio of nth terms and sums">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ratio-of-nth-terms-when-ratio-of-sums-is-known-better-than-the-method-in-previous-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ratio of nth terms when ratio of sums is known (Better than the method in previous examples)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ratio-of-sum-of-n-terms-of-two-aps-when-the-ratio-of-their-nth-terms-is-known" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ratio of sum of n terms of two AP's when the ratio of their nth terms is known
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-properties-of-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Properties of AP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important Properties of AP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-terms-in-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three terms in AP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kth-term-from-the-end-in-an-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      kth Term from the End in an AP:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constant-sum-property-of-equidistant-terms-in-arithmetic-progressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Sum Property of Equidistant Terms in Arithmetic Progressions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#average-of-n-terms-of-an-arithmetic-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Average of n Terms of an Arithmetic Progression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operations-and-their-effects-on-arithmetic-progressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Operations and Their Effects on Arithmetic Progressions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplified-assumptions-for-sums-in-ap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplified Assumptions for Sums in AP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subsequences-in-an-arithmetic-progression-ap-formed-by-selecting-terms-at-regular-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subsequences in an Arithmetic Progression (AP) Formed by Selecting Terms at Regular Intervals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-terms-of-two-integer-arithmetic-progressions-form-an-arithmetic-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Terms of Two Integer Arithmetic Progressions Form an Arithmetic Progression
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Arithmetic Progression</h1>
+
+<p>We begin with some important special sequences and series, like arithmetic progression. geometric progression, harmonic progression, arithmetico-geometric progression etc Then, we will be looking at some general sequences and series. Our main goal will be finding the closed formulae for series if possible. </p>
+<h2 id="definition-of-arithmetic-progression">Definition of Arithmetic Progression</h2>
+<p>An arithmetic progression (AP) is a sequence of numbers <span class="arithmatex">\(a_1, a_2, a_3, \ldots, a_n, \ldots\)</span> where each term after the first is found by adding a constant difference, <span class="arithmatex">\(d\)</span>, to the previous term. This can be defined recursively as:</p>
+<p><span class="arithmatex">\( a_1 = a \)</span> <em>(the first term)</em>,</p>
+<p><span class="arithmatex">\( a_n = a_{n-1} + d \)</span> for all <span class="arithmatex">\( n &gt; 1 \)</span>, where <span class="arithmatex">\( a_n \)</span> is the <span class="arithmatex">\(n\)</span>-th term, <span class="arithmatex">\( a_{n-1} \)</span> is the term before <span class="arithmatex">\( a_n \)</span>, and <span class="arithmatex">\( d \)</span> is the <em>common difference</em> of the arithmetic progression.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Given the first term <span class="arithmatex">\( a_1 = 5 \)</span> and the common difference <span class="arithmatex">\( d = 3 \)</span>, the sequence of the arithmetic progression (AP) can be defined recursively as:</p>
+<div class="arithmatex">\[ a_1 = 5 \]</div>
+<div class="arithmatex">\[ a_n = a_{n-1} + 3 \]</div>
+<p>Using this recursive relationship, the first few terms of the sequence are:</p>
+<div class="arithmatex">\[ \begin{align*}
+&amp;a_1 = 5 \\
+&amp;a_2 = a_1 + 3 = 5 + 3 = 8  \\
+&amp;a_3 = a_2 + 3 = 8 + 3 = 11 \\  
+&amp;a_4 = a_3 + 3 = 11 + 3 = 14 \\
+ \vdots \\
+\end{align*} \]</div>
+<p>Continuing this pattern, the sequence is 5, 8, 11, 14, 17, ..., where each term is 3 more than the previous term.</p>
+</div>
+<h3 id="explicit-formula-for-the-nth-term">Explicit Formula for the nth term</h3>
+<p>Given an arithmetic progression <span class="arithmatex">\(a_1, a_2, a_3, \ldots, a_n, \ldots\)</span> with the first term <span class="arithmatex">\(a_1 = a\)</span> and common difference <span class="arithmatex">\(d\)</span>, the recursive definition of the sequence is given by:</p>
+<div class="arithmatex">\[ a_n = a_{n-1} + d \quad \text{for all } n &gt; 1. \]</div>
+<p>We observe the differences between successive terms:</p>
+<div class="arithmatex">\[\begin{align*}
+a_2 - a_1 &amp;= d, \\
+a_3 - a_2 &amp;= d, \\
+&amp;\ \vdots \\
+a_n - a_{n-1} &amp;= d.
+\end{align*}\]</div>
+<p>Summing these equations, we have:</p>
+<div class="arithmatex">\[\begin{align*}
+(a_2 - a_1) + (a_3 - a_2) + \cdots + (a_n - a_{n-1}) &amp;= d + d + \cdots + d \\
+a_n - a_1 &amp;= d(n - 1).
+\end{align*}\]</div>
+<p>From the telescoping nature of the series, all intermediate terms cancel, leaving:</p>
+<div class="arithmatex">\[ a_n = a + (n - 1)d. \]</div>
+<p>This expression provides the explicit formula for the <span class="arithmatex">\(n\)</span>-th term of an arithmetic progression.</p>
+<h2 id="sum-of-n-terms-of-a-sequence-in-ap">Sum of n terms of a sequence in AP</h2>
+<p>The sum of the first <span class="arithmatex">\(n\)</span> terms of an arithmetic progression, denoted <span class="arithmatex">\(S_n\)</span>, is given by <span class="arithmatex">\(S_n = \frac{n}{2}(2a + (n-1)d)\)</span>, where <span class="arithmatex">\(a\)</span> is the first term and <span class="arithmatex">\(d\)</span> is the common difference of the progression.</p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Proof:</strong></p>
+<p>Let an arithmetic progression be given by <span class="arithmatex">\(a_1, a_2, a_3, \ldots, a_n\)</span>, with the first term <span class="arithmatex">\(a_1 = a\)</span> and the common difference <span class="arithmatex">\(d\)</span>. We seek to find an expression for the sum of the first <span class="arithmatex">\(n\)</span> terms, <span class="arithmatex">\(S_n\)</span>.</p>
+<p>Consider the sequence in its original order and in <strong><em>reverse</em></strong>:</p>
+<div class="arithmatex">\[ S_n = a_1 + a_2 + a_3 + \ldots + a_{n-1} + a_n \]</div>
+<div class="arithmatex">\[ S_n = a_n + a_{n-1} + a_{n-2} + \ldots + a_2 + a_1 \]</div>
+<p>Adding these two expressions for <span class="arithmatex">\(S_n\)</span> term by term, we observe that:</p>
+<div class="arithmatex">\[ 2S_n = (a_1 + a_n) + (a_2 + a_{n-1}) + (a_3 + a_{n-2}) + \ldots + (a_{n-1} + a_2) + (a_n + a_1) \]</div>
+<p>From the formula for the <span class="arithmatex">\(n\)</span>-th term of an arithmetic progression, <span class="arithmatex">\(a_n = a + (n-1)d\)</span>, we find that each pair of terms in the summation, such as <span class="arithmatex">\(a_1 + a_n\)</span>, <span class="arithmatex">\(a_2 + a_{n-1}\)</span>, and so on, sums to <span class="arithmatex">\(2a + (n-1)d\)</span>. This is because:</p>
+<div class="arithmatex">\[ a_k + a_{n-k+1} = a + (k-1)d + a + (n-k)d = 2a + (n-1)d \]</div>
+<p>Therefore, the sum of each pair of terms in the sequence is constant, and with <span class="arithmatex">\(n\)</span> terms in total, we have <span class="arithmatex">\(n/2\)</span> such pairs. Hence, the sum of the first <span class="arithmatex">\(n\)</span> terms is:</p>
+<div class="arithmatex">\[ 2S_n = n(2a + (n-1)d) \]</div>
+<div class="arithmatex">\[ S_n = \frac{n}{2}(2a + (n-1)d) \]</div>
+<p>This completes the proof, demonstrating that the sum of the first <span class="arithmatex">\(n\)</span> terms of an arithmetic progression can be calculated using the formula <span class="arithmatex">\(S_n = \frac{n}{2}(2a + (n-1)d)\)</span>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Reversal Method</p>
+<p>If you have read the proof above, you would see that we reversed the series and added with the original series. This ideas of reversing works whenever the sum the <span class="arithmatex">\(kth\)</span> term from the beginning and the <span class="arithmatex">\(kth\)</span> term from the end is constant, that is, independednt of <span class="arithmatex">\(k\)</span> for all <span class="arithmatex">\(k\)</span>. In simple words, whever we have the pattern <span class="arithmatex">\(a_1+a_n=a_2+a_{n-1}=a_3+a_{n-2}=...=constant\)</span>. For example, consider the following pronlem:</p>
+<p><strong>Problem:</strong>
+Given a series <span class="arithmatex">\(S_n = \frac{9^{1/n}}{9^{1/n}+3} + \frac{9^{2/n}}{9^{2/n}+3} + \ldots + \frac{9^{(n-1)/n}}{9^{(n-1)/n}+3}\)</span>, demonstrate that the sum of the <span class="arithmatex">\(k\)</span>-th term from the beginning and the <span class="arithmatex">\(k\)</span>-th term from the end equals 1, and then use this property to calculate the sum of the series.</p>
+<p><strong>Solution:</strong></p>
+<p>Consider the series <span class="arithmatex">\(S_n = \frac{9^{1/n}}{9^{1/n}+3} + \frac{9^{2/n}}{9^{2/n}+3} + \ldots + \frac{9^{(n-1)/n}}{9^{(n-1)/n}+3}\)</span>. Let <span class="arithmatex">\(T_k = \frac{9^{k/n}}{9^{k/n}+3}\)</span> represent the <span class="arithmatex">\(k\)</span>-th term from the beginning and <span class="arithmatex">\(T_{n-k} = \frac{9^{(n-k)/n}}{9^{(n-k)/n}+3}\)</span> the <span class="arithmatex">\(k\)</span>-th term from the end.</p>
+<p>Simplify <span class="arithmatex">\(T_{n-k}\)</span> by multipling numerator and denominator by <span class="arithmatex">\(9^{k/n}\)</span>, yielding <span class="arithmatex">\(T_{n-k} = \frac{3}{9^{k/n}+3}\)</span>. </p>
+<p>Adding <span class="arithmatex">\(T_k\)</span> and <span class="arithmatex">\(T_{n-k}\)</span> gives:</p>
+<div class="arithmatex">\[T_k + T_{n-k} = \frac{9^{k/n}}{9^{k/n}+3} + \frac{3}{9^{k/n}+3} = 1\]</div>
+<p>This demonstrates that the sum of the <span class="arithmatex">\(k\)</span>-th term from the beginning and the <span class="arithmatex">\(k\)</span>-th term from the end is constant and equals 1 for any <span class="arithmatex">\(k\)</span>.</p>
+<p><strong>To find <span class="arithmatex">\(S_n\)</span>, reverse the series and add to the original:</strong></p>
+<p>Considering the reversal leads to a series where each pair of terms from the beginning and the end sums to 1, and since there are <span class="arithmatex">\(n-1\)</span> such pairs, the total sum of the series and its reverse combined is <span class="arithmatex">\(2S_n = n-1\)</span>.</p>
+<div class="arithmatex">\[S_n = T_1 + T_2 + T_3 + \ldots + T_{n-1}\]</div>
+<div class="arithmatex">\[S_n = T_{n-1} + \ldots + T_3 + T_2 + T_1\]</div>
+<p>Add original and reversed:</p>
+<div class="arithmatex">\[2S_n = (1 + 1 + 1 + \ldots + 1) = n-1\]</div>
+<p>Thus, the sum <span class="arithmatex">\(S_n\)</span>:</p>
+<div class="arithmatex">\[S_n = \frac{n-1}{2}\]</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">An alternative way to write the sum of AP</p>
+<p>The sum of the first <span class="arithmatex">\(n\)</span> terms of an arithmetic progression can alternatively be expressed as: </p>
+<div class="arithmatex">\[S_n = \frac{n}{2}(a + l)\]</div>
+<p>where <span class="arithmatex">\(a\)</span> is the first term of the sequence and <span class="arithmatex">\(l\)</span> represents the last term, or the <span class="arithmatex">\(n\)</span>-th term. </p>
+<p>This formula provides a direct relationship between the sum of the arithmetic series and its first and last terms, highlighting the symmetry inherent in the progression. The factor <span class="arithmatex">\(\frac{n}{2}\)</span> accounts for the average of the first and last terms, multiplied by the total number of terms, <span class="arithmatex">\(n\)</span>, thereby giving the total sum of the series. This expression is particularly useful because it allows for the calculation of the sum without needing to directly use the common difference <span class="arithmatex">\(d\)</span>, provided the first and last terms of the sequence are known.</p>
+<p><strong>For example:</strong></p>
+<p>To find the sum of the first <span class="arithmatex">\(n\)</span> natural numbers using the formula <span class="arithmatex">\(S_n = \frac{n}{2}(a + l)\)</span>, where <span class="arithmatex">\(a\)</span> is the first term of the sequence and <span class="arithmatex">\(l\)</span> is the last term (or the <span class="arithmatex">\(n\)</span>-th term):
+ In the sequence of the first <span class="arithmatex">\(n\)</span> natural numbers, <span class="arithmatex">\(a = 1\)</span> (the first natural number), and <span class="arithmatex">\(l = n\)</span> (the <span class="arithmatex">\(n\)</span>-th natural number, also the last term in this sequence).</p>
+<p>Substituting these values into the formula, we get:</p>
+<div class="arithmatex">\[ S_n = \frac{n}{2}(1 + n) \]</div>
+<div class="arithmatex">\[ S_n = \frac{n(n + 1)}{2} \]</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong></p>
+<p>Calculate the sum of the first <span class="arithmatex">\(n\)</span> terms of the sequence <span class="arithmatex">\(1 + 3 + 5 + \ldots\)</span> up to <span class="arithmatex">\(n\)</span> terms, where the sequence consists of odd numbers starting from 1.</p>
+<p><strong>Solution:</strong></p>
+<p>The given sequence is an arithmetic progression (AP) with the first term <span class="arithmatex">\(a = 1\)</span> and a common difference <span class="arithmatex">\(d = 2\)</span> (since each term increases by 2).</p>
+<p>To find the sum of the first <span class="arithmatex">\(n\)</span> terms, <span class="arithmatex">\(S_n\)</span>, of this AP, we can use the formula for the sum of an AP:</p>
+<div class="arithmatex">\[ S_n = \frac{n}{2} \left[2a + (n - 1)d\right] \]</div>
+<p>Given <span class="arithmatex">\(a = 1\)</span> and <span class="arithmatex">\(d = 2\)</span>, substituting these values gives:</p>
+<div class="arithmatex">\[ \begin{align*}
+S_n &amp;= \frac{n}{2} \left[2 \cdot 1 + (n - 1) \cdot 2\right] \\
+S_n &amp;= \frac{n}{2} \left[2 + 2n - 2\right] \\
+S_n &amp;= \frac{n}{2} \left[2n\right] \\
+S_n &amp;= n^2 
+\end{align*}
+\]</div>
+<p>Therefore, the sum of the first <span class="arithmatex">\(n\)</span> terms of the sequence of odd numbers starting from 1 is <span class="arithmatex">\(n^2\)</span>.</p>
+</div>
+<h2 id="the-general-form-of-the-nth-term">The general form of the nth term</h2>
+<p>The general term of an arithmetic progression (AP) can be succinctly represented as a linear polynomial in <span class="arithmatex">\(n\)</span>, that is, <span class="arithmatex">\(a_n = pn + q\)</span>, where <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(q\)</span> are constants. This formulation emerges naturally from the conventional AP expression <span class="arithmatex">\(a_n = a + (n-1)d\)</span>, with <span class="arithmatex">\(a\)</span> as the initial term and <span class="arithmatex">\(d\)</span> as the common difference.</p>
+<p>To derive <span class="arithmatex">\(a_n = pn + q\)</span>, we observe:</p>
+<div class="arithmatex">\[a_n = a + (n-1)d = nd + (a - d) = pn + q\]</div>
+<p>where <span class="arithmatex">\(p = d\)</span>, the coefficient of n is the common difference of AP, and <span class="arithmatex">\(q = a - d\)</span>. In this framework, evaluating at <span class="arithmatex">\(n = 1\)</span> yields the first term:</p>
+<div class="arithmatex">\[a_1 = p + q\]</div>
+<p>Moreover, the coefficient <span class="arithmatex">\(p\)</span> is equal to the common difference <span class="arithmatex">\(d\)</span>.</p>
+<p>For the arithmetic progression given by <span class="arithmatex">\(a_n = 3n - 4\)</span>, we can identify the common difference and the first term by comparing this expression to the general form <span class="arithmatex">\(a_n = pn + q\)</span>. </p>
+<p>In this example, <span class="arithmatex">\(p = 3\)</span> and <span class="arithmatex">\(q = -4\)</span>. Thus, the common difference <span class="arithmatex">\(d\)</span> of this AP is <span class="arithmatex">\(3\)</span>.</p>
+<p>To find the first term <span class="arithmatex">\(a_1\)</span>, substitute <span class="arithmatex">\(n = 1\)</span> into the formula:</p>
+<div class="arithmatex">\[a_1 = 3(1) - 4 = 3 - 4 = -1\]</div>
+<p>Therefore, for the AP <span class="arithmatex">\(a_n = 3n - 4\)</span>, the common difference is <span class="arithmatex">\(3\)</span> and the first term is <span class="arithmatex">\(-1\)</span>.</p>
+<h2 id="general-form-of-the-sum-of-an-ap">General Form of the sum of an AP</h2>
+<p>For an arithmetic progression with first term <span class="arithmatex">\(a\)</span> and common difference <span class="arithmatex">\(d\)</span>, the sum of the first <span class="arithmatex">\(n\)</span> terms, <span class="arithmatex">\(S_n\)</span>, is traditionally given by:</p>
+<div class="arithmatex">\[S_n = \frac{n}{2}(2a + (n - 1)d).\]</div>
+<p>This sum can also be represented as a quadratic polynomial without a constant term:</p>
+<div class="arithmatex">\[S_n = pn^2 + qn,\]</div>
+<p>where <span class="arithmatex">\(p = \frac{d}{2}\)</span> and <span class="arithmatex">\(q = a - \frac{d}{2}\)</span>. Deriving this form involves rearranging the original sum formula:</p>
+<div class="arithmatex">\[S_n = \frac{n}{2}(2a + nd - d) = \frac{d}{2}n^2 + (a - \frac{d}{2})n.\]</div>
+<p>Thus, the quadratic representation <span class="arithmatex">\(S_n = pn^2 + qn\)</span> directly relates to the progression's common difference <span class="arithmatex">\(d\)</span> and first term <span class="arithmatex">\(a\)</span>.</p>
+<div class="admonition info">
+<p class="admonition-title">Relation between the general term and the sum coefficients</p>
+<p><strong>Problem Statement:</strong></p>
+<p>Given an arithmetic progression (AP) with the <span class="arithmatex">\(n\)</span>-th term represented as <span class="arithmatex">\(a_n = pn + q\)</span> and the sum of the first <span class="arithmatex">\(n\)</span> terms expressed as <span class="arithmatex">\(S_n = Pn^2 + Qn\)</span>, where <span class="arithmatex">\(p\)</span>, <span class="arithmatex">\(q\)</span>, <span class="arithmatex">\(P\)</span>, and <span class="arithmatex">\(Q\)</span> are constants, prove the following relationships:</p>
+<div class="arithmatex">\[P = \frac{p}{2}\]</div>
+<div class="arithmatex">\[Q = q + \frac{p}{2}\]</div>
+<p>Assume that the common difference of the AP is <span class="arithmatex">\(d\)</span>, and the first term is <span class="arithmatex">\(a\)</span>, with the known relations </p>
+<p><span class="arithmatex">\(p = d\)</span>, <span class="arithmatex">\(q = a - d\)</span>, <span class="arithmatex">\(P = \frac{d}{2}\)</span>, and <span class="arithmatex">\(Q = a - \frac{d}{2}\)</span>.</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>
+<p><strong>Proving <span class="arithmatex">\(P = \frac{p}{2}\)</span></strong></p>
+<p>Given that <span class="arithmatex">\(P = \frac{d}{2}\)</span> and <span class="arithmatex">\(p = d\)</span>, we directly substitute <span class="arithmatex">\(d\)</span> from <span class="arithmatex">\(p = d\)</span> into <span class="arithmatex">\(P = \frac{d}{2}\)</span> to get:</p>
+<div class="arithmatex">\[2P = 2\left(\frac{d}{2}\right) = d = p\]</div>
+<p>Thus, we have proven that <span class="arithmatex">\(P = \frac{p}{2}\)</span>.</p>
+</li>
+<li>
+<p><strong>Proving <span class="arithmatex">\(Q = q + \frac{p}{2}\)</span>:</strong></p>
+<p>From the given, <span class="arithmatex">\(q = a - d\)</span> and <span class="arithmatex">\(Q = a - \frac{d}{2}\)</span>. Since <span class="arithmatex">\(p = d\)</span>, we can substitute <span class="arithmatex">\(d\)</span> with <span class="arithmatex">\(p\)</span> in the expression for <span class="arithmatex">\(Q\)</span>:</p>
+<div class="arithmatex">\[Q = a - \frac{p}{2}\]</div>
+<p>To find <span class="arithmatex">\(a\)</span> in terms of <span class="arithmatex">\(q\)</span> and <span class="arithmatex">\(p\)</span>, we rearrange <span class="arithmatex">\(q = a - d = a - p\)</span> to get <span class="arithmatex">\(a = q + p\)</span>. Substituting this expression for <span class="arithmatex">\(a\)</span> into <span class="arithmatex">\(Q\)</span>:</p>
+<div class="arithmatex">\[Q = (q + p) - \frac{p}{2} = q + \frac{p}{2}\]</div>
+<p>This proves that <span class="arithmatex">\(Q = q + \frac{p}{2}\)</span>, establishing the relationship between <span class="arithmatex">\(q\)</span> and <span class="arithmatex">\(Q\)</span> as well as between <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(P\)</span>.</p>
+</li>
+</ol>
+<p>Hence, the relationships <span class="arithmatex">\(P = \frac{p}{2}\)</span> and <span class="arithmatex">\(Q = q + \frac{p}{2}\)</span> accurately describe the connections between the coefficients of the <span class="arithmatex">\(n\)</span>-th term and the sum formula of an arithmetic progression in terms of <span class="arithmatex">\(p\)</span>, <span class="arithmatex">\(q\)</span>, <span class="arithmatex">\(P\)</span>, and <span class="arithmatex">\(Q\)</span>. <span class="arithmatex">\(\blacksquare\)</span></p>
+<p>We can  also write the relationship as:</p>
+<div class="arithmatex">\[p=2P\]</div>
+<div class="arithmatex">\[q=Q-P\]</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong></p>
+<p>Given the <span class="arithmatex">\(n\)</span>-th term of an arithmetic progression <span class="arithmatex">\(t_n = 2n + 3\)</span>, find the sum of the first <span class="arithmatex">\(n\)</span> terms, <span class="arithmatex">\(S_n\)</span>, using the relationships <span class="arithmatex">\(p = 2P\)</span> and <span class="arithmatex">\(q = Q - P\)</span> derived from the general form of an arithmetic progression sum <span class="arithmatex">\(S_n = Pn^2 + Qn\)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Identify <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(q\)</span> from <span class="arithmatex">\(t_n\)</span></strong></p>
+<p>From <span class="arithmatex">\(t_n = 2n + 3\)</span>, we identify:</p>
+<ul>
+<li><span class="arithmatex">\(p = 2\)</span>, the coefficient of <span class="arithmatex">\(n\)</span>, representing the common difference <span class="arithmatex">\(d\)</span>.</li>
+<li><span class="arithmatex">\(q = 3\)</span>, the constant term, representing <span class="arithmatex">\(a - d\)</span>, where <span class="arithmatex">\(a\)</span> is the first term.</li>
+</ul>
+<p><strong>Step 2: Use the relationships to find <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span></strong></p>
+<p>Given the relationships:</p>
+<ul>
+<li><span class="arithmatex">\(p = 2P\)</span></li>
+<li><span class="arithmatex">\(q = Q - P\)</span></li>
+</ul>
+<p>Substitute <span class="arithmatex">\(p = 2\)</span> into <span class="arithmatex">\(p = 2P\)</span> to find <span class="arithmatex">\(P\)</span>:</p>
+<ul>
+<li><span class="arithmatex">\(2 = 2P\)</span></li>
+<li><span class="arithmatex">\(P = 1\)</span></li>
+</ul>
+<p>Substitute <span class="arithmatex">\(q = 3\)</span> and <span class="arithmatex">\(P = 1\)</span> into <span class="arithmatex">\(q = Q - P\)</span> to find <span class="arithmatex">\(Q\)</span>:</p>
+<ul>
+<li><span class="arithmatex">\(3 = Q - 1\)</span></li>
+<li><span class="arithmatex">\(Q = 4\)</span></li>
+</ul>
+<p><strong>Step 3: Apply <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span> to find <span class="arithmatex">\(S_n\)</span></strong></p>
+<p>With <span class="arithmatex">\(P = 1\)</span> and <span class="arithmatex">\(Q = 4\)</span>, substitute into <span class="arithmatex">\(S_n = Pn^2 + Qn\)</span>:</p>
+<ul>
+<li><span class="arithmatex">\(S_n = 1n^2 + 4n\)</span></li>
+<li><span class="arithmatex">\(S_n = n^2 + 4n\)</span></li>
+</ul>
+<p><strong>Conclusion:</strong></p>
+<p>The sum of the first <span class="arithmatex">\(n\)</span> terms of the arithmetic progression with the <span class="arithmatex">\(n\)</span>-th term <span class="arithmatex">\(t_n = 2n + 3\)</span> is <span class="arithmatex">\(S_n = n^2 + 4n\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong></p>
+<p>Given the sum of the first <span class="arithmatex">\(n\)</span> terms of an arithmetic progression as <span class="arithmatex">\(S_n = 2n^2 - 3n\)</span>, determine the <span class="arithmatex">\(n\)</span>-th term, <span class="arithmatex">\(t_n\)</span>, utilizing the direct formulae <span class="arithmatex">\(p = 2P\)</span> and <span class="arithmatex">\(q = Q - P\)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p>From <span class="arithmatex">\(S_n = 2n^2 - 3n\)</span>, we identify:
+- <span class="arithmatex">\(P = 2\)</span>, the coefficient of <span class="arithmatex">\(n^2\)</span>,
+- <span class="arithmatex">\(Q = -3\)</span>, the coefficient of <span class="arithmatex">\(n\)</span>.</p>
+<p><strong>Apply the Direct Formulae:</strong></p>
+<ol>
+<li>
+<p><strong>Find <span class="arithmatex">\(p\)</span> using <span class="arithmatex">\(p = 2P\)</span>:</strong>
+<span class="arithmatex">\(p = 2 \times 2 = 4\)</span></p>
+</li>
+<li>
+<p><strong>Find <span class="arithmatex">\(q\)</span> using <span class="arithmatex">\(q = Q - P\)</span>:</strong>
+<span class="arithmatex">\(q = -3 - 2 = -5\)</span></p>
+</li>
+</ol>
+<p><strong>Derive <span class="arithmatex">\(t_n\)</span>:</strong></p>
+<p>Given the general formula for the <span class="arithmatex">\(n\)</span>-th term of an AP is <span class="arithmatex">\(t_n = pn + q\)</span>, substitute <span class="arithmatex">\(p = 4\)</span> and <span class="arithmatex">\(q = -5\)</span>:</p>
+<div class="arithmatex">\[t_n = 4n - 5\]</div>
+<p><strong>Conclusion:</strong></p>
+<p>The <span class="arithmatex">\(n\)</span>-th term of the arithmetic progression, given <span class="arithmatex">\(S_n = 2n^2 - 3n\)</span>, is <span class="arithmatex">\(t_n = 4n - 5\)</span>.<span class="arithmatex">\(\blacksquare\)</span></p>
+<p>You can also derive this using <span class="arithmatex">\(t_n=S_n-S_{n-1}\)</span></p>
+</div>
+<h2 id="ratio-of-nth-terms-and-sums">Ratio of nth terms and sums</h2>
+<p>Let us understand this from the following examples. There are three methods we can use to solve this problem. Observe each one of them. The last one is obviously the simplest one and you should use that method. Expalantion is given below the example. </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong></p>
+<p>Given the sum of the first <span class="arithmatex">\(n\)</span> terms of an arithmetic progression (AP) as <span class="arithmatex">\(S_n = 2n^2 - 3n\)</span>, determine the <span class="arithmatex">\(n\)</span>-th term of the AP, <span class="arithmatex">\(t_n\)</span>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><strong>Solution 1:</strong></label><label for="__tabbed_1_2"><strong>Solution 2:</strong></label><label for="__tabbed_1_3">Solution 3:</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Given the ratio of the sums of <span class="arithmatex">\(n\)</span> terms of two arithmetic progressions (APs) as <span class="arithmatex">\(\frac{3n+2}{5n-1}\)</span>, we are tasked with finding the ratio of their respective <span class="arithmatex">\(n\)</span>-th terms.</p>
+<p>Step 1: Assume Sums of <span class="arithmatex">\(n\)</span> Terms for Each AP
+For the first AP, let the sum of <span class="arithmatex">\(n\)</span> terms be <span class="arithmatex">\(S_{n1} = (3n+2)\lambda\)</span>, and for the second AP, <span class="arithmatex">\(S_{n2} = (5n-1)\lambda\)</span>, where <span class="arithmatex">\(\lambda\)</span> is a proportionality constant.</p>
+<p>Step 2: Identify <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span> for Each AP
+Given:
+- <span class="arithmatex">\(P_1 = 3\lambda\)</span> and <span class="arithmatex">\(Q_1 = 2\lambda\)</span> for the first AP,
+- <span class="arithmatex">\(P_2 = 5\lambda\)</span> and <span class="arithmatex">\(Q_2 = -\lambda\)</span> for the second AP.</p>
+<p>Step 3: Derive <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(q\)</span> Using Relationships
+Utilizing <span class="arithmatex">\(p = 2P\)</span> and <span class="arithmatex">\(q = Q - P\)</span>:</p>
+<ul>
+<li>
+<p>For the first AP:</p>
+<ul>
+<li><span class="arithmatex">\(p_1 = 2P_1 = 2(3\lambda) = 6\lambda\)</span></li>
+<li><span class="arithmatex">\(q_1 = Q_1 - P_1 = 2\lambda - 3\lambda = -\lambda\)</span></li>
+</ul>
+</li>
+<li>
+<p>For the second AP:</p>
+<ul>
+<li><span class="arithmatex">\(p_2 = 2P_2 = 2(5\lambda) = 10\lambda\)</span></li>
+<li><span class="arithmatex">\(q_2 = Q_2 - P_2 = -\lambda - 5\lambda = -6\lambda\)</span></li>
+</ul>
+</li>
+</ul>
+<p>Step 4: Express <span class="arithmatex">\(n\)</span>-th Terms and Find Their Ratio
+The <span class="arithmatex">\(n\)</span>-th term for each AP is <span class="arithmatex">\(t_{n1} = p_1n + q_1\)</span> and <span class="arithmatex">\(t_{n2} = p_2n + q_2\)</span>, substituting the derived values:</p>
+<ul>
+<li><span class="arithmatex">\(t_{n1} = 6\lambda n - \lambda\)</span></li>
+<li><span class="arithmatex">\(t_{n2} = 10\lambda n - 6\lambda\)</span></li>
+</ul>
+<p>The ratio of the <span class="arithmatex">\(n\)</span>-th terms is:</p>
+<div class="arithmatex">\[
+\frac{t_{n1}}{t_{n2}} = \frac{6\lambda n - \lambda}{10\lambda n - 6\lambda}
+\]</div>
+<p>Canceling <span class="arithmatex">\(\lambda\)</span> and simplifying gives:</p>
+<div class="arithmatex">\[
+\frac{t_{n1}}{t_{n2}} = \frac{6n - 1}{10n - 6}
+\]</div>
+<p>This ratio represents the relationship between the <span class="arithmatex">\(n\)</span>-th terms of the two APs, independent of the proportionality constant <span class="arithmatex">\(\lambda\)</span>.</p>
+</div>
+<div class="tabbed-block">
+<p>Let's correctly address the problem with the appropriate assumption for <span class="arithmatex">\(S_n\)</span> for each AP.</p>
+<p>Step 1: Assume Sums of <span class="arithmatex">\(n\)</span> Terms for Each AP</p>
+<p>For the first AP, let the sum of <span class="arithmatex">\(n\)</span> terms be <span class="arithmatex">\(S_{n1} = n(3n + 2)\lambda\)</span>, and for the second AP, <span class="arithmatex">\(S_{n2} = n(5n - 1)\lambda\)</span>.</p>
+<p>Step 2: Evaluate <span class="arithmatex">\(t_n\)</span> for Each AP Using <span class="arithmatex">\(t_n = S_n - S_{n-1}\)</span></p>
+<p>For the first AP:</p>
+<div class="arithmatex">\[ \begin{align*}
+t_{n1} &amp;= S_{n1} - S_{n1-1}\\
+&amp;= n(3n + 2)\lambda - (n-1)(3(n-1) + 2)\lambda\\
+&amp;= [3n^2 + 2n - 3(n^2 - 2n + 1) - 2(n-1)]\lambda\\
+&amp;= [3n^2 + 2n - 3n^2 + 6n - 3 - 2n + 2]\lambda\\
+&amp;= (6n - 1)\lambda
+\end{align*}
+\]</div>
+<p>For the second AP:</p>
+<div class="arithmatex">\[\begin{align*}
+t_{n2} &amp;= S_{n2} - S_{n2-1} \\
+&amp;= n(5n - 1)\lambda - (n-1)(5(n-1) - 1)\lambda \\
+&amp;= [5n^2 - n - 5(n^2 - 2n + 1) + (n-1)]\lambda \\
+&amp;= [5n^2 - n - 5n^2 + 10n - 5 + n - 1]\lambda \\
+&amp;= (10n - 6)\lambda
+\end{align*}\]</div>
+<p>Step 3: Take the Ratio of <span class="arithmatex">\(t_{n1}\)</span> to <span class="arithmatex">\(t_{n2}\)</span> and Cancel <span class="arithmatex">\(\lambda\)</span>
+The ratio of the <span class="arithmatex">\(n\)</span>-th terms of the two APs is:
+- <span class="arithmatex">\(\frac{t_{n1}}{t_{n2}} = \frac{(6n - 1)\lambda}{(10n - 6)\lambda} = \frac{6n - 1}{10n - 6}\)</span></p>
+</div>
+<div class="tabbed-block">
+<p>Replace <span class="arithmatex">\(n\)</span> with <span class="arithmatex">\(2n-1\)</span> in <span class="arithmatex">\(\frac{3n+2}{5n-1}\)</span>:</p>
+<div class="arithmatex">\[ \text{Ratio of the \(n\)-th terms} = \frac{3(2n-1)+2}{5(2n-1)-1} \]</div>
+<div class="arithmatex">\[ = \frac{6n - 3 + 2}{10n - 5 - 1} \]</div>
+<div class="arithmatex">\[ = \frac{6n - 1}{10n - 6} \]</div>
+<p>Hence, the ratio of the respective <span class="arithmatex">\(n\)</span>-th terms of the two APs is <span class="arithmatex">\(\frac{6n - 1}{10n - 6}\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="ratio-of-nth-terms-when-ratio-of-sums-is-known-better-than-the-method-in-previous-examples">Ratio of nth terms when ratio of sums is known (Better than the method in previous examples)</h3>
+<p>For two arithmetic progressions with the <span class="arithmatex">\(n\)</span>-th terms denoted by <span class="arithmatex">\(t_n\)</span> and <span class="arithmatex">\(t_n'\)</span> respectively, the ratio of the <span class="arithmatex">\(n\)</span>-th terms is equal to the ratio of the sums of their first <span class="arithmatex">\((2n-1)\)</span> terms, that is, <span class="arithmatex">\(t_n/t_n' = S_{2n-1}/S_{2n-1}'\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Proof:</strong></p>
+<p>Given two arithmetic progressions with their <span class="arithmatex">\(n\)</span>-th terms defined as <span class="arithmatex">\(t_n = a + (n-1)d\)</span> and <span class="arithmatex">\(t_n' = a' + (n-1)d'\)</span>, where <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(a'\)</span> are the first terms, and <span class="arithmatex">\(d\)</span> and <span class="arithmatex">\(d'\)</span> are the common differences of the first and second sequences respectively.</p>
+<p>The sum of the first <span class="arithmatex">\(m\)</span> terms of an arithmetic progression is given by <span class="arithmatex">\(S_m = \frac{m}{2}(2a + (m-1)d)\)</span>, and similarly for the second sequence, <span class="arithmatex">\(S_m' = \frac{m}{2}(2a' + (m-1)d')\)</span>.</p>
+<ol>
+<li>
+<p>Consider the ratio of sums <span class="arithmatex">\(S_m/S_m'\)</span>:</p>
+<div class="arithmatex">\[ \frac{S_m}{S_m'} = \frac{\frac{m}{2}[2a + (m-1)d]}{\frac{m}{2}[2a' + (m-1)d']} \]</div>
+</li>
+<li>
+<p>Cancel <span class="arithmatex">\(m/2\)</span> from 2 to simplify:</p>
+<div class="arithmatex">\[ \frac{S_m}{S_m'} = \frac{a + \frac{m-1}{2}d}{a' + \frac{m-1}{2}d'} \]</div>
+</li>
+</ol>
+<p>This expression resembles the formula for the <span class="arithmatex">\(n\)</span>-th term of an AP, where the <span class="arithmatex">\(n\)</span>-th term <span class="arithmatex">\(t_n = a + (n-1)d\)</span>. By observing that if we set <span class="arithmatex">\(\frac{m-1}{2} = n-1\)</span>, which implies <span class="arithmatex">\(m = 2n - 1\)</span>, we align the ratio of sums with the structure of the <span class="arithmatex">\(n\)</span>-th term ratio.</p>
+<p><strong>Conclusion:</strong>
+Hence, for <span class="arithmatex">\(m = 2n - 1\)</span>, the ratio of sums of <span class="arithmatex">\(m\)</span> terms of two APs directly parallels the ratio of their <span class="arithmatex">\(n\)</span>-th terms, leading to:</p>
+<div class="arithmatex">\[ \frac{t_n}{t_n'} = \frac{a + (n-1)d}{a' + (n-1)d'} = \frac{S_{2n-1}}{S_{2n-1}'} \]</div>
+<p>This derivation demonstrates that by choosing <span class="arithmatex">\(m = 2n - 1\)</span>, we can use the sum formula for APs to effectively calculate the ratio of <span class="arithmatex">\(n\)</span>-th terms, streamlining the process without directly calculating each <span class="arithmatex">\(n\)</span>-th term. </p>
+</div>
+<h3 id="ratio-of-sum-of-n-terms-of-two-aps-when-the-ratio-of-their-nth-terms-is-known">Ratio of sum of n terms of two AP's when the ratio of their nth terms is known</h3>
+<p>Given two arithmetic progressions (APs) with sums of the first <span class="arithmatex">\(n\)</span> terms denoted by <span class="arithmatex">\(S_n\)</span> and <span class="arithmatex">\(S_n'\)</span>, respectively, the ratio of these sums <span class="arithmatex">\(S_n/S_n'\)</span> is equal to the ratio of their <span class="arithmatex">\(\left(\frac{n+1}{2}\right)\)</span>-th terms, i.e., <span class="arithmatex">\(S_n/S_n' = t_{\left(\frac{n+1}{2}\right)}/t_{\left(\frac{n+1}{2}\right)}'\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Proof:</strong></p>
+<p>From the previously established theorem that <span class="arithmatex">\(t_n/t_n' = S_{2n-1}/S_{2n-1}'\)</span>, we infer a relationship between the terms of two APs and the sums of their sequences.</p>
+<p>To prove the current theorem, let us consider the expression <span class="arithmatex">\(S_n/S_n' = t_{\left(\frac{n+1}{2}\right)}/t_{\left(\frac{n+1}{2}\right)}'\)</span> and utilize the insights from the previous theorem.</p>
+<ol>
+<li>
+<p><strong>Relation from the Previous Theorem:</strong> </p>
+<p>The previous theorem establishes that for any integer <span class="arithmatex">\(m\)</span>, the ratio of the <span class="arithmatex">\(m\)</span>-th terms of two APs is equal to the ratio of the sums of their first <span class="arithmatex">\((2m-1)\)</span> terms. Mathematically, if <span class="arithmatex">\(m = \frac{n+1}{2}\)</span>, then <span class="arithmatex">\(2m-1 = n\)</span>.</p>
+</li>
+<li>
+<p><strong>Applying the Previous Theorem:</strong></p>
+<p>Given that <span class="arithmatex">\(m = \frac{n+1}{2}\)</span>, we directly apply the previous theorem's result:</p>
+<div class="arithmatex">\[t_m/t_m' = S_{2m-1}/S_{2m-1}'\]</div>
+<p>Substituting <span class="arithmatex">\(m = \frac{n+1}{2}\)</span> into <span class="arithmatex">\(2m-1 = n\)</span>, we get:</p>
+<div class="arithmatex">\[t_{\left(\frac{n+1}{2}\right)}/t_{\left(\frac{n+1}{2}\right)}' = S_n/S_n'\]</div>
+</li>
+</ol>
+</div>
+<p>We have a similar theorem on an AP about ratios:</p>
+<div class="admonition info">
+<p class="admonition-title">Similar result</p>
+<p><strong>Theorem:</strong> Let <span class="arithmatex">\(S_m\)</span> and <span class="arithmatex">\(S_n\)</span> denote the sums of the first <span class="arithmatex">\(m\)</span> and <span class="arithmatex">\(n\)</span> terms, respectively, of an arithmetic progression (AP), with the known ratio <span class="arithmatex">\(S_m/S_n = (Pm^2 + Qm)/(Pn^2 + Qn)\)</span>, where <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span> are constants related to the AP. Then, the ratio of the <span class="arithmatex">\(m\)</span>-th term to the <span class="arithmatex">\(n\)</span>-th term, <span class="arithmatex">\(t_m/t_n\)</span>, is given by:</p>
+<div class="arithmatex">\[ \frac{t_m}{t_n} = \frac{P(2m - 1) + Q}{P(2n - 1) + Q} \]</div>
+<p><strong>Proof:</strong>
+To prove the theorem, we start by assuming the sums of the first <span class="arithmatex">\(m\)</span> and <span class="arithmatex">\(n\)</span> terms of an arithmetic progression (AP) as <span class="arithmatex">\(S_m = (Pm^2 + Qm)\lambda\)</span> and <span class="arithmatex">\(S_n = (Pn^2 + Qn)\lambda\)</span>, respectively, where <span class="arithmatex">\(\lambda\)</span> is a proportionality constant, and <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span> are constants related to the AP.</p>
+<ol>
+<li>
+<p>find <span class="arithmatex">\(t_m\)</span>:
+    Using <span class="arithmatex">\(t_m = S_m - S_{m-1}\)</span>, we find <span class="arithmatex">\(t_m\)</span>:</p>
+<p><span class="arithmatex">\(S_m = (Pm^2 + Qm)\lambda\)</span></p>
+<p><span class="arithmatex">\(S_{m-1} = P(m-1)^2 + Q(m-1)\lambda = [P(m^2 - 2m + 1) + Qm - Q]\lambda\)</span></p>
+<p><span class="arithmatex">\(t_m = S_m - S_{m-1} = [Pm^2 + Qm - P(m^2 - 2m + 1) - Qm + Q]\lambda\)</span></p>
+<p><span class="arithmatex">\(t_m = [P(2m - 1) + Q]\lambda\)</span></p>
+</li>
+<li>
+<p>find <span class="arithmatex">\(t_n\)</span>:
+    Similarly, for <span class="arithmatex">\(t_n = S_n - S_{n-1}\)</span>, we find <span class="arithmatex">\(t_n\)</span>:</p>
+<p><span class="arithmatex">\(S_n = (Pn^2 + Qn)\lambda\)</span></p>
+<p><span class="arithmatex">\(S_{n-1} = [P(n^2 - 2n + 1) + Qn - Q]\lambda\)</span></p>
+<p><span class="arithmatex">\(t_n = S_n - S_{n-1} = [P(2n - 1) + Q]\lambda\)</span></p>
+</li>
+<li>
+<p>find the Ratio <span class="arithmatex">\(t_m/t_n\)</span>:
+    The ratio <span class="arithmatex">\(t_m/t_n\)</span> is then:</p>
+<p><span class="arithmatex">\(\frac{t_m}{t_n} = \frac{[P(2m - 1) + Q]\lambda}{[P(2n - 1) + Q]\lambda} = \frac{P(2m - 1) + Q}{P(2n - 1) + Q}\)</span></p>
+</li>
+</ol>
+</div>
+<h2 id="important-properties-of-ap">Important Properties of AP</h2>
+<h3 id="three-terms-in-ap">Three terms in AP</h3>
+<p>If three numbers <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span> are in Arithmetic Progression (AP), then <span class="arithmatex">\(b = \frac{a + c}{2}\)</span>.</p>
+<p>In an Arithmetic Progression, the difference between consecutive terms is constant. This constant difference is known as the common difference, denoted as <span class="arithmatex">\(d\)</span>. When three numbers <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span> are in AP, it means that the difference between <span class="arithmatex">\(b\)</span> and <span class="arithmatex">\(a\)</span> is the same as the difference between <span class="arithmatex">\(c\)</span> and <span class="arithmatex">\(b\)</span>. Mathematically, this is expressed as:</p>
+<div class="arithmatex">\[b - a = c - b\]</div>
+<p>Rearranging the terms to solve for <span class="arithmatex">\(b\)</span>, we get:</p>
+<div class="arithmatex">\[2b = a + c\]</div>
+<p>Dividing both sides by 2 gives us the average of <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(c\)</span>:</p>
+<div class="arithmatex">\[b = \frac{a + c}{2}\]</div>
+<p>Thus, <span class="arithmatex">\(b\)</span> is the arithmetic mean of <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(c\)</span>. This result implies that in an AP, the middle term is always the average of the terms on either side of it, maintaining a uniform progression throughout the sequence.</p>
+<h3 id="kth-term-from-the-end-in-an-ap">kth Term from the End in an AP:</h3>
+<p>For an arithmetic progression (AP) with <span class="arithmatex">\(n\)</span> terms, first term <span class="arithmatex">\(a\)</span>, and common difference <span class="arithmatex">\(d\)</span>, the <span class="arithmatex">\(k\)</span>-th term from the end is given by <span class="arithmatex">\(a + (n-k)d\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<ol>
+<li>
+<p><strong>General Formula for the <span class="arithmatex">\(n\)</span>-th Term:</strong> The <span class="arithmatex">\(n\)</span>-th term of an AP, <span class="arithmatex">\(a_n\)</span>, is defined as <span class="arithmatex">\(a_n = a + (n-1)d\)</span>, where <span class="arithmatex">\(a\)</span> is the first term, <span class="arithmatex">\(d\)</span> is the common difference, and <span class="arithmatex">\(n\)</span> is the term's position in the sequence.</p>
+</li>
+<li>
+<p><strong>Position from the End:</strong> The <span class="arithmatex">\(k\)</span>-th term from the end means that there are <span class="arithmatex">\(k-1\)</span> terms after it. Since there are <span class="arithmatex">\(n\)</span> terms in total, the position of this term from the start is <span class="arithmatex">\(n - (k-1)\)</span> or <span class="arithmatex">\(n-k+1\)</span>.</p>
+</li>
+<li>
+<p><strong>Applying the Formula:</strong> To find the value of the term at this position, we substitute <span class="arithmatex">\(n-k+1\)</span> for <span class="arithmatex">\(n\)</span> in the general formula:</p>
+</li>
+</ol>
+<div class="arithmatex">\[a_{(n-k+1)} = a + [(n-k+1)-1]d\]</div>
+<div class="arithmatex">\[a_{(n-k+1)} = a + (n-k)d\]</div>
+<p><strong>Conclusion:</strong>
+This proves that the <span class="arithmatex">\(k\)</span>-th term from the end of an AP is calculated as <span class="arithmatex">\(a + (n-k)d\)</span>, effectively demonstrating how the structure of an AP allows for straightforward calculation of terms based on their position from either end of the sequence.</p>
+</div>
+<h3 id="constant-sum-property-of-equidistant-terms-in-arithmetic-progressions">Constant Sum Property of Equidistant Terms in Arithmetic Progressions</h3>
+<p>In an Arithmetic Progression (AP) consisting of terms <span class="arithmatex">\(a_1, a_2, a_3, \ldots, a_n\)</span>, the property of equidistant terms can be expressed as follows:</p>
+<div class="arithmatex">\[a_1 + a_n = a_2 + a_{n-1} = a_3 + a_{n-2} = \ldots = a_k + a_{n-k+1} = \ldots\]</div>
+<p>that is, the sum of the first and last term, <span class="arithmatex">\(a_1 + a_n\)</span>, is equal to the sum of the second term and the second last term, <span class="arithmatex">\(a_2 + a_{n-1}\)</span>, and so on. This pattern continues such that the sum of terms equidistant from the beginning and end of the sequence is constant.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>The <span class="arithmatex">\(n\)</span>-th term of an AP, <span class="arithmatex">\(a_n\)</span>, can be expressed as:
+[a_n = a + (n-1)d]</p>
+<p>Consider two terms, <span class="arithmatex">\(a_k\)</span> and <span class="arithmatex">\(a_{n-k+1}\)</span>, which are equidistant from the start and end of the sequence:
+- The <span class="arithmatex">\(k\)</span>-th term, <span class="arithmatex">\(a_k = a + (k-1)d\)</span>
+- The <span class="arithmatex">\((n-k+1)\)</span>-th term, <span class="arithmatex">\(a_{n-k+1} = a + (n-k)d\)</span></p>
+<p>The sum of these two terms is:</p>
+<div class="arithmatex">\[a_k + a_{n-k+1} = [a + (k-1)d] + [a + (n-k)d]\]</div>
+<div class="arithmatex">\[= 2a + (n-1)d\]</div>
+<p>Notice that the sum <span class="arithmatex">\(2a + (n-1)d\)</span> does not depend on <span class="arithmatex">\(k\)</span>; it depends only on <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(d\)</span>, and <span class="arithmatex">\(n\)</span>, which are constant for the entire sequence. Thus, for any <span class="arithmatex">\(k\)</span>, the sum of terms equidistant from the start and end of the AP is the same, and it is equal to the sum of the first and last term of the progression.</p>
+<p><strong>Conclusion:</strong>
+This proves that in an AP with first term <span class="arithmatex">\(a\)</span> and common difference <span class="arithmatex">\(d\)</span>, the sum of pairs of terms equidistant from both ends is constant, demonstrating a fundamental symmetry in the structure of arithmetic progressions.</p>
+</div>
+<h3 id="average-of-n-terms-of-an-arithmetic-progression">Average of n Terms of an Arithmetic Progression</h3>
+<p>In an arithmetic progression (AP) with <span class="arithmatex">\(n\)</span> terms, the average of these <span class="arithmatex">\(n\)</span> terms is equal to the average of the first term (<span class="arithmatex">\(a_1\)</span>) and the last term (<span class="arithmatex">\(a_n\)</span>). Mathematically, this property is expressed as:</p>
+<div class="arithmatex">\[\frac{a_1 + a_2 + a_3 + \ldots + a_n}{n} = \frac{a_1 + a_n}{2}\]</div>
+<p>This means that the average of all the terms in an AP is the same as the average of its first and last terms, effectively representing the midpoint value of the sequence.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<ol>
+<li>
+<p><strong>Sum of the First <span class="arithmatex">\(n\)</span> Terms of an AP:</strong>
+The sum of the first <span class="arithmatex">\(n\)</span> terms of an AP is given by <span class="arithmatex">\(S_n = \frac{n}{2}(a_1 + a_n)\)</span>, where <span class="arithmatex">\(a_1\)</span> is the first term, <span class="arithmatex">\(a_n\)</span> is the <span class="arithmatex">\(n\)</span>-th (last) term, and <span class="arithmatex">\(n\)</span> is the total number of terms.</p>
+</li>
+<li>
+<p><strong>Average of the First <span class="arithmatex">\(n\)</span> Terms:</strong>
+The average of these <span class="arithmatex">\(n\)</span> terms, denoted as <span class="arithmatex">\(\bar{a}\)</span>, is found by dividing the total sum <span class="arithmatex">\(S_n\)</span> by <span class="arithmatex">\(n\)</span>:</p>
+<div class="arithmatex">\[\bar{a} = \frac{S_n}{n} = \frac{\frac{n}{2}(a_1 + a_n)}{n}\]</div>
+</li>
+<li>
+<p><strong>Simplification:</strong>
+Simplify the expression by canceling <span class="arithmatex">\(n\)</span> in the numerator and the denominator:</p>
+</li>
+</ol>
+<div class="arithmatex">\[\bar{a} = \frac{1}{2}(a_1 + a_n)\]</div>
+<p><strong>Conclusion:</strong>
+This simplification proves that the average of <span class="arithmatex">\(n\)</span> terms of an AP is equal to the average of its first and last terms, <span class="arithmatex">\(\frac{a_1 + a_n}{2}\)</span>.'</p>
+</div>
+<h3 id="arithmetic-operations-and-their-effects-on-arithmetic-progressions">Arithmetic Operations and Their Effects on Arithmetic Progressions</h3>
+<p>Arithmetic Progressions (APs) exhibit several fundamental properties that remain consistent under various arithmetic operations. These properties highlight the structural integrity and predictable nature of APs:</p>
+<ol>
+<li>
+<p><strong>Addition/Subtraction:</strong></p>
+<ul>
+<li>If a constant is added to or subtracted from each term of an AP, the resulting sequence remains an AP with the same common difference.</li>
+<li><strong>Example:</strong> Given an AP <span class="arithmatex">\(a, a+d, a+2d, \ldots\)</span>, adding or subtracting a constant <span class="arithmatex">\(c\)</span> yields a new AP <span class="arithmatex">\(a+c, a+d+c, a+2d+c, \ldots\)</span>, with the same common difference <span class="arithmatex">\(d\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Multiplication:</strong></p>
+<ul>
+<li>If each term of an AP is multiplied by a constant, the resulting sequence is also an AP. The common difference of the new AP is the original common difference multiplied by that constant.</li>
+<li><strong>Example:</strong> Multiplying each term of an AP <span class="arithmatex">\(a, a+d, a+2d, \ldots\)</span> by a constant <span class="arithmatex">\(k\)</span> results in <span class="arithmatex">\(ak, ak+kd, ak+2kd, \ldots\)</span>, with a new common difference of <span class="arithmatex">\(kd\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Division:</strong></p>
+<ul>
+<li>If each term of an AP is divided by the same non-zero constant, the resulting sequence is an AP. The common difference of the new AP is the original common difference divided by that constant.</li>
+<li><strong>Example:</strong> Dividing each term of an AP <span class="arithmatex">\(a, a+d, a+2d, \ldots\)</span> by a non-zero constant <span class="arithmatex">\(k\)</span> forms a new AP <span class="arithmatex">\(\frac{a}{k}, \frac{a+d}{k}, \frac{a+2d}{k}, \ldots\)</span>, with a new common difference of <span class="arithmatex">\(\frac{d}{k}\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Combining APs:</strong></p>
+<ul>
+<li>If two sequences are APs with the same common difference, then the sequence formed by adding or subtracting corresponding terms of these APs is also an AP with the same common difference.</li>
+<li><strong>Example:</strong> Given two APs <span class="arithmatex">\(a_1, a_1+d, a_1+2d, \ldots\)</span> and <span class="arithmatex">\(a_2, a_2+d, a_2+2d, \ldots\)</span>, adding corresponding terms yields a new AP <span class="arithmatex">\(a_1+a_2, a_1+a_2+2d, a_1+a_2+4d, \ldots\)</span>, with the same common difference <span class="arithmatex">\(d\)</span>.</li>
+</ul>
+</li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">Combinig APs by multiplication and Division</p>
+<p>Multiplying or dividing the corresponding terms of two APs does not generally result in a sequence that maintains the properties of an AP. This is because the operation of multiplication or division on the terms from different APs disrupts the uniformity of the common difference, which is fundamental to the definition of an AP.</p>
+<p>For instance, consider two APs: <span class="arithmatex">\(a, a+d, a+2d, \ldots\)</span> and <span class="arithmatex">\(b, b+d', b+2d', \ldots\)</span>. Multiplying the <span class="arithmatex">\(n\)</span>-th terms of these APs yields <span class="arithmatex">\(ab, (a+d)(b+d'), (a+2d)(b+2d'), \ldots\)</span>, where the difference between successive terms varies and does not remain constant. Similarly, dividing corresponding terms also leads to a sequence where the ratio of successive terms is not constant, deviating from the characteristic feature of an AP.</p>
+</div>
+<h3 id="simplified-assumptions-for-sums-in-ap">Simplified Assumptions for Sums in AP</h3>
+<p>Sometimes we have to assume a sequence of three three, four, five or more numbers in AP. We follow the following <strong>thumb rules</strong>q while making assumptions:</p>
+<p><strong>Three Numbers in AP:</strong> Prefer <span class="arithmatex">\(a-d\)</span>, <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(a+d\)</span> over <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(a+d\)</span>, <span class="arithmatex">\(a+2d\)</span>. </p>
+<p><strong>Four Numbers in AP:</strong> Use <span class="arithmatex">\(a-3d\)</span>, <span class="arithmatex">\(a-d\)</span>, <span class="arithmatex">\(a+d\)</span>, <span class="arithmatex">\(a+3d\)</span>. Common difference effectively <span class="arithmatex">\(2d\)</span>, centered around <span class="arithmatex">\(a\)</span>.</p>
+<p><strong>Five Numbers in AP:</strong> Assume <span class="arithmatex">\(a-2d\)</span>, <span class="arithmatex">\(a-d\)</span>, <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(a+d\)</span>, <span class="arithmatex">\(a+2d\)</span>. Symmetry with <span class="arithmatex">\(a\)</span> as central term simplifies calculations.</p>
+<p>While it's possible to assume three numbers in an AP as <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(a+d\)</span>, <span class="arithmatex">\(a+2d\)</span>, choosing <span class="arithmatex">\(a-d\)</span>, <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(a+d\)</span> is often more practical, especially when the sum of the numbers is known. This assumption leverages the symmetry around the central term <span class="arithmatex">\(a\)</span> for more straightforward calculations and problem-solving.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong>
+Find four terms in an Arithmetic Progression (AP) whose sum is 36, and the sum of their squares is 404, using the assumption <span class="arithmatex">\(a-3d\)</span>, <span class="arithmatex">\(a-d\)</span>, <span class="arithmatex">\(a+d\)</span>, and <span class="arithmatex">\(a+3d\)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Set Up the Terms Based on the Given Assumption</strong></p>
+<p>The four terms of the AP are assumed as <span class="arithmatex">\(a-3d\)</span>, <span class="arithmatex">\(a-d\)</span>, <span class="arithmatex">\(a+d\)</span>, and <span class="arithmatex">\(a+3d\)</span>.</p>
+<p><strong>Step 2: Apply the Given Conditions</strong></p>
+<ul>
+<li>The sum of the terms is 36: <span class="arithmatex">\((a-3d) + (a-d) + (a+d) + (a+3d) = 4a = 36\)</span>.</li>
+<li>The sum of their squares is 404: <span class="arithmatex">\((a-3d)^2 + (a-d)^2 + (a+d)^2 + (a+3d)^2 = 404\)</span>.</li>
+</ul>
+<p><strong>Step 3: Solve for <span class="arithmatex">\(a\)</span></strong></p>
+<p>From the sum condition:</p>
+<div class="arithmatex">\[4a = 36 \Rightarrow a = 9\]</div>
+<p><strong>Step 4: Calculate <span class="arithmatex">\(d\)</span> Using the Sum of Squares</strong></p>
+<p>Substitute <span class="arithmatex">\(a = 9\)</span> into the sum of squares condition and simplify:</p>
+<div class="arithmatex">\[\begin{align*}
+(9-3d)^2 + (9-d)^2 + (9+d)^2 + (9+3d)^2 &amp;= 404 \\
+81 - 54d + 9d^2 + 81 - 18d + d^2 + 81 + 18d + d^2 + 81 + 54d + 9d^2 &amp;= 404 \\
+4(81) + 20d^2 &amp;= 404 \\
+324 + 20d^2 &amp;= 404 \\
+20d^2 &amp;= 80 \\
+d^2 &amp;= 4 \\
+d &amp;= \pm 2
+\end{align*}\]</div>
+<p><strong>Step 5: Find the Four Terms</strong></p>
+<p>Using <span class="arithmatex">\(a = 9\)</span> and <span class="arithmatex">\(d = 2\)</span> (choosing the positive difference for simplicity):</p>
+<ol>
+<li><span class="arithmatex">\(a-3d = 9 - 3(2) = 3\)</span></li>
+<li><span class="arithmatex">\(a-d = 9 - 2 = 7\)</span></li>
+<li><span class="arithmatex">\(a+d = 9 + 2 = 11\)</span></li>
+<li><span class="arithmatex">\(a+3d = 9 + 3(2) = 15\)</span></li>
+</ol>
+<p><strong>Conclusion:</strong>
+The four terms in the AP that meet the given conditions are <span class="arithmatex">\(3, 7, 11, 15\)</span>, with a sum of 36 and a sum of their squares of 404.</p>
+</div>
+<h3 id="subsequences-in-an-arithmetic-progression-ap-formed-by-selecting-terms-at-regular-intervals">Subsequences in an Arithmetic Progression (AP) Formed by Selecting Terms at Regular Intervals</h3>
+<p>Given an arithmetic progression (AP) with terms <span class="arithmatex">\(a_1, a_2, a_3, a_4, \ldots\)</span>, and a common difference <span class="arithmatex">\(d\)</span>, if we select terms from this AP at regular intervals <span class="arithmatex">\(k\)</span>, then the selected terms also form an AP. The common difference of the new AP is <span class="arithmatex">\(kd\)</span>.</p>
+<p><strong><em>Definition of Interval</em></strong></p>
+<p><em>In this context, an interval <span class="arithmatex">\(k\)</span> refers to the fixed number of positions we move forward in the sequence to select the next term. For example, if <span class="arithmatex">\(k=2\)</span>, we select every second term from the original AP, such as <span class="arithmatex">\(a_1, a_3, a_5, \ldots\)</span>, skipping one term between selections.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>Consider the original AP defined by the sequence <span class="arithmatex">\(a_1, a_2, a_3, \ldots\)</span>, where the <span class="arithmatex">\(n^{th}\)</span> term (<span class="arithmatex">\(a_n\)</span>) is given by:</p>
+<div class="arithmatex">\[ a_n = a_1 + (n-1)d \]</div>
+<p>Here, <span class="arithmatex">\(a_1\)</span> is the first term, <span class="arithmatex">\(d\)</span> is the common difference, and <span class="arithmatex">\(n\)</span> is the term's position in the sequence.</p>
+<p>When selecting terms at intervals <span class="arithmatex">\(k\)</span>, we choose terms <span class="arithmatex">\(a_1, a_{1+k}, a_{1+2k}, \ldots\)</span>. The <span class="arithmatex">\(m^{th}\)</span> term of this new sequence, denoted as <span class="arithmatex">\(a'_m\)</span>, corresponds to the term <span class="arithmatex">\(a_{1+(m-1)k}\)</span> in the original AP. Therefore, <span class="arithmatex">\(a'_m\)</span> can be expressed as:</p>
+<div class="arithmatex">\[ a'_m = a_1 + \left(1+(m-1)k - 1\right)d = a_1 + (m-1)kd \]</div>
+<p>This equation shows that the selected terms form an AP with the first term <span class="arithmatex">\(a_1\)</span> and a common difference of <span class="arithmatex">\(kd\)</span>, proving that any subsequence formed by selecting terms at regular intervals from an AP is itself an AP with a modified common difference.</p>
+</div>
+<h3 id="common-terms-of-two-integer-arithmetic-progressions-form-an-arithmetic-progression">Common Terms of Two Integer Arithmetic Progressions Form an Arithmetic Progression</h3>
+<p>Given two integer arithmetic progressions (APs) <span class="arithmatex">\(A_1, A_2, A_3, \ldots\)</span> with common difference <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B_1, B_2, B_3, \ldots\)</span> with common difference <span class="arithmatex">\(B\)</span>, if there exist common terms between these two sequences, then these common terms themselves form an arithmetic progression with a common difference equal to the least common multiple (LCM) of <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>.</p>
+<div class="admonition tip">
+<p class="admonition-title">How to find the first common term?</p>
+<p>Usually you are asked problems where the first term can be found by observation via writing first few terms of both AP's. </p>
+<p>The general way of finding the first common term involves some Number Theory concepts. </p>
+<p>Given two APs:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(a, a+d, a+2d, a+3d, \ldots\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(b, b+e, b+2e, b+3e, \ldots\)</span></p>
+</li>
+</ol>
+<p>Suppose the first common term is the <span class="arithmatex">\((m+1)^{th}\)</span> term in the first AP and the <span class="arithmatex">\((n+1)^{th}\)</span> term in the second AP, leading to the equation <span class="arithmatex">\(a + md = b + ne\)</span>.</p>
+<p>Rearranging gives:</p>
+<div class="arithmatex">\[ md - ne = b - a \]</div>
+<p>This is a linear Diophantine equation in <span class="arithmatex">\(m\)</span> and <span class="arithmatex">\(n\)</span>, with coefficients being integers.</p>
+<p>To find the first common term, we need to solve <span class="arithmatex">\(md - ne = b - a\)</span> for <span class="arithmatex">\(m\)</span> and <span class="arithmatex">\(n\)</span>. A solution exists if and only if the greatest common divisor (gcd) of <span class="arithmatex">\(d\)</span> and <span class="arithmatex">\(-e\)</span> (or equivalently, <span class="arithmatex">\(gcd(d, e)\)</span> since gcd is indifferent to the sign) divides <span class="arithmatex">\(b-a\)</span>.</p>
+<p><a href="https://brilliant.org/wiki/bezouts-identity/">Click here for more information</a></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

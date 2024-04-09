@@ -1,0 +1,3694 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/">
+      
+      
+        <link rel="prev" href="../02%20-%20Measuring%20distances/">
+      
+      
+        <link rel="next" href="../04%20-%20Area/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Section Formula and Centres of a Triangle - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#section-formula" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Section Formula and Centres of a Triangle
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#section-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#section-formula-for-internal-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Formula for Internal Division:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternate-way-to-write-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternate way to write ratio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#section-formual-for-external-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Formual for External division
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-way-of-writing-the-unified-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative way of writing the unified formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location-of-point-p-depending-on-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Location of point P depending on lambda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yet-another-way-of-writing-the-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Yet another way of writing the ratio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#midpoint-and-points-of-trisection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Midpoint and points of trisection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#harmonic-conjugates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Harmonic Conjugates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-of-section-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications of Section Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Applications of Section Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collinearity-of-three-points-using-section-formulae" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collinearity of Three Points using section formulae
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#median" class="md-nav__link">
+    <span class="md-ellipsis">
+      Median
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#centroid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Centroid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orthocentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orthocentre
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Orthocentre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orthocenters-of-triangles-formed-by-orthocenter-and-vertices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orthocenters of Triangles Formed by Orthocenter and Vertices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pedal-triangle-amd-orthic-triangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pedal Triangle amd Orthic Triangle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incentre
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coordinates-of-incentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coordinates of Incentre
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excentres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excentres
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circumcentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circumcentre
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Circumcentre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circumcentre-of-a-right-angled-triangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circumcentre of a right angled triangle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location-of-circumcentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Location of circumcentre
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-miscellaneuous-facts-based-on-centres-of-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Some Miscellaneuous Facts based on centres of Circle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Some Miscellaneuous Facts based on centres of Circle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#image-orthocentre-in-sides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Orthocentre in sides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pedal-triangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pedal Triangle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eulers-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Euler's Line
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equilateral-triangle-and-its-centres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equilateral triangle and its centres
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#section-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#section-formula-for-internal-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Formula for Internal Division:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternate-way-to-write-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternate way to write ratio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#section-formual-for-external-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Formual for External division
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-way-of-writing-the-unified-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative way of writing the unified formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location-of-point-p-depending-on-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Location of point P depending on lambda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yet-another-way-of-writing-the-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Yet another way of writing the ratio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#midpoint-and-points-of-trisection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Midpoint and points of trisection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#harmonic-conjugates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Harmonic Conjugates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-of-section-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications of Section Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Applications of Section Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collinearity-of-three-points-using-section-formulae" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collinearity of Three Points using section formulae
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#median" class="md-nav__link">
+    <span class="md-ellipsis">
+      Median
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#centroid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Centroid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orthocentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orthocentre
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Orthocentre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orthocenters-of-triangles-formed-by-orthocenter-and-vertices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orthocenters of Triangles Formed by Orthocenter and Vertices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pedal-triangle-amd-orthic-triangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pedal Triangle amd Orthic Triangle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incentre
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coordinates-of-incentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coordinates of Incentre
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excentres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excentres
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circumcentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circumcentre
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Circumcentre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circumcentre-of-a-right-angled-triangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circumcentre of a right angled triangle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location-of-circumcentre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Location of circumcentre
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-miscellaneuous-facts-based-on-centres-of-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Some Miscellaneuous Facts based on centres of Circle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Some Miscellaneuous Facts based on centres of Circle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#image-orthocentre-in-sides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Orthocentre in sides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pedal-triangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pedal Triangle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eulers-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Euler's Line
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equilateral-triangle-and-its-centres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equilateral triangle and its centres
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Section Formula and Centres of a Triangle</h1>
+
+<h2 id="section-formula">Section Formula</h2>
+<p>Given points <span class="arithmatex">\(A(x_1, y_1)\)</span> and <span class="arithmatex">\(B(x_2, y_2)\)</span> and a point <span class="arithmatex">\(P(x, y)\)</span> that divides the line segment <span class="arithmatex">\(AB\)</span> internally in the ratio <span class="arithmatex">\(m:n\)</span>, we can derive the coordinates of point <span class="arithmatex">\(P\)</span> using the section formula.</p>
+<h3 id="section-formula-for-internal-division">Section Formula for Internal Division:</h3>
+<p>The point <span class="arithmatex">\(P\)</span> dividing the line segment <span class="arithmatex">\(AB\)</span> internally in the ratio <span class="arithmatex">\(m:n\)</span> has coordinates given by</p>
+<div class="arithmatex">\[ x = \frac{mx_2 + nx_1}{m + n} \]</div>
+<div class="arithmatex">\[ y = \frac{my_2 + ny_1}{m + n} \]</div>
+<p><strong>Proof:</strong></p>
+<p>Consider the right-angled triangles <span class="arithmatex">\(PNB\)</span> and <span class="arithmatex">\(PLA\)</span> as shown in the figure below:</p>
+<p><a class="glightbox" href="../image-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure for the proof of section formula for internal division" src="../image-7.png" /></a></p>
+<p>It is straightforward to prove that <span class="arithmatex">\(\Delta PNB\sim\Delta PLA\)</span></p>
+<p>From these proportions, we can write:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{AL}{PN}=\frac{PA}{PB}\)</span></p>
+<p><span class="arithmatex">\( \implies \frac{x-x_1}{x_2-x}=\frac{m}{n} \)</span></p>
+<p><span class="arithmatex">\(\implies nx-nx_1=mx_2-mx\)</span></p>
+<p><span class="arithmatex">\(\implies x=\frac{mx_2+nx_1}{m+n}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{PL}{BN}=\frac{PA}{PB}\)</span></p>
+<p><span class="arithmatex">\( \implies \frac{y-y_1}{y_2-y}=\frac{m}{n} \)</span></p>
+<p><span class="arithmatex">\(\implies ny-ny_1=my_2-my\)</span></p>
+<p><span class="arithmatex">\(\implies y=\frac{my_2+ny_1}{m+n}\)</span></p>
+</li>
+</ol>
+<p>This concludes the proof of the section formula for internal division of a line segment.</p>
+<h3 id="alternate-way-to-write-ratio">Alternate way to write ratio</h3>
+<p>In coordinate geometry, when simplifying the algebraic representation of the ratio of division of a line segment, it's common to introduce a parameter <span class="arithmatex">\( \lambda \)</span> to represent the ratio <span class="arithmatex">\( \frac{m}{n} \)</span>. This is particularly useful when dealing with problems involving section formulae, as it allows us to express the coordinates of the dividing point <span class="arithmatex">\( P(x, y) \)</span> in a more streamlined form.</p>
+<p>Using <span class="arithmatex">\( \lambda = \frac{m}{n} \)</span>, the section formula for internal division becomes:</p>
+<div class="arithmatex">\[ x = \frac{\lambda x_2 + x_1}{\lambda + 1} \]</div>
+<div class="arithmatex">\[ y = \frac{\lambda y_2 + y_1}{\lambda + 1} \]</div>
+<p>This is because the original expressions:</p>
+<div class="arithmatex">\[ x = \frac{mx_2 + nx_1}{m + n} \]</div>
+<div class="arithmatex">\[ y = \frac{my_2 + ny_1}{m + n} \]</div>
+<p>can be rewritten by dividing the numerator and denominator by <span class="arithmatex">\( n \)</span> (assuming <span class="arithmatex">\( n \neq 0 \)</span>), resulting in:</p>
+<div class="arithmatex">\[ x = \frac{\frac{m}{n}x_2 + 1 \cdot x_1}{\frac{m}{n} + 1} = \frac{\lambda x_2 + x_1}{\lambda + 1} \]</div>
+<div class="arithmatex">\[ y = \frac{\frac{m}{n}y_2 + 1 \cdot y_1}{\frac{m}{n} + 1} = \frac{\lambda y_2 + y_1}{\lambda + 1} \]</div>
+<p>Hence, the point <span class="arithmatex">\( P \)</span> dividing the line segment <span class="arithmatex">\( AB \)</span> internally in the ratio <span class="arithmatex">\( \lambda:1 \)</span> (or <span class="arithmatex">\( m:n \)</span>) has its coordinates given by the simplified section formula above.</p>
+<h3 id="section-formual-for-external-division">Section Formual for External division</h3>
+<p>The coordinates of a point <span class="arithmatex">\( P(x, y) \)</span> that divides the line segment joining two points <span class="arithmatex">\( A(x_1, y_1) \)</span> and <span class="arithmatex">\( B(x_2, y_2) \)</span> in the ratio <span class="arithmatex">\( m:n \)</span> externally are given by <span class="arithmatex">\( \left( \frac{mx_2 - nx_1}{m-n}, \frac{my_2 - ny_1}{m-n} \right) \)</span>.</p>
+<p>Proof: A similar proof as Internal division ensues. Please try to do it yourself.</p>
+<div class="admonition note">
+<p class="admonition-title">Unified formula of Internal and external division: Positive and Negative Ratio</p>
+<p>For the coordinates of a point <span class="arithmatex">\(P\)</span> dividing the line segment <span class="arithmatex">\(AB\)</span> externally in the ratio <span class="arithmatex">\(m:n\)</span>, the formula is given by <span class="arithmatex">\((\frac{mx_2 - nx_1}{m-n}, \frac{my_2 - ny_1}{m-n})\)</span>. This can also be written as <span class="arithmatex">\((\frac{mx_2 + (-n)x_1}{m + (-n)}, \frac{my_2 + (-n)y_1}{m + (-n)})\)</span> by absorbing the negative sign. The ratio for external division can be denoted as <span class="arithmatex">\(-m:n\)</span>, where the negative sign indicates external division. Thus, for any division ratio <span class="arithmatex">\(m:n\)</span>, whether positive or negative, the formula <span class="arithmatex">\((\frac{mx_2 + nx_1}{m + n}, \frac{my_2 + ny_1}{m + n})\)</span> can be used.</p>
+</div>
+<h3 id="alternative-way-of-writing-the-unified-formula">Alternative way of writing the unified formula</h3>
+<p>Given the formula for the coordinates of <span class="arithmatex">\(P\)</span>:</p>
+<div class="arithmatex">\[P(x, y) = \left( \frac{mx_2 + nx_1}{m + n}, \frac{my_2 + ny_1}{m + n} \right)\]</div>
+<p>Dividing both numerator and denominator by <span class="arithmatex">\(n\)</span>, we get:</p>
+<div class="arithmatex">\[P(x, y) = \left( \frac{\frac{m}{n}x_2 + x_1}{\frac{m}{n} + 1}, \frac{\frac{m}{n}y_2 + y_1}{\frac{m}{n} + 1} \right)\]</div>
+<p>Substituting <span class="arithmatex">\(\lambda = \frac{m}{n}\)</span>, we obtain:</p>
+<div class="arithmatex">\[P(x, y) = \left( \frac{\lambda x_2 + x_1}{\lambda + 1}, \frac{\lambda y_2 + y_1}{\lambda + 1} \right)\]</div>
+<p>This formula compactly expresses the coordinates of <span class="arithmatex">\(P\)</span> dividing the segment <span class="arithmatex">\(AB\)</span> in the ratio <span class="arithmatex">\(m:n\)</span> or equivalently <span class="arithmatex">\(\lambda:1\)</span>, where <span class="arithmatex">\(\lambda\)</span> can be any real number, capturing both internal and external division scenarios.</p>
+<h3 id="location-of-point-p-depending-on-lambda">Location of point P depending on lambda</h3>
+<p>The location of point <span class="arithmatex">\(P\)</span>, dividing a line segment <span class="arithmatex">\(AB\)</span> in the ratio <span class="arithmatex">\(\lambda:1\)</span> (where <span class="arithmatex">\(\lambda = \frac{m}{n}\)</span>), relative to points <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>, varies depending on the value of <span class="arithmatex">\(\lambda\)</span>:</p>
+<p><a class="glightbox" href="../image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Relative Location of P with respect to A and B" src="../image-8.png" /></a></p>
+<ol>
+<li>
+<p><strong><span class="arithmatex">\(\lambda = 0\)</span>:</strong> Point <span class="arithmatex">\(P\)</span> coincides with point <span class="arithmatex">\(A\)</span>. This is because the division ratio effectively becomes <span class="arithmatex">\(0:1\)</span>, indicating that <span class="arithmatex">\(P\)</span> is at <span class="arithmatex">\(A\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\lambda&gt;0\)</span>:</strong> Point <span class="arithmatex">\(P\)</span> lies between <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>. As <span class="arithmatex">\(\lambda\)</span> changes from <span class="arithmatex">\(0\)</span> to <span class="arithmatex">\(\infty\)</span>, <span class="arithmatex">\(P\)</span> moves from <span class="arithmatex">\(A\)</span> towards <span class="arithmatex">\(B\)</span>. </p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(-1 &lt; \lambda &lt; 0\)</span>:</strong> Point <span class="arithmatex">\(P\)</span> divides <span class="arithmatex">\(AB\)</span> externally but is closer to <span class="arithmatex">\(A\)</span>. In this range, <span class="arithmatex">\(\lambda\)</span> is negative, signifying external division, but since <span class="arithmatex">\(|\lambda| &lt; 1\)</span>, <span class="arithmatex">\(P\)</span> is positioned on the extension of <span class="arithmatex">\(AB\)</span> on <span class="arithmatex">\(A\)</span>'s side.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\lambda &lt; -1\)</span>:</strong> Point <span class="arithmatex">\(P\)</span> divides <span class="arithmatex">\(AB\)</span> externally on the side of <span class="arithmatex">\(B\)</span>. Here, the absolute value of <span class="arithmatex">\(\lambda\)</span> being greater than 1 means that <span class="arithmatex">\(P\)</span> not only divides <span class="arithmatex">\(AB\)</span> externally but also lies closer to <span class="arithmatex">\(B\)</span>, on the extension of <span class="arithmatex">\(AB\)</span> beyond <span class="arithmatex">\(B\)</span>. </p>
+</li>
+</ol>
+<p>These scenarios illustrate how the value of <span class="arithmatex">\(\lambda\)</span> determines <span class="arithmatex">\(P\)</span>'s relative location to <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>, spanning both internal and external divisions along and beyond the segment <span class="arithmatex">\(AB\)</span>.</p>
+<h3 id="yet-another-way-of-writing-the-ratio">Yet another way of writing the ratio</h3>
+<p>When the ratio of the lengths of segments <span class="arithmatex">\(AP\)</span> to <span class="arithmatex">\(AB\)</span> is taken as <span class="arithmatex">\(\lambda\)</span>, that is, <span class="arithmatex">\(AP:AB = \lambda\)</span>, a different approach is used to find the coordinates of point <span class="arithmatex">\(P\)</span>. This implies that <span class="arithmatex">\(AP\)</span> is a fraction <span class="arithmatex">\(\lambda\)</span> of the total length <span class="arithmatex">\(AB\)</span>. Consequently, the ratio <span class="arithmatex">\(AP:PB\)</span> can be expressed as <span class="arithmatex">\(\lambda:(1-\lambda)\)</span>, since <span class="arithmatex">\(AP + PB = AB\)</span> and <span class="arithmatex">\(PB = AB - AP\)</span>.</p>
+<p>Given this, the coordinates of point <span class="arithmatex">\(P\)</span> can be derived from the ratio <span class="arithmatex">\(AP:PB = \lambda:(1-\lambda)\)</span> as follows:</p>
+<div class="arithmatex">\[P(x, y) = \left( \frac{\lambda x_2 + (1-\lambda) x_1}{1}, \frac{\lambda y_2 + (1-\lambda) y_1}{1} \right)\]</div>
+<p>This formula simplifies to:</p>
+<div class="arithmatex">\[\color{green}P(x, y) = (\lambda x_2 + (1-\lambda) x_1, \lambda y_2 + (1-\lambda) y_1)\]</div>
+<p>In the approach where the ratio <span class="arithmatex">\(AP:AB = \lambda\)</span>, the value of <span class="arithmatex">\(\lambda\)</span> directly influences the position of point <span class="arithmatex">\(P\)</span> relative to points <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> along or beyond the line segment <span class="arithmatex">\(AB\)</span>:</p>
+<p><a class="glightbox" href="../image-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Relative Location of P with respect to lambda" src="../image-9.png" /></a></p>
+<ol>
+<li>
+<p><strong><span class="arithmatex">\(\lambda = 0\)</span>:</strong> Point <span class="arithmatex">\(P\)</span> coincides with point <span class="arithmatex">\(A\)</span>. This corresponds to <span class="arithmatex">\(P\)</span> being at the very start of the segment <span class="arithmatex">\(AB\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(0 &lt; \lambda &lt; 1\)</span>:</strong> Point <span class="arithmatex">\(P\)</span> lies between <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> on the line segment <span class="arithmatex">\(AB\)</span>. As <span class="arithmatex">\(\lambda\)</span> increases from 0 to 1, <span class="arithmatex">\(P\)</span> moves from <span class="arithmatex">\(A\)</span> towards <span class="arithmatex">\(B\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\lambda = 1\)</span>:</strong> Point <span class="arithmatex">\(P\)</span> coincides with point <span class="arithmatex">\(B\)</span>, marking the end of the segment <span class="arithmatex">\(AB\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\lambda &gt; 1\)</span>:</strong> <span class="arithmatex">\(P\)</span> divides <span class="arithmatex">\(AB\)</span> externally on the side of <span class="arithmatex">\(B\)</span>. In this scenario, <span class="arithmatex">\(P\)</span> is located on the extension of <span class="arithmatex">\(AB\)</span> beyond <span class="arithmatex">\(B\)</span>, indicating that <span class="arithmatex">\(P\)</span> is further from <span class="arithmatex">\(A\)</span> compared to <span class="arithmatex">\(B\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\lambda &lt; 0\)</span>:</strong> <span class="arithmatex">\(P\)</span> divides <span class="arithmatex">\(AB\)</span> externally on the side of <span class="arithmatex">\(A\)</span>. Here, <span class="arithmatex">\(P\)</span> is positioned on the extension of <span class="arithmatex">\(AB\)</span> beyond <span class="arithmatex">\(A\)</span>, suggesting an external division where <span class="arithmatex">\(P\)</span> is closer to <span class="arithmatex">\(A\)</span> than to <span class="arithmatex">\(B\)</span>.</p>
+</li>
+</ol>
+<p>This formulation provides a continuous mapping of <span class="arithmatex">\(\lambda\)</span> to positions of <span class="arithmatex">\(P\)</span> along and beyond the segment <span class="arithmatex">\(AB\)</span>, illustrating how changes in <span class="arithmatex">\(\lambda\)</span> translate to different locations of <span class="arithmatex">\(P\)</span> in relation to <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>.</p>
+<h3 id="midpoint-and-points-of-trisection">Midpoint and points of trisection</h3>
+<h4 id="midpoint">Midpoint</h4>
+<p>Given two points <span class="arithmatex">\(A(x_1, y_1)\)</span> and <span class="arithmatex">\(B(x_2, y_2)\)</span>, the midpoint <span class="arithmatex">\(M\)</span> of the line segment <span class="arithmatex">\(\overline{AB}\)</span> divides it in the ratio 1:1. Put <span class="arithmatex">\(lambda=1\)</span> in the section formula <span class="arithmatex">\(M=\frac{\lambda B+A}{\lambda+1}\)</span>.Therefore, the coordinates of <span class="arithmatex">\(M\)</span> are given by</p>
+<div class="arithmatex">\[
+M = \left( \frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2} \right).
+\]</div>
+<h4 id="points-of-trisection">Points of Trisection</h4>
+<p>Points of trisection of a line segment are the two points that divide the segment into three equal parts. Let <span class="arithmatex">\(A(x_1, y_1)\)</span> and <span class="arithmatex">\(B(x_2, y_2)\)</span> be the endpoints of the segment. We aim to find the coordinates of the points <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span> that trisect the line segment <span class="arithmatex">\(\overline{AB}\)</span>.</p>
+<p>Points of trisection <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span> of a line segment into ratio <span class="arithmatex">\(1:2\)</span> and <span class="arithmatex">\(2:1\)</span> respectively. </p>
+<p>Given a line segment <span class="arithmatex">\(\overline{AB}\)</span>, the section formula for a point dividing this segment in the ratio <span class="arithmatex">\(m:n\)</span> is given by the coordinates:</p>
+<div class="arithmatex">\[
+x = \frac{m x_2 + n x_1}{m + n}, \quad y = \frac{m y_2 + n y_1}{m + n}
+\]</div>
+<p><strong>For Point <span class="arithmatex">\(P\)</span> (First Trisection Point):</strong></p>
+<p>For <span class="arithmatex">\(P\)</span> dividing <span class="arithmatex">\(\overline{AB}\)</span> in the ratio <span class="arithmatex">\(1:2\)</span> (<span class="arithmatex">\(m=1\)</span>, <span class="arithmatex">\(n=2\)</span>), the coordinates <span class="arithmatex">\(x_p, y_p\)</span> are calculated as:</p>
+<div class="arithmatex">\[
+x_p = \frac{1 \cdot x_2 + 2 \cdot x_1}{1 + 2}, \quad y_p = \frac{1 \cdot y_2 + 2 \cdot y_1}{1 + 2}
+\]</div>
+<p>Simplifying, we obtain:</p>
+<div class="arithmatex">\[
+x_p = \frac{x_2 + 2x_1}{3}, \quad y_p = \frac{y_2 + 2y_1}{3}
+\]</div>
+<p><strong>For Point <span class="arithmatex">\(Q\)</span> (Second Trisection Point):</strong></p>
+<p>For <span class="arithmatex">\(Q\)</span> dividing <span class="arithmatex">\(\overline{AB}\)</span> in the ratio <span class="arithmatex">\(2:1\)</span> (<span class="arithmatex">\(m=2\)</span>, <span class="arithmatex">\(n=1\)</span>), the coordinates <span class="arithmatex">\(x_q, y_q\)</span> are determined by:</p>
+<div class="arithmatex">\[
+x_q = \frac{2 \cdot x_2 + 1 \cdot x_1}{2 + 1}, \quad y_q = \frac{2 \cdot y_2 + 1 \cdot y_1}{2 + 1}
+\]</div>
+<p>Yielding:</p>
+<div class="arithmatex">\[
+x_q = \frac{2x_2 + x_1}{3}, \quad y_q = \frac{2y_2 + y_1}{3}
+\]</div>
+<h2 id="harmonic-conjugates">Harmonic Conjugates</h2>
+<p>Let <span class="arithmatex">\(A(x_1, y_1)\)</span> and <span class="arithmatex">\(B(x_2, y_2)\)</span> be two points on a plane. Suppose a point <span class="arithmatex">\(P\)</span> divides the line segment <span class="arithmatex">\(\overline{AB}\)</span> internally in the ratio <span class="arithmatex">\(m:n\)</span>, and a point <span class="arithmatex">\(Q\)</span> divides the same line segment externally in the same ratio <span class="arithmatex">\(m:n\)</span>. Then, points <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span> are referred to as harmonic conjugates with respect to <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>.</p>
+<p><strong>Internal Division by <span class="arithmatex">\(P\)</span></strong></p>
+<p>For internal division, the coordinates of <span class="arithmatex">\(P(x_p, y_p)\)</span> are determined using the section formula:</p>
+<div class="arithmatex">\[
+x_p = \frac{m x_2 + n x_1}{m + n}, \quad y_p = \frac{m y_2 + n y_1}{m + n}
+\]</div>
+<p><strong>External Division by <span class="arithmatex">\(Q\)</span></strong></p>
+<p>For external division, the coordinates of <span class="arithmatex">\(Q(x_q, y_q)\)</span> still follow a similar form but account for the external division by using a negative ratio for <span class="arithmatex">\(n\)</span>, effectively flipping the sign:</p>
+<div class="arithmatex">\[
+x_q = \frac{m x_2 - n x_1}{m - n}, \quad y_q = \frac{m y_2 - n y_1}{m - n}
+\]</div>
+<p>Given that <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span> are harmonic conjugates with respect to <span class="arithmatex">\(A(x_1, y_1)\)</span> and <span class="arithmatex">\(B(x_2, y_2)\)</span>, where <span class="arithmatex">\(P\)</span> divides <span class="arithmatex">\(AB\)</span> internally in the ratio <span class="arithmatex">\(m:n\)</span> and <span class="arithmatex">\(Q\)</span> divides <span class="arithmatex">\(AB\)</span> externally in the same ratio <span class="arithmatex">\(m:n\)</span>, we aim to find the ratio <span class="arithmatex">\(\lambda:1\)</span> in which <span class="arithmatex">\(A\)</span> divides the segment <span class="arithmatex">\(PQ\)</span>.</p>
+<p><strong>Step 1: Expressing <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(P\)</span>, and <span class="arithmatex">\(Q\)</span> Using the Section Formula</strong></p>
+<p>For <span class="arithmatex">\(P\)</span>, which internally divides <span class="arithmatex">\(AB\)</span>, the coordinates are given by:</p>
+<div class="arithmatex">\[ x_p = \frac{m x_2 + n x_1}{m + n}, \quad y_p = \frac{m y_2 + n y_1}{m + n} \]</div>
+<p>For <span class="arithmatex">\(Q\)</span>, which externally divides <span class="arithmatex">\(AB\)</span>, the coordinates are:</p>
+<div class="arithmatex">\[ x_q = \frac{m x_2 - n x_1}{m - n}, \quad y_q = \frac{m y_2 - n y_1}{m - n} \]</div>
+<p><strong>Step 2: Ratio in Which <span class="arithmatex">\(A\)</span> Divides <span class="arithmatex">\(PQ\)</span></strong></p>
+<p>According to the problem, <span class="arithmatex">\(A\)</span> divides <span class="arithmatex">\(PQ\)</span> in the ratio <span class="arithmatex">\(\lambda:1\)</span>, implying:</p>
+<div class="arithmatex">\[ A = \frac{\lambda Q + P}{\lambda + 1} \]</div>
+<p>Expanding this for the <span class="arithmatex">\(x\)</span>-coordinate (and similarly for <span class="arithmatex">\(y\)</span>), we have:</p>
+<div class="arithmatex">\[ x_1 = \frac{\lambda x_q + x_p}{\lambda + 1} \]</div>
+<p>Substituting <span class="arithmatex">\(x_p\)</span> and <span class="arithmatex">\(x_q\)</span> from above:</p>
+<div class="arithmatex">\[ x_1 = \frac{\lambda \left( \frac{m x_2 - n x_1}{m - n} \right) + \left( \frac{m x_2 + n x_1}{m + n} \right)}{\lambda + 1} \]</div>
+<p><strong>Step 3: Solving for <span class="arithmatex">\(\lambda\)</span></strong></p>
+<p>Multiply both sides by <span class="arithmatex">\((\lambda + 1)(m - n)(m + n)\)</span> to clear the denominators:</p>
+<div class="arithmatex">\[ x_1(\lambda + 1)(m^2 - n^2) = \lambda(m x_2 - n x_1)(m + n) + (m x_2 + n x_1)(m - n) \]</div>
+<p>On simplification, we get:</p>
+<div class="arithmatex">\[\lambda = \frac{n-m}{m+n}\]</div>
+<p>Similarly it can be proven that <span class="arithmatex">\(B\)</span> divides <span class="arithmatex">\(PQ\)</span></p>
+<div class="admonition note">
+<p>Let <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span> be harmonic conjugates with respect to points <span class="arithmatex">\(A(x_1, y_1)\)</span> and <span class="arithmatex">\(B(x_2, y_2)\)</span>. If <span class="arithmatex">\(P\)</span> divides the segment <span class="arithmatex">\(\overline{AB}\)</span> internally and <span class="arithmatex">\(Q\)</span> divides the same segment externally, both in the ratio <span class="arithmatex">\(m:n\)</span>, then <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> also serve as harmonic conjugates with respect to <span class="arithmatex">\(P\)</span> and <span class="arithmatex">\(Q\)</span>. Furthermore, <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> divide the segment <span class="arithmatex">\(\overline{PQ}\)</span> in the ratio <span class="arithmatex">\((n-m):(m+n)\)</span>. </p>
+<ol>
+<li>
+<p><strong>If <span class="arithmatex">\(n &gt; m\)</span></strong>, then <span class="arithmatex">\(A\)</span> divides <span class="arithmatex">\(\overline{PQ}\)</span> internally, and <span class="arithmatex">\(B\)</span> divides it externally.</p>
+<p><a class="glightbox" href="../image-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="When n&gt;m" src="../image-10.png" /></a></p>
+</li>
+<li>
+<p><strong>If <span class="arithmatex">\(n &lt; m\)</span></strong>, then <span class="arithmatex">\(A\)</span> divides <span class="arithmatex">\(\overline{PQ}\)</span> externally, and <span class="arithmatex">\(B\)</span> divides it internally.</p>
+<p><a class="glightbox" href="../image-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="When n&lt;m&gt;" src="../image-11.png" /></a></p>
+</li>
+</ol>
+</div>
+<h2 id="applications-of-section-formula">Applications of Section Formula</h2>
+<h3 id="collinearity-of-three-points-using-section-formulae">Collinearity of Three Points using section formulae</h3>
+<p>Interestingly, we can verify using section formula whether three points are collinear or not. To verify if three points <span class="arithmatex">\(A(x_1, y_1)\)</span>, <span class="arithmatex">\(B(x_2, y_2)\)</span>, and <span class="arithmatex">\(C(x_3, y_3)\)</span> are collinear using the section formula, we assume that point <span class="arithmatex">\(B\)</span> divides the segment <span class="arithmatex">\(\overline{AC}\)</span> in the ratio <span class="arithmatex">\(\lambda:1\)</span>. The section formula provides a method to calculate the coordinates of a point dividing a line segment internally in a given ratio.</p>
+<p>Given that <span class="arithmatex">\(B\)</span> divides <span class="arithmatex">\(\overline{AC}\)</span> in the ratio <span class="arithmatex">\(\lambda:1\)</span>, the coordinates of <span class="arithmatex">\(B\)</span> can be expressed as:</p>
+<ul>
+<li>For the <span class="arithmatex">\(x\)</span>-coordinate:</li>
+</ul>
+<div class="arithmatex">\[x_2 = \frac{\lambda x_3 + x_1}{\lambda + 1}\]</div>
+<ul>
+<li>For the <span class="arithmatex">\(y\)</span>-coordinate:</li>
+</ul>
+<div class="arithmatex">\[y_2 = \frac{\lambda y_3 + y_1}{\lambda + 1}\]</div>
+<p>Isolate <span class="arithmatex">\(\lambda\)</span>, we rearrange the equations for both <span class="arithmatex">\(x_2\)</span> and <span class="arithmatex">\(y_2\)</span>:</p>
+<ul>
+<li>From the <span class="arithmatex">\(x\)</span>-coordinate equation:</li>
+</ul>
+<div class="arithmatex">\[\lambda = \frac{x_2 - x_1}{x_3 - x_2}\]</div>
+<ul>
+<li>From the <span class="arithmatex">\(y\)</span>-coordinate equation:</li>
+</ul>
+<div class="arithmatex">\[\lambda = \frac{y_2 - y_1}{y_3 - y_2}\]</div>
+<p>Now, for the points <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span>, and <span class="arithmatex">\(C\)</span> to be collinear, the value of <span class="arithmatex">\(\lambda\)</span> obtained from the equations involving the <span class="arithmatex">\(x\)</span>-coordinates must be equal to the value of <span class="arithmatex">\(\lambda\)</span> obtained from the equations involving the <span class="arithmatex">\(y\)</span>-coordinates. This is because the ratio of division by <span class="arithmatex">\(B\)</span> should be consistent in both dimensions for the points to lie on the same straight line. If the values of <span class="arithmatex">\(\lambda\)</span> are not equal, it indicates that the points do not lie on the same straight line, thus not being collinear.</p>
+<h3 id="median">Median</h3>
+<p>In triangle <span class="arithmatex">\(ABC\)</span>, a median is a line segment that originates from a vertex and divides the opposite side into two equal parts. Specifically:</p>
+<ul>
+<li>The median from vertex <span class="arithmatex">\(A\)</span> meets the midpoint of side <span class="arithmatex">\(BC\)</span> at point <span class="arithmatex">\(D\)</span>, where <span class="arithmatex">\(D\)</span> is such that <span class="arithmatex">\(BD = DC\)</span>.</li>
+<li>The median from vertex <span class="arithmatex">\(B\)</span> meets the midpoint of side <span class="arithmatex">\(AC\)</span> at point <span class="arithmatex">\(E\)</span>, where <span class="arithmatex">\(AE = EC\)</span>.</li>
+<li>The median from vertex <span class="arithmatex">\(C\)</span> meets the midpoint of side <span class="arithmatex">\(AB\)</span> at point <span class="arithmatex">\(F\)</span>, where <span class="arithmatex">\(AF = FB\)</span>.</li>
+</ul>
+<p><a class="glightbox" href="../image-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="A triangle showing medians and centroid" src="../image-12.png" /></a></p>
+<p>These medians (<span class="arithmatex">\(\overline{AD}\)</span>, <span class="arithmatex">\(\overline{BE}\)</span>, and <span class="arithmatex">\(\overline{CF}\)</span>) bisect the sides of the triangle to which they are drawn, and all three intersect at a single point, known as the centroid of the triangle.</p>
+<p>A geometrical proof can be easily written for the fact that all three medians intersect in a common point. But we do not wish to because we will prove this using vectors later on.</p>
+<h4 id="length-of-median-apolloniuss-theorem">Length of Median: Apollonius's Theorem</h4>
+<p><a href="https://en.wikipedia.org/wiki/Apollonius%27s_theorem">Apollonius's Theorem</a> states that in any triangle <span class="arithmatex">\(ABC\)</span>, for a median <span class="arithmatex">\(AD\)</span> with <span class="arithmatex">\(D\)</span> as the midpoint of <span class="arithmatex">\(BC\)</span>, the relationship between the sides of the triangle and the median is given by:</p>
+<div class="arithmatex">\[AB^2 + AC^2 = 2(AD^2 + BD^2)\]</div>
+<p>Here, <span class="arithmatex">\(AD\)</span> is the median, <span class="arithmatex">\(BD\)</span> is half the length of <span class="arithmatex">\(BC\)</span>, and <span class="arithmatex">\(AB\)</span>, <span class="arithmatex">\(AC\)</span> are the lengths of the other two sides of the triangle. This theorem provides a method to compute the length of the median <span class="arithmatex">\(AD\)</span> from the known lengths of the sides <span class="arithmatex">\(AB\)</span>, <span class="arithmatex">\(AC\)</span>, and the segment <span class="arithmatex">\(BD\)</span>.</p>
+<p>Given that <span class="arithmatex">\(a = BC\)</span>, <span class="arithmatex">\(b = AC\)</span>, and <span class="arithmatex">\(c = AB\)</span> in triangle <span class="arithmatex">\(ABC\)</span>, and using Apollonius's Theorem:</p>
+<div class="arithmatex">\[AB^2 + AC^2 = 2(AD^2 + BD^2)\]</div>
+<p>We can express this in terms of <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span>:</p>
+<div class="arithmatex">\[c^2 + b^2 = 2\left(AD^2 + \left(\frac{a}{2}\right)^2\right)\]</div>
+<p>To solve for <span class="arithmatex">\(AD\)</span>, the length of the median from <span class="arithmatex">\(A\)</span> to <span class="arithmatex">\(D\)</span> (with <span class="arithmatex">\(D\)</span> being the midpoint of <span class="arithmatex">\(BC\)</span>), we isolate <span class="arithmatex">\(AD\)</span>:</p>
+<div class="arithmatex">\[AD^2 = \frac{c^2 + b^2}{2} - \left(\frac{a}{2}\right)^2\]</div>
+<div class="arithmatex">\[AD^2 = \frac{c^2 + b^2}{2} - \frac{a^2}{4}\]</div>
+<div class="arithmatex">\[AD^2 = \frac{2(c^2 + b^2) - a^2}{4}\]</div>
+<p>Taking the square root of both sides gives us <span class="arithmatex">\(AD\)</span>:</p>
+<div class="arithmatex">\[AD = \sqrt{\frac{2(c^2 + b^2) - a^2}{4}}\]</div>
+<div class="arithmatex">\[AD = \frac{1}{2}\sqrt{2(c^2 + b^2) - a^2}\]</div>
+<p>Hence, the length of the median <span class="arithmatex">\(AD\)</span> in terms of the sides <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span> of the triangle is:</p>
+<div class="arithmatex">\[AD = \frac{1}{2}\sqrt{2b^2 + 2c^2 - a^2}\]</div>
+<p>Similarly other medians have lengths given by, </p>
+<div class="arithmatex">\[BE = \frac{1}{2}\sqrt{2a^2 + 2c^2 - b^2}\]</div>
+<div class="arithmatex">\[CF = \frac{1}{2}\sqrt{2a^2 + 2b^2 - c^2}\]</div>
+<div class="admonition note">
+<div class="arithmatex">\[AD = \frac{1}{2}\sqrt{2b^2 + 2c^2 - a^2}\]</div>
+<div class="arithmatex">\[BE = \frac{1}{2}\sqrt{2a^2 + 2c^2 - b^2}\]</div>
+<div class="arithmatex">\[CF = \frac{1}{2}\sqrt{2a^2 + 2b^2 - c^2}\]</div>
+</div>
+<h3 id="centroid">Centroid</h3>
+<p>The centroid of triangle <span class="arithmatex">\(ABC\)</span> is the point of intersection of its three medians, which are the line segments connecting each vertex to the midpoint of the opposite side.</p>
+<p>The centroid divides each median in the ratio of 2:1, with the larger segment being between the vertex and the centroid. If <span class="arithmatex">\( G \)</span> is the centroid and <span class="arithmatex">\( AD \)</span> is a median, then <span class="arithmatex">\( AG:GD = 2:1 \)</span>. Similarly, the centroid divides medians <span class="arithmatex">\( BE \)</span> and <span class="arithmatex">\( CF \)</span> in the ratio of <span class="arithmatex">\( 2:1 \)</span>, with <span class="arithmatex">\( BG:GE = 2:1 \)</span> and <span class="arithmatex">\( CG:GF = 2:1 \)</span>, where <span class="arithmatex">\( G \)</span> is closer to vertex <span class="arithmatex">\( B \)</span> and vertex <span class="arithmatex">\( C \)</span> respectively, than to points <span class="arithmatex">\( E \)</span> and <span class="arithmatex">\( F \)</span>.</p>
+<p><a class="glightbox" href="../image-13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Centroid divides a median in the ration 2:1" src="../image-13.png" /></a></p>
+<h4 id="coordinates-of-the-centroid-of-a-triangle">Coordinates of the Centroid of a Triangle</h4>
+<p>Given a triangle <span class="arithmatex">\( ABC \)</span> with vertices <span class="arithmatex">\( A(x_1, y_1) \)</span>, <span class="arithmatex">\( B(x_2, y_2) \)</span>, and <span class="arithmatex">\( C(x_3, y_3) \)</span>, the centroid <span class="arithmatex">\( G \)</span> of the triangle has coordinates</p>
+<div class="arithmatex">\[ G\left(\frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3}\right). \]</div>
+<p><strong>Proof:</strong></p>
+<p>Let <span class="arithmatex">\( D \)</span> be the midpoint of side <span class="arithmatex">\( BC \)</span> of triangle <span class="arithmatex">\( ABC \)</span>. By definition of a midpoint in Cartesian coordinates,</p>
+<div class="arithmatex">\[ D\left(\frac{x_2 + x_3}{2}, \frac{y_2 + y_3}{2}\right). \]</div>
+<p>Since the centroid <span class="arithmatex">\( G \)</span> divides median <span class="arithmatex">\( AD \)</span> in the ratio <span class="arithmatex">\( 2:1 \)</span>, the coordinates of <span class="arithmatex">\( G \)</span> can be found using the section formula in the ratio <span class="arithmatex">\( 2:1 \)</span> as follows:</p>
+<div class="arithmatex">\[ x_G = \frac{2\left(\frac{x_2 + x_3}{2}\right) + x_1}{2 + 1} = \frac{x_1 + x_2 + x_3}{3}, \]</div>
+<div class="arithmatex">\[ y_G = \frac{2\left(\frac{y_2 + y_3}{2}\right) + y_1}{2 + 1} = \frac{y_1 + y_2 + y_3}{3}. \]</div>
+<p>Thus, the centroid <span class="arithmatex">\( G \)</span> has coordinates</p>
+<div class="arithmatex">\[ G\left(\frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3}\right). \]</div>
+<div class="arithmatex">\[ \mathbf{G} = \frac{\mathbf{A} + \mathbf{B} + \mathbf{C}}{3} \]</div>
+<p>This concludes the proof.</p>
+<h4 id="some-important-facts-about-centroid">Some important facts about centroid</h4>
+<p><a class="glightbox" href="../image-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Centroid " src="../image-14.png" /></a></p>
+<ul>
+<li>
+<p>In triangle <span class="arithmatex">\( ABC \)</span>, let <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span> be the midpoints of sides <span class="arithmatex">\( BC \)</span>, <span class="arithmatex">\( AC \)</span>, and <span class="arithmatex">\( AB \)</span>, respectively. When segments <span class="arithmatex">\( FE \)</span>, <span class="arithmatex">\( FD \)</span>, and <span class="arithmatex">\( DE \)</span> are drawn, they create the <strong>*medial triangle</strong> <span class="arithmatex">\( DEF \)</span>. By the Midpoint Theorem, segment <span class="arithmatex">\( FE \)</span> is parallel to <span class="arithmatex">\( BC \)</span>, segment <span class="arithmatex">\( FD \)</span> is parallel to <span class="arithmatex">\( AC \)</span>, and segment <span class="arithmatex">\( DE \)</span> is parallel to <span class="arithmatex">\( AB \)</span>. This theorem states that a line segment joining the midpoints of two sides of a triangle is parallel to the third side and half its length. Therefore, medial triangle <span class="arithmatex">\( DEF \)</span> is formed, whose sides are parallel to the respective sides of triangle <span class="arithmatex">\( ABC \)</span> and half as long.</p>
+</li>
+<li>
+<p>The quadrilateral <span class="arithmatex">\(AFDE\)</span> is a parallelogram. This is due to the fact that <span class="arithmatex">\(FD\)</span> and <span class="arithmatex">\(AE\)</span> are both parallel and equal to half of length of <span class="arithmatex">\(BC\)</span> (as <span class="arithmatex">\(FD\)</span> and <span class="arithmatex">\(AE\)</span> are each half the length of <span class="arithmatex">\(BC\)</span> by the Midpoint Theorem), and <span class="arithmatex">\(AF\)</span> and <span class="arithmatex">\(DE\)</span> are both parallel and equal to half of length of <span class="arithmatex">\(AB\)</span> (again by the Midpoint Theorem).</p>
+<p>Within parallelogram <span class="arithmatex">\(AFDE\)</span>, diagonals <span class="arithmatex">\(AD\)</span> and <span class="arithmatex">\(FE\)</span> bisect each other at point <span class="arithmatex">\(L\)</span>. According to the properties of parallelograms, the diagonals bisect each other, meaning <span class="arithmatex">\(L\)</span> is the midpoint of both <span class="arithmatex">\(AD\)</span> and <span class="arithmatex">\(FE\)</span>. Therefore, by the midpoint formula, <span class="arithmatex">\(L\)</span> is calculated as:</p>
+<div class="arithmatex">\[ L = \frac{A + D}{2} = \frac{F + E}{2} \]</div>
+<p>From this, we deduce that vertex <span class="arithmatex">\(A\)</span> can be found using the coordinates of <span class="arithmatex">\(D\)</span>, <span class="arithmatex">\(E\)</span>, and <span class="arithmatex">\(F\)</span>:</p>
+<div class="arithmatex">\[ A = F + E - D \]</div>
+<p>To find the coordinates of vertices <span class="arithmatex">\(B\)</span> and <span class="arithmatex">\(C\)</span>, we apply similar logic, considering parallelograms formed by other pairs of triangle medians:</p>
+<div class="arithmatex">\[ B = D + F - E \]</div>
+<div class="arithmatex">\[ C = E + D - F \]</div>
+<p>This method is effective for calculating the vertices of a triangle when the midpoints of its sides are known.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Given the midpoints <span class="arithmatex">\( D(1, 2) \)</span>, <span class="arithmatex">\( E(-3, 4) \)</span>, and <span class="arithmatex">\( F(-5, -3) \)</span>, the vertices of triangle <span class="arithmatex">\( ABC \)</span> can be calculated using the relationships established by the properties of parallelograms within the triangle. According to these properties:</p>
+<p>Vertex <span class="arithmatex">\( A \)</span> can be found as <span class="arithmatex">\( A = F + E - D \)</span>:</p>
+<div class="arithmatex">\[ A_x = F_x + E_x - D_x = (-5) + (-3) - (1) = -9 \]</div>
+<div class="arithmatex">\[ A_y = F_y + E_y - D_y = (-3) + (4) - (2) = -1 \]</div>
+<p>So, <span class="arithmatex">\( A \)</span> is at <span class="arithmatex">\( (-9, -1) \)</span>.</p>
+<p>Vertex <span class="arithmatex">\( B \)</span> is found as <span class="arithmatex">\( B = D + F - E \)</span>:</p>
+<div class="arithmatex">\[ B_x = D_x + F_x - E_x = (1) + (-5) - (-3) = -1 \]</div>
+<div class="arithmatex">\[ B_y = D_y + F_y - E_y = (2) + (-3) - (4) = -5 \]</div>
+<p>So, <span class="arithmatex">\( B \)</span> is at <span class="arithmatex">\( (-1, -5) \)</span>.</p>
+<p>Vertex <span class="arithmatex">\( C \)</span> is calculated as <span class="arithmatex">\( C = E + D - F \)</span>:</p>
+<div class="arithmatex">\[ C_x = E_x + D_x - F_x = (-3) + (1) - (-5) = 3 \]</div>
+<div class="arithmatex">\[ C_y = E_y + D_y - F_y = (4) + (2) - (-3) = 9 \]</div>
+<p>So, <span class="arithmatex">\( C \)</span> is at <span class="arithmatex">\( (3, 9) \)</span>.</p>
+<p>The vertices of triangle <span class="arithmatex">\( ABC \)</span> are thus <span class="arithmatex">\( A(-9, -1) \)</span>, <span class="arithmatex">\( B(-1, -5) \)</span>, and <span class="arithmatex">\( C(3, 9) \)</span>.</p>
+</div>
+</li>
+<li>
+<p>Triangles <span class="arithmatex">\( AFE \)</span>, <span class="arithmatex">\( BDF \)</span>, and <span class="arithmatex">\( CDE \)</span> are congruent to triangle <span class="arithmatex">\( DEF \)</span>. </p>
+<p><a class="glightbox" href="../image-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Medial triangle" src="../image-15.png" /></a></p>
+<p>The congruency of these triangles can be established through the following properties:</p>
+<ol>
+<li>
+<p><strong>Parallel Sides:</strong> Each side of triangle <span class="arithmatex">\( DEF \)</span> is parallel to one side of triangle <span class="arithmatex">\( ABC \)</span>.</p>
+</li>
+<li>
+<p><strong>Proportional Sides:</strong> Because the medians divide the sides of triangle <span class="arithmatex">\( ABC \)</span> into segments of equal length, the corresponding sides of triangles <span class="arithmatex">\( AFE \)</span>, <span class="arithmatex">\( BDF \)</span>, and <span class="arithmatex">\( CDE \)</span> are equal to each other and half the length of the sides of triangle <span class="arithmatex">\( ABC \)</span>.</p>
+</li>
+<li>
+<p><strong>Equal Angles:</strong> The angles of triangles <span class="arithmatex">\( AFE \)</span>, <span class="arithmatex">\( BDF \)</span>, and <span class="arithmatex">\( CDE \)</span> are equal to the corresponding angles in triangle <span class="arithmatex">\( DEF \)</span> because they are alternate interior angles created by transversal lines cutting parallel lines.</p>
+</li>
+</ol>
+<p>These properties result in triangles <span class="arithmatex">\( AFE \)</span>, <span class="arithmatex">\( BDF \)</span>, <span class="arithmatex">\( CDE \)</span>, and <span class="arithmatex">\( DEF \)</span> all being congruent.</p>
+</li>
+<li>
+<p>Given that triangles <span class="arithmatex">\( AFE \)</span>, <span class="arithmatex">\( BDF \)</span>, <span class="arithmatex">\( CDE \)</span>, and <span class="arithmatex">\( DEF \)</span> are congruent, it follows that their areas are equal and thus, </p>
+<div class="arithmatex">\[ \text{Area}(DEF) = \text{Area}(AFE) = \text{Area}(BDF) = \text{Area}(CDE) = \frac{1}{4}\text{Area}(ABC) \]</div>
+</li>
+<li>
+<p>Area of triangle <span class="arithmatex">\(ABD\)</span> is equal to the area of triangle <span class="arithmatex">\(ACD\)</span> because <span class="arithmatex">\(D\)</span> is the midpoint of <span class="arithmatex">\(BC\)</span>, making <span class="arithmatex">\(AD\)</span> and <span class="arithmatex">\(DC\)</span> equal in length, and both triangles share the same height from <span class="arithmatex">\(A\)</span> perpendicular to <span class="arithmatex">\(BC\)</span>.</p>
+<p><a class="glightbox" href="../image-16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Median divides a triangle into two equal parts" src="../image-16.png" /></a></p>
+<p>Similarly, the area of triangle <span class="arithmatex">\(BEC\)</span> is equal to the area of triangle <span class="arithmatex">\(AEB\)</span> because <span class="arithmatex">\(E\)</span> is the midpoint of <span class="arithmatex">\(AC\)</span>, making <span class="arithmatex">\(BE\)</span> and <span class="arithmatex">\(AE\)</span> equal in length, with both triangles sharing the same height from <span class="arithmatex">\(B\)</span> perpendicular to <span class="arithmatex">\(AC\)</span>.</p>
+<p>Finally, the area of triangle <span class="arithmatex">\(AFC\)</span> is equal to the area of triangle <span class="arithmatex">\(AFB\)</span> because <span class="arithmatex">\(F\)</span> is the midpoint of <span class="arithmatex">\(AB\)</span>, making <span class="arithmatex">\(CF\)</span> and <span class="arithmatex">\(BF\)</span> equal in length, with both triangles sharing the same height from <span class="arithmatex">\(C\)</span> perpendicular to <span class="arithmatex">\(AB\)</span>.</p>
+</li>
+<li>
+<p>In any triangle <span class="arithmatex">\(ABC\)</span>, where <span class="arithmatex">\(G\)</span> is the centroid, the medians of the triangle divide it into three smaller triangles, <span class="arithmatex">\(AGB\)</span>, <span class="arithmatex">\(AGC\)</span>, and <span class="arithmatex">\(BGC\)</span>, that have equal areas.</p>
+<p><a class="glightbox" href="../image-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Medians divide a triangle into three equal parts" src="../image-17.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>To prove that Area(<span class="arithmatex">\(AGB\)</span>) = Area(<span class="arithmatex">\(AGC\)</span>), we proceed as follows:</p>
+<ol>
+<li>
+<p>Show that Area(<span class="arithmatex">\(BGD\)</span>) = Area(<span class="arithmatex">\(CGD\)</span>):
+Since <span class="arithmatex">\(D\)</span> is the midpoint of <span class="arithmatex">\(BC\)</span>, <span class="arithmatex">\(BD = DC\)</span>, and <span class="arithmatex">\(GD\)</span> is common to both triangles <span class="arithmatex">\(BGD\)</span> and <span class="arithmatex">\(CGD\)</span>, the two triangles have the same base and height, hence the same area.</p>
+</li>
+<li>
+<p>Knowing that Area(<span class="arithmatex">\(ABD\)</span>) = Area(<span class="arithmatex">\(ACD\)</span>) (since <span class="arithmatex">\(AD\)</span> is a median):
+Each of these areas is half of the entire triangle <span class="arithmatex">\(ABC\)</span>, as a median divides a triangle into two triangles of equal area.</p>
+</li>
+<li>
+<p>The area of <span class="arithmatex">\(AGB\)</span> can be expressed as Area(<span class="arithmatex">\(ABD\)</span>) - Area(<span class="arithmatex">\(BGD\)</span>), and similarly, the area of <span class="arithmatex">\(AGC\)</span> as Area(<span class="arithmatex">\(ACD\)</span>) - Area(<span class="arithmatex">\(CGD\)</span>).</p>
+</li>
+</ol>
+<p>Thus, because Area(<span class="arithmatex">\(ABD\)</span>) = Area(<span class="arithmatex">\(ACD\)</span>) and Area(<span class="arithmatex">\(BGD\)</span>) = Area(<span class="arithmatex">\(CGD\)</span>), subtracting equal areas from equal areas gives us Area(<span class="arithmatex">\(AGB\)</span>) = Area(<span class="arithmatex">\(AGC\)</span>).</p>
+<p>Similarly, we can prove that Area(<span class="arithmatex">\(AGC\)</span>) = Area(<span class="arithmatex">\(BGC\)</span>) by observing that both triangles <span class="arithmatex">\(AGC\)</span> and <span class="arithmatex">\(BGC\)</span> share the common base <span class="arithmatex">\(GC\)</span> and have the same height from vertex <span class="arithmatex">\(B\)</span> and <span class="arithmatex">\(A\)</span> respectively to line <span class="arithmatex">\(GC\)</span>.</p>
+<p>Thus, since Area(<span class="arithmatex">\(AGB\)</span>) = Area(<span class="arithmatex">\(AGC\)</span>) and Area(<span class="arithmatex">\(AGC\)</span>) = Area(<span class="arithmatex">\(BGC\)</span>), it follows that all three triangles <span class="arithmatex">\(AGB\)</span>, <span class="arithmatex">\(AGC\)</span>, and <span class="arithmatex">\(BGC\)</span> have equal areas. This demonstrates that the medians of a triangle not only bisect the area of the triangle but also partition the triangle into six smaller triangles of equal area. <span class="arithmatex">\(\blacksquare\)</span></p>
+</div>
+</li>
+<li>
+<p><strong>Coincidence of Centroids of Triangle <span class="arithmatex">\( ABC \)</span> and Medial Triangle <span class="arithmatex">\( DEF \)</span></strong></p>
+<p>The centroid of triangle <span class="arithmatex">\( ABC \)</span> and the centroid of the medial triangle <span class="arithmatex">\( DEF \)</span>, formed by the midpoints <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span> of the sides <span class="arithmatex">\( BC \)</span>, <span class="arithmatex">\( AC \)</span>, and <span class="arithmatex">\( AB \)</span> of triangle <span class="arithmatex">\( ABC \)</span>, are the same point.</p>
+<p><strong>Proof:</strong></p>
+<ol>
+<li>
+<p>Construct parallelogram <span class="arithmatex">\( AFDE \)</span> as previously discussed, where <span class="arithmatex">\( AF \)</span> and <span class="arithmatex">\( DE \)</span> are parallel, as are <span class="arithmatex">\( AD \)</span> and <span class="arithmatex">\( FE \)</span>.</p>
+</li>
+<li>
+<p>Diagonals <span class="arithmatex">\( AD \)</span> and <span class="arithmatex">\( FE \)</span> of parallelogram <span class="arithmatex">\( AFDE \)</span> intersect at point <span class="arithmatex">\( L \)</span>, bisecting each other.</p>
+</li>
+<li>
+<p>Since <span class="arithmatex">\( L \)</span> is the midpoint of <span class="arithmatex">\( FE \)</span>, and <span class="arithmatex">\( FE \)</span> is a side of triangle <span class="arithmatex">\( DEF \)</span>, segment <span class="arithmatex">\( DL \)</span> is a median of triangle <span class="arithmatex">\( DEF \)</span>.</p>
+</li>
+<li>
+<p>Median <span class="arithmatex">\( AD \)</span> of triangle <span class="arithmatex">\( ABC \)</span> coincides with median <span class="arithmatex">\( DL \)</span> of triangle <span class="arithmatex">\( DEF \)</span>, as they are collinear and share the common midpoint <span class="arithmatex">\( L \)</span>.</p>
+</li>
+<li>
+<p>Similarly, median <span class="arithmatex">\( BE \)</span> of triangle <span class="arithmatex">\( ABC \)</span> is collinear with median <span class="arithmatex">\( EL \)</span> of triangle <span class="arithmatex">\( DEF \)</span>, and median <span class="arithmatex">\( CF \)</span> of triangle <span class="arithmatex">\( ABC \)</span> with median <span class="arithmatex">\( FL \)</span> of triangle <span class="arithmatex">\( DEF \)</span>.</p>
+</li>
+<li>
+<p>The three medians of triangle <span class="arithmatex">\( ABC \)</span> intersect at the centroid <span class="arithmatex">\( G \)</span>, which, by the collinearity established in steps 3 and 4, must also be the point where the medians of triangle <span class="arithmatex">\( DEF \)</span> intersect.</p>
+</li>
+<li>
+<p>Therefore, the centroid <span class="arithmatex">\( G \)</span> of triangle <span class="arithmatex">\( ABC \)</span> is also the centroid of the medial triangle <span class="arithmatex">\( DEF \)</span>.</p>
+</li>
+</ol>
+<p>By this proof, we have established that the centroids of both triangle <span class="arithmatex">\( ABC \)</span> and its medial triangle <span class="arithmatex">\( DEF \)</span> are the same point.</p>
+</li>
+</ul>
+<h2 id="orthocentre">Orthocentre</h2>
+<p>The orthocenter of a triangle is the point where the three altitudes intersect. An altitude of a triangle is a line which passes through a vertex of the triangle and is perpendicular to the opposite side.</p>
+<p>In triangle <span class="arithmatex">\( ABC \)</span>, let the altitudes from vertices <span class="arithmatex">\( A \)</span>, <span class="arithmatex">\( B \)</span>, and <span class="arithmatex">\( C \)</span> be <span class="arithmatex">\( AD \)</span>, <span class="arithmatex">\( BE \)</span>, and <span class="arithmatex">\( CF \)</span>, respectively. The point of intersection of these altitudes is denoted as <span class="arithmatex">\( H \)</span>, which is the orthocenter of the triangle.</p>
+<p>The orthocenter of a triangle, denoted by <span class="arithmatex">\( H \)</span>, is the common point of intersection of the triangle's three altitudes. An altitude is a perpendicular segment from a vertex to the line containing the opposite side. The location of the orthocenter relative to the triangle depends on the type of triangle:</p>
+<ol>
+<li>
+<p><strong>Acute Triangle:</strong> For an acute triangle, where all angles are less than 90 degrees, the orthocenter lies inside the triangle. This is because each altitude will be internal when drawn from a vertex to the opposite side.</p>
+</li>
+<li>
+<p><strong>Right Triangle:</strong> In a right triangle, the orthocenter coincides with the vertex of the right angle. This happens because the sides of the triangle itself serve as altitudes: one altitude is the vertical side, another is the horizontal side, and the third is the line segment from the right angle vertex to the hypotenuse, which is already perpendicular by definition.</p>
+</li>
+<li>
+<p><strong>Obtuse Triangle:</strong> For an obtuse triangle, which has an angle greater than 90 degrees, the orthocenter falls outside the triangle. To draw the altitudes, extensions of the sides are needed since the perpendicular lines from the vertices opposite the obtuse angle will fall outside the triangle.</p>
+</li>
+</ol>
+<p>In any triangle <span class="arithmatex">\( ABC \)</span> with altitudes <span class="arithmatex">\( AD \)</span>, <span class="arithmatex">\( BE \)</span>, and <span class="arithmatex">\( CF \)</span>, the point where these three altitudes meet is the orthocenter <span class="arithmatex">\( H \)</span>. To find <span class="arithmatex">\( H \)</span> computationally or constructively, it typically requires only two altitudes; their intersection defines the orthocenter's exact location.</p>
+<p><strong>ACUTE TRIANGLE</strong></p>
+<p><a class="glightbox" href="../image-19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Orthocentre of Acute triangle" src="../image-19.png" /></a></p>
+<p><strong>RIGHT ANGLED TRIANGLE</strong></p>
+<p><a class="glightbox" href="../image-20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RIght Angles Triangle" src="../image-20.png" /></a></p>
+<p><strong>OBTUSE TRIANGLE</strong></p>
+<p><a class="glightbox" href="../image-22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Obtuse Triangle" src="../image-22.png" /></a></p>
+<h3 id="orthocenters-of-triangles-formed-by-orthocenter-and-vertices">Orthocenters of Triangles Formed by Orthocenter and Vertices</h3>
+<p>In triangle <span class="arithmatex">\( ABC \)</span>, if <span class="arithmatex">\( H \)</span> is the orthocenter, then <span class="arithmatex">\( A \)</span> is the orthocenter of triangle <span class="arithmatex">\( HBC \)</span>, <span class="arithmatex">\( B \)</span> is the orthocenter of triangle <span class="arithmatex">\( HCA \)</span>, and <span class="arithmatex">\( C \)</span> is the orthocenter of triangle <span class="arithmatex">\( HAB \)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<ol>
+<li><span class="arithmatex">\( HD \)</span> is an altitude of <span class="arithmatex">\( \triangle ABC \)</span> because <span class="arithmatex">\( H \)</span> is the orthocenter, implying <span class="arithmatex">\( HD \perp BC \)</span>.</li>
+<li><span class="arithmatex">\( HD \)</span> is also an altitude of <span class="arithmatex">\( \triangle HBC \)</span> since it is coincident with <span class="arithmatex">\( AD \)</span> of <span class="arithmatex">\( \triangle ABC \)</span> and lies on <span class="arithmatex">\( A \)</span>, one of the vertices of <span class="arithmatex">\( \triangle HBC \)</span>.</li>
+</ol>
+<p>Similarly, for <span class="arithmatex">\( \triangle HCA \)</span> and <span class="arithmatex">\( \triangle HAB \)</span>:</p>
+<ol>
+<li><span class="arithmatex">\( BE \)</span> is the altitude of <span class="arithmatex">\( \triangle ABC \)</span> extended through <span class="arithmatex">\( H \)</span>, which implies <span class="arithmatex">\( BE \perp AC \)</span> and <span class="arithmatex">\( CE \)</span> is the altitude of <span class="arithmatex">\( \triangle HCA \)</span>.</li>
+<li><span class="arithmatex">\( CF \)</span> is the altitude of <span class="arithmatex">\( \triangle ABC \)</span> extended through <span class="arithmatex">\( H \)</span>, which implies <span class="arithmatex">\( CF \perp AB \)</span> and <span class="arithmatex">\( BF \)</span> is the altitude of <span class="arithmatex">\( \triangle HAB \)</span>.</li>
+</ol>
+<p>Since the altitudes of <span class="arithmatex">\( \triangle ABC \)</span> serve as altitudes for <span class="arithmatex">\( \triangle HBC \)</span>, <span class="arithmatex">\( \triangle HCA \)</span>, and <span class="arithmatex">\( \triangle HAB \)</span> respectively, through coincident lines, this establishes that <span class="arithmatex">\( A \)</span>, <span class="arithmatex">\( B \)</span>, and <span class="arithmatex">\( C \)</span> serve as orthocenters for these triangles respectively.</p>
+</div>
+<h3 id="pedal-triangle-amd-orthic-triangle">Pedal Triangle amd Orthic Triangle</h3>
+<p>The pedal triangle <span class="arithmatex">\( DEF \)</span> of a point <span class="arithmatex">\( P \)</span> relative to <span class="arithmatex">\( \triangle ABC \)</span> is the triangle formed by the points <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span>, which are the feet of the perpendiculars from <span class="arithmatex">\( P \)</span> to the sides <span class="arithmatex">\( BC \)</span>, <span class="arithmatex">\( CA \)</span>, and <span class="arithmatex">\( AB \)</span> of <span class="arithmatex">\( \triangle ABC \)</span>, respectively.</p>
+<ul>
+<li><span class="arithmatex">\( PD \perp BC \)</span></li>
+<li><span class="arithmatex">\( PE \perp AC \)</span></li>
+<li><span class="arithmatex">\( PF \perp AB \)</span></li>
+</ul>
+<p>If <span class="arithmatex">\( P \)</span> coincides with the orthocenter <span class="arithmatex">\( H \)</span> of <span class="arithmatex">\( \triangle ABC \)</span>, then <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span> are the feet of the altitudes of <span class="arithmatex">\( \triangle ABC \)</span>, and the pedal triangle <span class="arithmatex">\( DEF \)</span> is also known as the orthic triangle of <span class="arithmatex">\( \triangle ABC \)</span>.</p>
+<h2 id="incentre">Incentre</h2>
+<p>The incenter of a triangle <span class="arithmatex">\( ABC \)</span> is the point from which the incircle, the unique circle that touches each of the sides <span class="arithmatex">\( AB \)</span>, <span class="arithmatex">\( BC \)</span>, and <span class="arithmatex">\( CA \)</span> internally, is centered. The points where the incircle touches the sides are called the points of tangency, and they lie directly on the sides <span class="arithmatex">\( AB \)</span>, <span class="arithmatex">\( BC \)</span>, and <span class="arithmatex">\( CA \)</span>, equidistant from the incenter. The radius of the incircle is perpendicular to each side of the triangle at these points of tangency.</p>
+<p>In triangle <span class="arithmatex">\( ABC \)</span>, the incircle is tangent to the sides at points <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span>. The center of this incircle is the incenter, denoted as <span class="arithmatex">\( I \)</span>. The radius of the incircle, such as <span class="arithmatex">\( ID \)</span>, is perpendicular to the side it touches, in this case, side <span class="arithmatex">\( BC \)</span>.</p>
+<p>Since the segments <span class="arithmatex">\( AE \)</span> and <span class="arithmatex">\( AF \)</span> are equal in length, being tangents to the incircle from the same external point <span class="arithmatex">\( A \)</span>, triangles <span class="arithmatex">\( AIE \)</span> and <span class="arithmatex">\( AIF \)</span> are congruent by the Side-Side-Side postulate. This congruency implies that angle <span class="arithmatex">\( IAC \)</span> is equal to angle <span class="arithmatex">\( IAB \)</span>, which establishes that <span class="arithmatex">\( AI \)</span> is the angle bisector of angle <span class="arithmatex">\( A \)</span>.</p>
+<p>Similarly, because the incircle is tangent to <span class="arithmatex">\( AB \)</span> at <span class="arithmatex">\( F \)</span> and <span class="arithmatex">\( AC \)</span> at <span class="arithmatex">\( E \)</span>, and the tangents from a common external point to a circle are equal, we can deduce that <span class="arithmatex">\( BI \)</span> and <span class="arithmatex">\( CI \)</span> bisect angles <span class="arithmatex">\( B \)</span> and <span class="arithmatex">\( C \)</span> respectively.</p>
+<p>Thus, the incenter <span class="arithmatex">\( I \)</span> can also be defined as the single point at which the three internal angle bisectors of triangle <span class="arithmatex">\( ABC \)</span> intersect.</p>
+<h2 id="coordinates-of-incentre">Coordinates of Incentre</h2>
+<p>The coordinates of the incenter <span class="arithmatex">\( I \)</span> of triangle <span class="arithmatex">\( ABC \)</span>, with vertices <span class="arithmatex">\( A(x_1, y_1) \)</span>, <span class="arithmatex">\( B(x_2, y_2) \)</span>, and <span class="arithmatex">\( C(x_3, y_3) \)</span> and side lengths <span class="arithmatex">\( a = BC \)</span>, <span class="arithmatex">\( b = AC \)</span>, and <span class="arithmatex">\( c = AB \)</span>, can be found using the formula:</p>
+<div class="arithmatex">\[ I \left( \frac{ax_1 + bx_2 + cx_3}{a+b+c}, \frac{ay_1 + by_2 + cy_3}{a+b+c} \right) \]</div>
+<p>Proof:</p>
+<p>To prove the formula for the incenter <span class="arithmatex">\( I \)</span> of a triangle <span class="arithmatex">\( ABC \)</span>, we can employ the Angle Bisector Theorem. This theorem states that an angle bisector in a triangle divides the opposite side into two segments that are proportional to the lengths of the other two sides.</p>
+<p>Given:</p>
+<ul>
+<li>Triangle <span class="arithmatex">\( ABC \)</span> with side lengths <span class="arithmatex">\( AB = c \)</span>, <span class="arithmatex">\( AC = b \)</span>, and <span class="arithmatex">\( BC = a \)</span>.</li>
+<li>Vertices of the triangle are  <span class="arithmatex">\( A(x_1, y_1) \)</span>, <span class="arithmatex">\( B(x_2, y_2) \)</span>, and <span class="arithmatex">\( C(x_3, y_3) \)</span>. </li>
+</ul>
+<p>We proceed as follows: </p>
+<p><strong>Step 1: Applying the Angle Bisector Theorem to <span class="arithmatex">\( AL \)</span></strong></p>
+<p>The angle bisector theorem states that the angle bisector divides the opposite side in the ratio of the adjacent sides. If <span class="arithmatex">\( AL \)</span> is the angle bisector of <span class="arithmatex">\( \angle A \)</span>, it divides side <span class="arithmatex">\( BC \)</span> into two segments, <span class="arithmatex">\( BD \)</span> and <span class="arithmatex">\( DC \)</span>, such that <span class="arithmatex">\( BD:DC = AB:AC = c:b \)</span>. Since we know the coordinates of <span class="arithmatex">\( B \)</span> and <span class="arithmatex">\( C \)</span>, we can find the coordinates of <span class="arithmatex">\( D \)</span> as:</p>
+<div class="arithmatex">\[ D\left(\frac{cx_3 + bx_2}{b + c}, \frac{cy_3 + by_2}{b + c}\right) \]</div>
+<p><strong>Step 2: Length of Segment <span class="arithmatex">\( AL \)</span></strong></p>
+<p>Using the section formula, the length of segment <span class="arithmatex">\( AL \)</span>, which is in the ratio <span class="arithmatex">\( c:b \)</span> to side <span class="arithmatex">\( BC \)</span>, can be expressed as:</p>
+<p>[ AL = \frac{c}{b + c} \cdot BC ]
+[ BC ] can be found by the distance formula, and then <span class="arithmatex">\( AL \)</span> can be calculated.</p>
+<p><strong>Step 3: Apply the Angle Bisector Theorem to <span class="arithmatex">\( \triangle ABL \)</span></strong></p>
+<p>Similarly, <span class="arithmatex">\( BI \)</span> is the angle bisector in <span class="arithmatex">\( \triangle ABL \)</span>, and it divides <span class="arithmatex">\( AL \)</span> in the ratio of <span class="arithmatex">\( AB:BL \)</span>. Given that <span class="arithmatex">\( AB \)</span> is to <span class="arithmatex">\( BL \)</span> as <span class="arithmatex">\( c \)</span> is to <span class="arithmatex">\( ac/(b+c) \)</span>, we have <span class="arithmatex">\( AI:IL = (b+c):a \)</span>.</p>
+<p>The coordinates of <span class="arithmatex">\( I \)</span> are found by dividing the segment <span class="arithmatex">\( AL \)</span> in the ratio <span class="arithmatex">\( (b+c):a \)</span> starting from <span class="arithmatex">\( A \)</span> to <span class="arithmatex">\( L \)</span>. If <span class="arithmatex">\( L \)</span> is the point on segment <span class="arithmatex">\( AL \)</span> at which <span class="arithmatex">\( BI \)</span> intersects <span class="arithmatex">\( AL \)</span>, then <span class="arithmatex">\( I \)</span> can be determined by the section formula:</p>
+<div class="arithmatex">\[ I\left(\frac{ax_1 + (b+c)x_{\text{D}}}{a + b + c}, \frac{ay_1 + (b+c)y_{\text{D}}}{a + b + c}\right) \]</div>
+<p>Substitute the coordinates of <span class="arithmatex">\( D \)</span> from Step 1 into this equation to get the coordinates of the incenter <span class="arithmatex">\( I \)</span>.</p>
+<div class="arithmatex">\[ I = \left(\frac{ax_1 + (b+c)\frac{cx_3 + bx_2}{b + c}}{a + b + c}, \frac{ay_1 + (b+c)\frac{cy_3 + by_2}{b + c}}{a + b + c}\right) \]</div>
+<p>Now we simplify the expressions for the coordinates of <span class="arithmatex">\( I \)</span>:</p>
+<div class="arithmatex">\[ I = \left(\frac{ax_1 + cx_3 + bx_2}{a + b + c}, \frac{ay_1 + cy_3 + by_2}{a + b + c}\right) \]</div>
+<p>Thus, the coordinates of <span class="arithmatex">\( I \)</span> are obtained by the formula above, giving us the incenter of triangle <span class="arithmatex">\( ABC \)</span> in terms of the vertices coordinates <span class="arithmatex">\( A(x_1, y_1) \)</span>, <span class="arithmatex">\( B(x_2, y_2) \)</span>, and <span class="arithmatex">\( C(x_3, y_3) \)</span> and the lengths of the sides opposite these vertices, <span class="arithmatex">\( a \)</span>, <span class="arithmatex">\( b \)</span>, and <span class="arithmatex">\( c \)</span>.</p>
+<h2 id="excentres">Excentres</h2>
+<p>Excenters of a triangle are the centers of the escribed circles, which are circles tangent to one side of the triangle and to the extensions of the other two sides. Each triangle has three excenters, corresponding to each of the triangle's vertices.</p>
+<p>To construct an excenter, you need to extend the bisector of one interior angle and the bisectors of the exterior angles at the other two vertices. The point where these three lines intersect is the excenter. </p>
+<p>For a triangle <span class="arithmatex">\(ABC\)</span>, the excenters are often denoted as <span class="arithmatex">\(I_a\)</span>, <span class="arithmatex">\(I_b\)</span>, and <span class="arithmatex">\(I_c\)</span>, opposite to the vertices <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span>, and <span class="arithmatex">\(C\)</span>, respectively.</p>
+<p><a class="glightbox" href="../image-18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Excentres figure" src="../image-18.png" /></a></p>
+<p><strong>Formulas for excenters:</strong>
+Given the vertices <span class="arithmatex">\(A(x_1, y_1)\)</span>, <span class="arithmatex">\(B(x_2, y_2)\)</span>, and <span class="arithmatex">\(C(x_3, y_3)\)</span>, and sides <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span> opposite these vertices, the coordinates of the excenters <span class="arithmatex">\(I_a\)</span>, <span class="arithmatex">\(I_b\)</span>, and <span class="arithmatex">\(I_c\)</span> can be found using similar constructions as the incenter but using the exterior angle bisectors. The formulas are as follows:</p>
+<ul>
+<li><strong>Excenter <span class="arithmatex">\(I_a\)</span></strong> opposite of vertex <span class="arithmatex">\(A\)</span> and corresponding to side <span class="arithmatex">\(a\)</span>:</li>
+</ul>
+<div class="arithmatex">\[ I_a = \left( \frac{-ax_1 + bx_2 + cx_3}{-a + b + c}, \frac{-ay_1 + by_2 + cy_3}{-a + b + c} \right) \]</div>
+<ul>
+<li><strong>Excenter <span class="arithmatex">\(I_b\)</span></strong> opposite of vertex <span class="arithmatex">\(B\)</span> and corresponding to side <span class="arithmatex">\(b\)</span>:</li>
+</ul>
+<div class="arithmatex">\[ I_b = \left( \frac{ax_1 - bx_2 + cx_3}{a - b + c}, \frac{ay_1 - by_2 + cy_3}{a - b + c} \right) \]</div>
+<ul>
+<li><strong>Excenter <span class="arithmatex">\(I_c\)</span></strong> opposite of vertex <span class="arithmatex">\(C\)</span> and corresponding to side <span class="arithmatex">\(c\)</span>:</li>
+</ul>
+<div class="arithmatex">\[ I_c = \left( \frac{ax_1 + bx_2 - cx_3}{a + b - c}, \frac{ay_1 + by_2 - cy_3}{a + b - c} \right) \]</div>
+<p>These formulas are based on the concept that to locate an excenter, you must consider the lengths of the sides with respect to the angles being bisected. For example, for the excenter <span class="arithmatex">\(I_a\)</span>, the angle bisector of <span class="arithmatex">\(A\)</span> is extended outside the triangle to form the exterior angle, and then the lengths of the other sides are considered with their signs changed accordingly.</p>
+<p>[We will study in more detail in the chapter Solutions of Triangle]</p>
+<h2 id="circumcentre">Circumcentre</h2>
+<p>The <strong>circumcircle</strong> of a triangle is the unique circle that passes through all three vertices of the triangle. The center of this circle is known as the <strong>circumcenter</strong>, and its radius is called the circumradius.</p>
+<p><a class="glightbox" href="../image-23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Circumcentre of a triangle" src="../image-23.png" /></a></p>
+<p>The figure illustrates triangle <span class="arithmatex">\( ABC \)</span> inscribed in its circumcircle. Point <span class="arithmatex">\( S \)</span> represents the circumcenter of the triangle. Perpendiculars <span class="arithmatex">\( SD \)</span>, <span class="arithmatex">\( SE \)</span>, and <span class="arithmatex">\( SF \)</span> are dropped from <span class="arithmatex">\( S \)</span> to the sides <span class="arithmatex">\( BC \)</span>, <span class="arithmatex">\( AC \)</span>, and <span class="arithmatex">\( AB \)</span> respectively, bisecting each side. This bisecting property stems from the fact that a perpendicular drawn from the center of a circle to any chord of the circle bisects the chord. Consequently, the circumcenter <span class="arithmatex">\( S \)</span> can also be defined as the intersection point of the perpendicular bisectors of the sides of the triangle.</p>
+<p>Additionally, the lengths <span class="arithmatex">\( SA \)</span>, <span class="arithmatex">\( SB \)</span>, and <span class="arithmatex">\( SC \)</span> are congruent as they are radii of the circumcircle. This equality is crucial for determining the location of <span class="arithmatex">\( S \)</span> when the coordinates of <span class="arithmatex">\( A \)</span>, <span class="arithmatex">\( B \)</span>, and <span class="arithmatex">\( C \)</span> are known. The circumcenter is equidistant from all vertices of the triangle.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Find the circumcenter <span class="arithmatex">\( S(\alpha, \beta) \)</span> of the triangle <span class="arithmatex">\( ABC \)</span> with vertices <span class="arithmatex">\( A(2,5) \)</span>, <span class="arithmatex">\( B(-5,3) \)</span>, and <span class="arithmatex">\( C(0,-4) \)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p>Given vertices:
+<span class="arithmatex">\( A(2,5) \)</span>, <span class="arithmatex">\( B(-5,3) \)</span>, and <span class="arithmatex">\( C(0,-4) \)</span></p>
+<p>Let <span class="arithmatex">\( S(\alpha, \beta) \)</span> be the circumcenter.</p>
+<p>Equations based on radii equality:</p>
+<p><span class="arithmatex">\( SA = SC \)</span></p>
+<p><span class="arithmatex">\( SB = SC \)</span></p>
+<p>From <span class="arithmatex">\( SA = SC \)</span>, we get the equation of the perpendicular bisector of <span class="arithmatex">\( AC \)</span>:</p>
+<div class="arithmatex">\[
+(\alpha - 2)^2 + (\beta - 5)^2 = (\alpha - 0)^2 + (\beta + 4)^2
+\]</div>
+<p>Expanding and simplifying, we get:</p>
+<div class="arithmatex">\[
+\alpha^2 - 4\alpha + 4 + \beta^2 - 10\beta + 25 = \alpha^2 + \beta^2 + 8\beta + 16
+\]</div>
+<div class="arithmatex">\[
+-4\alpha - 18\beta = -13 \quad \rightarrow \quad 4\alpha + 18\beta + 13 = 0 \quad \ldots \text{(i)}
+\]</div>
+<p>From <span class="arithmatex">\( SB = SC \)</span>, we get the equation of the perpendicular bisector of <span class="arithmatex">\( BC \)</span>:</p>
+<div class="arithmatex">\[
+(\alpha + 5)^2 + (\beta - 3)^2 = (\alpha - 0)^2 + (\beta + 4)^2
+\]</div>
+<p>Expanding and simplifying, we get:</p>
+<div class="arithmatex">\[
+\alpha^2 + 10\alpha + 25 + \beta^2 - 6\beta + 9 = \alpha^2 + \beta^2 + 8\beta + 16
+\]</div>
+<div class="arithmatex">\[
+10\alpha - 14\beta = -18 \quad \rightarrow \quad 10\alpha - 14\beta + 18 = 0 \quad \ldots \text{(ii)}
+\]</div>
+<p>For the system of equations:</p>
+<div class="arithmatex">\[
+4\alpha + 18\beta + 13 = 0 \quad \text{(i)}
+\]</div>
+<div class="arithmatex">\[
+10\alpha - 14\beta + 18 = 0 \quad \text{(ii)}
+\]</div>
+<p>We use the formulas:</p>
+<div class="arithmatex">\[
+\alpha = \frac{c_1 b_2 - c_2 b_1}{a_1 b_2 - a_2 b_1}, \quad \beta = \frac{a_1 c_2 - a_2 c_1}{a_1 b_2 - a_2 b_1}
+\]</div>
+<p>For (i) <span class="arithmatex">\( a_1 = 4 \)</span>, <span class="arithmatex">\( b_1 = 18 \)</span>, <span class="arithmatex">\( c_1 = 13 \)</span>.</p>
+<p>For (ii) <span class="arithmatex">\( a_2 = 10 \)</span>, <span class="arithmatex">\( b_2 = -14 \)</span>, <span class="arithmatex">\( c_2 = 18 \)</span>.</p>
+<p>Now we calculate:</p>
+<div class="arithmatex">\[
+\alpha = \frac{(13)(-14) - (18)(18)}{(4)(-14) - (10)(18)} = \frac{-182 - 324}{-56 - 180} = \frac{-506}{-236} = \frac{253}{118}
+\]</div>
+<div class="arithmatex">\[
+\beta = \frac{(4)(18) - (10)(13)}{(4)(-14) - (10)(18)} = \frac{72 - 130}{-56 - 180} = \frac{-58}{-236} = \frac{29}{118}
+\]</div>
+<p>The circumcenter <span class="arithmatex">\( S \)</span> of triangle <span class="arithmatex">\( ABC \)</span> has coordinates:</p>
+<div class="arithmatex">\[
+S\left(\frac{253}{118}, \frac{29}{118}\right)
+\]</div>
+</div>
+<h3 id="circumcentre-of-a-right-angled-triangle">Circumcentre of a right angled triangle</h3>
+<p>For a right-angled triangle, the circumcenter lies at the midpoint of the hypotenuse, and the circumradius is equal to half of the length of hypotenuse.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p><a class="glightbox" href="../image-24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Circumcentre of right angled triangle" src="../image-24.png" /></a></p>
+<p>In the figure, the triangle is right-angled at <span class="arithmatex">\( A \)</span>. To prove that the circumcenter is the midpoint of the hypotenuse <span class="arithmatex">\( AB \)</span>, draw the perpendicular bisector of <span class="arithmatex">\( AB \)</span> passing through point <span class="arithmatex">\( P \)</span>. Since this bisector is parallel to <span class="arithmatex">\( AC \)</span> (as <span class="arithmatex">\( AC \)</span> is also perpendicular to <span class="arithmatex">\( AB \)</span>), by the Midpoint Theorem, it must also bisect the hypotenuse at <span class="arithmatex">\( S \)</span>. Similarly, the perpendicular bisector of <span class="arithmatex">\( AC \)</span> bisects the hypotenuse at <span class="arithmatex">\( S \)</span>. Since both these bisectors intersect at <span class="arithmatex">\( S \)</span>, <span class="arithmatex">\( S \)</span> must be the circumcenter.</p>
+</div>
+<h3 id="location-of-circumcentre">Location of circumcentre</h3>
+<p>The circumcenter of a triangle may lie inside, on, or outside the triangle depending on the type of triangle:</p>
+<ul>
+<li>
+<p><strong>Acute Triangle</strong>: The circumcenter lies inside the triangle. This is because the perpendicular bisectors of the sides intersect at a point that is equidistant from all the vertices, which will be within the bounds of the triangle.</p>
+</li>
+<li>
+<p><strong>Right Triangle</strong>: The circumcenter lies on the triangle, specifically on the midpoint of the hypotenuse. In a right triangle, the hypotenuse serves as the diameter of the circumcircle.</p>
+</li>
+<li>
+<p><strong>Obtuse Triangle</strong>: The circumcenter lies outside the triangle. In an obtuse triangle, the perpendicular bisectors of the sides will intersect at a point outside the triangle, as the angle opposite the longest side (which is obtuse) requires the circumcenter to fall outside to be equidistant from all three vertices. See the figure below:</p>
+</li>
+</ul>
+<p><a class="glightbox" href="../image-25.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="circumcentre of obtuse triangle" src="../image-25.png" /></a></p>
+<h2 id="some-miscellaneuous-facts-based-on-centres-of-circle">Some Miscellaneuous Facts based on centres of Circle</h2>
+<h3 id="image-orthocentre-in-sides">Image Orthocentre in sides</h3>
+<p>In triangle <span class="arithmatex">\( ABC \)</span>, let <span class="arithmatex">\( H \)</span> be the orthocenter, and let <span class="arithmatex">\( H_1 \)</span>, <span class="arithmatex">\( H_2 \)</span>, and <span class="arithmatex">\( H_3 \)</span> be the reflections of <span class="arithmatex">\( H \)</span> over sides <span class="arithmatex">\( BC \)</span>, <span class="arithmatex">\( CA \)</span>, and <span class="arithmatex">\( AB \)</span>, respectively. Then, points <span class="arithmatex">\( H_1 \)</span>, <span class="arithmatex">\( H_2 \)</span>, and <span class="arithmatex">\( H_3 \)</span> lie on the circumcircle of triangle <span class="arithmatex">\( ABC \)</span>.</p>
+<p><a class="glightbox" href="../image-27.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image of orthocentre" src="../image-27.png" /></a></p>
+<p>The figure displays triangle <span class="arithmatex">\( ABC \)</span>, with <span class="arithmatex">\( AD \)</span>, <span class="arithmatex">\( BE \)</span>, and <span class="arithmatex">\( CF \)</span> representing the altitudes from vertices <span class="arithmatex">\( A \)</span>, <span class="arithmatex">\( B \)</span>, and <span class="arithmatex">\( C \)</span>, respectively. These altitudes intersect at point <span class="arithmatex">\( H \)</span>, known as the orthocenter of the triangle. The triangle is inscribed in a circle, known as the circumcircle. The points <span class="arithmatex">\( H_1 \)</span>, <span class="arithmatex">\( H_2 \)</span>, and <span class="arithmatex">\( H_3 \)</span> are depicted on the sides <span class="arithmatex">\( BC \)</span>, <span class="arithmatex">\( CA \)</span>, and <span class="arithmatex">\( AB \)</span>, respectively, and are the reflections of the orthocenter <span class="arithmatex">\( H \)</span> across the respective sides of the triangle.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p><a class="glightbox" href="../image-28.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure for the proof that image of orthocentre in any side lies on circumcentre" src="../image-28.png" /></a></p>
+<p>To prove that <span class="arithmatex">\( H_1 \)</span>, <span class="arithmatex">\( H_2 \)</span>, and <span class="arithmatex">\( H_3 \)</span> are the images of the orthocenter <span class="arithmatex">\( H \)</span> in the sides of <span class="arithmatex">\( \triangle ABC \)</span>, begin by joining <span class="arithmatex">\( H_1B \)</span> and <span class="arithmatex">\( H_1C \)</span>.</p>
+<p>In <span class="arithmatex">\( \triangle ABD \)</span>, which is right-angled at <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( \angle BAD = 90^\circ - B \)</span>. The chord <span class="arithmatex">\( H_1B \)</span> subtends <span class="arithmatex">\( \angle BAD \)</span> at <span class="arithmatex">\( B \)</span> and therefore must subtend the same angle at <span class="arithmatex">\( C \)</span>, which implies that <span class="arithmatex">\( \angle BCH_1 = 90^\circ - B \)</span>. Also, in <span class="arithmatex">\( \triangle BFC \)</span>, which is right-angled at <span class="arithmatex">\( F \)</span>, <span class="arithmatex">\( \angle BCF = 90^\circ - C \)</span>, and so <span class="arithmatex">\( \angle HCB = \angle H_1CB = 90^\circ - C \)</span>. Similarly, it can be shown that <span class="arithmatex">\( \angle HBD = \angle H_1BD = 90^\circ - B \)</span>.</p>
+<p>Thus, by the ASA congruence criterion, <span class="arithmatex">\( \triangle HBC \)</span> is congruent to <span class="arithmatex">\( \triangle H_1BC \)</span>, with <span class="arithmatex">\( BC \)</span> being the common side. It follows that <span class="arithmatex">\( HD = DH_1 \)</span>, confirming that <span class="arithmatex">\( H_1 \)</span> is the image of <span class="arithmatex">\( H \)</span> in <span class="arithmatex">\( BC \)</span>. Similar arguments would show that <span class="arithmatex">\( H_2 \)</span> and <span class="arithmatex">\( H_3 \)</span> are the images of <span class="arithmatex">\( H \)</span> in sides <span class="arithmatex">\( CA \)</span> and <span class="arithmatex">\( AB \)</span>, respectively.</p>
+</div>
+<h3 id="pedal-triangle">Pedal Triangle</h3>
+<p>In triangle <span class="arithmatex">\( ABC \)</span>, let point <span class="arithmatex">\( P \)</span> be an arbitrary point. The pedal triangle of point <span class="arithmatex">\( P \)</span> with respect to triangle <span class="arithmatex">\( ABC \)</span> is constructed by dropping perpendiculars from <span class="arithmatex">\( P \)</span> to the sides <span class="arithmatex">\( AB \)</span>, <span class="arithmatex">\( BC \)</span>, and <span class="arithmatex">\( CA \)</span>. These perpendiculars meet the sides of <span class="arithmatex">\( ABC \)</span> at points <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span> respectively, which are the vertices of the pedal triangle <span class="arithmatex">\( DEF \)</span>.</p>
+<p>The pedal triangle can be classified as follows based on the location of point <span class="arithmatex">\( P \)</span>:</p>
+<ul>
+<li>
+<p>When <span class="arithmatex">\( P \)</span> is the orthocenter of triangle <span class="arithmatex">\( ABC \)</span>, the pedal triangle <span class="arithmatex">\( DEF \)</span> is known as the orthic triangle. Points <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span> are the feet of the altitudes of <span class="arithmatex">\( ABC \)</span>.</p>
+</li>
+<li>
+<p>If <span class="arithmatex">\( P \)</span> is the centroid of triangle <span class="arithmatex">\( ABC \)</span>, the pedal triangle <span class="arithmatex">\( DEF \)</span> is termed the medial triangle. Points <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span> are the midpoints of the sides <span class="arithmatex">\( BC \)</span>, <span class="arithmatex">\( CA \)</span>, and <span class="arithmatex">\( AB \)</span> respectively.</p>
+</li>
+<li>
+<p>When <span class="arithmatex">\( P \)</span> is the incenter of triangle <span class="arithmatex">\( ABC \)</span>, the pedal triangle <span class="arithmatex">\( DEF \)</span> is referred to as the intouch triangle. In this case, <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span> are the points of tangency of the incircle with the sides <span class="arithmatex">\( BC \)</span>, <span class="arithmatex">\( CA \)</span>, and <span class="arithmatex">\( AB \)</span>.</p>
+</li>
+</ul>
+<p>When point <span class="arithmatex">\( P \)</span> lies on the circumcircle of triangle <span class="arithmatex">\( ABC \)</span>, the feet of the perpendiculars from <span class="arithmatex">\( P \)</span> to the sides of <span class="arithmatex">\( ABC \)</span>, namely points <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span>, become collinear. This specific line on which <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span> lie is known as the Simson line, after Robert Simson.</p>
+<h3 id="eulers-line">Euler's Line</h3>
+<p>In triangle <span class="arithmatex">\( ABC \)</span>, Euler's line is defined as the straight line that passes through several of the triangle's important centers: the centroid <span class="arithmatex">\( G \)</span>, the orthocenter <span class="arithmatex">\( H \)</span>, and the circumcenter <span class="arithmatex">\( S \)</span>.</p>
+<p>The distances between these points are related in a fixed ratio. The centroid <span class="arithmatex">\( G \)</span> divides the segment from the orthocenter <span class="arithmatex">\( H \)</span> to the circumcenter <span class="arithmatex">\( S \)</span> in the ratio 2:1. This means that <span class="arithmatex">\( HG:GS = 2:1 \)</span>. The centroid is twice as far from the orthocenter as it is from the circumcenter. </p>
+<p><a class="glightbox" href="../image-29.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Euler's Line" src="../image-29.png" /></a></p>
+<p>In the figure of triangle <span class="arithmatex">\( ABC \)</span>, Euler's line is illustrated by the red line intersecting the orthocenter <span class="arithmatex">\( H \)</span>, the centroid <span class="arithmatex">\( G \)</span>, and the circumcenter <span class="arithmatex">\( S \)</span>.</p>
+<p>The orthocenter <span class="arithmatex">\( H \)</span> is where the altitudes of the triangle meet, specifically altitudes <span class="arithmatex">\( AD \)</span> and <span class="arithmatex">\( BE \)</span>, and the third altitude (not shown) would also converge at <span class="arithmatex">\( H \)</span>.</p>
+<p>The centroid <span class="arithmatex">\( G \)</span> is found at the intersection of the medians of the triangle, with medians <span class="arithmatex">\( AL \)</span> and <span class="arithmatex">\( BM \)</span> shown intersecting at <span class="arithmatex">\( G \)</span>. The third median from vertex <span class="arithmatex">\( C \)</span> (not depicted) would also intersect at <span class="arithmatex">\( G \)</span>.</p>
+<p>The circumcenter <span class="arithmatex">\( S \)</span> is the point of intersection of the perpendicular bisectors of the triangle's sides. The perpendicular bisectors through points <span class="arithmatex">\( L \)</span> and <span class="arithmatex">\( M \)</span> are shown intersecting at <span class="arithmatex">\( S \)</span>. The perpendicular bisector of the third side (not labeled) would also pass through <span class="arithmatex">\( S \)</span>.</p>
+<p>Euler's line connects points <span class="arithmatex">\( H \)</span>, <span class="arithmatex">\( G \)</span>, and <span class="arithmatex">\( S \)</span>, affirming their collinearity. The centroid <span class="arithmatex">\( G \)</span> bisects the line segment joining the orthocenter <span class="arithmatex">\( H \)</span> and the circumcenter <span class="arithmatex">\( S \)</span> in a <span class="arithmatex">\( 2:1 \)</span> ratio, with <span class="arithmatex">\( HG \)</span> being twice as long as <span class="arithmatex">\( GS \)</span>.</p>
+<div class="admonition note">
+<p><a class="glightbox" href="../image-30.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Euler's Line" src="../image-30.png" /></a> </p>
+<p>In the figure, triangle <span class="arithmatex">\( AGH \)</span> is similar to triangle <span class="arithmatex">\( SGL \)</span> by the Angle-Angle (AA) similarity criterion, as they share an angle at <span class="arithmatex">\( G \)</span> and both have a right angle by the definition of altitude and perpendicular bisector, respectively.</p>
+<p>The ratios of the corresponding sides of similar triangles <span class="arithmatex">\( AGH \)</span> and <span class="arithmatex">\( SGL \)</span> are equal to the ratio of their respective sides. If <span class="arithmatex">\( AG \)</span>, <span class="arithmatex">\( GH \)</span>, and <span class="arithmatex">\( GL \)</span> are the lengths of the sides in <span class="arithmatex">\( AGH \)</span>, and <span class="arithmatex">\( SG \)</span>, <span class="arithmatex">\( GL \)</span>, and <span class="arithmatex">\( LS \)</span> are the lengths of the sides in <span class="arithmatex">\( SGL \)</span>, then the ratios are:</p>
+<div class="arithmatex">\[ \frac{AG}{GL} = \frac{HG}{GS} = \frac{AH}{SL} \]</div>
+<p>Given that <span class="arithmatex">\( G \)</span> is the centroid, it divides the medians in a <span class="arithmatex">\( 2:1 \)</span> ratio, so if we let the entire median from <span class="arithmatex">\( A \)</span> to <span class="arithmatex">\( L \)</span> be <span class="arithmatex">\( 3x \)</span>, then <span class="arithmatex">\( AG = 2x \)</span> and <span class="arithmatex">\( GL = x \)</span>. This further defines the ratio of <span class="arithmatex">\( GH \)</span> to <span class="arithmatex">\( SG \)</span> as <span class="arithmatex">\( 2:1 \)</span>. The other sides will have a ratio that maintains this proportionality.</p>
+</div>
+<div class="admonition note">
+<p>Given the centroid <span class="arithmatex">\( G \)</span> of a triangle <span class="arithmatex">\( ABC \)</span> expressed in terms of the orthocenter <span class="arithmatex">\( H \)</span> and the circumcenter <span class="arithmatex">\( S \)</span>:</p>
+<div class="arithmatex">\[ G = \frac{2S + H}{3} \]</div>
+<div class="arithmatex">\[ H = 3G - 2S \]</div>
+<div class="arithmatex">\[ S = \frac{3G - H}{2} \]</div>
+<p>These expressions allow us to interchangeably use the coordinates or positions of <span class="arithmatex">\( G \)</span>, <span class="arithmatex">\( H \)</span>, and <span class="arithmatex">\( S \)</span> based on the centroid equation. These formulae are pretty useful when we know two of the centres and we wish to find the third one. </p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">A very useful case</p>
+<p>If the circumcenter <span class="arithmatex">\( S \)</span> of a triangle is at the origin, then its coordinates are <span class="arithmatex">\( (0,0) \)</span>. Given the centroid formula <span class="arithmatex">\( G = \frac{2S + H}{3} \)</span>, and substituting <span class="arithmatex">\( S \)</span> with the origin, we have:</p>
+<p>[ G = \frac{2(0,0) + H}{3} ]
+[ G = \frac{H}{3} ]</p>
+<p>Solving for <span class="arithmatex">\( H \)</span>, we get:</p>
+<div class="arithmatex">\[ H = 3G \]</div>
+<p>Thus, when the circumcenter is at the origin, the orthocenter <span class="arithmatex">\( H \)</span> is three times the vector of the centroid <span class="arithmatex">\( G \)</span>.</p>
+<p>For a triangle <span class="arithmatex">\( ABC \)</span> with vertices at <span class="arithmatex">\( A(x_1, y_1) \)</span>, <span class="arithmatex">\( B(x_2, y_2) \)</span>, and <span class="arithmatex">\( C(x_3, y_3) \)</span>, and if the circumcenter <span class="arithmatex">\( S \)</span> is at the origin <span class="arithmatex">\( (0,0) \)</span>, then the coordinates of the centroid <span class="arithmatex">\( G \)</span> are given by:</p>
+<div class="arithmatex">\[ G\left(\frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3}\right) \]</div>
+<p>Now, using the formula <span class="arithmatex">\( H = 3G \)</span> when <span class="arithmatex">\( S \)</span> is at the origin, the coordinates of the orthocenter <span class="arithmatex">\( H \)</span> are:</p>
+<div class="arithmatex">\[ H\left(3 \cdot \frac{x_1 + x_2 + x_3}{3}, 3 \cdot \frac{y_1 + y_2 + y_3}{3}\right) \]</div>
+<p>Simplifying this, we get:</p>
+<div class="arithmatex">\[ H(x_1 + x_2 + x_3, y_1 + y_2 + y_3) \]</div>
+<p>This formula represents the orthocenter <span class="arithmatex">\( H \)</span> in terms of the coordinates of the vertices of triangle <span class="arithmatex">\( ABC \)</span> when the circumcenter is at the origin.</p>
+</div>
+<h3 id="equilateral-triangle-and-its-centres">Equilateral triangle and its centres</h3>
+<p>In an equilateral triangle <span class="arithmatex">\( ABC \)</span> with vertices <span class="arithmatex">\( A(x_1, y_1) \)</span>, <span class="arithmatex">\( B(x_2, y_2) \)</span>, and <span class="arithmatex">\( C(x_3, y_3) \)</span>, the incenter, centroid, circumcenter, and orthocenter all coincide at the same point due to the symmetry of the triangle. The common point, often referred to as the triangle's center, can be found using the formula for the centroid which applies to all these centers in the case of an equilateral triangle:</p>
+<div class="arithmatex">\[ \left(\frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3}\right) \]</div>
+<p>This point is equidistant from all the vertices and also equidistant from all the sides of the equilateral triangle. It serves as the center for the inscribed circle (incircle), the circumscribed circle (circumcircle), and is also the point where the altitudes, which are the same as the medians and the angle bisectors, intersect.</p>
+<div class="admonition note">
+<p class="admonition-title">An important fact on Orthic Triangle</p>
+<p>The orthic triangle <span class="arithmatex">\( DEF \)</span> of the reference triangle <span class="arithmatex">\( ABC \)</span> is formed by connecting the feet of the altitudes from each vertex of <span class="arithmatex">\( ABC \)</span> to the opposite sides. In triangle <span class="arithmatex">\( ABC \)</span>, the points <span class="arithmatex">\( D \)</span>, <span class="arithmatex">\( E \)</span>, and <span class="arithmatex">\( F \)</span> are the feet of the perpendiculars from vertices <span class="arithmatex">\( A \)</span>, <span class="arithmatex">\( B \)</span>, and <span class="arithmatex">\( C \)</span>, respectively.</p>
+<p>In the orthic triangle <span class="arithmatex">\( DEF \)</span>, the incenter (the center of the inscribed circle) coincides with the orthocenter of the original triangle <span class="arithmatex">\( ABC \)</span>. This is because the altitudes of <span class="arithmatex">\( ABC \)</span> are the angle bisectors of the orthic triangle <span class="arithmatex">\( DEF \)</span>. Since the incenter is the point where the angle bisectors of a triangle meet, the incenter of the orthic triangle <span class="arithmatex">\( DEF \)</span> is indeed the point where the altitudes of triangle <span class="arithmatex">\( ABC \)</span> intersect, which is the orthocenter of <span class="arithmatex">\( ABC \)</span>.</p>
+<p><strong>Explanation:</strong></p>
+<p><a class="glightbox" href="../image-31.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../image-31.png" /></a></p>
+<p>In triangle <span class="arithmatex">\( ABC \)</span>, <span class="arithmatex">\( DEF \)</span> is the orthic triangle. <span class="arithmatex">\( FBDH \)</span> is a cyclic quadrilateral because <span class="arithmatex">\( \angle BFH + \angle BDH = 180^\circ \)</span> as both are right angles. Thus, there is a unique circle passing through all vertices of the quadrilateral. The angle subtended by chord <span class="arithmatex">\( FH \)</span> at <span class="arithmatex">\( B \)</span> is <span class="arithmatex">\( 90^\circ - A \)</span> (as triangle <span class="arithmatex">\( ABE \)</span> is right-angled at <span class="arithmatex">\( E \)</span>). Then, the angle subtended by <span class="arithmatex">\( FH \)</span> at <span class="arithmatex">\( D \)</span> is also <span class="arithmatex">\( 90^\circ - A \)</span>. Similarly, <span class="arithmatex">\( HDCE \)</span> is a cyclic quadrilateral; side <span class="arithmatex">\( HE \)</span> subtends equal angles at <span class="arithmatex">\( D \)</span> and <span class="arithmatex">\( C \)</span>, which is again <span class="arithmatex">\( 90^\circ - A \)</span>. Thus, <span class="arithmatex">\( \angle HDF = \angle HDE \)</span> implying that <span class="arithmatex">\( AD \)</span> is the angle bisector of <span class="arithmatex">\( \angle FDE \)</span>. Similarly, altitude <span class="arithmatex">\( BE \)</span> is the angle bisector of <span class="arithmatex">\( \angle DEF \)</span> and <span class="arithmatex">\( FC \)</span> of <span class="arithmatex">\( \angle DFE \)</span>. Thus, the orthocenter of <span class="arithmatex">\( ABC \)</span> is the incenter of the orthic triangle <span class="arithmatex">\( DEF \)</span>.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

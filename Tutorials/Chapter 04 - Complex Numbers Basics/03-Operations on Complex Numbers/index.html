@@ -1,0 +1,3027 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/">
+      
+      
+        <link rel="prev" href="../02-Argand%20Plane/">
+      
+      
+        <link rel="next" href="../04%20-%20Square%20root%20of%20a%20complex%20number/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Fundamental Operations on Complex Numbers - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fundamental Operations on Complex Numbers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ordering-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordering Relations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ordering Relations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inequalities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations-on-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations on Complex Numbers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations on Complex Numbers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addition-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Addition of Complex Numbers:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtraction-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subtraction of Complex Numbers:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizing-addition-and-subtraction-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualizing Addition and Subtraction of Complex Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subtraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplication-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplication of Complex Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#division-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Division of complex numbers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#powers-of-iota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Powers of iota
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ordering-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordering Relations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ordering Relations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inequalities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations-on-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations on Complex Numbers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations on Complex Numbers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addition-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Addition of Complex Numbers:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtraction-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subtraction of Complex Numbers:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizing-addition-and-subtraction-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualizing Addition and Subtraction of Complex Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subtraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplication-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplication of Complex Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#division-of-complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Division of complex numbers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#powers-of-iota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Powers of iota
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Fundamental Operations on Complex Numbers</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p><a class="glightbox" href="../image-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="3 circles + 2 circles = 5 circles" src="../image-7.png" /></a>
+In mathematics, when a new mathematical object is introduced, defining operations on it is crucial to understanding its properties and how it interacts with other objects. This is evident in the creation and exploration of complex numbers, which extend the operations defined for real numbers.</p>
+<p>Complex numbers expand the operations on real numbers to include an imaginary unit, <span class="arithmatex">\( i \)</span>, where <span class="arithmatex">\( i^2 = -1 \)</span>. This addition allows for a richer set of operations that are not possible within the real numbers alone. The operations on complex numbers, like addition, subtraction, multiplication, and division, are consistent with those on real numbers but are extended to accommodate the interaction between the real and imaginary parts.</p>
+<p>You have seen many mathematical objects before and operations defined on them. </p>
+<ul>
+<li>
+<p><strong>Real Numbers Operations</strong>: The operations on real numbers are closed, commutative, associative, and have elements of identity and inverses. They are defined for addition, subtraction, multiplication, and division (except division by zero).</p>
+</li>
+<li>
+<p><strong>Sets Operations</strong>: Operations on sets, such as union, intersection, and complement, follow different rules and laws, like commutativity, associativity, and distributivity, which dictate how sets combine and relate to each other.</p>
+</li>
+<li>
+<p><strong>Vector Operations</strong>: Operations on vectors include addition, scalar multiplication, dot product, and cross product. These operations are defined in the context of a vector space and have their own set of rules, such as the commutative and associative properties for vector addition and the distributive property for scalar multiplication.</p>
+</li>
+</ul>
+<p>Complex numbers, while they include an element (the imaginary unit) that vectors and sets do not, still maintain a structure with operations that resemble those of real numbers in many ways, albeit extended into two dimensions. This system of operations allows complex numbers to form a field, similar to real numbers, which supports a broad range of mathematical exploration and application.</p>
+<h2 id="ordering-relations">Ordering Relations</h2>
+<h3 id="equality">Equality</h3>
+<p>Equality of complex numbers is defined based on the equality of their real and imaginary components. Two complex numbers are considered equal if, and only if, their corresponding real parts are equal and their corresponding imaginary parts are equal.</p>
+<p>If we have two complex numbers, <span class="arithmatex">\( z_1 = a + bi \)</span> and <span class="arithmatex">\( z_2 = c + di \)</span>, where <span class="arithmatex">\( a, b, c, \)</span> and <span class="arithmatex">\( d \)</span> are real numbers, and <span class="arithmatex">\( i \)</span> is the imaginary unit (<span class="arithmatex">\( i^2 = -1 \)</span>), then <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> are equal if:</p>
+<div class="arithmatex">\[ a = c \quad \text{and} \quad b = d \]</div>
+<p>In other words, <span class="arithmatex">\( z_1 = z_2 \)</span> if and only if <span class="arithmatex">\( a = c \)</span> and <span class="arithmatex">\( b = d \)</span>.</p>
+<h3 id="inequalities">Inequalities</h3>
+<p>In the real number line, which is a single-dimensional line, we can easily compare numbers using symbols like <span class="arithmatex">\(&gt;\)</span> and <span class="arithmatex">\(&lt;\)</span>. For instance, if we have two real numbers, <span class="arithmatex">\(4\)</span> and <span class="arithmatex">\(7\)</span>, we can say <span class="arithmatex">\(4 &lt; 7\)</span> because on the real number line, <span class="arithmatex">\(4\)</span> is to the left of <span class="arithmatex">\(7\)</span>.</p>
+<p>However, when we step into the realm of complex numbers and their representation on the Argand plane, this kind of simple comparison doesn't work anymore. The Argand plane is a two-dimensional space where the horizontal axis represents the real part of complex numbers and the vertical axis represents the imaginary part. So, a complex number is represented as a point on this plane, with its position determined by both its real and imaginary components.</p>
+<p>For example, consider two complex numbers <span class="arithmatex">\(2 + 3i\)</span> and <span class="arithmatex">\(4 + i\)</span>. On the Argand plane, these numbers are points in different positions, one not simply "greater" or "less" than the other in the way real numbers are on the real line. One might be further to the right (indicating a larger real part) or higher up (indicating a larger imaginary part), but these differences don't translate into a straightforward <span class="arithmatex">\(&gt;\)</span> or <span class="arithmatex">\(&lt;\)</span> comparison as they do on the real line.</p>
+<p>Therefore, in the context of the Argand plane and complex numbers, we don't use <span class="arithmatex">\(&gt;\)</span> or <span class="arithmatex">\(&lt;\)</span> to compare numbers. Instead, we can talk about their magnitude (distance from the origin) or their angle with the real axis, but there's no direct way to say one complex number is greater or less than another like we can with numbers on the real line.</p>
+<h2 id="operations-on-complex-numbers">Operations on Complex Numbers</h2>
+<h3 id="addition-of-complex-numbers">Addition of Complex Numbers:</h3>
+<p>Let <span class="arithmatex">\( z_1 = x_1 + iy_1 \)</span> and <span class="arithmatex">\( z_2 = x_2 + iy_2 \)</span>, where <span class="arithmatex">\( x_1, x_2, y_1, \)</span> and <span class="arithmatex">\( y_2 \)</span> are real numbers and <span class="arithmatex">\( i \)</span> is the imaginary unit. The sum of <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> is a complex number <span class="arithmatex">\( z_1 + z_2 \)</span> found by adding the real parts and the imaginary parts separately:</p>
+<div class="arithmatex">\[ z_1 + z_2 \in \mathbb{C} \quad \text{such that} \quad z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2) \]</div>
+<p>For example:</p>
+<p>Let <span class="arithmatex">\( z_1 = 3 + 4i \)</span> and <span class="arithmatex">\( z_2 = 1 - 2i \)</span>.</p>
+<p>To add <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>, we combine their real parts and their imaginary parts separately:</p>
+<p><span class="arithmatex">\( z_1 + z_2 = (3 + 4i) + (1 - 2i) = (3 + 1) + (4i - 2i) = 4 + 2i \)</span></p>
+<p>So, the sum of <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> is <span class="arithmatex">\( 4 + 2i \)</span>.</p>
+<p>Properties of addition for complex numbers are as follows:</p>
+<ol>
+<li>
+<p><strong>Closure Property</strong>: The sum of two complex numbers is a complex number, meaning if <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> are in the set of complex numbers <span class="arithmatex">\( \mathbb{C} \)</span>, then <span class="arithmatex">\( z_1 + z_2 \)</span> is also in <span class="arithmatex">\( \mathbb{C} \)</span>.</p>
+</li>
+<li>
+<p><strong>Commutative Property</strong>: The addition of complex numbers is commutative, which means that the order of addition does not affect the sum:</p>
+<div class="arithmatex">\[ z_1 + z_2 = z_2 + z_1 \]</div>
+</li>
+<li>
+<p><strong>Associative Property</strong>: The addition of complex numbers is associative, indicating that when three complex numbers are added, the sum is the same regardless of how the numbers are grouped:</p>
+<div class="arithmatex">\[ z_1 + (z_2 + z_3) = (z_1 + z_2) + z_3 \]</div>
+</li>
+<li>
+<p><strong>Additive Identity</strong>: The complex number <span class="arithmatex">\( 0 + 0i \)</span>, or simply <span class="arithmatex">\( 0 \)</span>, serves as the additive identity in the set of complex numbers, meaning adding zero to any complex number <span class="arithmatex">\( z \)</span> will yield <span class="arithmatex">\( z \)</span>:</p>
+<div class="arithmatex">\[ z + 0 = z \]</div>
+</li>
+<li>
+<p><strong>Additive Inverse</strong>: Every complex number <span class="arithmatex">\( z = x + iy \)</span> has an additive inverse <span class="arithmatex">\( -z = -x - iy \)</span>, such that their sum is the additive identity <span class="arithmatex">\( 0 \)</span>:</p>
+<div class="arithmatex">\[ z + (-z) = (x + iy) + (-x - iy) = 0 \]</div>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Geometrical Representation of <span class="arithmatex">\(-z\)</span></p>
+<p>Geometrically on the Argand plane, <span class="arithmatex">\( -z \)</span> is the reflection of <span class="arithmatex">\( z \)</span> in the origin. Clearly, if <span class="arithmatex">\( \arg(z) = \theta \)</span>, then <span class="arithmatex">\( \arg(-z) = \theta + \pi \)</span>.</p>
+<p><a class="glightbox" href="../image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Geometrical representation of additive inverse of z" src="../image-8.png" /></a></p>
+</div>
+<h3 id="subtraction-of-complex-numbers">Subtraction of Complex Numbers:</h3>
+<p>Let <span class="arithmatex">\( z_1 = x_1 + iy_1 \)</span> and <span class="arithmatex">\( z_2 = x_2 + iy_2 \)</span>, then we define subtraction as</p>
+<div class="arithmatex">\[ z_1 - z_2 = z_1 + (-z_2) \]</div>
+<p>i.e., subtraction of <span class="arithmatex">\( z_2 \)</span> from <span class="arithmatex">\( z_1 \)</span> is equivalent to the addition of the additive inverse of <span class="arithmatex">\( z_2 \)</span> to <span class="arithmatex">\( z_1 \)</span>.</p>
+<p>For example:</p>
+<p>Let <span class="arithmatex">\( z_1 = 6 + 8i \)</span> and <span class="arithmatex">\( z_2 = 3 + 4i \)</span>.</p>
+<p>To subtract <span class="arithmatex">\( z_2 \)</span> from <span class="arithmatex">\( z_1 \)</span>, we first find the additive inverse of <span class="arithmatex">\( z_2 \)</span>, which is <span class="arithmatex">\( -z_2 = -3 - 4i \)</span>. Then, we add this additive inverse to <span class="arithmatex">\( z_1 \)</span>:</p>
+<p><span class="arithmatex">\( z_1 - z_2 = (6 + 8i) - (3 + 4i) = (6 - 3) + (8i - 4i) = 3 + 4i \)</span></p>
+<p>So, the result of the subtraction <span class="arithmatex">\( z_1 - z_2 \)</span> is <span class="arithmatex">\( 3 + 4i \)</span>.</p>
+<h3 id="visualizing-addition-and-subtraction-of-complex-numbers">Visualizing Addition and Subtraction of Complex Numbers</h3>
+<h4 id="addition">Addition</h4>
+<p>The addition of complex numbers can be represented geometrically using the Argand plane. Each complex number corresponds to a point on this plane, and their addition results in a new point that corresponds to the sum. If we have two complex numbers, <span class="arithmatex">\(z_1\)</span> and <span class="arithmatex">\(z_2\)</span>, with <span class="arithmatex">\(z_1\)</span> represented by point <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(z_2\)</span> by point <span class="arithmatex">\(B\)</span>, the addition is illustrated by plotting these points and completing a parallelogram with the origin. The point <span class="arithmatex">\(C\)</span>, which is the opposite vertex of the parallelogram from the origin, represents the sum <span class="arithmatex">\(z_1 + z_2\)</span>.</p>
+<p><a class="glightbox" href="../image-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Visualizing Addition of Complex Numbers" src="../image-11.png" /></a></p>
+<ul>
+<li>
+<p>The point <span class="arithmatex">\( A \)</span> represents the complex number <span class="arithmatex">\( z_1 = x_1 + iy_1 \)</span>. This is shown in the diagram where <span class="arithmatex">\( OM = x_1 \)</span> is the real component and <span class="arithmatex">\( AM = PL = y_1 \)</span> is the imaginary component of <span class="arithmatex">\( z_1 \)</span>.</p>
+</li>
+<li>
+<p>Similarly, point <span class="arithmatex">\( B \)</span> represents the complex number <span class="arithmatex">\( z_2 = x_2 + iy_2 \)</span>, with <span class="arithmatex">\( ON = x_2 \)</span> as the real part and <span class="arithmatex">\( BN = QL = y_2 \)</span> as the imaginary part.</p>
+</li>
+<li>
+<p>Observe that triangle <span class="arithmatex">\( OAM \)</span> is congruent to triangle <span class="arithmatex">\( BQC \)</span>. They are congruent because they have the same side lengths (<span class="arithmatex">\( OM = QC = x_1 \)</span> and <span class="arithmatex">\( AM = QB = y_1 \)</span>) and their corresponding angles are equal (each pair of angles are vertical angles formed by intersecting lines, which are congruent).</p>
+</li>
+<li>
+<p>Triangle <span class="arithmatex">\( OBN \)</span> is congruent to triangle <span class="arithmatex">\( ACP \)</span>. These triangles are congruent for similar reasons: corresponding sides are equal (<span class="arithmatex">\( ON = AP = x_2 \)</span>, <span class="arithmatex">\( BN = CP = y_2 \)</span>), and corresponding angles are equal.</p>
+</li>
+</ul>
+<p>Due to these congruencies, the horizontal and vertical components of the diagonals can be summed:</p>
+<ul>
+<li>
+<p><span class="arithmatex">\( OL \)</span> (the total real part of <span class="arithmatex">\( z_1 + z_2 \)</span>) is equal to <span class="arithmatex">\( OM + ML \)</span> which is the same as <span class="arithmatex">\( OM + AP \)</span> because <span class="arithmatex">\( AP \)</span> is equal to <span class="arithmatex">\( ON \)</span>. Therefore, <span class="arithmatex">\( OL = OM + ON = x_1 + x_2 \)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( CL \)</span> (the total imaginary part of <span class="arithmatex">\( z_1 + z_2 \)</span>) is equal to <span class="arithmatex">\( CQ + QL \)</span> which is equal to <span class="arithmatex">\( AM + BN \)</span> since <span class="arithmatex">\( CQ = AM \)</span> and <span class="arithmatex">\( QL = BN \)</span>. Hence, <span class="arithmatex">\( CL = AM + BN = y_1 + y_2 \)</span>.</p>
+</li>
+</ul>
+<p>The coordinates of point <span class="arithmatex">\( C \)</span> are therefore <span class="arithmatex">\( (x_1 + x_2, y_1 + y_2) \)</span>, which means that point <span class="arithmatex">\( C \)</span> represents the complex number <span class="arithmatex">\( z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2) \)</span>. Point <span class="arithmatex">\( C \)</span> is the endpoint of the diagonal <span class="arithmatex">\( OC \)</span> of parallelogram <span class="arithmatex">\( OACB \)</span>, which geometrically represents the sum of the complex numbers <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>.</p>
+<h3 id="subtraction">Subtraction</h3>
+<div class="arithmatex">\[ z_1 - z_2 = z_1 + (-z_2) \]</div>
+<p>To achieve this geometrically, we first draw <span class="arithmatex">\( OB' \)</span> which is equal in length to <span class="arithmatex">\( OB \)</span> but in the opposite direction. <span class="arithmatex">\( B' \)</span> represents <span class="arithmatex">\( -z_2 \)</span>. And now we complete the parallelogram <span class="arithmatex">\( OAC'B' \)</span>, where the point <span class="arithmatex">\( C' \)</span> represents <span class="arithmatex">\( z_1 - z_2 \)</span>.</p>
+<p><a class="glightbox" href="../image-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Subtraction of Complex Numbers" src="../image-12.png" /></a></p>
+<p>Similarly, we plot <span class="arithmatex">\( z_2 - z_1 \)</span>. Clearly, <span class="arithmatex">\( z_2 - z_1 \)</span> is the additive inverse of <span class="arithmatex">\( z_1 - z_2 \)</span>, and thus has the opposite direction of <span class="arithmatex">\( z_1 - z_2 \)</span>.</p>
+<figure>
+  <a class="glightbox" href="../image-13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Addition and Subtraction together" src="../image-13.png" /></a>
+  <figcaption>Fig.1 - This figure demonstrates the geometric representation of addition and subtraction of complex numbers on the Argand plane. Parallelogram OACB shows addition where diagonal OC represents z1 + z2. Parallelograms OA'B'C' and OB'A'C'' show subtraction, where diagonals OC' and OC'' represent z1 - z2 and z2 - z1, respectively. The congruency of these parallelograms illustrates the relationship between addition and subtraction through additive inverses.</figcaption>
+</figure>
+<p>The above figure illustrates the geometric representation of addition and subtraction of complex numbers on the Argand plane. </p>
+<ul>
+<li>Parallelogram <span class="arithmatex">\( OACB \)</span> demonstrates the addition of <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>. Point <span class="arithmatex">\( A \)</span> represents <span class="arithmatex">\( z_1 \)</span>, and point <span class="arithmatex">\( B \)</span> represents <span class="arithmatex">\( z_2 \)</span>. The diagonal <span class="arithmatex">\( OC \)</span> represents the sum <span class="arithmatex">\( z_1 + z_2 \)</span>.</li>
+<li>The parallelogram <span class="arithmatex">\( OA'B'C' \)</span> shows the subtraction of <span class="arithmatex">\( z_2 \)</span> from <span class="arithmatex">\( z_1 \)</span>, where <span class="arithmatex">\( A' \)</span> represents <span class="arithmatex">\( -z_1 \)</span> and <span class="arithmatex">\( B' \)</span> represents <span class="arithmatex">\( -z_2 \)</span>. The diagonal <span class="arithmatex">\( OC' \)</span> represents the difference <span class="arithmatex">\( z_1 - z_2 \)</span>.</li>
+<li>The parallelogram <span class="arithmatex">\( OB'A'C'' \)</span> represents the subtraction of <span class="arithmatex">\( z_1 \)</span> from <span class="arithmatex">\( z_2 \)</span>, with diagonal <span class="arithmatex">\( OC'' \)</span> representing <span class="arithmatex">\( z_2 - z_1 \)</span>.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Distance between two complex numbers</p>
+<p>The modulus of a complex number is equivalent to its distance from the origin on the complex plane. Consequently, for the complex number <span class="arithmatex">\( z_1 + z_2 \)</span>, the distance from the origin to the point <span class="arithmatex">\( C \)</span>, denoted <span class="arithmatex">\( OC \)</span>, is given by <span class="arithmatex">\( |z_1 + z_2| \)</span>. Similarly, the modulus of the difference <span class="arithmatex">\( z_1 - z_2 \)</span>, represented by the length of <span class="arithmatex">\( OC' \)</span>, is <span class="arithmatex">\( |z_1 - z_2| \)</span>.</p>
+<p>Given that the parallelograms <span class="arithmatex">\( OACB \)</span> and <span class="arithmatex">\( OAC'B' \)</span> are congruent, we can ascertain that the lengths of <span class="arithmatex">\( OC' \)</span> and <span class="arithmatex">\( AB \)</span> are identical, hence <span class="arithmatex">\( OC' = AB \)</span>. This equality reveals that the diagonal <span class="arithmatex">\( AB \)</span> of parallelogram <span class="arithmatex">\( OACB \)</span> is equal to <span class="arithmatex">\( |z_1 - z_2| \)</span>, which is the modulus of the difference of <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>.</p>
+<p>Furthermore, the segment <span class="arithmatex">\( AB \)</span> represents the distance between the points <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>, which correspond to the complex numbers <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>, respectively. Therefore, the distance between <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> on the complex plane is expressed by <span class="arithmatex">\( |z_1 - z_2| \)</span>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Directly finding differnce of complex numbers on Argand plane</p>
+<p>How can one directly find out <span class="arithmatex">\( z_1 - z_2 \)</span> on the complex plane? </p>
+<p>Let <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span> be represented by <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>. Draw an arrow <span class="arithmatex">\( BA \)</span> with tail at <span class="arithmatex">\( B \)</span> and head at <span class="arithmatex">\( A \)</span> joining <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>. Translate this arrow parallelly (without rotation) such that the tail is now at the origin, then the location of the head now is nothing but <span class="arithmatex">\( z_1 - z_2 \)</span>. Similarly, thing you do with <span class="arithmatex">\( z_2 - z_1 \)</span>. This time head of the arrow is at <span class="arithmatex">\( z_2 \)</span>, and tail is at <span class="arithmatex">\( z_1 \)</span>. And we translate the arrow parallelly such that tail is at the origin. The new location of the arrow is <span class="arithmatex">\( z_2 - z_1 \)</span>.</p>
+<p><a class="glightbox" href="../image-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Subtraction of complex numbers directly" src="../image-14.png" /></a></p>
+</div>
+<h3 id="multiplication-of-complex-numbers">Multiplication of Complex Numbers</h3>
+<p>When multiplying two complex numbers <span class="arithmatex">\( z_1 = x_1 + iy_1 \)</span> and <span class="arithmatex">\( z_2 = x_2 + iy_2 \)</span>, we follow the distributive and commutative laws of algebra, similar to multiplying real numbers, while treating <span class="arithmatex">\( i \)</span> as a coefficient that also follows the special property <span class="arithmatex">\( i^2 = -1 \)</span>.</p>
+<p>The multiplication process is as follows:</p>
+<div class="arithmatex">\[\begin{align} 
+(x_1 + iy_1)(x_2 + iy_2) &amp;= x_1x_2 + x_1(iy_2) + (iy_1)x_2 + (iy_1)(iy_2)\\
+&amp;= x_1x_2 + ix_1y_2 + ix_2y_1 + i^2y_1y_2 \\
+&amp;= x_1x_2 + i(x_1y_2 + x_2y_1) + (-1)y_1y_2 \quad(since, i^2 = -1)\\ 
+&amp;= (x_1x_2 - y_1y_2) + i(x_1y_2 + x_2y_1) 
+\end{align}\]</div>
+<p>This multiplication produces another complex number where <span class="arithmatex">\( (x_1x_2 - y_1y_2) \)</span> is the real part and <span class="arithmatex">\( (x_1y_2 + x_2y_1) \)</span> is the imaginary part.</p>
+<p>Further observations include:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\( k(x + iy) = (k + i 0)(x + iy) = kx + kiy \)</span> where <span class="arithmatex">\( k \in \mathbb{R} \)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\( 0(x + iy) = 0 \)</span></p>
+</li>
+<li>
+<div class="arithmatex">\[(x + iy)(x + iy) = (x + iy)^2 = x^2 + ixy + ixy + i^2y^2 = (x^2 - y^2) + i(2xy) \]</div>
+</li>
+<li>
+<p><span class="arithmatex">\( (x - iy)^2 = (x^2 - y^2) - i(2xy) \)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\( (x + iy)(x - iy) = x^2 - (iy)^2 = x^2 + y^2 \)</span></p>
+</li>
+<li>
+<div class="arithmatex">\[ (x + iy)^3 = x^3 + i3x^2y + 3xiy^2 + i^3y^3 = x^3 + i3x^2y + i3xy^2 - y^3 = (x^3 - 3xy^2) + i(3x^2y - y^3) \]</div>
+</li>
+<li>
+<div class="arithmatex">\[ (x - iy)^3 = x^3 - i3x^2y - 3xiy^2 - i^3y^3 = x^3 - i3x^2y - i3xy^2 + y^3 = (x^3 - 3xy^2) + i(y^3 - 3x^2y) \]</div>
+</li>
+</ol>
+<h4 id="properties-of-multiplication">Properties of Multiplication</h4>
+<ol>
+<li>
+<p><strong>Closure</strong>: The product of any two complex numbers is always another complex number. This ensures that complex numbers are closed under multiplication within the set of complex numbers.</p>
+</li>
+<li>
+<p><strong>Commutativity</strong>: For two complex numbers <span class="arithmatex">\( z_1 \)</span> and <span class="arithmatex">\( z_2 \)</span>, the product is the same regardless of the order in which they are multiplied, i.e., <span class="arithmatex">\( z_1z_2 = z_2z_1 \)</span>.</p>
+</li>
+<li>
+<p><strong>Associativity</strong>: Multiplication of complex numbers is associative, meaning that when multiplying three complex numbers together, the product is the same no matter how the numbers are grouped. If <span class="arithmatex">\( z_1 \)</span>, <span class="arithmatex">\( z_2 \)</span>, and <span class="arithmatex">\( z_3 \)</span> are complex numbers, then <span class="arithmatex">\( z_1(z_2z_3) = (z_1z_2)z_3 \)</span>.</p>
+</li>
+<li>
+<p><strong>Existence of Multiplicative Identity</strong>: For every complex number <span class="arithmatex">\( z \)</span>, there exists a multiplicative identity which is <span class="arithmatex">\( 1 \)</span> (or <span class="arithmatex">\( 1 + 0i \)</span>) such that <span class="arithmatex">\( z \cdot 1 = z \)</span>. Thus, <span class="arithmatex">\( 1 \)</span> (or <span class="arithmatex">\( 1 + 0i \)</span>) is the multiplicative identity in the set of complex numbers.</p>
+</li>
+<li>
+<p><strong>Multiplicative Inverse</strong>: Every complex number <span class="arithmatex">\( z \)</span> <strong>that isn’t zero</strong> has a multiplicative inverse, called <span class="arithmatex">\( z^{-1} \)</span>, and it’s a number that, when multiplied by <span class="arithmatex">\( z \)</span>, gives 1. If <span class="arithmatex">\( z = a + ib \)</span>, then the inverse would be some <span class="arithmatex">\( x + iy \)</span>.</p>
+<p>To find this <span class="arithmatex">\( x + iy \)</span>, you multiply <span class="arithmatex">\( z \)</span> by <span class="arithmatex">\( x + iy \)</span> and set it to equal 1:</p>
+<div class="arithmatex">\[ (a + ib)(x + iy) = 1 \]</div>
+<p>This equation expands to:</p>
+<div class="arithmatex">\[ (ax - by) + i(ay + bx) = 1 \]</div>
+<p>For the equation to hold true, the real parts must add up to 1 and the imaginary parts must cancel out:</p>
+<p><span class="arithmatex">\( ax - by = 1 \)</span> and <span class="arithmatex">\( ay + bx = 0 \)</span></p>
+<p>Solving these gives you <span class="arithmatex">\( x = \frac{a}{a^2 + b^2} \)</span> and <span class="arithmatex">\( y = -\frac{b}{a^2 + b^2} \)</span>. Therefore, the inverse of <span class="arithmatex">\( z \)</span> is:</p>
+<div class="arithmatex">\[ z^{-1} = \frac{a}{a^2 + b^2} - i\frac{b}{a^2 + b^2} \]</div>
+<p>And another way to write this is:</p>
+<div class="arithmatex">\[ \frac{1}{z} = \frac{a - ib}{a^2 + b^2} \]</div>
+<p>This is how you find the multiplicative inverse of a complex number—it’s just a matter of switching the sign of the imaginary part and dividing by the sum of the squares of both parts.</p>
+<div class="admonition tip">
+<p class="admonition-title">Finding mulitplicative inverse</p>
+<p>Obtaining the multiplicative inverse of <span class="arithmatex">\( z \)</span>, i.e., <span class="arithmatex">\( \frac{1}{z} \)</span> using the above formula is equivalent to multiplying the numerator and denominator of the fraction <span class="arithmatex">\( \frac{1}{z} \)</span> with the conjugate of <span class="arithmatex">\( z \)</span>.</p>
+<p>e.g., The multiplicative inverse of <span class="arithmatex">\( 1 + 2i \)</span> is <span class="arithmatex">\( \frac{1}{1 + 2i} \)</span> which is equal to</p>
+<div class="arithmatex">\[ \frac{1 \times (1 - 2i)}{(1 + 2i)(1 - 2i)} = \frac{1 - 2i}{1 + 4} = \frac{1 - 2i}{5} = \frac{1}{5} - \frac{2i}{5} \]</div>
+<p>Here, by multiplying both the numerator and the denominator by the conjugate of the denominator, we can eliminate the imaginary unit from the denominator, thereby finding the complex number's multiplicative inverse in standard form. This technique is widely used because it simplifies the division of complex numbers into an algebraic expression involving only real numbers in the denominator.</p>
+</div>
+</li>
+<li>
+<p>Distributive: The multiplication of complex numbers is distributive over addition.</p>
+<p>For all <span class="arithmatex">\( z_1, z_2, z_3 \in \mathbb{C} \)</span>, <span class="arithmatex">\( z_1 (z_2 + z_3) = z_1z_2 + z_1z_3 \)</span></p>
+</li>
+</ol>
+<h3 id="division-of-complex-numbers">Division of complex numbers</h3>
+<p>Let <span class="arithmatex">\( z_1 = x_1 + iy_1 \)</span> and <span class="arithmatex">\( z_2 = x_2 + iy_2 \neq 0 \)</span>. Then the division of complex number <span class="arithmatex">\( z_1 \)</span> by <span class="arithmatex">\( z_2 \)</span>, i.e., <span class="arithmatex">\( \frac{z_1}{z_2} \)</span>, is a complex number such that <span class="arithmatex">\( \frac{z_1}{z_2} = z_1 \left( \frac{1}{z_2} \right) \)</span>, i.e.<strong><em>it is a product of <span class="arithmatex">\( z_1 \)</span> with multiplicative inverse of <span class="arithmatex">\( z_2 \)</span>.</em></strong> </p>
+<p>Thus, to obtain the quotient <span class="arithmatex">\( \frac{z_1}{z_2} \)</span>, we multiply the numerator and denominator of the fraction with the conjugate of <span class="arithmatex">\( z_2 \)</span>.</p>
+<div class="arithmatex">\[ \frac{z_1}{z_2} = \frac{x_1 + iy_1}{x_2 + iy_2} = (x_1 + iy_1)(x_2 - iy_2) \]</div>
+<div class="arithmatex">\[ = \frac{(x_1x_2 + y_1y_2) + i(y_1x_2 - x_1y_2)}{x_2^2 + y_2^2} \]</div>
+<p>In this way, by multiplying by the conjugate, we rationalize the denominator, transforming the division of complex numbers into an easier addition of two complex numbers in standard form, where the real and imaginary parts are separated.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Let's say we have two complex numbers:</p>
+<div class="arithmatex">\[ z_1 = 3 + 4i \quad \text{and} \quad z_2 = 1 - 2i \]</div>
+<p>We want to find the quotient <span class="arithmatex">\( \frac{z_1}{z_2} \)</span>.</p>
+<p>First, we multiply the numerator and denominator by the conjugate of the denominator:</p>
+<div class="arithmatex">\[ \frac{z_1}{z_2} = \frac{3 + 4i}{1 - 2i} \times \frac{1 + 2i}{1 + 2i} \]</div>
+<p>Now, calculate the product in the numerator and the denominator separately:</p>
+<p>Numerator:</p>
+<div class="arithmatex">\[ (3 + 4i)(1 + 2i) = 3 + 6i + 4i + 8i^2 \]</div>
+<p>Since <span class="arithmatex">\( i^2 = -1 \)</span>, this simplifies to:</p>
+<div class="arithmatex">\[ 3 + 6i + 4i - 8 = -5 + 10i \]</div>
+<p>Denominator:</p>
+<div class="arithmatex">\[ (1 - 2i)(1 + 2i) = 1 + 2i - 2i - 4i^2 \]</div>
+<p>Again, using <span class="arithmatex">\( i^2 = -1 \)</span>, this simplifies to:</p>
+<div class="arithmatex">\[ 1 - 4(-1) = 1 + 4 = 5 \]</div>
+<p>So, putting it together, we have:</p>
+<div class="arithmatex">\[ \frac{z_1}{z_2} = \frac{-5 + 10i}{5} \]</div>
+<p>We can split this into real and imaginary parts and simplify:</p>
+<div class="arithmatex">\[ \frac{z_1}{z_2} = \frac{-5}{5} + \frac{10i}{5} = -1 + 2i \]</div>
+<p>Therefore, the quotient of <span class="arithmatex">\( z_1 \)</span> by <span class="arithmatex">\( z_2 \)</span> is the complex number <span class="arithmatex">\( -1 + 2i \)</span>.</p>
+</div>
+<h2 id="powers-of-iota">Powers of iota</h2>
+<p>The imaginary unit <span class="arithmatex">\( i \)</span> is defined such that <span class="arithmatex">\( i^2 = -1 \)</span>. Using this definition, the powers of <span class="arithmatex">\( i \)</span> can be determined:</p>
+<ol>
+<li><span class="arithmatex">\( i^2 = -1 \)</span>: This is the definition of the imaginary unit.</li>
+<li><span class="arithmatex">\( i^3 = i \cdot i^2 = i \cdot (-1) = -i \)</span>: Here, we multiply <span class="arithmatex">\( i^2 \)</span> by <span class="arithmatex">\( i \)</span> to get <span class="arithmatex">\( i^3 \)</span>.</li>
+<li><span class="arithmatex">\( i^4 = (i^2)^2 = (-1)^2 = 1 \)</span>: Squaring <span class="arithmatex">\( i^2 \)</span> results in 1 because the square of -1 is 1.</li>
+</ol>
+<p><strong>Thus, in general, <span class="arithmatex">\( i^n = i^{4q+r} = (i^4)^q \cdot i^r = i^r \)</span> where <span class="arithmatex">\( n \)</span> is an integer, and <span class="arithmatex">\( n = 4q + r \)</span> where <span class="arithmatex">\( 0 \leq r &lt; 4 \)</span></strong>.</p>
+<p>Here’s what the general formula means:</p>
+<ul>
+<li><span class="arithmatex">\( n \)</span> is an integer representing the exponent to which <span class="arithmatex">\( i \)</span> is raised.</li>
+<li><span class="arithmatex">\( q \)</span> is the quotient when <span class="arithmatex">\( n \)</span> is divided by 4. It represents how many full cycles of 4 (the period of the powers of <span class="arithmatex">\( i \)</span>) there are in <span class="arithmatex">\( n \)</span>.</li>
+<li><span class="arithmatex">\( r \)</span> is the remainder when <span class="arithmatex">\( n \)</span> is divided by 4. It determines the actual power of <span class="arithmatex">\( i \)</span> since <span class="arithmatex">\( i^4 = 1 \)</span>, and therefore <span class="arithmatex">\( (i^4)^q = 1^q = 1 \)</span> for any integer <span class="arithmatex">\( q \)</span>, the value of <span class="arithmatex">\( i^n \)</span> ultimately depends only on <span class="arithmatex">\( r \)</span>.</li>
+</ul>
+<p>This leads to the simplified form <span class="arithmatex">\( i^n = i^r \)</span>, where <span class="arithmatex">\( r \)</span> can only be 0, 1, 2, or 3.</p>
+<p>For example, <span class="arithmatex">\( i^{58} = i^{4 \cdot 14 + 2} = i^2 = -1 \)</span>.</p>
+<ul>
+<li><span class="arithmatex">\( n = 58 \)</span> is divided by 4 giving <span class="arithmatex">\( q = 14 \)</span> and <span class="arithmatex">\( r = 2 \)</span>.</li>
+<li>We only need to consider the remainder <span class="arithmatex">\( r \)</span> because <span class="arithmatex">\( (i^4)^q = 1 \)</span> regardless of <span class="arithmatex">\( q \)</span>.</li>
+<li>Since <span class="arithmatex">\( r = 2 \)</span>, we use the base power <span class="arithmatex">\( i^2 = -1 \)</span>.</li>
+</ul>
+<p><strong>Sum of four integral powers of iota is equal to zero, i.e., <span class="arithmatex">\( i^n + i^{n+1} + i^{n+2} + i^{n+3} = 0 \)</span></strong>.</p>
+<p>This statement asserts that the sum of any four consecutive powers of <span class="arithmatex">\( i \)</span> is zero. It’s valid because the powers of <span class="arithmatex">\( i \)</span> are cyclical with a period of 4:</p>
+<ul>
+<li><span class="arithmatex">\( i^0 = 1 \)</span></li>
+<li><span class="arithmatex">\( i^1 = i \)</span></li>
+<li><span class="arithmatex">\( i^2 = -1 \)</span></li>
+<li><span class="arithmatex">\( i^3 = -i \)</span></li>
+</ul>
+<p>And since <span class="arithmatex">\( i^4 = 1 \)</span>, the sequence repeats. Thus, the sum of these four quantities is <span class="arithmatex">\( 1 + i - 1 - i = 0 \)</span>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

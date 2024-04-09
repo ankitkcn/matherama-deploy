@@ -1,0 +1,3097 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/">
+      
+      
+        <link rel="prev" href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/">
+      
+      
+        <link rel="next" href="../02%20-%20Sigma%20Notation/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Introduction - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-a-sequence" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a sequence?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is a sequence?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informal-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informal Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formal-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formal Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#index-of-a-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Index of a sequence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods-to-define-a-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods to define a sequence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods to define a sequence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explicit-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursive-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convergence-and-divergence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convergence and Divergence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Series
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-sum-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence-Sum Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increasing-and-decreasing-behaviour-of-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increasing and Decreasing Behaviour of Sequences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Increasing and Decreasing Behaviour of Sequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#increasing-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increasing Sequence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decreasing-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decreasing Sequence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neither-increasing-nor-decreasing-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neither Increasing Nor Decreasing Sequence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constant-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Sequence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a sequence?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is a sequence?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informal-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informal Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formal-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formal Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#index-of-a-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Index of a sequence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods-to-define-a-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods to define a sequence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods to define a sequence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explicit-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursive-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convergence-and-divergence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convergence and Divergence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Series
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-sum-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence-Sum Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increasing-and-decreasing-behaviour-of-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increasing and Decreasing Behaviour of Sequences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Increasing and Decreasing Behaviour of Sequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#increasing-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increasing Sequence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decreasing-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decreasing Sequence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neither-increasing-nor-decreasing-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neither Increasing Nor Decreasing Sequence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constant-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Sequence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Introduction</h1>
+
+<h2 id="what-is-a-sequence">What is a sequence?</h2>
+<h3 id="informal-definition">Informal Definition</h3>
+<p>A sequence is an <strong><em>ordered</em></strong> list of mathematical objects, such as real numbers, complex numbers, matrices, or any other mathematical objects, arranged in a specific order separated by commas. Sequences can be finite, with a limited number of terms, or infinite, extending indefinitely. </p>
+<p>The order of the elements in a sequence is crucial, and each element is called a <strong>term</strong> of the sequence. For example, the sequence of powers of 2, starting from <span class="arithmatex">\(1\)</span>, is an infinite sequence <span class="arithmatex">\(1, 2, 4, 8, 16, \ldots\)</span>, where each term after the first is obtained by multiplying the previous term by <span class="arithmatex">\(2\)</span>.</p>
+<h3 id="formal-definition">Formal Definition</h3>
+<p>Formally, a sequence can be defined as a function <span class="arithmatex">\(f: D \rightarrow A\)</span>, where <span class="arithmatex">\(D\)</span> is a domain consisting of either the first <span class="arithmatex">\(n\)</span> positive integers <span class="arithmatex">\(\{1, 2, 3, \ldots, n\}\)</span> for a finite sequence of length <span class="arithmatex">\(n\)</span>, or the set of all positive integers <span class="arithmatex">\(\mathbb{N} = \{1, 2, 3, \ldots\}\)</span> for an infinite sequence. The codomain <span class="arithmatex">\(A\)</span> can be any set, such as <span class="arithmatex">\(\mathbb{R}\)</span> (the set of real numbers), <span class="arithmatex">\(\mathbb{C}\)</span> (the set of complex numbers), or the set of all matrices of a given size or any other set of objects. Element <span class="arithmatex">\(f(n)\)</span> in the codomain is the nth term of the sequence.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>The sequence <span class="arithmatex">\(1, 2, 4, 8, 16, \ldots\)</span> is an infinite sequence generated by the function <span class="arithmatex">\(f(n) = 2^n\)</span> for <span class="arithmatex">\(n \in \mathbb{N}\)</span>. Here, <span class="arithmatex">\(D = \mathbb{N}\)</span> and <span class="arithmatex">\(A = \mathbb{R}\)</span>. For each <span class="arithmatex">\(n \in D\)</span>, <span class="arithmatex">\(f(n) = 2^n\)</span> determines the value of the nth term in the sequence. This sequence showcases how each term is related to its position <span class="arithmatex">\(n\)</span> in the sequence through a specific mathematical rule, in this case, exponentiation.</p>
+</div>
+<h2 id="notation">Notation</h2>
+<p>Sequences are often represented using specific notation to succinctly describe their structure and elements. A common notation for sequences is <span class="arithmatex">\((a_n)\)</span>, where <span class="arithmatex">\(a_n\)</span> represents the nth term of the sequence. </p>
+<p>For finite sequences, we might specify the range of <span class="arithmatex">\(n\)</span> explicitly, such as <span class="arithmatex">\((a_n)_{n=1}^{10}\)</span>, indicating the sequence starts at <span class="arithmatex">\(n=1\)</span> and ends at <span class="arithmatex">\(n=10\)</span>. For example, the sequence of the first ten positive even numbers could be denoted as <span class="arithmatex">\((2n)_{n=1}^{10}\)</span>, explicitly listing the terms as <span class="arithmatex">\(2, 4, 6, 8, 10, 12, 14, 16, 18, 20\)</span>. Similarly, an infinite sequence might be denoted simply as <span class="arithmatex">\((a_n)_{n=1}^{\infty}\)</span>, such as <span class="arithmatex">\((2^n)_{n=1}^{\infty}\)</span> for the sequence <span class="arithmatex">\(2, 4, 8, 16, \ldots\)</span>, indicating it continues indefinitely following the given pattern. This notation is powerful for both its precision in defining the terms of the sequence and its flexibility in representing a wide range of sequences, from simple arithmetic progressions to complex formula-based sequences.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((n^2)_{n=1}^{\infty}\)</span> represents the sequence of square numbers: <span class="arithmatex">\(1, 4, 9, 16, 25, \ldots\)</span>, where each term is the square of its position in the sequence, continuing indefinitely.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left(\frac{1}{n}\right)_{n=1}^{\infty}\)</span> denotes the sequence of reciprocals of natural numbers: <span class="arithmatex">\(1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \ldots\)</span>, illustrating a sequence that approaches zero as <span class="arithmatex">\(n\)</span> increases without bound.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(((-1)^n)_{n=1}^{\infty}\)</span> describes the alternating sequence: <span class="arithmatex">\(-1, 1, -1, 1, -1, \ldots\)</span>, where each term switches sign from the previous term, creating a pattern of negative and positive ones.</p>
+</li>
+<li>
+<p><span class="arithmatex">\((3n + 1)_{n=1}^{\infty}\)</span> gives the sequence: <span class="arithmatex">\(4, 7, 10, 13, 16, \ldots\)</span>, which is an arithmetic sequence with a common difference of <span class="arithmatex">\(3\)</span>, starting from <span class="arithmatex">\(4\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\((2^{n} - n)_{n=1}^{\infty}\)</span> generates the sequence: <span class="arithmatex">\(1, 2, 5, 12, 27, \ldots\)</span>, where each term is the result of subtracting the position <span class="arithmatex">\(n\)</span> from <span class="arithmatex">\(2\)</span> raised to the power of <span class="arithmatex">\(n\)</span>, showcasing a rapidly increasing sequence as <span class="arithmatex">\(n\)</span> grows.</p>
+</li>
+<li>
+<p><span class="arithmatex">\((n^2)_{n=1}^{5}\)</span> represents the sequence of square numbers for the first five natural numbers: <span class="arithmatex">\(1, 4, 9, 16, 25\)</span>. This sequence contains the squares of the numbers <span class="arithmatex">\(1\)</span> through <span class="arithmatex">\(5\)</span>, ending after the fifth term.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left(\frac{1}{n}\right)_{n=1}^{4}\)</span> denotes the sequence of reciprocals of the first four natural numbers: <span class="arithmatex">\(1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}\)</span>. This sequence showcases the reciprocals starting from <span class="arithmatex">\(1\)</span> to <span class="arithmatex">\(\frac{1}{4}\)</span>, and it concludes at the fourth term.</p>
+</li>
+<li>
+<p><span class="arithmatex">\((2n - 1)_{n=1}^{6}\)</span> gives the sequence of the first six odd numbers: <span class="arithmatex">\(1, 3, 5, 7, 9, 11\)</span>. This arithmetic sequence is generated by multiplying <span class="arithmatex">\(n\)</span> by <span class="arithmatex">\(2\)</span> and subtracting <span class="arithmatex">\(1\)</span>, demonstrating a consistent pattern of odd numbers up to the sixth term.</p>
+</li>
+</ol>
+<h2 id="index-of-a-sequence">Index of a sequence</h2>
+<p>The index of a sequence refers to the position of an element within the sequence. It acts as an identifier for each term in the sequence, indicating its order or placement. For sequences defined mathematically, the index is typically denoted by a natural number (such as <span class="arithmatex">\(n\)</span>, <span class="arithmatex">\(i\)</span>, or <span class="arithmatex">\(k\)</span>) in the set <span class="arithmatex">\(\mathbb{N}\)</span> (which can include <span class="arithmatex">\(0\)</span> if the sequence starts from <span class="arithmatex">\(0\)</span>), and it serves as the argument to the sequence's defining function.</p>
+<p>For example, in the sequence <span class="arithmatex">\((a_n)_{n=1}^{\infty}\)</span>, <span class="arithmatex">\(n\)</span> is the index of the sequence. It starts from <span class="arithmatex">\(1\)</span> and increases by <span class="arithmatex">\(1\)</span> for each subsequent term, indicating the progression of the sequence. The term <span class="arithmatex">\(a_n\)</span> represents the element of the sequence at position <span class="arithmatex">\(n\)</span>. The index allows for the direct reference to any term in the sequence, enabling the calculation or identification of sequence elements based on their position.</p>
+<h2 id="methods-to-define-a-sequence">Methods to define a sequence</h2>
+<p>Sequences can be defined in several ways, with the most common methods being through an explicit formula or a recursive definition. Each method provides a systematic approach to generating the terms of a sequence, catering to different kinds of patterns and complexities.</p>
+<h3 id="explicit-formula">Explicit Formula</h3>
+<p>An explicit formula defines the nth term of a sequence directly in terms of <span class="arithmatex">\(n\)</span>, without relying on the knowledge of previous terms. It provides a direct rule to calculate any term in the sequence given its position.</p>
+<p><strong>Example:</strong> Consider the sequence <span class="arithmatex">\(1, 3, 9, 27, \ldots\)</span>, where each term is three times the previous term, starting from <span class="arithmatex">\(1\)</span>. The explicit formula for this sequence is <span class="arithmatex">\(a_n = 3^{n-1}\)</span>, where <span class="arithmatex">\(n\)</span> is the position of the term in the sequence. This formula allows for the direct computation of any term in the sequence without needing to calculate the preceding terms. For instance, to find the 5th term, we simply compute <span class="arithmatex">\(a_5 = 3^{5-1} = 81\)</span>.</p>
+<h3 id="recursive-definition">Recursive Definition</h3>
+<p>A recursive definition specifies each term of a sequence using one or more previous terms, starting with one or more initial terms. This approach defines a sequence by its relationship between successive terms.</p>
+<p><strong>Example:</strong> Using the same sequence as above <span class="arithmatex">\(1, 3, 9, 27, \ldots\)</span>, we can define it recursively by stating that each term is three times the previous term, with the first term given as <span class="arithmatex">\(a_1 = 1\)</span>. The recursive formula is then <span class="arithmatex">\(a_n = 3a_{n-1}\)</span> for <span class="arithmatex">\(n &gt; 1\)</span>. This means to find a specific term, you start from the initial term and use the formula to find subsequent terms iteratively. For example, to find the 4th term, you would start with <span class="arithmatex">\(a_1 = 1\)</span>, then find <span class="arithmatex">\(a_2 = 3 \cdot 1 = 3\)</span>, then <span class="arithmatex">\(a_3 = 3 \cdot 3 = 9\)</span>, and finally <span class="arithmatex">\(a_4 = 3 \cdot 9 = 27\)</span>.</p>
+<p>Both methods have their advantages and applications. The explicit formula is useful for calculating terms without iterating through the sequence, ideal for finding terms far into the sequence. The recursive definition is beneficial when the relationship between consecutive terms is simple to describe or when the sequence is naturally defined by its progression from one term to the next.</p>
+<div class="admonition example">
+<p class="admonition-title">Fibonacci Sequence</p>
+<p><strong>Fibonacci Sequence: Recursive Definition</strong></p>
+<p>The Fibonacci sequence is defined recursively as follows:</p>
+<ul>
+<li><strong>Base cases:</strong> <span class="arithmatex">\(a_1 = 0, a_2 = 1\)</span></li>
+<li><strong>Recursive step:</strong> For <span class="arithmatex">\(n &gt; 2\)</span>, <span class="arithmatex">\(a_n = a_{n-1} + a_{n-2}\)</span></li>
+</ul>
+<p>This means each term is the sum of the two preceding terms, starting with <span class="arithmatex">\(0\)</span> and <span class="arithmatex">\(1\)</span>.</p>
+<p>Let us find the first 10 terms of the Fibonacci sequence. We apply the recursive definition:</p>
+<ol>
+<li><span class="arithmatex">\(a_1 = 0\)</span></li>
+<li><span class="arithmatex">\(a_2 = 1\)</span></li>
+<li><span class="arithmatex">\(a_3 = a_2 + a_1 = 1 + 0 = 1\)</span></li>
+<li><span class="arithmatex">\(a_4 = a_3 + a_2 = 1 + 1 = 2\)</span></li>
+<li><span class="arithmatex">\(a_5 = a_4 + a_3 = 2 + 1 = 3\)</span></li>
+<li><span class="arithmatex">\(a_6 = a_5 + a_4 = 3 + 2 = 5\)</span></li>
+<li><span class="arithmatex">\(a_7 = a_6 + a_5 = 5 + 3 = 8\)</span></li>
+<li><span class="arithmatex">\(a_8 = a_7 + a_6 = 8 + 5 = 13\)</span></li>
+<li><span class="arithmatex">\(a_9 = a_8 + a_7 = 13 + 8 = 21\)</span></li>
+<li><span class="arithmatex">\(a_{10} = a_9 + a_8 = 21 + 13 = 34\)</span></li>
+</ol>
+<p>So, the first 10 terms of the Fibonacci sequence are: <span class="arithmatex">\(0, 1, 1, 2, 3, 5, 8, 13, 21, 34\)</span>.</p>
+<p><strong>Binet's Formula</strong></p>
+<p>Binet's formula offers a non-recursive way to calculate the nth Fibonacci number directly:</p>
+<div class="arithmatex">\[a_n = \frac{\phi^n - (1-\phi)^n}{\sqrt{5}}\]</div>
+<p>where <span class="arithmatex">\(\phi = \frac{1 + \sqrt{5}}{2}\)</span> is the golden ratio. Unlike the recursive definition, which requires calculating all previous terms, Binet's formula allows for the direct computation of any term in the sequence. This method is particularly useful for finding terms far into the sequence without iterating through all preceding numbers.
+<em>We will learn how to derive this formula later on.</em></p>
+</div>
+<h2 id="convergence-and-divergence">Convergence and Divergence</h2>
+<p>A <strong>converging sequence</strong> is one that settles into a particular pattern as you go further along its terms, eventually getting closer and closer to a specific value, called the limit. The idea is that as you progress through the sequence, the difference between each term and this limit becomes smaller and smaller, effectively becoming negligible. An example of a converging sequence is <span class="arithmatex">\(\frac{1}{n}\)</span>, which approaches <span class="arithmatex">\(0\)</span> as <span class="arithmatex">\(n\)</span> becomes very large. Another example: consider the sequence <span class="arithmatex">\(\left(\frac{1}{2^n}\right)_{n=1}^{\infty}\)</span>: <span class="arithmatex">\( \frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \ldots \)</span></p>
+<p>This sequence converges to <span class="arithmatex">\(0\)</span> because as <span class="arithmatex">\(n\)</span> increases, <span class="arithmatex">\(\frac{1}{2^n}\)</span> gets smaller and smaller, approaching <span class="arithmatex">\(0\)</span> more closely with each successive term.</p>
+<p>A <strong>diverging sequence</strong>, on the other hand, doesn't settle down to a single value as you move along its terms. It might keep growing larger and larger, oscillate between values, or behave unpredictably without nearing any specific number. For instance, the sequence <span class="arithmatex">\(n\)</span>, which simply counts upwards (1, 2, 3, ...), is divergent because it gets indefinitely large as you go further along the sequence.</p>
+<p>Look at the sequence <span class="arithmatex">\(((-1)^n)_{n=1}^{\infty}\)</span>: <span class="arithmatex">\( -1, 1, -1, 1, \ldots \)</span></p>
+<p>This sequence diverges because it does not approach a single value; instead, it oscillates between <span class="arithmatex">\(-1\)</span> and <span class="arithmatex">\(1\)</span> indefinitely, never settling down to a specific limit.</p>
+<p>We will not go into more discussion on convergence and divergence as this topic has NOT been included in JEE Mains and Advanced. </p>
+<h2 id="series">Series</h2>
+<p>A series is the sum of the terms of a sequence. It is often represented as the summation of sequence terms <span class="arithmatex">\(a_n\)</span> over a specified range of values. If the sequence is infinite, the series is called an infinite series and is written as:</p>
+<div class="arithmatex">\[S = a_1 + a_2 + a_3 + \ldots \]</div>
+<p>For a finite sequence, the series sums over a finite number of terms, and can be expressed as:</p>
+<div class="arithmatex">\[S_n = a_1 + a_2 + \ldots + a_n \]</div>
+<p>where <span class="arithmatex">\(n\)</span> is the index of the last term in the series. For examples:</p>
+<ol>
+<li>
+<p>For the sequence <span class="arithmatex">\((\frac{1}{j})_{j=1}^n\)</span>, summing these terms, we denote the sum as </p>
+<div class="arithmatex">\[S_n = \frac{1}{1} + \frac{1}{2} + \ldots + \frac{1}{n}\]</div>
+</li>
+<li>
+<p>For the sequence <span class="arithmatex">\((\frac{k}{k+1})_{k=0}^{n-1}\)</span>, the sum is represented as </p>
+<div class="arithmatex">\[S_n = \frac{0}{1} + \frac{1}{2} + \ldots + \frac{n-1}{n}\]</div>
+</li>
+<li>
+<p>For the sequence <span class="arithmatex">\((r^2 + r + 1)_{r=0}^{n-1}\)</span>, the sum is expressed as </p>
+<div class="arithmatex">\[S_n = (0^2 + 0 + 1) + (1^2 + 1 + 1) + \ldots + ((n-1)^2 + (n-1) + 1)\]</div>
+<div class="arithmatex">\[\implies S_n = 1 + 3 + 7 + 13 + \ldots + \left((n-1)^2 + (n-1) + 1\right)\]</div>
+</li>
+</ol>
+<p><strong><em>A bit more formal definition of series goes like this:</em></strong></p>
+<p><strong>Definition (Series and Partial Sums):</strong></p>
+<p>Let <span class="arithmatex">\( (t_n) \)</span> denote a sequence of real numbers. A series generated by <span class="arithmatex">\( (t_n) \)</span> is the ordered collection of sums known as partial sums, and is denoted by <span class="arithmatex">\( S = (s_k) \)</span>, where each <span class="arithmatex">\( s_k \)</span> is defined as follows:</p>
+<div class="arithmatex">\[ s_1 := t_1 \]</div>
+<div class="arithmatex">\[ s_2 := s_1 + t_2 = (t_1 + t_2) \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ s_k := s_{k-1} + t_k = (t_1 + t_2 + \cdots + t_k) \]</div>
+<p><strong>Explanation of Partial Sums:</strong></p>
+<ol>
+<li>
+<p><strong>Initial Partial Sum (<span class="arithmatex">\( s_1 \)</span>)</strong>: The series commences with the first partial sum <span class="arithmatex">\( s_1 \)</span>, which is equal to the first term of the sequence, <span class="arithmatex">\( t_1 \)</span>.</p>
+</li>
+<li>
+<p><strong>Subsequent Partial Sums (<span class="arithmatex">\( s_2, s_3, \ldots \)</span>)</strong>: Each subsequent partial sum is obtained by adding the next term in the sequence to the previous partial sum. Thus, the second partial sum <span class="arithmatex">\( s_2 \)</span> is the sum of the first two terms, the third partial sum <span class="arithmatex">\( s_3 \)</span> is the sum of the first three terms, and so forth.</p>
+</li>
+<li>
+<p><strong>General Partial Sum (<span class="arithmatex">\( s_k \)</span>)</strong>: The k-th partial sum <span class="arithmatex">\( s_k \)</span> represents the sum of the first <span class="arithmatex">\( k \)</span> terms of the sequence. It encapsulates the cumulative addition of sequence terms up to the k-th position.</p>
+</li>
+</ol>
+<p><strong>Convergence and Divergence of Series:</strong></p>
+<ul>
+<li>
+<p><strong>Convergence</strong>: If the sequence of partial sums <span class="arithmatex">\( (s_k) \)</span> approaches a finite limit as <span class="arithmatex">\( k \)</span> increases without bound, the series is said to converge, and the limit is known as the sum of the series.</p>
+</li>
+<li>
+<p><strong>Divergence</strong>: If the sequence of partial sums does not approach a finite limit, the series is described as divergent.</p>
+</li>
+</ul>
+<p>Again we will not dive into convergence and divergence more than this, but still it is important for our understanding of series. You can get more idea from the following examples. </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Divergent Series</label><label for="__tabbed_1_2">Convergent Series</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Let's consider the sequence <span class="arithmatex">\( (t_n) \)</span> where each term is defined by <span class="arithmatex">\( t_n = \frac{1}{n} \)</span>. This is often referred to as the harmonic sequence.</p>
+<p>Using the sequence <span class="arithmatex">\( (t_n) \)</span>, we can form a series, which is the sum of the terms of the sequence. The series generated by the harmonic sequence is:</p>
+<div class="arithmatex">\[ s_1 = \frac{1}{1} \]</div>
+<div class="arithmatex">\[ s_2 = \frac{1}{1} + \frac{1}{2} \]</div>
+<div class="arithmatex">\[ s_3 = \frac{1}{1} + \frac{1}{2} + \frac{1}{3} \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ s_k = \frac{1}{1} + \frac{1}{2} + \frac{1}{3} + \ldots + \frac{1}{k} \]</div>
+<p>The series formed by this sequence is the harmonic series. The <span class="arithmatex">\( k \)</span>-th partial sum <span class="arithmatex">\( s_k \)</span> is the sum of the reciprocals of the first <span class="arithmatex">\( k \)</span> positive integers.</p>
+<p>It is a well-established result that the harmonic series diverges, which means that the sequence of its partial sums <span class="arithmatex">\( (s_k) \)</span> does not converge to a finite limit as <span class="arithmatex">\( k \)</span> tends to infinity. The terms <span class="arithmatex">\( \frac{1}{n} \)</span> get smaller as <span class="arithmatex">\( n \)</span> gets larger, but they do not diminish quickly enough for the sum to stabilize at a finite number. Thus, despite the terms approaching zero, the sum grows without bound.</p>
+</div>
+<div class="tabbed-block">
+<p>Consider the sequence <span class="arithmatex">\( (t_n) \)</span> where each term is given by <span class="arithmatex">\( t_n = \frac{1}{2^n} \)</span>. This sequence represents the terms of a geometric series with a common ratio of <span class="arithmatex">\( \frac{1}{2} \)</span>.</p>
+<p>The series generated by this sequence is:</p>
+<div class="arithmatex">\[ s_1 = \frac{1}{2} \]</div>
+<div class="arithmatex">\[ s_2 = \frac{1}{2} + \frac{1}{4} \]</div>
+<div class="arithmatex">\[ s_3 = \frac{1}{2} + \frac{1}{4} + \frac{1}{8} \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ s_k = \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \ldots + \frac{1}{2^k} \]</div>
+<p>This series converges to 1. We can prove this geometrically:</p>
+<p>Imagine a square with an area of 1. If you cut this square in half, one of the halves represents an area of <span class="arithmatex">\( \frac{1}{2} \)</span>, which corresponds to the first term of our series, <span class="arithmatex">\( s_1 \)</span>.</p>
+<p>Now, if you take the remaining half and cut it in half again, you get a quarter of the original square, which represents an area of <span class="arithmatex">\( \frac{1}{4} \)</span>, corresponding to the second term of our series, <span class="arithmatex">\( s_2 \)</span>.</p>
+<p>Continuing this process, each subsequent cut divides the remaining area in half again, corresponding to the terms <span class="arithmatex">\( \frac{1}{8}, \frac{1}{16}, \)</span> and so on. The total area never exceeds the area of the original square, so the series converges to 1.</p>
+<p>This geometric progression can be visualized by continuing to halve a rectangle or square, fitting each subsequent rectangle within the remaining space, and never exceeding the total area. It's a simple yet powerful illustration of an infinite process approaching a finite limit.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="sequence-sum-relationships">Sequence-Sum Relationships</h2>
+<p><strong>Finding nth term from the Sum</strong></p>
+<p>Let <span class="arithmatex">\( S = (s_n) \)</span> be a series generated by a sequence <span class="arithmatex">\( T = (t_n) \)</span> , where each term <span class="arithmatex">\( s_n \)</span> of the series <span class="arithmatex">\( S \)</span> is defined as the sum of the first <span class="arithmatex">\( n \)</span> terms of the sequence <span class="arithmatex">\( T \)</span>. Then <span class="arithmatex">\( s_1 = t_1 \)</span>, and for each <span class="arithmatex">\( n &gt; 1 \)</span>, <span class="arithmatex">\( t_n = s_n - s_{n-1} \)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>Given a sequence <span class="arithmatex">\( T = (t_n) \)</span>, a series <span class="arithmatex">\( S = (s_n) \)</span> is constructed such that each term <span class="arithmatex">\( s_n \)</span> is the sum of the first <span class="arithmatex">\( n \)</span> terms of <span class="arithmatex">\( T \)</span>, i.e.,</p>
+<div class="arithmatex">\[ s_n = t_1 + t_2 + \ldots + t_n \quad \text{for all} \quad n \in \mathbb{N} \]</div>
+<p>By definition of the series:</p>
+<ol>
+<li>For <span class="arithmatex">\( n = 1 \)</span>, the first partial sum <span class="arithmatex">\( s_1 \)</span> is defined to be equal to the first term of the sequence <span class="arithmatex">\( T \)</span>, which gives us:</li>
+</ol>
+<div class="arithmatex">\[ s_1 = t_1 \]</div>
+<p>This establishes the base case of our theorem.</p>
+<ol>
+<li>For <span class="arithmatex">\( n &gt; 1 \)</span>, consider the <span class="arithmatex">\( n \)</span>-th partial sum <span class="arithmatex">\( s_n \)</span> and the <span class="arithmatex">\( (n-1) \)</span>-th partial sum <span class="arithmatex">\( s_{n-1} \)</span>:</li>
+</ol>
+<div class="arithmatex">\[ s_n = t_1 + t_2 + \ldots + t_{n-1} + t_n \]</div>
+<div class="arithmatex">\[ s_{n-1} = t_1 + t_2 + \ldots + t_{n-1} \]</div>
+<p>Subtracting <span class="arithmatex">\( s_{n-1} \)</span> from <span class="arithmatex">\( s_n \)</span>, we have:</p>
+<div class="arithmatex">\[ s_n - s_{n-1} = (t_1 + t_2 + \ldots + t_{n-1} + t_n) - (t_1 + t_2 + \ldots + t_{n-1}) \]</div>
+<div class="arithmatex">\[ s_n - s_{n-1} = t_n \]</div>
+<p>Thus, for each <span class="arithmatex">\( n &gt; 1 \)</span>, it is shown that <span class="arithmatex">\( t_n \)</span>, the <span class="arithmatex">\( n \)</span>-th term of the sequence <span class="arithmatex">\( T \)</span>, is equal to the difference between the <span class="arithmatex">\( n \)</span>-th and <span class="arithmatex">\( (n-1) \)</span>-th partial sums of the series <span class="arithmatex">\( S \)</span>.</p>
+<p>Hence, the theorem is proven.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Problem:</strong></p>
+<p>Given a sequence <span class="arithmatex">\( (a_n) \)</span> with the property that its partial sum up to <span class="arithmatex">\( n \)</span> terms, denoted by <span class="arithmatex">\( S_n \)</span>, is <span class="arithmatex">\( S_n = n^2 \)</span>, find the <span class="arithmatex">\( n \)</span>-th term <span class="arithmatex">\( a_n \)</span> of the sequence.</p>
+<p><strong>Solution:</strong></p>
+<p>We are given that the partial sum <span class="arithmatex">\( S_n = n^2 \)</span> for the sequence <span class="arithmatex">\( (a_n) \)</span>. We also know the formula for finding the <span class="arithmatex">\( n \)</span>-th term of the sequence is <span class="arithmatex">\( a_n = S_n - S_{n-1} \)</span>.</p>
+<ol>
+<li>
+<p><strong>Calculate <span class="arithmatex">\( S_n \)</span></strong>: From the given information, <span class="arithmatex">\( S_n = n^2 \)</span>.</p>
+</li>
+<li>
+<p><strong>Calculate <span class="arithmatex">\( S_{n-1} \)</span></strong>: To find <span class="arithmatex">\( S_{n-1} \)</span>, we substitute <span class="arithmatex">\( n-1 \)</span> into the given formula for <span class="arithmatex">\( S_n \)</span>, giving us <span class="arithmatex">\( S_{n-1} = (n-1)^2 \)</span>.</p>
+</li>
+<li>
+<p><strong>Find <span class="arithmatex">\( a_n \)</span></strong>: Using the formula <span class="arithmatex">\( a_n = S_n - S_{n-1} \)</span>, we substitute the expressions for <span class="arithmatex">\( S_n \)</span> and <span class="arithmatex">\( S_{n-1} \)</span> into this formula:</p>
+</li>
+</ol>
+<div class="arithmatex">\[ a_n = n^2 - (n-1)^2 \]</div>
+<p>Expanding the square on the right-hand side:</p>
+<div class="arithmatex">\[ a_n = n^2 - (n^2 - 2n + 1) \]</div>
+<p>Simplifying the expression:</p>
+<div class="arithmatex">\[ a_n = n^2 - n^2 + 2n - 1 \]</div>
+<div class="arithmatex">\[ a_n = 2n - 1 \]</div>
+<p><strong>Conclusion:</strong></p>
+<p>Therefore, the <span class="arithmatex">\( n \)</span>-th term <span class="arithmatex">\( a_n \)</span> of the sequence <span class="arithmatex">\( (a_n) \)</span>, where the partial sum <span class="arithmatex">\( S_n = n^2 \)</span>, is <span class="arithmatex">\( a_n = 2n - 1 \)</span>.</p>
+</div>
+<p><strong>Sum of n consecutive terms following the first m terms</strong></p>
+<p>Let <span class="arithmatex">\( S = (s_k) \)</span> be a series generated by a sequence <span class="arithmatex">\( (t_n) \)</span>.  If the sum of the first <span class="arithmatex">\( m \)</span> terms of the series is denoted by <span class="arithmatex">\( s_m \)</span>, then the sum of the next <span class="arithmatex">\( n \)</span> terms is given by <span class="arithmatex">\( s_{m+n} - s_m \)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>By definition, the <span class="arithmatex">\( k \)</span>-th partial sum <span class="arithmatex">\( s_k \)</span> of the series <span class="arithmatex">\( S \)</span> is the sum of the first <span class="arithmatex">\( k \)</span> terms of the sequence <span class="arithmatex">\( (t_n) \)</span>, that is:</p>
+<div class="arithmatex">\[ s_k = t_1 + t_2 + \ldots + t_k \]</div>
+<p>For <span class="arithmatex">\( k = m \)</span>, the sum of the first <span class="arithmatex">\( m \)</span> terms is:</p>
+<div class="arithmatex">\[ s_m = t_1 + t_2 + \ldots + t_m \]</div>
+<p>For <span class="arithmatex">\( k = m + n \)</span>, the sum of the first <span class="arithmatex">\( m + n \)</span> terms is:</p>
+<div class="arithmatex">\[ s_{m+n} = t_1 + t_2 + \ldots + t_m + t_{m+1} + \ldots + t_{m+n} \]</div>
+<p>To find the sum of the terms from <span class="arithmatex">\( t_{m+1} \)</span> to <span class="arithmatex">\( t_{m+n} \)</span>, we subtract the first <span class="arithmatex">\( m \)</span> terms from the sum of the first <span class="arithmatex">\( m + n \)</span> terms:</p>
+<div class="arithmatex">\[ s_{m+n} - s_m = (t_1 + \ldots + t_m + t_{m+1} + \ldots + t_{m+n}) - (t_1 + \ldots + t_m) \]</div>
+<div class="arithmatex">\[ s_{m+n} - s_m = t_{m+1} + t_{m+2} + \ldots + t_{m+n} \]</div>
+<p>Therefore, the sum of the <span class="arithmatex">\( n \)</span> terms following the first <span class="arithmatex">\( m \)</span> terms is <span class="arithmatex">\( s_{m+n} - s_m \)</span>, which completes the proof.</p>
+</div>
+<h2 id="increasing-and-decreasing-behaviour-of-sequences">Increasing and Decreasing Behaviour of Sequences</h2>
+<h3 id="increasing-sequence">Increasing Sequence</h3>
+<p><strong>Definition:</strong> A sequence <span class="arithmatex">\((a_n)\)</span> is said to be increasing if for all natural numbers <span class="arithmatex">\(n\)</span>, <span class="arithmatex">\(a_n &lt; a_{n+1}\)</span>. This means that each term in the sequence is strictly greater than the preceding term.</p>
+<p><strong>Example:</strong> Consider the sequence <span class="arithmatex">\(a_n = n\)</span>. This is an increasing sequence because each term is exactly one more than the previous term. For instance, <span class="arithmatex">\(1 &lt; 2 &lt; 3 &lt; \ldots\)</span>.</p>
+<h3 id="decreasing-sequence">Decreasing Sequence</h3>
+<p><strong>Definition:</strong> A sequence <span class="arithmatex">\((b_n)\)</span> is said to be decreasing if for all natural numbers <span class="arithmatex">\(n\)</span>, <span class="arithmatex">\(b_n &gt; b_{n+1}\)</span>. This means that each term in the sequence is strictly less than the preceding term.</p>
+<p><strong>Example:</strong> Consider the sequence <span class="arithmatex">\(b_n = \frac{1}{n}\)</span>. This is a decreasing sequence because each term is smaller than the previous term. For example, <span class="arithmatex">\(\frac{1}{1} &gt; \frac{1}{2} &gt; \frac{1}{3} &gt; \ldots\)</span>.</p>
+<h3 id="neither-increasing-nor-decreasing-sequence">Neither Increasing Nor Decreasing Sequence</h3>
+<p><strong>Definition:</strong> A sequence <span class="arithmatex">\((c_n)\)</span> is neither increasing nor decreasing if it does not strictly follow either pattern. This means there are terms in the sequence where <span class="arithmatex">\(c_n \leq c_{n+1}\)</span> or <span class="arithmatex">\(c_n \geq c_{n+1}\)</span> without a consistent pattern of strictly increasing or strictly decreasing values.</p>
+<p><strong>Example:</strong> Consider the sequence <span class="arithmatex">\(c_n = (-1)^n\)</span>. This sequence alternates between -1 and 1, so it is neither increasing nor decreasing. The terms of the sequence are <span class="arithmatex">\(1, -1, 1, -1, \ldots\)</span>, which does not show a consistent pattern of increase or decrease.</p>
+<h3 id="constant-sequence">Constant Sequence</h3>
+<p>A sequence can also be monotonic without being strictly increasing or decreasing. For example, a sequence <span class="arithmatex">\(d_n = 2\)</span> for all <span class="arithmatex">\(n\)</span> is monotonic because it does not increase or decrease; all its terms are equal. This is an example of a constant sequence, which is a special case of a monotonic sequence.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

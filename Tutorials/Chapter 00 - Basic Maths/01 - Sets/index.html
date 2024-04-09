@@ -1,0 +1,3419 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/">
+      
+      
+        <link rel="prev" href="../../../About/">
+      
+      
+        <link rel="next" href="../01%20-%20Useful%20Equalities%20and%20inequalities/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Concept of Sets, Notation and Operation - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#why-should-one-learn-about-sets" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Concept of Sets, Notation and Operation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-should-one-learn-about-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why should one learn about Sets?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of a Set
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-symbols-for-some-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Symbols for some sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-membership-symbol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Membership Symbol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subset-and-superset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subset and Superset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subset and Superset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Superset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-prove-a-set-is-subset-of-another-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to prove a set is subset of another set
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equality-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equality of Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proper-subset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proper Subset
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations-on-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations on Sets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations on Sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#union" class="md-nav__link">
+    <span class="md-ellipsis">
+      Union
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intersection-of-two-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intersection of two sets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complement-of-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complement of a Set
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Difference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intervals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Intervals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-brief-history-of-real-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      A brief history of real numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative Numbers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-an-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of an Interval
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definition of an Interval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-an-interval-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is an interval a set?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closed-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closed Interval
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Interval
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maximum-and-minimum-of-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum and Minimum of a set
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#an-important-difference-between-closed-and-open-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      An important difference between closed and open intervals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semi-closed-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semi-closed Interval
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-should-one-learn-about-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why should one learn about Sets?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of a Set
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-symbols-for-some-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Symbols for some sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-membership-symbol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Membership Symbol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subset-and-superset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subset and Superset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subset and Superset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Superset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-prove-a-set-is-subset-of-another-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to prove a set is subset of another set
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equality-of-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equality of Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proper-subset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proper Subset
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations-on-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations on Sets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations on Sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#union" class="md-nav__link">
+    <span class="md-ellipsis">
+      Union
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intersection-of-two-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intersection of two sets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complement-of-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complement of a Set
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Difference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intervals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Intervals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-brief-history-of-real-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      A brief history of real numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative Numbers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-an-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of an Interval
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definition of an Interval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-an-interval-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is an interval a set?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closed-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closed Interval
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Interval
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maximum-and-minimum-of-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum and Minimum of a set
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#an-important-difference-between-closed-and-open-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      An important difference between closed and open intervals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semi-closed-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semi-closed Interval
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Concept of Sets, Notation and Operation</h1>
+
+<h2 id="why-should-one-learn-about-sets">Why should one learn about Sets?</h2>
+<p>Sets serve as a foundational concept in mathematics, providing a framework for understanding and formalizing the notion of collections of objects. Knowledge of set theory is crucial because it forms the basis for various branches of mathematics, including algebra, geometry, and calculus. </p>
+<p>For instance, consider the equation:</p>
+<div class="arithmatex">\[
+(x(x - 1)(x - 2)(x - 3)(x - 4))^2 + ((x - 3)(x - 4)(x - 5))^2 = 0.
+\]</div>
+<p>To find all real values of <span class="arithmatex">\( x \)</span> that satisfy this equation, we apply the principle that if <span class="arithmatex">\( p^2 + q^2 = 0 \)</span>, then both <span class="arithmatex">\( p \)</span> and <span class="arithmatex">\( q \)</span> must be zero because the square of a real number is non-negative. Consequently, each term must independently equal zero.</p>
+<p>Term 1: <span class="arithmatex">\( (x(x - 1)(x - 2)(x - 3)(x - 4))^2 = 0 \)</span> yields solutions <span class="arithmatex">\( 0, 1, 2, 3, 4 \)</span>.</p>
+<p>Term 2: <span class="arithmatex">\( ((x - 3)(x - 4)(x - 5))^2 = 0 \)</span> yields solutions <span class="arithmatex">\( 3, 4, 5 \)</span>.</p>
+<p>The comprehensive list of possible solutions is <span class="arithmatex">\( 0, 1, 2, 3, 4, 5 \)</span> when combining all solutions. However, not all these values are actual solutions to the original equation; only <span class="arithmatex">\( x = 3 \)</span> and <span class="arithmatex">\( x = 4 \)</span> satisfy both terms simultaneously, thus making the entire expression equal to zero.</p>
+<p>Using set theory, we can concisely express these findings. Let <span class="arithmatex">\( A = \{0, 1, 2, 3, 4\} \)</span> represent the solutions from the first term, and <span class="arithmatex">\( B = \{3, 4, 5\} \)</span> for the second term. The set containing all the potential solutions is <span class="arithmatex">\( A \cup B \)</span>, which is <span class="arithmatex">\( \{0, 1, 2, 3, 4, 5\} \)</span>. Nevertheless, the actual solution set, corresponding to values that satisfy both terms, is <span class="arithmatex">\( A \cap B = \{3, 4\} \)</span>. This illustrates the power of set theory in providing clear and succinct representations of complex concepts, highlighting its importance in mathematical problem-solving.</p>
+<h2 id="definition-of-a-set">Definition of a Set</h2>
+<p>A set is an unordered collection of distinct, well-defined objects.</p>
+<p><strong>Unordered:</strong> The elements of a set do not have a specific sequence; their arrangement within the set does not matter. For example, if we consider a bag filled with colored balls, the order in which the balls are placed in the bag is irrelevant. Whether a red ball is added before a blue ball or vice versa, it does not change the contents of the bag.</p>
+<p><strong>Distinct:</strong> Sets contain unique elements, with no repetitions. Continuing with the bag analogy, even if we place several balls of the same color into the bag, within the context of set theory, we only acknowledge the presence of one ball of each color. If we were to list the contents, we would mention each color only once.</p>
+<p><strong>Well-Defined:</strong> The elements of a set must be clearly defined, allowing for unambiguous determination of whether an object belongs to the set or not. In terms of the bag analogy, this would be akin to having a rule that states only balls of certain colors can be included. If a ball's color is on the accepted list, it belongs in the bag; if not, it does not. This rule precisely determines the composition of the bag's contents.</p>
+<div class="admonition quote">
+<p>An object in a set is referred to as an element or member of the set.</p>
+</div>
+<h2 id="set-notation">Set Notation</h2>
+<p>In set notation, sets are usually denoted by capital letters, and when there is a series of related sets, subscripts are employed to differentiate them. For example, <span class="arithmatex">\( A_1, A_2, A_3, \ldots \)</span> might represent different sets in a sequence.</p>
+<p>The curly braces <span class="arithmatex">\( \{ \} \)</span> signify the collection of elements that constitute the set. These elements are written between the braces, separated by commas, and can include numbers, variables, or other types of objects.</p>
+<p>Here are some examples of sets:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\( A = \{1, 2, 3, 4, 5, 6, 7\} \)</span> is a set containing the first seven natural numbers.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( B_{\text{odd}} = \{1, 3, 5, 7, 9\} \)</span> represents a set of the first five odd numbers.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( C_{\text{prime}} = \{2, 3, 5, 7, 11, 13, 17, 19, 23, \ldots\} \)</span> represents the set of all prime numbers, which is infinite.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( D_i = \{0, i, 2i, 3i, 4i\} \)</span> where <span class="arithmatex">\( i \)</span> is an integer and the set consists of the first five non-negative multiples of <span class="arithmatex">\( i \)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( E_{\text{vowels}} = \{'a', 'e', 'i', 'o', 'u'\} \)</span> is the set of lowercase vowels in the English alphabet.</p>
+</li>
+</ol>
+<h2 id="types-of-sets">Types of sets</h2>
+<ul>
+<li>
+<p><strong>Null Set (Void Set or Empty Set)</strong>: This is a set that contains no elements. It is denoted by <span class="arithmatex">\( \emptyset \)</span> or <span class="arithmatex">\( \{\} \)</span>. The empty set is a subset of every set, including itself.</p>
+</li>
+<li>
+<p><strong>Singleton Set</strong>: A singleton set contains exactly one element. For example, the set <span class="arithmatex">\( \{a\} \)</span> is a singleton set because it contains only the element <span class="arithmatex">\( a \)</span>.</p>
+</li>
+<li>
+<p><strong>Finite Set</strong>: A set is finite if it contains a limited number of elements. The number of elements in a finite set is a non-negative integer. For example, the set <span class="arithmatex">\( \{1, 2, 3, 4, 5\} \)</span> is finite because it contains five elements.</p>
+</li>
+<li>
+<p><strong>Infinite Set</strong>: A set is infinite if it contains an unlimited number of elements. In other words, an infinite set is not finite. The set of all natural numbers <span class="arithmatex">\( \mathbb{N} = \{1, 2, 3, \ldots\} \)</span> is an example of an infinite set, as there is no limit to the counting numbers.</p>
+</li>
+</ul>
+<h2 id="special-symbols-for-some-sets">Special Symbols for some sets</h2>
+<p>Special sets in mathematics often represent collections of numbers with specific properties. YOu will be using this set throughout this course in every chapter.Here are descriptions of some of these sets:</p>
+<ol>
+<li>
+<p><strong><span class="arithmatex">\(\mathbb{R}\)</span></strong>: Represents the set of all real numbers, which includes all rational and irrational numbers. Real numbers can be thought of as any point along an infinitely long line. This set encompasses all possible magnitudes and includes both positive and negative numbers, as well as zero.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\mathbb{Z}\)</span></strong>: Denotes the set of all integers. Integers include all whole numbers and their negative counterparts, as well as zero. This set does not include fractions or decimal numbers.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\mathbb{N}\)</span></strong>: Stands for the set of all natural numbers. Traditionally, natural numbers are the set of positive integers starting from 1, used for counting and ordering. Some definitions include zero in this set.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\mathbb{Q}\)</span></strong>: Represents the set of all rational numbers. A rational number can be expressed as the quotient or fraction <span class="arithmatex">\(\frac{p}{q}\)</span> of two integers, where <span class="arithmatex">\(p\)</span> is the numerator, <span class="arithmatex">\(q\)</span> is the denominator, and <span class="arithmatex">\(q \neq 0\)</span>. This set includes numbers such as <span class="arithmatex">\(\frac{1}{2}\)</span>, <span class="arithmatex">\(3\)</span>, and <span class="arithmatex">\(-\frac{4}{5}\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\mathbb{W}\)</span></strong>: Sometimes used to denote the set of whole numbers, though this notation is not as standardized as others. Whole numbers are similar to natural numbers but include zero, i.e., <span class="arithmatex">\(\{0, 1, 2, 3, \ldots\}\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\mathbb{R} - \mathbb{Q}\)</span></strong>: Represents the set of irrational numbers, which are real numbers that cannot be expressed as a ratio of two integers. These numbers have non-repeating, non-terminating decimal expansions. Examples include <span class="arithmatex">\(\sqrt{2}\)</span> and <span class="arithmatex">\(\pi\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\mathbb{R}^+\)</span></strong>: Denotes the set of all positive real numbers. This set includes all real numbers greater than zero, covering both rational and irrational numbers, but excludes zero itself.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\mathbb{Z}^+\)</span></strong>: Represents the set of all positive integers, also known as the set of natural numbers by some definitions. This includes numbers like <span class="arithmatex">\(1, 2, 3, \ldots\)</span>, excluding zero and any negative numbers.</p>
+</li>
+</ol>
+<p>These sets play crucial roles in various branches of mathematics, providing a foundation for defining numbers, operations, and mathematical concepts.</p>
+<h2 id="set-membership-symbol">Set Membership Symbol</h2>
+<p>The set membership symbol <span class="arithmatex">\( \in \)</span> denotes "is a member of" or "is an element of." Conversely, the symbol <span class="arithmatex">\( \notin \)</span> indicates "does not belong to" or "is not an element of."</p>
+<p>For example, using the set of prime numbers <span class="arithmatex">\( P = \{2, 3, 5, 7, 11, \ldots\} \)</span>:</p>
+<ul>
+<li><span class="arithmatex">\( 3 \in P \)</span> means 3 is a member of the set of prime numbers.</li>
+<li><span class="arithmatex">\( 4 \notin P \)</span> means 4 is not a member of the set of prime numbers.</li>
+</ul>
+<h2 id="subset-and-superset">Subset and Superset</h2>
+<h3 id="subset">Subset</h3>
+<p>A subset is defined as follows: Given two sets <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>, if every element of set <span class="arithmatex">\( A \)</span> is also an element of set <span class="arithmatex">\( B \)</span>, then <span class="arithmatex">\( A \)</span> is a subset of <span class="arithmatex">\( B \)</span>, denoted as <span class="arithmatex">\( A \subseteq B \)</span>.</p>
+<p>For example, consider the set of prime numbers less than 10, <span class="arithmatex">\( P = \{2, 3, 5, 7\} \)</span>, and the set of natural numbers <span class="arithmatex">\( \mathbb{N} = \{1, 2, 3, 4, 5, \ldots\} \)</span>. Since every element of <span class="arithmatex">\( P \)</span> is also an element of <span class="arithmatex">\( \mathbb{N} \)</span>, we can say that <span class="arithmatex">\( P \)</span> is a subset of <span class="arithmatex">\( \mathbb{N} \)</span>, or <span class="arithmatex">\( P \subseteq \mathbb{N} \)</span>.</p>
+<h3 id="superset">Superset</h3>
+<p>A superset is defined in relation to the concept of a subset. Given two sets <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>, if every element of <span class="arithmatex">\( A \)</span> is also an element of <span class="arithmatex">\( B \)</span>, then <span class="arithmatex">\( A \)</span> is a subset of <span class="arithmatex">\( B \)</span>, denoted as <span class="arithmatex">\( A \subseteq B \)</span>. Conversely, <span class="arithmatex">\( B \)</span> is said to be a superset of <span class="arithmatex">\( A \)</span>, which means that <span class="arithmatex">\( B \)</span> contains all elements of <span class="arithmatex">\( A \)</span> along with possibly more elements not in <span class="arithmatex">\( A \)</span>. The notation for <span class="arithmatex">\( B \)</span> being a superset of <span class="arithmatex">\( A \)</span> is <span class="arithmatex">\( B \supseteq A \)</span>.</p>
+<h3 id="how-to-prove-a-set-is-subset-of-another-set">How to prove a set is subset of another set</h3>
+<p>To prove theoretically that a set <span class="arithmatex">\( A \)</span> is a subset of another set <span class="arithmatex">\( B \)</span>, one typically follows these steps:</p>
+<ol>
+<li>
+<p><strong>Assume an Arbitrary Element</strong>: Take an arbitrary element <span class="arithmatex">\( x \)</span> from set <span class="arithmatex">\( A \)</span>. The choice of <span class="arithmatex">\( x \)</span> is arbitrary to ensure that the argument applies to every element of <span class="arithmatex">\( A \)</span> without exception.</p>
+</li>
+<li>
+<p><strong>Demonstrate Membership in <span class="arithmatex">\( B \)</span></strong>: Then, using definitions, properties, or other logical arguments, demonstrate that this arbitrary element <span class="arithmatex">\( x \)</span> also belongs to set <span class="arithmatex">\( B \)</span>, i.e., show that <span class="arithmatex">\( x \in B \)</span>.</p>
+</li>
+<li>
+<p><strong>Apply Universal Generalization</strong>: Since the element <span class="arithmatex">\( x \)</span> was chosen arbitrarily from <span class="arithmatex">\( A \)</span> and it was shown that <span class="arithmatex">\( x \in B \)</span>, by the principle of universal generalization, one can conclude that this argument holds for all elements of <span class="arithmatex">\( A \)</span>. Therefore, every element of <span class="arithmatex">\( A \)</span> is also an element of <span class="arithmatex">\( B \)</span>, which means <span class="arithmatex">\( A \subseteq B \)</span>.</p>
+</li>
+</ol>
+<p>This method relies on the foundational logic that if a property holds for any arbitrary element of a set, then it holds for all elements of that set.</p>
+<div class="admonition note">
+<p>The empty set, denoted by <span class="arithmatex">\( \emptyset \)</span>, is indeed a subset of any set. This is because the statement that "every element of the empty set is also an element of any given set" is vacuously true, as the empty set contains no elements to contradict this statement. Thus, by definition, <span class="arithmatex">\( \emptyset \subseteq A \)</span> for any set <span class="arithmatex">\( A \)</span>.</p>
+<p>Similarly, any set <span class="arithmatex">\( A \)</span> is a subset of itself, expressed as <span class="arithmatex">\( A \subseteq A \)</span>. This is because every element in <span class="arithmatex">\( A \)</span> is, by definition, an element of <span class="arithmatex">\( A \)</span>, satisfying the criterion for being a subset.</p>
+</div>
+<h2 id="equality-of-sets">Equality of Sets</h2>
+<p>Equality of two sets occurs when they contain exactly the same elements. A more precise definition is that two sets <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span> are equal, denoted as <span class="arithmatex">\( A = B \)</span>, if every element of <span class="arithmatex">\( A \)</span> is in <span class="arithmatex">\( B \)</span> and every element of <span class="arithmatex">\( B \)</span> is in <span class="arithmatex">\( A \)</span>. This condition implies that <span class="arithmatex">\( A \)</span> is a subset of <span class="arithmatex">\( B \)</span> (<span class="arithmatex">\( A \subseteq B \)</span>) and <span class="arithmatex">\( B \)</span> is a subset of <span class="arithmatex">\( A \)</span> (<span class="arithmatex">\( B \subseteq A \)</span>). The mutual subset relationship establishes that <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span> have identical membership, hence are equal.</p>
+<p>Let's consider two sets <span class="arithmatex">\( A = \{1, 2, 3\} \)</span> and <span class="arithmatex">\( B = \{3, 2, 1\} \)</span>.</p>
+<p>To demonstrate <span class="arithmatex">\( A = B \)</span>:</p>
+<ol>
+<li>
+<p><strong>Show <span class="arithmatex">\( A \subseteq B \)</span></strong>: Every element of <span class="arithmatex">\( A \)</span> (which are 1, 2, and 3) is also found in <span class="arithmatex">\( B \)</span>. There is no element in <span class="arithmatex">\( A \)</span> that is not in <span class="arithmatex">\( B \)</span>.</p>
+</li>
+<li>
+<p><strong>Show <span class="arithmatex">\( B \subseteq A \)</span></strong>: Similarly, every element of <span class="arithmatex">\( B \)</span> (which are 3, 2, and 1, noting the order does not matter in a set) is also found in <span class="arithmatex">\( A \)</span>. There is no element in <span class="arithmatex">\( B \)</span> that is not in <span class="arithmatex">\( A \)</span>.</p>
+</li>
+</ol>
+<p>Since both <span class="arithmatex">\( A \subseteq B \)</span> and <span class="arithmatex">\( B \subseteq A \)</span> are true, by definition, <span class="arithmatex">\( A = B \)</span>. This demonstrates that despite the difference in how the elements are listed, the sets are equal because they contain the exact same elements.</p>
+<h2 id="proper-subset">Proper Subset</h2>
+<p>A proper subset is defined when set <span class="arithmatex">\( A \)</span> is a subset of set <span class="arithmatex">\( B \)</span>, and there exists at least one element in <span class="arithmatex">\( B \)</span> that is not in <span class="arithmatex">\( A \)</span>. This relationship is denoted as <span class="arithmatex">\( A \subsetneq B \)</span> or simply <span class="arithmatex">\( A \subset B \)</span>, indicating that while all elements of <span class="arithmatex">\( A \)</span> are in <span class="arithmatex">\( B \)</span>, <span class="arithmatex">\( A \)</span> does not contain every element of <span class="arithmatex">\( B \)</span>, making <span class="arithmatex">\( A \)</span> strictly smaller than <span class="arithmatex">\( B \)</span> in terms of its composition. The distinction here is that <span class="arithmatex">\( A \)</span> cannot be equal to <span class="arithmatex">\( B \)</span>; there must be at least one element that is unique to <span class="arithmatex">\( B \)</span>, which is not found in <span class="arithmatex">\( A \)</span>.</p>
+<p>Let <span class="arithmatex">\( A = \{1, 2\} \)</span> and <span class="arithmatex">\( B = \{1, 2, 3\} \)</span>.</p>
+<p>In this case, <span class="arithmatex">\( A \)</span> is a proper subset of <span class="arithmatex">\( B \)</span> because:</p>
+<ul>
+<li>Every element of <span class="arithmatex">\( A \)</span> (which are 1 and 2) is also in <span class="arithmatex">\( B \)</span>.</li>
+<li>There is at least one element in <span class="arithmatex">\( B \)</span> (which is 3) that is not in <span class="arithmatex">\( A \)</span>.</li>
+</ul>
+<p>Thus, <span class="arithmatex">\( A \subsetneq B \)</span> or <span class="arithmatex">\( A \subset B \)</span>, demonstrating that <span class="arithmatex">\( A \)</span> is a proper subset of <span class="arithmatex">\( B \)</span>.</p>
+<h2 id="operations-on-sets">Operations on Sets</h2>
+<h3 id="union">Union</h3>
+<p>The union of two sets <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>, denoted by <span class="arithmatex">\( A \cup B \)</span>, is the process of merging the elements of <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span> into a single set where each distinct element appears only once. This operation does not consider the repetition of elements; if an element is present in both <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>, it is included only once in the union.</p>
+<p>Precisely defined, the union <span class="arithmatex">\( A \cup B \)</span> can be represented as:</p>
+<div class="arithmatex">\[
+A \cup B = \{x : x \in A \text{ or } x \in B\}
+\]</div>
+<p>This means the set <span class="arithmatex">\( A \cup B \)</span> consists of all elements <span class="arithmatex">\( x \)</span> such that <span class="arithmatex">\( x \)</span> is an element of <span class="arithmatex">\( A \)</span>, an element of <span class="arithmatex">\( B \)</span>, or an element of both.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Let <span class="arithmatex">\( A = \{1, 2, 3\} \)</span> and <span class="arithmatex">\( B = \{3, 4, 5\} \)</span>.</p>
+<p>The union <span class="arithmatex">\( A \cup B \)</span> is:</p>
+<div class="arithmatex">\[
+A \cup B = \{1, 2, 3, 4, 5\}
+\]</div>
+<p>This set contains all distinct elements from both <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>, with the element <span class="arithmatex">\( 3 \)</span>, which is common to both sets, included only once.</p>
+</div>
+<h3 id="intersection-of-two-sets">Intersection of two sets</h3>
+<p>The intersection of two sets <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>, denoted by <span class="arithmatex">\( A \cap B \)</span>, is defined as the set containing all elements that are common to both <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>. In other words, an element <span class="arithmatex">\( x \)</span> is in <span class="arithmatex">\( A \cap B \)</span> if and only if <span class="arithmatex">\( x \)</span> is in both <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>.</p>
+<p>Formally, the intersection is represented as:</p>
+<div class="arithmatex">\[
+A \cap B = \{x : x \in A \text{ and } x \in B\}
+\]</div>
+<p>This definition implies that for an element to be included in the intersection set, it must satisfy the membership criteria for both of the original sets.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>I. Let <span class="arithmatex">\( A = \{1, 2, 3, 4\} \)</span> and <span class="arithmatex">\( B = \{3, 4, 5, 6\} \)</span>.</p>
+<p>The intersection <span class="arithmatex">\( A \cap B \)</span> is:</p>
+<div class="arithmatex">\[
+A \cap B = \{3, 4\}
+\]</div>
+<p>These are the elements common to both sets <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>.</p>
+<p>II. The intersection of the set of integers <span class="arithmatex">\( \mathbb{Z} \)</span> and the set of natural numbers <span class="arithmatex">\( \mathbb{N} \)</span> is the set of all natural numbers, since natural numbers are a subset of integers that includes all positive integers starting from 1 (assuming the definition of <span class="arithmatex">\( \mathbb{N} \)</span> does not include 0). Thus,</p>
+<div class="arithmatex">\[
+\mathbb{Z} \cap \mathbb{N} = \mathbb{N}
+\]</div>
+<p>This includes all positive integers <span class="arithmatex">\( \{1, 2, 3, 4, \ldots\} \)</span>.</p>
+</div>
+<p>The intersection of two sets can indeed be the null set, also known as the empty set <span class="arithmatex">\( \emptyset \)</span>, when the two sets have no elements in common. Sets with this property are referred to as <strong>disjoint sets</strong>. </p>
+<p>Formally, two sets <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span> are disjoint if their intersection is the empty set:</p>
+<div class="arithmatex">\[
+A \cap B = \emptyset
+\]</div>
+<p>This means there are no elements that both <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span> share.</p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Universal Set</strong></p>
+<p>The universal set, typically denoted by <span class="arithmatex">\( U \)</span>, is the set that contains all objects or elements under consideration for a particular discussion or problem. Every other set within the context of that discussion is a subset of the universal set. The concept of a universal set is relative to the scope of the discussion; what constitutes <span class="arithmatex">\( U \)</span> in one context may differ in another.</p>
+<p>For example, if the discussion is limited to numbers involved in a certain mathematical problem, the universal set might consist of just those numbers. In a discussion about geometric shapes, the universal set would include all the shapes under consideration.</p>
+<p>The universal set serves as a reference for operations like complementation, where the complement of a set <span class="arithmatex">\( A \)</span> within <span class="arithmatex">\( U \)</span> includes all elements in <span class="arithmatex">\( U \)</span> that are not in <span class="arithmatex">\( A \)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>In a class students have preferences for either Mythology or Philosophy, the universal set <span class="arithmatex">\( U \)</span> can be defined as the complete list of these students.</p>
+<p>Let's consider the universal set <span class="arithmatex">\( U \)</span> to be:</p>
+<div class="arithmatex">\[ U = \{\text{Zeus, Hera, Athena, Apollo, Artemis}\} \]</div>
+<p>We define two subsets of <span class="arithmatex">\( U \)</span>:</p>
+<ul>
+<li><span class="arithmatex">\( A \)</span> for students who like Mythology.</li>
+<li><span class="arithmatex">\( B \)</span> for students who like Philosophy.</li>
+</ul>
+<p>If Zeus, Athena, and Apollo like Mythology, and Athena and Artemis like Philosophy, then the sets can be represented as:</p>
+<ul>
+<li><span class="arithmatex">\( A = \{\text{Zeus, Athena, Apollo}\} \)</span></li>
+<li><span class="arithmatex">\( B = \{\text{Athena, Artemis}\} \)</span></li>
+</ul>
+<p>In this context:</p>
+<ul>
+<li>The universal set <span class="arithmatex">\( U \)</span> represents all students in the class.</li>
+<li><span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span> are subsets of <span class="arithmatex">\( U \)</span>, where <span class="arithmatex">\( A \)</span> includes the students interested in Mythology and <span class="arithmatex">\( B \)</span> those interested in Philosophy. Athena, having an interest in both subjects, is included in both subsets <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>.</li>
+</ul>
+</div>
+</div>
+<h3 id="complement-of-a-set">Complement of a Set</h3>
+<p>The complement of a set <span class="arithmatex">\( A \)</span>, denoted by <span class="arithmatex">\( A^c \)</span> (or sometimes <span class="arithmatex">\( \bar{A} \)</span>), consists of all elements that are in the universal set <span class="arithmatex">\( U \)</span> but not in <span class="arithmatex">\( A \)</span>. The concept of the complement relies on the existence of a universal set <span class="arithmatex">\( U \)</span>, which contains all objects or elements under consideration.</p>
+<p>Formally, the complement of <span class="arithmatex">\( A \)</span> is defined as:</p>
+<div class="arithmatex">\[
+A^c = \{x \in U : x \notin A\}
+\]</div>
+<p>This means that <span class="arithmatex">\( A^c \)</span> includes every element that is part of <span class="arithmatex">\( U \)</span> but is excluded from <span class="arithmatex">\( A \)</span>. It's important to note that the complement of <span class="arithmatex">\( A \)</span> is relative to <span class="arithmatex">\( U \)</span>; changing <span class="arithmatex">\( U \)</span> can change <span class="arithmatex">\( A^c \)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Let's consider a universal set <span class="arithmatex">\( U \)</span> that represents all the letters in the English alphabet:</p>
+<div class="arithmatex">\[ U = \{A, B, C, D, \ldots, Z\} \]</div>
+<p>Now, define set <span class="arithmatex">\( A \)</span> as the set of vowels in the English alphabet:</p>
+<div class="arithmatex">\[ A = \{A, E, I, O, U\} \]</div>
+<p>The complement of set <span class="arithmatex">\( A \)</span>, denoted as <span class="arithmatex">\( A^c \)</span>, includes all the letters in the English alphabet that are not vowels, which means all the consonants. Therefore, <span class="arithmatex">\( A^c \)</span> is:</p>
+<div class="arithmatex">\[ A^c = \{B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z\} \]</div>
+<p>Here, <span class="arithmatex">\( A^c \)</span> represents all elements of the universal set <span class="arithmatex">\( U \)</span> that are not in <span class="arithmatex">\( A \)</span>, showcasing that the complement set consists of all the consonants.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>In the context where the universal set <span class="arithmatex">\( U \)</span> is the set of all real numbers <span class="arithmatex">\( \mathbb{R} \)</span>, and considering <span class="arithmatex">\( \mathbb{Q} \)</span> as the set of all rational numbers, the complement of <span class="arithmatex">\( \mathbb{Q} \)</span> in <span class="arithmatex">\( \mathbb{R} \)</span>, denoted as <span class="arithmatex">\( \mathbb{Q}^c \)</span>, would consist of all irrational numbers.</p>
+<p>Thus, <span class="arithmatex">\( \mathbb{Q}^c \)</span> is:</p>
+<div class="arithmatex">\[ \mathbb{Q}^c = \{x \in \mathbb{R} : x \notin \mathbb{Q}\} \]</div>
+<p>This includes numbers such as <span class="arithmatex">\( \sqrt{2} \)</span>, <span class="arithmatex">\( \pi \)</span>, <span class="arithmatex">\( e \)</span>, and any other real number that cannot be expressed as a ratio of two integers.</p>
+</div>
+<h3 id="set-difference">Set Difference</h3>
+<p>The difference of two sets <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>, denoted by <span class="arithmatex">\( A - B \)</span> or <span class="arithmatex">\( A \setminus B \)</span>, consists of all elements that are in <span class="arithmatex">\( A \)</span> but not in <span class="arithmatex">\( B \)</span>. This operation effectively "subtracts" the elements of <span class="arithmatex">\( B \)</span> from <span class="arithmatex">\( A \)</span>.</p>
+<p>Formally, the difference is defined as:</p>
+<div class="arithmatex">\[
+A - B = \{x : x \in A \text{ and } x \notin B\}
+\]</div>
+<p>This means that <span class="arithmatex">\( A - B \)</span> includes every element that is a member of <span class="arithmatex">\( A \)</span> but excludes any member that is also in <span class="arithmatex">\( B \)</span>. The difference of sets highlights the elements that are unique to the first set when compared to the second.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Let <span class="arithmatex">\( A = \{1, 2, 3, 4, 5\} \)</span> and <span class="arithmatex">\( B = \{4, 5, 6, 7\} \)</span>.</p>
+<p>The difference <span class="arithmatex">\( A - B \)</span> is:</p>
+<div class="arithmatex">\[
+A - B = \{1, 2, 3\}
+\]</div>
+<p>This set includes all the elements that are in <span class="arithmatex">\( A \)</span> but not in <span class="arithmatex">\( B \)</span>, which are <span class="arithmatex">\( 1 \)</span>, <span class="arithmatex">\( 2 \)</span>, and <span class="arithmatex">\( 3 \)</span>.</p>
+<p>Also,</p>
+<p>The difference <span class="arithmatex">\( B - A \)</span> is calculated as:</p>
+<div class="arithmatex">\[
+B - A = \{6, 7\}
+\]</div>
+<p>This represents the elements that are unique to <span class="arithmatex">\( B \)</span> when the elements of <span class="arithmatex">\( A \)</span> are removed, specifically <span class="arithmatex">\( 6 \)</span> and <span class="arithmatex">\( 7 \)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Given the universal set of real numbers <span class="arithmatex">\( \mathbb{R} \)</span> and the set of rational numbers <span class="arithmatex">\( \mathbb{Q} \)</span>,</p>
+<ul>
+<li>
+<p><span class="arithmatex">\( \mathbb{R} - \mathbb{Q} \)</span> represents the set of all irrational numbers, which are real numbers that cannot be expressed as the ratio of two integers. Examples include <span class="arithmatex">\( \sqrt{2} \)</span>, <span class="arithmatex">\( \pi \)</span>, and <span class="arithmatex">\( e \)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( \mathbb{Q} - \mathbb{R} \)</span> is a theoretical expression that doesn't practically apply because <span class="arithmatex">\( \mathbb{Q} \)</span> is a subset of <span class="arithmatex">\( \mathbb{R} \)</span>. Since all rational numbers are already within the real numbers, <span class="arithmatex">\( \mathbb{Q} - \mathbb{R} \)</span> would result in the empty set <span class="arithmatex">\( \emptyset \)</span>, as there are no elements in <span class="arithmatex">\( \mathbb{Q} \)</span> that are not in <span class="arithmatex">\( \mathbb{R} \)</span>.</p>
+</li>
+</ul>
+</div>
+<h2 id="intervals">Intervals</h2>
+<h3 id="a-brief-history-of-real-numbers">A brief history of real numbers</h3>
+<p>The history of numbers encompasses the evolution from counting numbers (natural numbers <span class="arithmatex">\(\mathbb{N}\)</span>) to a more comprehensive understanding that includes whole numbers, fractions (rational numbers <span class="arithmatex">\(\mathbb{Q}\)</span>), and the realization of irrational numbers. Initially, natural numbers (<span class="arithmatex">\(1, 2, 3, \ldots\)</span>) were used for counting. The concept of zero was later introduced, expanding the set to whole numbers (<span class="arithmatex">\(0, 1, 2, 3, \ldots\)</span>). Fractions led to the development of rational numbers, which can be expressed as the quotient <span class="arithmatex">\(\frac{a}{b}\)</span>, where <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> are integers, and <span class="arithmatex">\(b \neq 0\)</span>.</p>
+<p>The Greeks, using ropes to measure lengths, could represent any rational number. For instance, if a rope is one unit long and divided into three parts, then two parts represent <span class="arithmatex">\(\frac{2}{3}\)</span>. However, the discovery that not all numbers are rational marked a significant advancement in mathematics. It was Hippasus of the Pythagorean school who first suggested that the square root of 2 (<span class="arithmatex">\(\sqrt{2}\)</span>) could not be expressed as a fraction, implying its irrationality. He did that by  showing that the diagonal of a square with side length 1 unit cannot be expressed as a rational number, though it clearly exists as a geometric length. This was a shocking revelation, as it contradicted the Pythagorean belief in the universality of rational numbers. </p>
+<p>The formal proof of the irrationality of <span class="arithmatex">\(\sqrt{2}\)</span> is due to Euclid, who showed that if <span class="arithmatex">\(\sqrt{2}\)</span> were rational, it would lead to a contradiction, thereby establishing its irrational nature. This proof is a milestone in the history of mathematics, highlighting the existence of numbers beyond the rational spectrum, and leading to the broader concept of real numbers (<span class="arithmatex">\(\mathbb{R}\)</span>), which includes both rational and irrational numbers. </p>
+<p>Thus, the set of rational numbers (<span class="arithmatex">\(\mathbb{Q}\)</span>) has "gaps," which are points on the number line that cannot be represented by any rational number. These gaps correspond to irrational numbers—numbers that cannot be expressed as the ratio of two integers. The existence of these gaps highlights the incompleteness of the rational numbers as a number system when compared to the real numbers (<span class="arithmatex">\(\mathbb{R}\)</span>).</p>
+<p>The real numbers include both rational numbers and irrational numbers, thereby "completing" the number line without gaps. This completeness is a fundamental property of the real numbers, essential for the development of calculus, analysis, and much of modern mathematics.</p>
+<p>In foundational mathematics, real numbers are often introduced through intuitive concepts or as an axiom set, especially at elementary levels, allowing for an immediate application in calculus and analysis. However, in higher mathematics, the construction and properties of real numbers are treated with rigorous formalism, based on set theory and axiomatic frameworks.</p>
+<p>In the higher mathematics framework, particularly in real analysis, the real numbers (<span class="arithmatex">\(\mathbb{R}\)</span>) are constructed and understood through rigorous axiomatic approaches. Beyond considering real numbers as an intuitive or axiomatic set, advanced mathematical treatments often involve principles like the Nested Interval Property (NIP), and the Axiom of Completeness, to systematically construct and analyze real numbers. One foundational approach to constructing the real numbers (<span class="arithmatex">\(\mathbb{R}\)</span>) is through the completion of the rational numbers (<span class="arithmatex">\(\mathbb{Q}\)</span>), using techniques like Dedekind cuts or Cauchy sequences.</p>
+<h3 id="negative-numbers">Negative Numbers</h3>
+<p>Negative numbers were initially met with skepticism due to their abstract nature. Their early use can be traced back to ancient China and India, where they were used for practical purposes like accounting and solving equations. Chinese mathematicians during the Han Dynasty and Indian mathematicians like Brahmagupta in the 7th century AD were among the first to formally recognize and use negative numbers. </p>
+<p>In Europe, the acceptance of negative numbers evolved slowly, gaining traction in the 15th and 16th centuries with their utility in solving quadratic equations and bookkeeping. It wasn't until the 17th century, with mathematicians such as John Wallis and Isaac Newton, and the advent of coordinate geometry by René Descartes, that negative numbers became widely accepted. By the 18th and 19th centuries, with the formalization of mathematical concepts, negative numbers were fully integrated into mathematics, becoming indispensable across various fields.</p>
+<h2 id="definition-of-an-interval">Definition of an Interval</h2>
+<p>An interval is a set of real numbers lying between two specific real numbers, serving as the set's endpoints. This concept closely parallels the geometric idea of segments or cuts on the real line, where an interval represents a continuous stretch or segment between two points on this line. Just as a segment in geometry connects two points on a plane or in space, an interval connects two points on the number line, encompassing all the real numbers that lie between these two points.</p>
+<h3 id="why-is-an-interval-a-set">Why is an interval a set?</h3>
+<p>An interval is a set because it meets the definition of a set: a collection of distinct objects considered as a whole. In the context of intervals within the real numbers, these "objects" are the real numbers that fall within specified boundaries (endpoints). Like any set, an interval can be described by its members' properties, specifically those real numbers that lie between its endpoints, whether or not including the endpoints themselves. This collection of numbers, defined by a common property of lying within certain bounds on the real number line, thus forms a set according to the principles of set theory.</p>
+<h2 id="closed-interval">Closed Interval</h2>
+<p>A closed interval is a set of real numbers that includes all the numbers between two specified endpoints, and importantly, it also includes the endpoints themselves. If <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> are the endpoints, the closed interval is denoted by <span class="arithmatex">\([a, b]\)</span>, where <span class="arithmatex">\(a \leq x \leq b\)</span> for any <span class="arithmatex">\(x\)</span> in the interval. This means every number greater than or equal to <span class="arithmatex">\(a\)</span> and less than or equal to <span class="arithmatex">\(b\)</span> is part of the interval, making it "closed" because it contains its boundary points.</p>
+<p>A closed interval <span class="arithmatex">\([a, b]\)</span> can be written in set-builder form as:</p>
+<div class="arithmatex">\[
+\{x \in \mathbb{R} \mid a \leq x \leq b\}
+\]</div>
+<p>This denotes the set of all real numbers <span class="arithmatex">\(x\)</span> such that <span class="arithmatex">\(x\)</span> is greater than or equal to <span class="arithmatex">\(a\)</span> and less than or equal to <span class="arithmatex">\(b\)</span>.</p>
+<div class="admonition quote">
+<p><a class="glightbox" href="../image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Visual Representation of a closed Interval" src="../image.png" /></a></p>
+<p>This visual representation depicts a closed interval on the real number line. The darkened horizontal line between the points labeled <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span> represents all the real numbers that are included in the interval. The filled-in circles at <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span> indicate that these endpoint values are included in the interval. The closed interval includes all real numbers from <span class="arithmatex">\( a \)</span> to <span class="arithmatex">\( b \)</span>, inclusive of the endpoints. This interval is mathematically denoted as <span class="arithmatex">\([a, b]\)</span>.</p>
+</div>
+<h2 id="open-interval">Open Interval</h2>
+<p>An open interval is a set of real numbers that includes all the numbers between two specified endpoints but does not include the endpoints themselves. If <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span> are the endpoints, the open interval is denoted by <span class="arithmatex">\( (a, b) \)</span>, where <span class="arithmatex">\( a &lt; x &lt; b \)</span> for any <span class="arithmatex">\( x \)</span> in the interval. This means every number that is strictly greater than <span class="arithmatex">\( a \)</span> and strictly less than <span class="arithmatex">\( b \)</span> is part of the interval, making it "open" because it excludes its boundary points. In set-builder notation, an open interval is written as:</p>
+<div class="arithmatex">\[
+\{ x \in \mathbb{R} \mid a &lt; x &lt; b \}
+\]</div>
+<p>This denotes the set of all real numbers <span class="arithmatex">\( x \)</span> such that <span class="arithmatex">\( x \)</span> is greater than <span class="arithmatex">\( a \)</span> and less than <span class="arithmatex">\( b \)</span>, without including <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span> themselves.</p>
+<div class="admonition quote">
+<p><a class="glightbox" href="../image-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Open Interval" src="../image-1.png" /></a></p>
+<p>This diagram represents an open interval on the real number line. The line segment between the points labeled <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span> symbolizes all the real numbers that lie between <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span>. The open circles at <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span> illustrate that these endpoint values are not included in the interval. Mathematically, this open interval is denoted as <span class="arithmatex">\( (a, b) \)</span>, encompassing all real numbers greater than <span class="arithmatex">\( a \)</span> and less than <span class="arithmatex">\( b \)</span>, but excluding the endpoints <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span> themselves.</p>
+</div>
+<h2 id="maximum-and-minimum-of-a-set">Maximum and Minimum of a set</h2>
+<p>The maximum of a set is an element belonging to the set such that it is greater than or equal to every other element in the set. Conversely, the minimum of a set is an element belonging to the set such that it is less than or equal to every other element in the set.</p>
+<p>For the set <span class="arithmatex">\( \{1, 2, 3, 4, 5\} \)</span>:</p>
+<ul>
+<li>The maximum is 5, because it is the element in the set that is greater than or equal to all other elements.</li>
+<li>The minimum is 1, because it is the element in the set that is less than or equal to all other elements.</li>
+</ul>
+<h2 id="an-important-difference-between-closed-and-open-intervals">An important difference between closed and open intervals</h2>
+<p>For the closed interval <span class="arithmatex">\([-2, 3]\)</span>:</p>
+<ul>
+<li>The maximum is 3, because 3 is included in the interval and there is no other number in the interval that is greater than 3.</li>
+<li>The minimum is -2, because -2 is included in the interval and there is no other number in the interval that is less than -2.</li>
+</ul>
+<p>Since the interval is closed, both endpoints -2 and 3 are included in the interval, and they serve as the minimum and maximum, respectively.</p>
+<p>For the open interval <span class="arithmatex">\((-2, 3)\)</span>:</p>
+<ul>
+<li>The maximum does not exist because, although numbers in the interval can get arbitrarily close to 3, there is no largest number since 3 itself is not included.</li>
+<li>Similarly, the minimum does not exist because numbers can get arbitrarily close to -2 from above, but -2 is not an element of the interval.</li>
+</ul>
+<p>In the open interval, for any number you choose that you might think is the greatest, you can always find another number closer to 3 but still not equal to 3. This means there is no "last" number before 3, so no maximum exists in the set. The same reasoning applies for not having a minimum value in the set. The numbers can always get closer to -2 from the right without ever reaching -2, so there is no "first" number after -2. For example:</p>
+<div class="arithmatex">\[ 2.9 &lt; 2.99 &lt; 2.999 &lt; 2.9999 &lt; \ldots \]</div>
+<p>This sequence can continue indefinitely with more 9s being added, getting increasingly closer to 3, but never actually reaching 3. Since the interval is open, 3 itself is not included, and hence, we can never actually arrive at the maximum. Similarly, approaching the lower bound, we find:</p>
+<div class="arithmatex">\[ -1.9 &gt; -1.99 &gt; -1.999 &gt; -1.9999 &gt; \ldots \]</div>
+<p>This shows how you can always choose a number closer to -2 from the right, yet never include -2 itself, thus the interval does not have a minimum either.</p>
+<p><strong><em>In general, a closed interval includes its endpoints, meaning it has both a maximum and a minimum element. An open interval, on the other hand, does not include its endpoints, and therefore does not have a maximum or a minimum element.</em></strong></p>
+<h2 id="semi-closed-interval">Semi-closed Interval</h2>
+<p>A semi-closed interval, or half-open interval, is an interval that includes one of its endpoints but leaves the other endpoint excluded. This leads to two main types of semi-closed intervals:</p>
+<ol>
+<li>
+<p><strong>Left-Closed, Right-Open Interval <span class="arithmatex">\([a, b)\)</span></strong>: This type includes the left endpoint <span class="arithmatex">\(a\)</span> but excludes the right endpoint <span class="arithmatex">\(b\)</span>, covering all real numbers <span class="arithmatex">\(x\)</span> where <span class="arithmatex">\(a \leq x &lt; b\)</span>. The inclusion of <span class="arithmatex">\(a\)</span> is indicated by a square bracket, while the exclusion of <span class="arithmatex">\(b\)</span> is denoted by a parenthesis.</p>
+<p>Set-builder notation for this interval is <span class="arithmatex">\(\{x \in \mathbb{R} \mid a \leq x &lt; b\}\)</span>.</p>
+<p><a class="glightbox" href="../image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Left closed right open interval" src="../image-2.png" /></a></p>
+</li>
+<li>
+<p><strong>Left-Open, Right-Closed Interval <span class="arithmatex">\((a, b]\)</span></strong>: This interval excludes the left endpoint <span class="arithmatex">\(a\)</span> but includes the right endpoint <span class="arithmatex">\(b\)</span>, and it consists of all real numbers <span class="arithmatex">\(x\)</span> where <span class="arithmatex">\(a &lt; x \leq b\)</span>.</p>
+<p>Set-builder notation for this interval is <span class="arithmatex">\(\{x \in \mathbb{R} \mid a &lt; x \leq b\}\)</span>.</p>
+<p><a class="glightbox" href="../image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Left Open and right closed interval" src="../image-3.png" /></a></p>
+</li>
+</ol>
+<p>When involving infinity, semi-closed intervals extend without a bound in one direction, which impacts the existence of a maximum or minimum:</p>
+<ul>
+<li>
+<p><strong>Extending to Positive Infinity <span class="arithmatex">\([a, \infty)\)</span></strong>: Includes all real numbers <span class="arithmatex">\(x\)</span> greater than or equal to <span class="arithmatex">\(a\)</span> and extends without limit towards positive infinity. Here, the interval includes its left endpoint <span class="arithmatex">\(a\)</span>, but since it extends towards infinity, there is no maximum value, reflecting the interval's open nature on the right.</p>
+<p>Set-builder notation: <span class="arithmatex">\(\{x \in \mathbb{R} \mid x \geq a\}\)</span>.</p>
+</li>
+<li>
+<p><strong>Extending to Negative Infinity <span class="arithmatex">\((-\infty, b]\)</span></strong>: Includes all real numbers <span class="arithmatex">\(x\)</span> less than or equal to <span class="arithmatex">\(b\)</span> and extends without limit towards negative infinity. The interval includes its right endpoint <span class="arithmatex">\(b\)</span>, but due to its extension towards negative infinity, there is no minimum value, making the interval open on the left.</p>
+<p>Set-builder notation: <span class="arithmatex">\(\{x \in \mathbb{R} \mid x \leq b\}\)</span>.</p>
+</li>
+</ul>
+<p><a class="glightbox" href="../image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="One end extending to inifinity" src="../image-4.png" /></a></p>
+<p>In such intervals that extend towards infinity, the absence of a bound on one side means that there is no maximum (for intervals extending to positive infinity) or no minimum (for intervals extending to negative infinity), thus maintaining their open characteristic on the respective infinite end.</p>
+<div class="admonition note">
+<p>The interval <span class="arithmatex">\((- \infty, \infty)\)</span> is equivalent to the set of all real numbers, <span class="arithmatex">\(\mathbb{R}\)</span>, representing the entire real number line without any bounds.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

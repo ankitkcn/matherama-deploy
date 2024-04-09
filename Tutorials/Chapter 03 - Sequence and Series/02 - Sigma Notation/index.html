@@ -1,0 +1,3135 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/">
+      
+      
+        <link rel="prev" href="../01%20-%20Introduction/">
+      
+      
+        <link rel="next" href="../03%20-%20Arithmetic%20Progression%28AP%29/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Sigma Notation - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sigma Notation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-sigma-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Sigma Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expanding-a-summation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expanding a summation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#condensing-a-series-in-sigma-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Condensing a Series in Sigma Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-of-sigma-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of sigma notation:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#double-summation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Double Summation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Double Summation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-double-summation-is-commutative" class="md-nav__link">
+    <span class="md-ellipsis">
+      The double summation is commutative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factorization-of-double-summations-with-separable-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factorization of Double Summations with Separable Terms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-curious-case-of-dependent-indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      The curious case of Dependent Indices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commuting-summations-in-case-of-dependent-indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commuting summations in case of dependent indices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symmetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetry
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2005%20-%20Polynomials/10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-sigma-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Sigma Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expanding-a-summation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expanding a summation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#condensing-a-series-in-sigma-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Condensing a Series in Sigma Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-of-sigma-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of sigma notation:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#double-summation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Double Summation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Double Summation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-double-summation-is-commutative" class="md-nav__link">
+    <span class="md-ellipsis">
+      The double summation is commutative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factorization-of-double-summations-with-separable-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factorization of Double Summations with Separable Terms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-curious-case-of-dependent-indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      The curious case of Dependent Indices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commuting-summations-in-case-of-dependent-indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commuting summations in case of dependent indices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symmetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetry
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Sigma Notation</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Sigma notation is used to write sums of many terms in a compact way.</p>
+<div class="arithmatex">\[ a_1 + a_2 + a_3 + ... + a_n = \sum_{i=1}^{n} a_i, \]</div>
+<p>It uses Greek letter sigma, which is why it is called sigma-notation.</p>
+<p>Here, <span class="arithmatex">\(i\)</span> is called the <strong>running index</strong>. The running index in this case varies through integer values from <strong>lower limit</strong> 1 to the <strong>upper limit</strong> <span class="arithmatex">\(n\)</span>. <span class="arithmatex">\(a_i\)</span> is called the <strong>summand</strong>.</p>
+<p>In general, given a sequence <span class="arithmatex">\( \{ a_k \}_{k=l}^{u} \)</span>, then the summation from over <span class="arithmatex">\(k\)</span> from <span class="arithmatex">\(l\)</span> to <span class="arithmatex">\(u\)</span> is</p>
+<div class="arithmatex">\[ \sum_{k=l}^{u} a_k = a_l + a_{l+1} + a_{l+2} + ... + a_{u-1} + a_u, \]</div>
+<p>The above form of the summation is called as <strong>delimited form</strong>.</p>
+<h2 id="general-sigma-notation">General Sigma Notation</h2>
+<p>General sigma notation is a way to write sigma notation in the form <span class="arithmatex">\(\sum_{P(k)} a_k\)</span>, where instead of giving the limits we mention the property <span class="arithmatex">\(P(k)\)</span> which is satisfied by integers and we take the summation over those integers only for which <span class="arithmatex">\(P(k)\)</span> is true.</p>
+<p>e.g. <span class="arithmatex">\(\sum_{1 \leq k \leq n} a_k\)</span>, means the same thing as <span class="arithmatex">\(\sum_{i=1}^{n} a_i\)</span>,</p>
+<div class="arithmatex">\[ \sum_{k=1}^{10} a_{2k-1} = a_1 + a_3 + a_5 + ... + a_{19} \]</div>
+<p>which in generalized form can be written as <span class="arithmatex">\(\sum_{\substack{1 \leq k \leq 19 \\ k \text{ is odd}}} (a_k)\)</span>,</p>
+<p>Sometimes the generalized form is much better than the delimited form.</p>
+<h2 id="expanding-a-summation">Expanding a summation</h2>
+<p>Expanding the summation notation means expressing the compact form of a sum represented by the sigma symbol <span class="arithmatex">\( \Sigma \)</span> into its individual terms. To do this, you follow the index of the summation from its lower limit to its upper limit, writing out each term in the sequence. Here’s how it works with a couple of examples:</p>
+<p>To expand the summation <span class="arithmatex">\( \sum_{k=1}^{n} \frac{k}{k+1} \)</span>, you would write out the terms of the sequence for each value of <span class="arithmatex">\( k \)</span> from 1 to <span class="arithmatex">\( n \)</span>. Here is how the expansion looks:</p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} \frac{k}{k+1} = \frac{1}{1+1} + \frac{2}{2+1} + \frac{3}{3+1} + \ldots + \frac{n}{n+1} \]</div>
+<p>Simplifying each fraction, you get:</p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} \frac{k}{k+1} = \frac{1}{2} + \frac{2}{3} + \frac{3}{4} + \ldots + \frac{n}{n+1} \]</div>
+<p>This gives you a clear picture of the series of terms that are being summed.</p>
+<p>Well, that is easy. </p>
+<h2 id="condensing-a-series-in-sigma-notation">Condensing a Series in Sigma Notation</h2>
+<p>This is the opposite on expansion. Sometimes you are given a series in expanded form and you need to write in summation form. If the general term, like nth term, rth term, etc is known we can easily write in sigma form. But when the general term is not given, we may have to identify the general term by observing some patterns. It can be understood via some examples. </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Consider the series <span class="arithmatex">\(S_n\)</span> given by the expression:</p>
+<div class="arithmatex">\[ S_n = 1 \cdot 2 + 2 \cdot 3 + 3 \cdot 4 + \ldots \]</div>
+<p>To express this series using sigma notation, let's examine its structure. Each term is the product of two consecutive integers, with the first factor being the position of the term in the series and the second factor being one more than the first. This observation allows us to define the general term of the series as <span class="arithmatex">\(t_k = k(k + 1)\)</span>, for the <span class="arithmatex">\(k\)</span>-th term.</p>
+<p>Therefore, the sum of the first <span class="arithmatex">\(n\)</span> terms of the series can be represented compactly as:</p>
+<div class="arithmatex">\[ S_n = \sum_{k=1}^{n} k(k + 1). \]</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Now consider the series <span class="arithmatex">\(S_n = \frac{1}{1 \cdot 2} + \frac{3}{2 \cdot 3} + \frac{5}{3 \cdot 4} + \ldots\)</span> up to <span class="arithmatex">\(n\)</span> terms. To condense it in sigma notation, we need to identify the pattern of the terms.</p>
+<p>In each term of this series, the numerator is an odd number, and the denominator is the product of consecutive integers. Specifically, the numerator starts at 1 and increases by 2 with each term (1, 3, 5, ...), and the denominator is the product of <span class="arithmatex">\(k\)</span> and <span class="arithmatex">\(k+1\)</span> where <span class="arithmatex">\(k\)</span> starts at 1.</p>
+<p>The odd numbers in the numerator can be represented by the formula <span class="arithmatex">\(2k-1\)</span>, which generates the sequence of odd numbers as <span class="arithmatex">\(k\)</span> increases (when <span class="arithmatex">\(k=1\)</span>, <span class="arithmatex">\(2k-1=1\)</span>; when <span class="arithmatex">\(k=2\)</span>, <span class="arithmatex">\(2k-1=3\)</span>; and so on).</p>
+<p>Thus, the <span class="arithmatex">\(k\)</span>-th term in the series can be written as:</p>
+<div class="arithmatex">\[ t_k = \frac{2k - 1}{k(k + 1)} \]</div>
+<p>Now we can express <span class="arithmatex">\(S_n\)</span> using sigma notation, which sums the general term from <span class="arithmatex">\(k = 1\)</span> to <span class="arithmatex">\(k = n\)</span>:</p>
+<div class="arithmatex">\[ S_n = \sum_{k=1}^{n} \frac{2k - 1}{k(k + 1)} \]</div>
+<p>This notation succinctly encapsulates the entire series, showing that for each integer <span class="arithmatex">\(k\)</span> from 1 to <span class="arithmatex">\(n\)</span>, we take the odd number <span class="arithmatex">\(2k - 1\)</span> and divide it by the product of <span class="arithmatex">\(k\)</span> and <span class="arithmatex">\(k + 1\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>To express the series <span class="arithmatex">\(S_n = 1\cdot3\cdot5 - 3\cdot5\cdot7 + 5\cdot7\cdot9 - 7\cdot9\cdot11 + \ldots\)</span> up to <span class="arithmatex">\(n\)</span> terms in sigma notation, observe the pattern in the series:</p>
+<ul>
+<li>Each term consists of the product of three consecutive odd numbers.</li>
+<li>The signs alternate between positive and negative.</li>
+</ul>
+<p>Notice the first number in each term: <span class="arithmatex">\(1, 3, 5, 7, \ldots\)</span> can be represented as <span class="arithmatex">\(2k-1\)</span> where <span class="arithmatex">\(k = 1, 2, 3, \ldots, n\)</span>. This gives us the starting odd number for each term.</p>
+<p>Given this, the <span class="arithmatex">\(k\)</span>-th term of the series can be written using the first odd number as <span class="arithmatex">\( (2k-1) \)</span>, the second as <span class="arithmatex">\( (2k+1) \)</span>, and the third as <span class="arithmatex">\( (2k+3) \)</span>.</p>
+<p>However, to account for the alternating signs, we use <span class="arithmatex">\( (-1)^{k+1} \)</span> as a multiplier, which alternates sign for each term in the series.</p>
+<p>Thus, the series can be condensed into the sigma notation as:</p>
+<div class="arithmatex">\[ S_n = \sum_{k=1}^{n} (-1)^{k+1} (2k-1)(2k+1)(2k+3) \]</div>
+<p>This notation captures the pattern of alternating signs and the product of three consecutive odd numbers starting from <span class="arithmatex">\(1, 3, 5, \ldots\)</span> for each term of the series up to <span class="arithmatex">\(n\)</span> terms.</p>
+</div>
+<h2 id="properties-of-sigma-notation">Properties of sigma notation:</h2>
+<ol>
+<li>
+<p><strong>Dummy variable:</strong></p>
+<div class="arithmatex">\[ \sum_{i=1}^{n} a_i = \sum_{j=1}^{n} a_j \]</div>
+<p>The index of summation is a “dummy” variable. The value of summation does not change if you change the index variable. It is bound to the sigma symbol and has no existence out of it.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>The notation <span class="arithmatex">\(\sum_{i=1}^{n} a_i\)</span> simply means to sum the terms <span class="arithmatex">\(a_1, a_2, \ldots, a_n\)</span>. The index <span class="arithmatex">\(i\)</span> is an arbitrary placeholder that indicates the position of each term in the sequence; it has no value outside the context of the sigma notation. Therefore, whether we write <span class="arithmatex">\(i\)</span>, <span class="arithmatex">\(j\)</span>, or any other letter as the index, the sum remains the same:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{n} a_i = a_1 + a_2 + \ldots + a_n = \sum_{j=1}^{n} a_j \]</div>
+<p>Since the summands <span class="arithmatex">\(a_i\)</span> and <span class="arithmatex">\(a_j\)</span> represent the same sequence of terms, the sum is unaffected by the choice of index variable.</p>
+</div>
+</li>
+<li>
+<p><strong>Splitting the Summation Range:</strong></p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} a_k = \sum_{k=1}^{m} a_k + \sum_{k=m+1}^{n} a_k \]</div>
+<p>where <span class="arithmatex">\( 1 \leq m \leq n \)</span>: We can “break” the summation into two summations.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>Consider the sum of the first <span class="arithmatex">\(n\)</span> terms of a sequence. We can partition this sum at an arbitrary point <span class="arithmatex">\(m\)</span> where <span class="arithmatex">\(1 \leq m \leq n\)</span>. The sum from 1 to <span class="arithmatex">\(n\)</span> is equivalent to the sum from 1 to <span class="arithmatex">\(m\)</span> plus the sum from <span class="arithmatex">\(m+1\)</span> to <span class="arithmatex">\(n\)</span>:</p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} a_k = (a_1 + \ldots + a_m) + (a_{m+1} + \ldots + a_n) \]</div>
+<p>This can be rewritten using sigma notation for both parts:</p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} a_k = \sum_{k=1}^{m} a_k + \sum_{k=m+1}^{n} a_k \]</div>
+<p>This demonstrates that we can "break" the summation into two summations over adjacent intervals.</p>
+</div>
+</li>
+<li>
+<p><strong>Factoring Out Constants:</strong></p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} c a_k = c \sum_{k=1}^{n} a_k \]</div>
+<p>A constant which is independent of index variable can be taken outside the sigma operator.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>Let <span class="arithmatex">\(c\)</span> be a constant. The sum of the sequence terms each multiplied by <span class="arithmatex">\(c\)</span> from 1 to <span class="arithmatex">\(n\)</span> is:</p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} c a_k = c a_1 + c a_2 + \ldots + c a_n \]</div>
+<p>Since <span class="arithmatex">\(c\)</span> is a common factor in each term, we can factor it out:</p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} c a_k = c (a_1 + a_2 + \ldots + a_n) \]</div>
+<p>Now, applying the sigma notation to the sum of <span class="arithmatex">\(a_k\)</span>:</p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} c a_k = c \sum_{k=1}^{n} a_k \]</div>
+<p>This shows that a constant factor can be moved outside the sigma notation, applying it to the sum as a whole.</p>
+</div>
+</li>
+<li>
+<p><strong>Distributive Property</strong></p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} (a_k + b_k) = \sum_{k=1}^{n} a_k + \sum_{k=1}^{n} b_k \]</div>
+<div class="admonition note">
+<p class="admonition-title"><strong>Proof:</strong></p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} (a_k + b_k) = (a_1 + b_1) + (a_2 + b_2) + (a_3 + b_3) + \ldots + (a_n + b_n) \]</div>
+<div class="arithmatex">\[ \Rightarrow \sum_{k=1}^{n} (a_k + b_k) = (a_1 + a_2 + a_3 + \ldots + a_n) + (b_1 + b_2 + b_3 + \ldots + b_n) \]</div>
+<div class="arithmatex">\[ \Rightarrow \sum_{k=1}^{n} (a_k + b_k) = \sum_{k=1}^{n} a_k + \sum_{k=1}^{n} b_k \]</div>
+</div>
+</li>
+<li>
+<p><strong>Substitution of index variable:</strong></p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} a_k = \sum_{k=m}^{n+m-1} a_{k-m+1} \]</div>
+<p>Many a times substitution of index variable may simplify the summation and it becomes easier to do the problem.</p>
+<p>Let there be a summation <span class="arithmatex">\( S = \sum_{k=1}^{n} a_k \)</span>. Suppose that for some reason we wish to change the lower limit from 1 to <span class="arithmatex">\( m \)</span>. Then we substitute <span class="arithmatex">\( k - 1 = j - m \)</span> <span class="arithmatex">\(\Rightarrow k = j - m + 1 \)</span></p>
+<p>We get <span class="arithmatex">\(\sum_{k=1}^{n} a_k = \sum_{j=m+1}^{n+m} a_{j-m+1} = \sum_{j=m}^{n+m-1} a_{j-m+1} \)</span></p>
+<p>So now the lower limit is <span class="arithmatex">\( m \)</span></p>
+<p>But since <span class="arithmatex">\( j \)</span> is a dummy variable we may change it back to <span class="arithmatex">\( k \)</span></p>
+<p>i.e. <span class="arithmatex">\( \sum_{k=1}^{n} a_k = \sum_{k=m}^{n+m-1} a_{k-m+1} \)</span></p>
+<p>More frequently though, suppose the lower limit of summation is <span class="arithmatex">\( m \)</span> and we wish to change it to 1 in the summation <span class="arithmatex">\( \sum_{k=m}^{n} a_k \)</span>, then we substitute <span class="arithmatex">\( k - m = j - 1 \)</span> <span class="arithmatex">\( \Rightarrow k = m + j - 1 \)</span></p>
+<p>Thus we get, <span class="arithmatex">\( \sum_{k=m}^{n} a_k = \sum_{m+j-1=j}^{n} a_{m+j-1} = \sum_{j=1}^{n-m+1} a_{j+m-1} \)</span> <span class="arithmatex">\( = \sum_{k=1}^{n-m+1} a_{k+m-1} \)</span> (j is a dummy variable)</p>
+</li>
+<li>
+<p><strong>Reversing the series:</strong></p>
+<div class="arithmatex">\[ \sum_{k=0}^{n} a_k = \sum_{k=0}^{n} a_{n-k} \]</div>
+<p>Observe that LHS <span class="arithmatex">\( = \sum_{k=0}^{n} a_k = a_0 + a_1 + a_2 + \ldots + a_n \)</span>, and RHS <span class="arithmatex">\( = \sum_{k=0}^{n} a_{n-k} = a_n + a_{n-1} + \ldots + a_0 \)</span></p>
+<p>The second series is opposite order. This is very helpful in calculating the sum of many series.</p>
+<p>Observe that index <span class="arithmatex">\(k\)</span> begins from <span class="arithmatex">\(0\)</span>. When <span class="arithmatex">\(k\)</span> begins from <span class="arithmatex">\(1\)</span>, we have,</p>
+<div class="arithmatex">\[ \sum_{k=1}^{n} a_k = \sum_{k=1}^{n} a_{n-k+1} \]</div>
+</li>
+</ol>
+<h2 id="double-summation">Double Summation</h2>
+<p>First consider this illustrative example. Basically double summation is summation of a summation. </p>
+<p>The double summation for the expression <span class="arithmatex">\( i^2 + j^2 \)</span>, where <span class="arithmatex">\( i \)</span> ranges from 1 to 4 and <span class="arithmatex">\( j \)</span> ranges from 1 to 3, can be written as:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{4} \left( \sum_{j=1}^{3} (i^2 + j^2) \right) \]</div>
+<p>In the above expression, there are two summations. Inside the bracket is the inner summation and outside is outer summation. </p>
+<p><span class="arithmatex">\(i\)</span> is the index of the outer summation and <span class="arithmatex">\(j\)</span> is the index of the outer summation. </p>
+<p>For the inner summation <span class="arithmatex">\(i\)</span> is basically a constant, only <span class="arithmatex">\(j\)</span> varies. </p>
+<p>Expanding the inner summation first by substituting the values of <span class="arithmatex">\( j \)</span>:</p>
+<p>When <span class="arithmatex">\( j = 1 \)</span>: <span class="arithmatex">\( i^2 + 1^2 = i^2 + 1 \)</span><br />
+When <span class="arithmatex">\( j = 2 \)</span>: <span class="arithmatex">\( i^2 + 2^2 = i^2 + 4 \)</span><br />
+When <span class="arithmatex">\( j = 3 \)</span>: <span class="arithmatex">\( i^2 + 3^2 = i^2 + 9 \)</span>  </p>
+<p>So, for each <span class="arithmatex">\( i \)</span>, the inner summation is:</p>
+<div class="arithmatex">\[ \left( i^2 + 1 \right) + \left( i^2 + 4 \right) + \left( i^2 + 9 \right) \]</div>
+<p>Thus, we get </p>
+<div class="arithmatex">\[\sum_{i=1}^{4} \left( \sum_{j=1}^{3} (i^2 + j^2) \right) = \sum_{i=1}^{4} (i^2 + 1)+(i^2 + 4)+(i^2 + 9)\]</div>
+<p>Now expand this summation.</p>
+<p>The full expansion will be:</p>
+<div class="arithmatex">\[ \begin{align*}
+    &amp;(1 + 1) + &amp;(1 + 4) + &amp;(1 + 9) \\
+    + &amp;(4 + 1) + &amp;(4 + 4) + &amp;(4 + 9) \\
+    + &amp;(9 + 1) + &amp;(9 + 4) + &amp;(9 + 9)\\
+    + &amp;(16 + 1) + &amp;(16 + 4) + &amp;(16 + 9)
+    \end{align*} \]</div>
+<p>This can be represented as a matrix where the element in the <span class="arithmatex">\(i\)</span>-th row and <span class="arithmatex">\(j\)</span>-th column is <span class="arithmatex">\( i^2 + j^2 \)</span>:</p>
+<div class="arithmatex">\[
+\begin{bmatrix}
+1^2 + 1^2 &amp; 1^2 + 2^2 &amp; 1^2 + 3^2 \\
+2^2 + 1^2 &amp; 2^2 + 2^2 &amp; 2^2 + 3^2 \\
+3^2 + 1^2 &amp; 3^2 + 2^2 &amp; 3^2 + 3^2 \\
+4^2 + 1^2 &amp; 4^2 + 2^2 &amp; 4^2 + 3^2
+\end{bmatrix}
+\]</div>
+<p>This matrix represents all terms and double summation is the sum of all elements in this matrix. </p>
+<h3 id="definition">Definition</h3>
+<p>Double summation is a mathematical operation that involves taking the summation of a summation, effectively summing over two indices. It is denoted by two sigma symbols, one nested inside the other, and is used to sum terms that are dependent on two different indices. For terms denoted by <span class="arithmatex">\( a_{ij} \)</span>, which are functions of two indices <span class="arithmatex">\( i \)</span> and <span class="arithmatex">\( j \)</span>, the double summation is defined as:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \left( \sum_{j=1}^{n} a_{ij} \right) \]</div>
+<p>Here, the inner summation <span class="arithmatex">\( \sum_{j=1}^{n} a_{ij} \)</span> is performed first for a fixed value of <span class="arithmatex">\( i \)</span>, summing over the index <span class="arithmatex">\( j \)</span>. Once this is done for every <span class="arithmatex">\( i \)</span>, the outer summation <span class="arithmatex">\( \sum_{i=1}^{m} \)</span> is then executed, summing the results of the inner summations across the index <span class="arithmatex">\( i \)</span>.</p>
+<p>This operation can be visualized as summing the entries of an <span class="arithmatex">\( m \times n \)</span> matrix, where <span class="arithmatex">\( m \)</span> represents the number of rows (controlled by the outer summation index <span class="arithmatex">\( i \)</span>), and <span class="arithmatex">\( n \)</span> represents the number of columns (controlled by the inner summation index <span class="arithmatex">\( j \)</span>). Each term <span class="arithmatex">\( a_{ij} \)</span> in the matrix is summed to produce the total sum of all entries.</p>
+<h3 id="notation">Notation</h3>
+<p>It is not necessary to enclose the inner summation in brackets, as we did above in the definition. The summation can be written succinctly without brackets, and it is understood that the inner summation is to be performed first. Here's the brief notation for a general double summation:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij} \]</div>
+<p>This implies that for each fixed <span class="arithmatex">\( i \)</span>, the sum over <span class="arithmatex">\( j \)</span> is to be calculated first, and then the resulting sums are to be added together as <span class="arithmatex">\( i \)</span> varies from 1 to <span class="arithmatex">\( m \)</span>.</p>
+<h3 id="the-double-summation-is-commutative">The double summation is commutative</h3>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij} = \sum_{j=1}^{n} \sum_{i=1}^{m} a_{ij} \]</div>
+<div class="admonition note">
+<p class="admonition-title"><strong>Explanation:</strong></p>
+<p>This mathematical statement expresses the commutative nature of double summation. It means that if you have a matrix or a two-dimensional array of numbers <span class="arithmatex">\( a_{ij} \)</span>, where <span class="arithmatex">\( i \)</span> and <span class="arithmatex">\( j \)</span> are indices running from 1 to <span class="arithmatex">\( m \)</span> and 1 to <span class="arithmatex">\( n \)</span> respectively, you can sum the elements in two ways. You can either add up the elements row by row (summing across <span class="arithmatex">\( j \)</span> for each <span class="arithmatex">\( i \)</span>) and then sum the results, or add up the elements column by column (summing across <span class="arithmatex">\( i \)</span> for each <span class="arithmatex">\( j \)</span>) and then sum those results. In either case, the final sum will be the same, demonstrating the commutative property of addition in this context.</p>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij} = \sum_{i=1}^{m} \left( \sum_{j=1}^{n} a_{ij} \right) = \sum_{i=1}^{m} \left[ a_{i1} + a_{i2} + a_{i3} + \ldots + a_{in} \right] \]</div>
+<div class="arithmatex">\[ = \left[ a_{11} + a_{12} + a_{13} + \ldots + a_{1n} \right] \]</div>
+<div class="arithmatex">\[ + \left[ a_{21} + a_{22} + a_{23} + \ldots + a_{2n} \right] \]</div>
+<div class="arithmatex">\[ + \ldots \]</div>
+<div class="arithmatex">\[ + \left[ a_{m1} + a_{m2} + a_{m3} + \ldots + a_{mn} \right] \]</div>
+<p>Visualizing all terms as an <span class="arithmatex">\( m \times n \)</span> matrix where double summation is the sum of all elements in the matrix.</p>
+<div class="arithmatex">\[
+\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; a_{13} &amp; \ldots &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; a_{23} &amp; \ldots &amp; a_{2n} \\
+a_{31} &amp; a_{32} &amp; a_{33} &amp; \ldots &amp; a_{3n} \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+a_{m1} &amp; a_{m2} &amp; a_{m3} &amp; \ldots &amp; a_{mn}
+\end{bmatrix}_{m \times n}
+\]</div>
+<p>If we sum column by column, i.e., </p>
+<div class="arithmatex">\[
+[a_{11} + a_{21} + a_{31} + \ldots + a_{m1}] + [a_{12} + a_{22} + a_{32} + \ldots + a_{m2}] + \ldots + [a_{1n} + a_{2n} + \ldots + a_{mn}] 
+\]</div>
+<p>it is equal to </p>
+<div class="arithmatex">\[
+\sum_{i=1}^{m} a_{i1} + \sum_{i=1}^{m} a_{i2} + \ldots + \sum_{i=1}^{m} a_{in}
+\]</div>
+<p>which can be expressed as the double summation </p>
+<div class="arithmatex">\[
+\sum_{j=1}^{n} \left( \sum_{i=1}^{m} a_{ij} \right) = \sum_{j=1}^{n} \sum_{i=1}^{m} a_{ij}
+\]</div>
+</div>
+<h3 id="factorization-of-double-summations-with-separable-terms">Factorization of Double Summations with Separable Terms</h3>
+<p>If the general term <span class="arithmatex">\( a_{ij} \)</span> can be expressed as the product of two terms <span class="arithmatex">\( b_i \)</span> and <span class="arithmatex">\( c_j \)</span>, where <span class="arithmatex">\( b_i \)</span> is solely dependent on the index <span class="arithmatex">\( i \)</span> and <span class="arithmatex">\( c_j \)</span> is solely dependent on the index <span class="arithmatex">\( j \)</span>, then the double summation of <span class="arithmatex">\( a_{ij} \)</span> across the indices <span class="arithmatex">\( i \)</span> and <span class="arithmatex">\( j \)</span> can be simplified. This is because the summation can be separated into the product of two single summations due to the independence of <span class="arithmatex">\( b_i \)</span> and <span class="arithmatex">\( c_j \)</span>:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij} = \sum_{i=1}^{m} \sum_{j=1}^{n} b_i c_j \]</div>
+<p>Since <span class="arithmatex">\( b_i \)</span> does not depend on <span class="arithmatex">\( j \)</span> and <span class="arithmatex">\( c_j \)</span> does not depend on <span class="arithmatex">\( i \)</span>, the summation can be decomposed into:</p>
+<div class="arithmatex">\[ \left( \sum_{i=1}^{m} b_i \right) \left(\sum_{j=1}^{n} c_j \right)\]</div>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>To prove that a double summation of a product of terms that each depend on only one index can be factorized, let's start with the general term <span class="arithmatex">\( a_{ij} = b_i c_j \)</span>, and perform the double summation:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij} \]</div>
+<p>This can be written as:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \left( \sum_{j=1}^{n} a_{ij} \right) \]</div>
+<p>Expanding the inner summation, we have:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \left( \sum_{j=1}^{n} b_i c_j \right) \]</div>
+<p>Since <span class="arithmatex">\( b_i \)</span> is independent of <span class="arithmatex">\( j \)</span>, it can be taken outside the inner summation:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \left( b_i \sum_{j=1}^{n} c_j \right) \]</div>
+<p>Now, <span class="arithmatex">\( b_i \)</span> is still inside the outer summation, so we continue to the next step. The inner sum <span class="arithmatex">\( \sum_{j=1}^{n} c_j \)</span> is a constant with respect to <span class="arithmatex">\( i \)</span> because it does not depend on <span class="arithmatex">\( i \)</span>. Therefore, it can be factored out completely, leading to:</p>
+<div class="arithmatex">\[ \left( \sum_{j=1}^{n} c_j \right) \sum_{i=1}^{m} b_i \]</div>
+<p>This factorization separates the double summation into the product of two separate summations, each over a single index. The final expression represents the total sum of the matrix <span class="arithmatex">\( a_{ij} \)</span> when each term is the product of a term dependent only on <span class="arithmatex">\( i \)</span> and another term dependent only on <span class="arithmatex">\( j \)</span>.</p>
+</div>
+<p>For example:</p>
+<ol>
+<li>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \sum_{j=1}^{n} ij = \left( \sum_{i=1}^{m} i \right) \left( \sum_{j=1}^{n} j \right) \]</div>
+</li>
+<li>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \sum_{j=1}^{n} i^2j = \left( \sum_{i=1}^{m} i^2 \right) \left( \sum_{j=1}^{n} j \right) \]</div>
+</li>
+<li>
+<div class="arithmatex">\[ \sum_{i=1}^{m} \sum_{j=1}^{n} i^2j^2 = \left( \sum_{i=1}^{m} i^2 \right) \left( \sum_{j=1}^{n} j^2 \right) \]</div>
+</li>
+</ol>
+<h3 id="the-curious-case-of-dependent-indices">The curious case of Dependent Indices</h3>
+<p>Consider <span class="arithmatex">\(\sum_{i=1}^{n} \sum_{j=1}^{n} a_{ij}\)</span>. Here <span class="arithmatex">\( m = n \)</span>, therefore we get a square matrix. It is the sum of all elements in the square matrix.</p>
+<div class="arithmatex">\[
+\sum_{i=1}^{n} \sum_{j=1}^{n} a_{ij} = \sum_{1 \leq i, j \leq n} a_{ij} \quad (\text{in general notation})
+\]</div>
+<div class="arithmatex">\[
+\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; a_{13} &amp; \ldots &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; a_{23} &amp; \ldots &amp; a_{2n} \\
+a_{31} &amp; a_{32} &amp; a_{33} &amp; \ldots &amp; a_{3n} \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+a_{n1} &amp; a_{n2} &amp; a_{n3} &amp; \ldots &amp; a_{nn}
+\end{bmatrix}_{n \times n}
+\]</div>
+<p>Now consider <span class="arithmatex">\(\sum_{i=1}^{n} \sum_{j=i}^{n} a_{ij}\)</span>. Observe that the lower limit of the inner summation dependent on the index of the outer summation. If we expand this we get, </p>
+<p>Expanding the summation <span class="arithmatex">\(\sum_{i=1}^{n} \sum_{j=i}^{n} a_{ij}\)</span>:</p>
+<p>For <span class="arithmatex">\(i = 1\)</span>, the terms are:</p>
+<div class="arithmatex">\[ a_{11} + a_{12} + a_{13} + \ldots + a_{1n} \]</div>
+<p>For <span class="arithmatex">\(i = 2\)</span>, the terms are:</p>
+<div class="arithmatex">\[ a_{22} + a_{23} + \ldots + a_{2n} \]</div>
+<p>For <span class="arithmatex">\(i = 3\)</span>, the terms are:</p>
+<div class="arithmatex">\[ a_{33} + \ldots + a_{3n} \]</div>
+<p>Continuing this pattern until <span class="arithmatex">\(i = n\)</span>, where the term is:</p>
+<div class="arithmatex">\[ a_{nn} \]</div>
+<p>Thus, the expanded summation is:</p>
+<div class="arithmatex">\[ (a_{11} + a_{12} + a_{13} + \ldots + a_{1n}) + (a_{22} + a_{23} + \ldots + a_{2n}) + \ldots + a_{nn} \]</div>
+<p>If you observe the above expansion carefully, the summation <span class="arithmatex">\( \sum_{i=1}^{n} \sum_{j=i}^{n} a_{ij} \)</span> corresponds to summing the elements in the upper triangular portion of the matrix, including the diagonal. This means that for each row <span class="arithmatex">\( i \)</span>, we start summing from the element on the diagonal (<span class="arithmatex">\( a_{ii} \)</span>) to the end of the row (<span class="arithmatex">\( a_{in} \)</span>).</p>
+<p>Here's a visual explanation using a matrix:</p>
+<div class="arithmatex">\[
+\begin{bmatrix}
+\color{red}a_{11} &amp; \color{red}a_{12} &amp; \color{red}a_{13} &amp; \color{red}\cdots &amp; \color{red}a_{1n} \\
+a_{21} &amp; \color{red}a_{22} &amp; \color{red}a_{23} &amp; \color{red}\cdots &amp; \color{red}a_{2n} \\
+a_{31} &amp; a_{32} &amp; \color{red}a_{33} &amp; \color{red}\cdots &amp; \color{red}a_{3n} \\
+\vdots &amp; \vdots &amp; \vdots &amp; \color{red}\ddots &amp; \color{red}\vdots \\
+a_{n1} &amp; a_{n2} &amp; a_{n3} &amp; \color{red}\cdots &amp; \color{red}a_{nn}
+\end{bmatrix}
+\]</div>
+<p>In this matrix:</p>
+<ul>
+<li>Red elements are those that are included in the summation.</li>
+<li>Non-colored elements are not included in the summation.</li>
+</ul>
+<p>The summation starts at the diagonal element <span class="arithmatex">\( a_{ii} \)</span> of each row <span class="arithmatex">\( i \)</span> and includes all elements to the right of the diagonal in that row, up to and including <span class="arithmatex">\( a_{in} \)</span>. Therefore, the sum is the total of all red-highlighted elements, which form the upper triangular part of the matrix.</p>
+<h4 id="alternative-notation">Alternative Notation</h4>
+<ol>
+<li>
+<div class="arithmatex">\[ \sum_{i=1}^{n} \sum_{j=i}^{n} a_{ij} \text{ can be written as } \sum_{1 \leq i \leq j \leq n} a_{ij} \]</div>
+<p>In the matrix above the elements in red, the index <span class="arithmatex">\(i\)</span> in always less than or euqal to index <span class="arithmatex">\(j\)</span>. That's why we can write the double summation alternatively as <span class="arithmatex">\(\sum_{1 \leq i \leq j \leq n} a_{ij} \)</span>. </p>
+<div class="arithmatex">\[
+\begin{bmatrix}
+\color{red}a_{11} &amp; \color{red}a_{12} &amp; \color{red}a_{13} &amp; \color{red}\cdots &amp; \color{red}a_{1n} \\
+a_{21} &amp; \color{red}a_{22} &amp; \color{red}a_{23} &amp; \color{red}\cdots &amp; \color{red}a_{2n} \\
+a_{31} &amp; a_{32} &amp; \color{red}a_{33} &amp; \color{red}\cdots &amp; \color{red}a_{3n} \\
+\vdots &amp; \vdots &amp; \vdots &amp; \color{red}\ddots &amp; \color{red}\vdots \\
+a_{n1} &amp; a_{n2} &amp; a_{n3} &amp; \color{red}\cdots &amp; \color{red}a_{nn}
+\end{bmatrix}
+\]</div>
+<p>Similarly, </p>
+</li>
+<li>
+<div class="arithmatex">\[ \sum_{i=1}^{n} \sum_{j=i+1}^{n} a_{ij} = \sum_{1 \leq i &lt; j \leq n} a_{ij} \]</div>
+<p>Visual representation:</p>
+<div class="arithmatex">\[
+\begin{bmatrix}
+a_{11} &amp; \color{red}a_{12} &amp; \color{red}a_{13} &amp; \ldots &amp; \color{red}a_{1n} \\
+a_{21} &amp; a_{22} &amp; \color{red}a_{23} &amp; \ldots &amp; \color{red}a_{2n} \\
+a_{31} &amp; a_{32} &amp; a_{33} &amp; \ldots &amp; \color{red}a_{3n} \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+a_{n1} &amp; a_{n2} &amp; a_{n3} &amp; \ldots &amp; a_{nn}
+\end{bmatrix}
+\]</div>
+<p>In this matrix, the elements <span class="arithmatex">\( a_{ij} \)</span> where <span class="arithmatex">\( i &lt; j \)</span> (above the main diagonal) are colored red. This visual representation corresponds to the sum:</p>
+<div class="arithmatex">\[ \sum_{i=1}^{n} \sum_{j=i+1}^{n} a_{ij} \]</div>
+<p>This sum includes only the red elements from the matrix.</p>
+</li>
+<li>
+<div class="arithmatex">\[ \sum_{j=1}^{n} \sum_{i=j}^{n} a_{ij} = \sum_{1 \leq j \leq i \leq n} a_{ij}  \]</div>
+<p>Visually, it is the sum of all elements in the lower triangle including the diagonal. </p>
+<div class="arithmatex">\[
+\begin{bmatrix}
+\color{red}a_{11} &amp; a_{12} &amp; a_{13} &amp; \ldots &amp; a_{1n} \\
+\color{red}a_{21} &amp; \color{red}a_{22} &amp; a_{23} &amp; \ldots &amp; a_{2n} \\
+\color{red}a_{31} &amp; \color{red}a_{32} &amp; \color{red}a_{33} &amp; \ldots &amp; a_{3n} \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+\color{red}a_{n1} &amp; \color{red}a_{n2} &amp; \color{red}a_{n3} &amp; \ldots &amp; \color{red}a_{nn}
+\end{bmatrix}
+\]</div>
+</li>
+<li>
+<div class="arithmatex">\[ \sum_{j=1}^{n} \sum_{i=j+1}^{n} a_{ij} = \sum_{1 \leq j &lt; i \leq n} a_{ij} \]</div>
+<div class="arithmatex">\[
+\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; a_{13} &amp; \ldots &amp; a_{1n} \\
+\color{red}a_{21} &amp; a_{22} &amp; a_{23} &amp; \ldots &amp; a_{2n} \\
+\color{red}a_{31} &amp; \color{red}a_{32} &amp; a_{33} &amp; \ldots &amp; a_{3n} \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+\color{red}a_{n1} &amp; \color{red}a_{n2} &amp; \color{red}a_{n3} &amp; \ldots &amp; a_{nn}
+\end{bmatrix}
+\]</div>
+<p>Excluding the main diagonal, the sum of the lower triangular matrix.</p>
+</li>
+</ol>
+<h3 id="commuting-summations-in-case-of-dependent-indices">Commuting summations in case of dependent indices</h3>
+<p>We know that when indices are not dependent, the double summation is commutative. On the other hand, when indices are dependent, we can interchange summations order with the following rules. If you observe the matrix representation, these rules quite easy to understand.</p>
+<ol>
+<li>
+<p><strong>Upper Triangular including diagonal</strong></p>
+<div class="arithmatex">\[ \sum_{j=1}^{n} \sum_{i=1}^{j} a_{ij} = \sum_{i=1}^{n} \sum_{j=i}^{n} a_{ij} \]</div>
+</li>
+<li>
+<p><strong>Upper Triangular excluding diagonal</strong></p>
+<div class="arithmatex">\[ \sum_{i=1}^{n} \sum_{j=i+1}^{n} a_{ij} = \sum_{j=2}^{n} \sum_{i=1}^{j-1} a_{ij} \]</div>
+</li>
+<li>
+<p><strong>Lower Triangular including Diagonal</strong></p>
+<div class="arithmatex">\[ \sum_{j=1}^{n} \sum_{i=j}^{n} a_{ij} = \sum_{i=1}^{n} \sum_{j=1}^{i} a_{ij} \]</div>
+</li>
+<li>
+<p><strong>Lower Triangular excluding Diagonal</strong></p>
+<div class="arithmatex">\[\sum_{j=1}^{n} \sum_{i=j+1}^{n} a_{ij} =\sum_{i=2}^{n} \sum_{j=1}^{i-1} a_{ij} \]</div>
+</li>
+</ol>
+<h3 id="symmetry">Symmetry</h3>
+<p>When <span class="arithmatex">\( a_{ij} = a_{ji} \)</span>, we get a very important result that</p>
+<div class="arithmatex">\[ \sum_{1 \leq i \leq j \leq n} a_{ij} = \sum_{1 \leq j \leq i \leq n} a_{ij} \]</div>
+<p>And </p>
+<div class="arithmatex">\[ \sum_{1 \leq i \leq j \leq n} a_{ij} = \sum_{1 \leq j \leq i \leq n} a_{ji} \]</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

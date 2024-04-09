@@ -1,0 +1,2885 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding Mathematics">
+      
+      
+      
+        <link rel="canonical" href="https://matherama.com/Tutorials/Chapter%2005%20-%20Polynomials/05%20-%20Polynomial%20Equation/">
+      
+      
+        <link rel="prev" href="../04%20-%20Remainder%20Theorem/">
+      
+      
+        <link rel="next" href="../06%20-%20Finding%20Roots/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Polynomial Equation, Roots and factorization - Matherama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#polynomial-equation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Matherama" class="md-header__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matherama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Polynomial Equation, Roots and factorization
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="black" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Matherama" class="md-nav__button md-logo" aria-label="Matherama" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.png" alt="logo">
+
+    </a>
+    Matherama
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 00   Basic Maths
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 00   Basic Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept of Sets, Notation and Operation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2000%20-%20Basic%20Maths/01%20-%20Useful%20Equalities%20and%20inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Equalities and inequalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 01   Sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 01   Sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/3%20-%20Venn%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3   Venn Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2001%20-%20Sets/4%20-%20Set%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 02   Quadratic Equations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 02   Quadratic Equations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/1-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/2-Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/3-Evaluating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating and Visualizing a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/4-Transforming%20quadratic%20expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transforming a quadratic expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/5-Extreme%20Values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extreme Values and Graph of a Quadratic Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/6-Range%20of%20quadratic%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range of Quadratic Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/7-Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/8-Relation%20of%20roots%20and%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relation of Roots with Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/9-Nature%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nature of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/91-Formation%20of%20Quadratic%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formation of Quadratic Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/92-Common%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/93-Location%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2002%20-%20Quadratic%20Equations/94-Transformation%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 03   Sequence and Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 03   Sequence and Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/02%20-%20Sigma%20Notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sigma Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/03%20-%20Arithmetic%20Progression%28AP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/04%20-%20Geometric%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/05%20-%20Harmonic%20Progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/06%20-%20AM%2C%20GM%20and%20HM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Means and Inequalities based on them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/07-%20AGP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetico-Geometric Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/08%20-%20Some%20Special%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/09%20-%20Telescoping%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Telescoping Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2003%20-%20Sequence%20and%20Series/10%20-%20Methos%20of%20differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Method of Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 04   Complex Numbers Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 04   Complex Numbers Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/02-Argand%20Plane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Representation of Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/03-Operations%20on%20Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Operations on Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/04%20-%20Square%20root%20of%20a%20complex%20number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Root of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/05%20-%20Properties%20of%20conjugate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Conjugate and Modulus of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/06%20-%20Polar%20form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polar Form of a Complex Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2004%20-%20Complex%20Numbers%20Basics/07%20-%20Properties%20of%20Argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties of Argument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 05   Polynomials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 05   Polynomials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01%20-%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02%20-%20Algebra%20of%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebra of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03%20-%20Dividing%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dividing Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04%20-%20Remainder%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remainder Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial Equation, Roots and factorization
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#polynomial-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Equation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factor-of-a-polynomial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factor of a Polynomial
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factor-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factor Theorem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiplicity-of-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplicity of Roots
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamental-theorem-of-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fundamental Theorem of Algebra
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fundamental Theorem of Algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#an-important-consequence-of-fundamental-theorem-of-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      An important consequence of Fundamental Theorem of Algebra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equality-of-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equality of polynomials
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polynomials-with-real-coefficients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomials with real coefficients
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relation-of-roots-with-coefficients-vietas-formulae" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relation of Roots with Coefficients (Vieta’s Formulae).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contructing-the-polynomial-equations-from-the-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contructing the polynomial equations from the root
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20-%20Finding%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Roots of Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07%20-%20Transformation%20of%20roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformation of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08%20-%20Symmetric%20Functions%20of%20Roots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Functions of Roots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09%20-%20Greatest%20Common%20Divisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Greatest Common Divisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20-%20Reciprocal%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reciprocal Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 06   Trigonometry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 06   Trigonometry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/01-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/02-Basics%20of%20Measurement%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/03-Radian%20Measure%20of%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radian Measure of Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/04-Right%20Triangle%20Trigonometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Right Triangle Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/05-Circular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circular Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/06-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/07-Compound%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compound Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/071-sinusoidal%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sinusoidal Fucntion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/08-Multiple%20angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/09-Submultiple%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submultiple Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/091-Some%20Special%20Angles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Special Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/10-Conditional%20Identities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional Identities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2006%20-%20Trigonometry/11-%20Trigonometric%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 07   Coordinate Geometry Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 07   Coordinate Geometry Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/01%20-%20Introduction%20to%20Coordinate%20Geometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Coordinate Geometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/02%20-%20Measuring%20distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/03%20-%20Section%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section Formula and Centres of a Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/04%20-%20Area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter%2007%20-%20Coordinate%20Geometry%20Fundamentals/05%20-%20Locus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/auc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AUC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/how_to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How_to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/integral_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral_Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#polynomial-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Equation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factor-of-a-polynomial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factor of a Polynomial
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factor-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factor Theorem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiplicity-of-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplicity of Roots
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamental-theorem-of-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fundamental Theorem of Algebra
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fundamental Theorem of Algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#an-important-consequence-of-fundamental-theorem-of-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      An important consequence of Fundamental Theorem of Algebra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equality-of-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equality of polynomials
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polynomials-with-real-coefficients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomials with real coefficients
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relation-of-roots-with-coefficients-vietas-formulae" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relation of Roots with Coefficients (Vieta’s Formulae).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contructing-the-polynomial-equations-from-the-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contructing the polynomial equations from the root
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Polynomial Equation, Roots and factorization</h1>
+
+<h2 id="polynomial-equation">Polynomial Equation</h2>
+<p>A polynomial equation is an expression where a polynomial is set equal to zero. Specifically, if we have a polynomial <span class="arithmatex">\( p(x) \)</span> of degree <span class="arithmatex">\( n \)</span>, which is the highest power of <span class="arithmatex">\( x \)</span> with a non-zero coefficient, the polynomial equation is written as <span class="arithmatex">\( p(x) = 0 \)</span>.</p>
+<p>The <strong>roots</strong> or <strong>zeros</strong> of the polynomial are the values of <span class="arithmatex">\( x \)</span> that make the polynomial equal to zero. They are the solutions to the polynomial equation <span class="arithmatex">\( p(x) = 0 \)</span>. These roots can be real or complex numbers and represent the points where the graph of the polynomial crosses the <span class="arithmatex">\( x \)</span>-axis.</p>
+<p>The coefficients of the polynomial, which can be real or complex numbers themselves, significantly affect the position and number of roots. For instance, in a quadratic polynomial (degree 2), the discriminant determined by the coefficients can tell us if the roots are real and distinct, real and equal (a repeated root), or complex.</p>
+<p>Understanding the roots is important for many applications in mathematics, including factoring the polynomial into linear factors (if the roots are real) and analyzing the function's behavior. Each real root corresponds to an <span class="arithmatex">\( x \)</span>-intercept on the graph of the polynomial.</p>
+<h2 id="factor-of-a-polynomial">Factor of a Polynomial</h2>
+<p>A factor of a polynomial is a non-zero expression that, when multiplied by another polynomial, yields the original polynomial.A polynomial <span class="arithmatex">\( d(x) \)</span> is identified as a factor of another polynomial <span class="arithmatex">\( p(x) \)</span> if, when <span class="arithmatex">\( p(x) \)</span> is divided by <span class="arithmatex">\( d(x) \)</span>, the division yields zero as the remainder. This relationship is a direct result of Long Division of Polynomials, which posits that <span class="arithmatex">\( p(x) \)</span> can be expressed as <span class="arithmatex">\( p(x) = q(x)d(x) + r(x) \)</span>, where <span class="arithmatex">\( r(x) \)</span> is the remainder. If <span class="arithmatex">\( r(x) \)</span> is zero, <span class="arithmatex">\( d(x) \)</span> divides <span class="arithmatex">\( p(x) \)</span> evenly, signifying that <span class="arithmatex">\( d(x) \)</span> is indeed a factor of <span class="arithmatex">\( p(x) \)</span>, and <span class="arithmatex">\( p(x) \)</span> is divisible by <span class="arithmatex">\( d(x) \)</span> without any residue, resulting in the quotient polynomial <span class="arithmatex">\( q(x) \)</span>. This notion is foundational to the factor theorem, which establishes the link between the roots of polynomial equations and their factors. </p>
+<h2 id="factor-theorem">Factor Theorem</h2>
+<p><em><span class="arithmatex">\( (x - \alpha) \)</span> is a factor of <span class="arithmatex">\( p(x) \)</span> if and only if <span class="arithmatex">\( p(\alpha) = 0 \)</span> ( <span class="arithmatex">\( \alpha \)</span> is a root of <span class="arithmatex">\( p(x) \)</span> )</em></p>
+<p><strong>Proof:</strong> Assuming <span class="arithmatex">\( (x - \alpha) \)</span> is a factor of <span class="arithmatex">\( p(x) \)</span>, then <span class="arithmatex">\( p(x) = q(x)(x - \alpha) \)</span> for some polynomial <span class="arithmatex">\( q(x) \)</span>. Put <span class="arithmatex">\( x = \alpha \)</span>, we get, <span class="arithmatex">\( p(\alpha) = 0 \)</span>.</p>
+<p>Conversely, Assuming <span class="arithmatex">\( p(\alpha) = 0 \)</span>, by Euclid’s Division Lemma, when <span class="arithmatex">\( p(x) \)</span> is divided by <span class="arithmatex">\( (x - \alpha) \)</span>, there exists <span class="arithmatex">\( p(x) \)</span> and <span class="arithmatex">\( r(x) \)</span> such that <span class="arithmatex">\( p(x) = q(x)(x - \alpha) + r(x) \)</span>. Put <span class="arithmatex">\( x = \alpha \)</span> in it, we get,</p>
+<div class="arithmatex">\[ p(\alpha) = r(\alpha) \Rightarrow r(\alpha) = 0 \]</div>
+<p>Thus</p>
+<div class="arithmatex">\[ p(x) = q(x)(x - \alpha) \]</div>
+<p><span class="arithmatex">\( (x - \alpha) \)</span> is a factor of <span class="arithmatex">\( p(x) \)</span>. <span class="arithmatex">\(\blacksquare\)</span></p>
+<h2 id="multiplicity-of-roots">Multiplicity of Roots</h2>
+<p>If <span class="arithmatex">\( p(x) \)</span> is divisible by <span class="arithmatex">\( (x - \alpha) \)</span> two times, i.e., <span class="arithmatex">\( p(x) \)</span> has factor <span class="arithmatex">\( (x - \alpha)^2 \)</span> then <span class="arithmatex">\( \alpha \)</span> is said to be a double root of <span class="arithmatex">\( p(x) \)</span>. Similarly, if <span class="arithmatex">\( p(x) \)</span> is divisible by <span class="arithmatex">\( (x - \alpha)^r \)</span> but not by <span class="arithmatex">\( (x - \alpha)^{r+1} \)</span>, then <span class="arithmatex">\( \alpha \)</span> is said to be an <span class="arithmatex">\( r \)</span>-multiple root.</p>
+<p>Observe that if a polynomial <span class="arithmatex">\( p(x) \)</span> of degree <span class="arithmatex">\( n \)</span> is divisible by <span class="arithmatex">\( (x - \alpha)^2 \)</span> then <span class="arithmatex">\( p(x) = q(x)(x - \alpha)^2 \)</span>. If we differentiate both sides we get, <span class="arithmatex">\( p'(x) = q'(x)(x - \alpha)^2 + 2q(x)(x - \alpha) \)</span>. <span class="arithmatex">\( p'(x) \)</span> has degree <span class="arithmatex">\( n - 1 \)</span> and clearly, it is divisible again by <span class="arithmatex">\( (x - \alpha) \)</span> i.e. <span class="arithmatex">\( p'(\alpha) = 0 \)</span>. If we differentiate again we will observe that <span class="arithmatex">\( p''(\alpha) \not= 0 \)</span>.</p>
+<p>Let us generalize the above observation:</p>
+<p><span class="arithmatex">\( \alpha \)</span> is an <span class="arithmatex">\( r \)</span>-multiple root of <span class="arithmatex">\( p(x) \)</span> if and only if <span class="arithmatex">\( p(\alpha) = 0 \)</span>, <span class="arithmatex">\( p'(\alpha) = 0 \)</span>, <span class="arithmatex">\( p''(\alpha) = 0 \)</span>, ..., <span class="arithmatex">\( p^{(r-1)}(\alpha) = 0 \)</span>, <span class="arithmatex">\( p^{(r)}(\alpha) \not= 0 \)</span>. Where <span class="arithmatex">\( p^{(r)}(x) \)</span> represents the <span class="arithmatex">\( r \)</span>-th derivative of <span class="arithmatex">\( p(x) \)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<ol>
+<li>
+<div class="arithmatex">\[ p(x) = (x - 1)^3(x^2 + x + 1) \]</div>
+<p>Expanding this would give a polynomial of degree 5. The cubic factor <span class="arithmatex">\( (x - 1)^3 \)</span> indicates that <span class="arithmatex">\( x = 1 \)</span> is a root with multiplicity 3.</p>
+</li>
+<li>
+<div class="arithmatex">\[ q(x) = (x - 2)^2(x + 3) \]</div>
+<p>This polynomial has a double root at <span class="arithmatex">\( x = 2 \)</span> and another root at <span class="arithmatex">\( x = -3 \)</span>.</p>
+</li>
+</ol>
+</div>
+<h2 id="fundamental-theorem-of-algebra">Fundamental Theorem of Algebra</h2>
+<p><em>The Fundamental Theorem of Algebra states that every non-constant single-variable polynomial with complex coefficients has at least one complex root.</em> This includes real numbers as a subset since real numbers are also complex numbers with an imaginary part of zero.</p>
+<p>Formally, the theorem can be expressed as follows: Given a polynomial <span class="arithmatex">\( p(x) \)</span> of degree <span class="arithmatex">\( n \)</span>, where <span class="arithmatex">\( n \geq 1 \)</span>, and coefficients in the complex numbers <span class="arithmatex">\( \mathbb{C} \)</span>, there exists at least one complex number <span class="arithmatex">\( c \)</span> such that <span class="arithmatex">\( p(c) = 0 \)</span>.</p>
+<h3 id="an-important-consequence-of-fundamental-theorem-of-algebra">An important consequence of Fundamental Theorem of Algebra</h3>
+<p>Theorem (Existence of Polynomial Roots):</p>
+<p>Every non-constant polynomial equation of degree <span class="arithmatex">\( n &gt; 0 \)</span>, with coefficients in the complex numbers, has exactly <span class="arithmatex">\( n \)</span> roots in the complex plane, considering multiplicity. These roots are represented by <span class="arithmatex">\( \alpha_1, \alpha_2, ..., \alpha_n \)</span> (not necessarily distinct), such that the polynomial can be expressed as <span class="arithmatex">\( f(x) = a(x - \alpha_1)(x - \alpha_2)...(x - \alpha_n) \)</span>, where <span class="arithmatex">\( a \)</span> is the leading coefficient of <span class="arithmatex">\( f(x) \)</span>.</p>
+<p><strong>Proof (by Mathematical Induction):</strong></p>
+<p>We begin with the base case where <span class="arithmatex">\( n = 1 \)</span>. For a linear polynomial, it's clear that there is one root <span class="arithmatex">\( \alpha \)</span>, making <span class="arithmatex">\( f(x) = a(x - \alpha) \)</span>.</p>
+<p>Now, let's assume the theorem holds for any polynomial of degree <span class="arithmatex">\( n - 1 \)</span>, where <span class="arithmatex">\( n \geq 2 \)</span>. Consider <span class="arithmatex">\( f(x) \)</span>, a polynomial of degree <span class="arithmatex">\( n \)</span> with a leading coefficient <span class="arithmatex">\( a \)</span>. By the Fundamental Theorem of Algebra, <span class="arithmatex">\( f(x) \)</span> has at least one root, say <span class="arithmatex">\( \alpha_1 \)</span>. This means <span class="arithmatex">\( (x - \alpha_1) \)</span> is a factor of <span class="arithmatex">\( f(x) \)</span>, so we can write:</p>
+<div class="arithmatex">\[ f(x) = (x - \alpha_1)q(x) .....(1)\]</div>
+<p>Here, <span class="arithmatex">\( q(x) \)</span> is a polynomial of degree <span class="arithmatex">\( n - 1 \)</span> with the same leading coefficient <span class="arithmatex">\( a \)</span> due to the factorization.</p>
+<p>Applying the induction hypothesis to <span class="arithmatex">\( q(x) \)</span>, we deduce that it has <span class="arithmatex">\( n - 1 \)</span> roots, say <span class="arithmatex">\( \alpha_2, ..., \alpha_n \)</span>, yielding:</p>
+<div class="arithmatex">\[ q(x) = a(x - \alpha_2)...(x - \alpha_n) .....(2)\]</div>
+<p>Combining equations (1) and (2), we obtain:</p>
+<div class="arithmatex">\[ f(x) = (x - \alpha_1)a(x - \alpha_2)...(x - \alpha_n) \]</div>
+<p>This confirms that <span class="arithmatex">\( f(x) \)</span> can be factored into <span class="arithmatex">\( n \)</span> linear factors, each corresponding to a root, which completes the proof.</p>
+<div class="admonition info">
+<p class="admonition-title">Factorization of a polynomial</p>
+<p>If <span class="arithmatex">\( \alpha_1, \alpha_2, ..., \alpha_n \)</span> are the <span class="arithmatex">\( n \)</span> roots of the polynomial <span class="arithmatex">\( p(x) = a_0x^n + a_1x^{n-1} + a_2x^{n-2} + ... + a_n \)</span>, then </p>
+<div class="arithmatex">\[ p(x) = a_0(x - \alpha_1)(x - \alpha_2)(x - \alpha_3)...(x - \alpha_n) \]</div>
+<p>(Remember roots may be real or complex. Some roots may be repeated)</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Can number of roots of a polynomial exceeds its degree?</p>
+<p>No, a polynomial of degree <span class="arithmatex">\( n \)</span> cannot have more than <span class="arithmatex">\( n \)</span> roots, according to the Fundamental Theorem of Algebra. This theorem states that every non-zero, single-variable, degree <span class="arithmatex">\( n \)</span> polynomial with complex coefficients has exactly <span class="arithmatex">\( n \)</span> roots in the complex plane when counted with multiplicity. </p>
+<p>If a polynomial seems to have more than <span class="arithmatex">\( n \)</span> roots, it must be the <strong>zero polynomial</strong>, which is the polynomial <span class="arithmatex">\( p(x) = 0 \)</span> for all <span class="arithmatex">\( x \)</span>, and in such a case, every number is a root. However, for non-zero polynomials, the number of roots — including repeated roots — cannot exceed its degree.</p>
+</div>
+<h3 id="equality-of-polynomials">Equality of polynomials</h3>
+<p><strong>Theorem:</strong> <em>If two polynomials of degree <span class="arithmatex">\( n \)</span> are equal at more than <span class="arithmatex">\( n \)</span> values of <span class="arithmatex">\( x \)</span>, then both polynomials are the same, i.e., they are equal for all values of <span class="arithmatex">\( x \)</span>.</em></p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Proof:</strong></p>
+<p>This result derives from the fundamental theorem of Algebra. Consider two polynomials <span class="arithmatex">\( p(x) \)</span> and <span class="arithmatex">\( q(x) \)</span> of equal degree <span class="arithmatex">\( n \)</span>:</p>
+<div class="arithmatex">\[ p(x) = a_0x^n + a_1x^{n-1} + \ldots + a_n \]</div>
+<div class="arithmatex">\[ q(x) = b_0x^n + b_1x^{n-1} + \ldots + b_n \]</div>
+<p>Suppose that these polynomials are equal for more than <span class="arithmatex">\( n \)</span> distinct values of <span class="arithmatex">\( x \)</span>. By subtracting the polynomials we get:</p>
+<div class="arithmatex">\[ p(x) - q(x) = (a_0 - b_0)x^n + (a_1 - b_1)x^{n-1} + \ldots + (a_n - b_n) = 0 \]</div>
+<p>This difference yields a new polynomial <span class="arithmatex">\( r(x) \)</span> of degree <span class="arithmatex">\( n \)</span> at most:</p>
+<div class="arithmatex">\[ r(x) = p(x) - q(x) = 0 .....(1)\]</div>
+<p>If <span class="arithmatex">\( p(x) \)</span> and <span class="arithmatex">\( q(x) \)</span> are equal for more than <span class="arithmatex">\( n \)</span> values of <span class="arithmatex">\( x \)</span>, then <span class="arithmatex">\( r(x) \)</span> has more than <span class="arithmatex">\( n \)</span> roots. According to the Fundamental Theorem of Algebra, a non-zero polynomial of degree <span class="arithmatex">\( n \)</span> can have at most <span class="arithmatex">\( n \)</span> roots. Since <span class="arithmatex">\( r(x) \)</span> has more than <span class="arithmatex">\( n \)</span> roots, it must be the zero polynomial, which implies all of its coefficients must be zero:</p>
+<div class="arithmatex">\[ a_0 - b_0 = a_1 - b_1 = \ldots = a_n - b_n = 0 \]</div>
+<p>Therefore:</p>
+<div class="arithmatex">\[ a_0 = b_0, a_1 = b_1, \ldots, a_n = b_n \]</div>
+<p>Hence, both polynomials <span class="arithmatex">\( p(x) \)</span> and <span class="arithmatex">\( q(x) \)</span> have the same coefficients and are therefore the same polynomial. This means they will be equal for all values of <span class="arithmatex">\( x \)</span>, completing the proof.</p>
+</div>
+<h2 id="polynomials-with-real-coefficients">Polynomials with real coefficients</h2>
+<p>When examining the roots of polynomials with real coefficients, a particular symmetry involving complex numbers arises. For any polynomial <span class="arithmatex">\( p(x) = a_0x^n + a_1x^{n-1} + ... + a_n \)</span> with real coefficients, if <span class="arithmatex">\( \alpha \)</span> is a complex root, its complex conjugate <span class="arithmatex">\( \overline{\alpha} \)</span> is also a root.</p>
+<p><strong>Theorem:</strong> If a polynomial <span class="arithmatex">\( p(x) \)</span> with real coefficients has a complex root <span class="arithmatex">\( \alpha \)</span>, then its complex conjugate <span class="arithmatex">\( \overline{\alpha} \)</span> is also a root of <span class="arithmatex">\( p(x) \)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Proof:</p>
+<p>Let <span class="arithmatex">\( p(x) \)</span> be a polynomial with real coefficients, expressed as:</p>
+<div class="arithmatex">\[ p(x) = a_0x^n + a_1x^{n-1} + \ldots + a_n \]</div>
+<p>Assume <span class="arithmatex">\( \alpha \)</span> is a root of <span class="arithmatex">\( p(x) \)</span>, so that <span class="arithmatex">\( p(\alpha) = 0 \)</span>. Since the coefficients of <span class="arithmatex">\( p(x) \)</span> are real, we can take the complex conjugate of the entire polynomial without changing the coefficients:</p>
+<p>Given <span class="arithmatex">\( p(x) = a_0x^n + a_1x^{n-1} + a_2x^{n-2} + ... + a_n \)</span>, take the conjugate of both sides.</p>
+<div class="arithmatex">\[ \overline{p(x)} = \overline{a_0x^n} + \overline{a_1x^{n-1}} + \overline{a_2x^{n-2}} + ... + \overline{a_n} \]</div>
+<div class="arithmatex">\[ \Rightarrow \overline{p(x)} = a_0\overline{x}^n + a_1\overline{x}^{n-1} + a_2\overline{x}^{n-2} + ... + \overline{a_n} \]</div>
+<div class="arithmatex">\[ \Rightarrow \overline{p(x)} = a_0\overline{x}^n + a_1\overline{x}^{n-1} + a_2\overline{x}^{n-2} + ... + a_n \]</div>
+<div class="arithmatex">\[ \Rightarrow \overline{p({x})} = p(\overline{x}) \]</div>
+<p>Now, the next statement should be clear to you if you are already acquainted with complex numbers. If the coefficients of <span class="arithmatex">\( p(x) = a_0x^n + a_1x^{n-1} + a_2x^{n-2} + ... + a_n \)</span> are all real numbers, then if <span class="arithmatex">\( \alpha \)</span> is one of the roots and it is complex, then the conjugate of <span class="arithmatex">\( \alpha \)</span>, that is <span class="arithmatex">\( \overline{\alpha} \)</span>, is also a root. It should be emphasized that this statement is only true when all coefficients of the polynomial are real. This can be easily proved.</p>
+<p>Given <span class="arithmatex">\( p(x) = a_0x^n + a_1x^{n-1} + a_2x^{n-2} + ... + a_n \)</span>, take the conjugate of both sides. We get</p>
+<div class="arithmatex">\[ \overline{p(x)} = \overline{a_0x^n} + \overline{a_1x^{n-1}} + \overline{a_2x^{n-2}} + ... + \overline{a_n} \]</div>
+<p>This simplifies to </p>
+<div class="arithmatex">\[ \overline{p(x)} = a_0\overline{x}^n + a_1\overline{x}^{n-1} + a_2\overline{x}^{n-2} + ... + a_n \]</div>
+<p>because the coefficients are real numbers. Hence, we have </p>
+<div class="arithmatex">\[ \overline{p(x)} = p(\overline{x}) \]</div>
+<p>Therefore, if <span class="arithmatex">\( p(\alpha) = 0 \)</span>, then <span class="arithmatex">\( {p(\overline{\alpha})} = 0 \)</span>.  That is, if <span class="arithmatex">\(\alpha\)</span> is a root, then it's conjugate <span class="arithmatex">\(\overline{\alpha}\)</span> is also a root of the polynomial. <span class="arithmatex">\(\blacksquare\)</span></p>
+</div>
+<p>For a polynomial <span class="arithmatex">\(p(x)\)</span> with real coefficients, from the above theorem we can conclude that if <span class="arithmatex">\( x - \alpha \)</span> is a factor, then <span class="arithmatex">\( x - \overline{\alpha} \)</span> is also a factor.</p>
+<p>If we calculate the product of these factors, we get <span class="arithmatex">\( (x - \alpha)(x - \overline{\alpha}) \)</span> which expands to <span class="arithmatex">\( x^2 - (\alpha + \overline{\alpha})x + \alpha\overline{\alpha} \)</span>.</p>
+<p>Now, <span class="arithmatex">\( x^2 - 2Re(\alpha)x + |\alpha|^2 \)</span> is a quadratic factor with real coefficients whose roots are complex conjugates of each other. Thus any polynomial with real coefficients can be factorized into linear and quadratic factors having complex conjugate roots. Thus, we can write the following:</p>
+<div class="admonition quote">
+<p><em>If <span class="arithmatex">\( p + iq \)</span> is one of the roots of a polynomial of real coefficients, then <span class="arithmatex">\( p - iq \)</span> is also the root and <span class="arithmatex">\( x^2 - 2px + p^2 + q^2 \)</span> is one of the quadratic factors. Here <span class="arithmatex">\( i = \sqrt{-1} \)</span>.</em></p>
+</div>
+<p>A polynomial possessing real coefficients can be decomposed into factors that are either linear or quadratic and cannot be further reduced. This decomposition is derived from the principle that for every complex root, its complex conjugate is also a root. Consequently, when a polynomial has real coefficients, any non-real root must appear alongside its conjugate pair. These conjugate pairs combine to form quadratic factors with real coefficients that cannot be factored further over the reals.</p>
+<p>Thus, a polynomial with real coefficients can be expressed as a product of factors of the form <span class="arithmatex">\( (x - r) \)</span>, where <span class="arithmatex">\( r \)</span> is a real root, and factors of the form <span class="arithmatex">\( (x^2 - 2px + p^2 + q^2) \)</span>, where <span class="arithmatex">\( p + iq \)</span> is a non-real complex root and <span class="arithmatex">\( p - iq \)</span> is its conjugate. The linear factors correspond to real roots, while the irreducible<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> quadratic factors correspond to pairs of complex conjugate roots. This results in a complete factorization where the original polynomial is represented as a product of linear and irreducible quadratic expressions, revealing all possible roots and confirming the polynomial's real-valued nature.</p>
+<p>For example:</p>
+<p>An example of a polynomial with two irreducible quadratic factors and two linear factors is:</p>
+<div class="arithmatex">\[ p(x) = (x^2 + x + 1)(x^2 + 2x + 5)(x - 3)(x + 2) \]</div>
+<p>Here, <span class="arithmatex">\( x^2 + x + 1 \)</span> and <span class="arithmatex">\( x^2 + 2x + 5 \)</span> are irreducible quadratic factors because they have no real roots (the discriminant is negative), and <span class="arithmatex">\( x - 3 \)</span> and <span class="arithmatex">\( x + 2 \)</span> are linear factors corresponding to real roots <span class="arithmatex">\( x = 3 \)</span> and <span class="arithmatex">\( x = -2 \)</span>, respectively. </p>
+<h2 id="relation-of-roots-with-coefficients-vietas-formulae">Relation of Roots with Coefficients (Vieta’s Formulae).</h2>
+<p>Let <span class="arithmatex">\( p(x) = a_0x^n + a_1x^{n-1} + a_2x^{n-2} + ... + a_n \)</span>. If <span class="arithmatex">\( \alpha_1, \alpha_2, ..., \alpha_n \)</span> are the roots (real or complex), then</p>
+<div class="arithmatex">\[ a_0x^n + a_1x^{n-1} + a_2x^{n-2} + ... + a_n = a_0(x - \alpha_1)(x - \alpha_2)...(x - \alpha_n) \]</div>
+<div class="arithmatex">\[ \Rightarrow a_0x^n + a_1x^{n-1} + a_2x^{n-2} + ... + a_n = a_0x^n - (\alpha_1 + \alpha_2 + ... + \alpha_n)x^{n-1} + (\sum_{1 \leq i &lt; j \leq n} \alpha_i\alpha_j)x^{n-2} - (\sum_{1 \leq i &lt; j &lt; k \leq n} \alpha_i\alpha_j\alpha_k)x^{n-3} ... + (-1)^n\alpha_1\alpha_2...\alpha_n \]</div>
+<p>Where <span class="arithmatex">\( \sum \alpha_i\alpha_j = \alpha_1\alpha_2 + \alpha_1\alpha_3 + ... \)</span> is equal to the sum of all possible products of <span class="arithmatex">\( \alpha_1, \alpha_2, ..., \alpha_n \)</span>, taken two at a time.</p>
+<p>Similarly, <span class="arithmatex">\( \sum \alpha_i\alpha_j\alpha_k = \alpha_1\alpha_2\alpha_3 + \alpha_1\alpha_2\alpha_4 + \alpha_1\alpha_2\alpha_5 + ... \)</span> is equal to the sum of all possible products of <span class="arithmatex">\( \alpha_1, \alpha_2, ..., \alpha_n \)</span>, taken three at a time.</p>
+<p>Comparing the coefficients of both sides, we get:</p>
+<div class="arithmatex">\[ \sum_{1 \leq i \leq n} \alpha_i = -\frac{a_1}{a_0} \]</div>
+<div class="arithmatex">\[ \sum_{1 \leq i &lt; j \leq n} \alpha_i\alpha_j = \frac{a_2}{a_0} \]</div>
+<div class="arithmatex">\[ \sum_{1 \leq i &lt; j &lt; k\leq n} \alpha_i\alpha_j\alpha_k = -\frac{a_3}{a_0} \]</div>
+<p>In general,</p>
+<div class="arithmatex">\[ \sum_{1 \leq i &lt; j \ldots &lt; r \leq n} \alpha_i\alpha_j...\alpha_r = (-1)^r\frac{a_r}{a_0} \]</div>
+<p>(there are a total of <span class="arithmatex">\( {n \choose r} \)</span> terms in this summation)</p>
+<p>The last relation is about the product of all roots:</p>
+<div class="arithmatex">\[ \alpha_1\alpha_2\alpha_3...\alpha_n = (-1)^n \frac{a_n}{a_0} \quad (\text{product of the roots}). \]</div>
+<div class="admonition note">
+<p>For a quadratic polynomial <span class="arithmatex">\( ax^2 + bx + c \)</span> if <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span> are the roots, then</p>
+<div class="arithmatex">\[ \alpha + \beta = -\frac{b}{a} \quad \text{and} \quad \alpha\beta = \frac{c}{a} \]</div>
+<p>For a cubic polynomial <span class="arithmatex">\( ax^3 + bx^2 + cx + d \)</span> if <span class="arithmatex">\( \alpha, \beta \)</span> and <span class="arithmatex">\( \gamma \)</span> are the roots then,</p>
+<div class="arithmatex">\[ \alpha + \beta + \gamma = -\frac{b}{a} \]</div>
+<div class="arithmatex">\[ \alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a} \]</div>
+<div class="arithmatex">\[ \alpha\beta\gamma = -\frac{d}{a} \]</div>
+</div>
+<h2 id="contructing-the-polynomial-equations-from-the-root">Contructing the polynomial equations from the root</h2>
+<p>Given the roots <span class="arithmatex">\( \alpha_1, \alpha_2, ..., \alpha_n \)</span>, the corresponding polynomial equation is given by:</p>
+<p><span class="arithmatex">\( (x - \alpha_1)(x - \alpha_2)...(x - \alpha_n) = 0\)</span>.</p>
+<p>When we expand this product, the resulting polynomial is of the form:</p>
+<div class="arithmatex">\[ x^n - \left(\sum_{1 \leq i \leq n} \alpha_i\right) x^{n-1} + \left(\sum_{1 \leq i &lt; j \leq n} \alpha_i\alpha_j\right) x^{n-2} - ... + (-1)^n\left(\alpha_1\alpha_2...\alpha_n\right) = 0 \]</div>
+<p>To construct a polynomial equation from known roots <span class="arithmatex">\( \alpha_1, \alpha_2, ..., \alpha_n \)</span>, we define the elementary symmetric sums of the roots:</p>
+<ul>
+<li><span class="arithmatex">\( \sigma_1 = \sum_{1 \leq i \leq n} \alpha_i \)</span> is the sum of the roots taken one at a time.</li>
+<li><span class="arithmatex">\( \sigma_2 = \sum_{1 \leq i &lt; j \leq n} \alpha_i \alpha_j \)</span> is the sum of the products of the roots taken two at a time.</li>
+<li>...</li>
+<li><span class="arithmatex">\( \sigma_r = \sum \alpha_{i_1} \alpha_{i_2} ... \alpha_{i_r} \)</span>, where the sum extends over all <span class="arithmatex">\( r \)</span>-combinations of the indices from 1 to <span class="arithmatex">\( n \)</span>, is the sum of the products of the roots taken <span class="arithmatex">\( r \)</span> at a time.</li>
+</ul>
+<p>Thus, to find the polynomial equation, we calculate the sums of the roots taken one at a time, two at a time, and so on, up to <span class="arithmatex">\( n \)</span> at a time. These sums are the elementary symmetric polynomials of the roots, and they directly determine the coefficients of the polynomial equation <span class="arithmatex">\( P(x) = 0 \)</span>.</p>
+<div class="arithmatex">\[ x^n - \sigma_1 x^{n-1} + \sigma_2 x^{n-2} - ... + (-1)^r \sigma_r x^{n-r} + ... + (-1)^n \sigma_n = 0 \]</div>
+<p>The coefficients of the polynomial are determined by these sums, with the coefficient of <span class="arithmatex">\( x^{n-r} \)</span> being <span class="arithmatex">\( (-1)^r \sigma_r \)</span>. This equation fully captures the relationship between the roots of the polynomial and its coefficients.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>The corresponding cubic equation with roots <span class="arithmatex">\( \alpha, \beta, \)</span> and <span class="arithmatex">\( \gamma \)</span> is:</p>
+<div class="arithmatex">\[ x^3 - (\alpha + \beta + \gamma)x^2 + (\alpha\beta + \alpha\gamma + \beta\gamma)x - \alpha\beta\gamma = 0 \]</div>
+<p>Here, the coefficient of <span class="arithmatex">\( x^2 \)</span> is the negative of the sum of the roots, the coefficient of <span class="arithmatex">\( x \)</span> is the sum of the product of the roots taken two at a time, and the constant term is the negative of the product of all three roots.</p>
+<p>For a polynomial of degree four with roots <span class="arithmatex">\( \alpha, \beta, \gamma, \)</span> and <span class="arithmatex">\( \delta \)</span>, the corresponding equation can be derived in a similar way, considering the sum and products of the roots in their various combinations:</p>
+<div class="arithmatex">\[ x^4 - (\alpha + \beta + \gamma + \delta)x^3 + (\alpha\beta + \alpha\gamma + \alpha\delta + \beta\gamma + \beta\delta + \gamma\delta)x^2 - (\alpha\beta\gamma + \alpha\beta\delta + \alpha\gamma\delta + \beta\gamma\delta)x + \alpha\beta\gamma\delta = 0 \]</div>
+<p>This equation is the result of expanding <span class="arithmatex">\( (x - \alpha)(x - \beta)(x - \gamma)(x - \delta) \)</span>.</p>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>An <strong>irreducible quadratic expression</strong> over the real numbers is a second-degree polynomial that cannot be factored into real-numbered linear factors. Formally, it can be defined as a quadratic expression of the form <span class="arithmatex">\( ax^2 + bx + c \)</span>, where <span class="arithmatex">\( a \)</span>, <span class="arithmatex">\( b \)</span>, and <span class="arithmatex">\( c \)</span> are real coefficients, and the discriminant <span class="arithmatex">\( b^2 - 4ac &lt; 0 \)</span>. The negative discriminant indicates that the quadratic equation <span class="arithmatex">\( ax^2 + bx + c = 0 \)</span> does not have real solutions, hence it cannot be decomposed into real linear factors. These expressions are "irreducible" in the sense that they cannot be simplified or broken down further using real numbers alone.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "navigation.footerhttp://127.0.0.1:8000/"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
